@@ -2,7 +2,7 @@
 
 These instructions will (in the future) tell you how to generate your own `doxygen` files for `Merlin`
 
-If you wish to view pre-generated documentation, see `generated-docs`
+If you wish to view pre-generated documentation, ~see `generated-docs`~ *to be added*
 
 ## Editing the Documentation
 
@@ -14,441 +14,444 @@ To generate `doxygen` files, ensure you are in the `doxygen` directory, in which
 
 ## Source File Documentation Status
 
-AcceleratorComponent.cpp
-AcceleratorComponent.h
-AcceleratorErrors.cpp
-AcceleratorErrors.h
-AcceleratorGeometry.cpp
-AcceleratorGeometry.h
-AcceleratorModelConstructor.cpp
-AcceleratorModelConstructor.h
-AcceleratorModel.cpp
-AcceleratorModel.h
-AcceleratorSupport.cpp
-AcceleratorSupport.h
-ACG.cpp
-ACG.h
-algorithm.h
-AMBufferManager.h
-ApertureConfiguration.cpp
-ApertureConfiguration.h
-Aperture.cpp
-Aperture.h
-ApertureSurvey.cpp
-ApertureSurvey.h
-ArcGeometry.cpp
-ArcGeometry.h
-ArcMultipoleField.h
-ATL2D.cpp
-ATL2D.h
-AxisRotations.cpp
-AxisRotations.h
-BasicTransportMaps.cpp
-BasicTransportMaps.h
-BeamData.h
-Bessel.cpp
-BetatronTunes.cpp
-BetatronTunes.cpp.2
-BetatronTunes.h
-BetatronTunes.h.2
-Binomial.cpp
-Binomial.h
-BPMChannel.cpp
-BPMChannelCtor.cpp
-BPMChannelCtor.h
-BPMChannel.h
-BPM.cpp
-BPMDataBuffer.cpp
-BPMDataBuffer.h
-BPMDataBufferServer.cpp
-BPMDataBufferServer.h
-BPM.h
-BunchConstructor.h
-BunchConverter.h
-BunchFilter.cpp
-BunchFilter.h
-Bunch.h
-BunchProcess.h
-BzField.cpp
-BzField.h
-CCFailureProcess.cpp
-CCFailureProcess.h
-CenteredGeometry.h
-Channels.cpp
-ChannelServer.cpp
-ChannelServer.h
-Channels.h
-ClosedOrbit.cpp
-ClosedOrbit.h
-CollimateParticleProcess.cpp
-CollimateParticleProcess.h
-CollimateProtonProcess.cpp
-CollimateProtonProcess.h
-CollimationOutput.cpp
-CollimationOutput.h
-CollimatorAperture.cpp
-CollimatorAperture.h
-Collimator.cpp
-CollimatorDatabase.cpp
-CollimatorDatabase.h
-Collimator.h
-CollimatorPotentialModels.cpp
-CollimatorPotentialModels.h
-CollimatorTable.h
-CollimatorWakePotentials.h
-CollimatorWakeProcess.cpp
-CollimatorWakeProcess.h
-CombinedWakeRF.h
-ComplexDef.h
-Complex.h
-ComponentFrame.cpp
-ComponentFrame.h
-ComponentIntegrator.h
-Components.h
-ComponentStepper.cpp
-ComponentStepper.h
-ComponentTracker.cpp
-ComponentTracker.h
-CompositeMaterial.cpp
-CompositeMaterial.h
-ConstructSrot.cpp
-ConstructSrot.h
-copyright.txt
-CorrectorDipoles.cpp
-CorrectorDipoles.h
-CorrectorWinding.cpp
-CorrectorWinding.h
-CoulombScatter.h
-CouplerWakeFieldProcess.cpp
-CouplerWakeFieldProcess.h
-CPUFeatures.cpp
-CPUFeatures.h
-CrabMarker.cpp
-CrabMarker.h
-CrossSections.cpp
-CrossSections.h
-deleters.h
-DiffractiveScatter.cpp
-DiffractiveScatter.h
-DiscUnif.cpp
-DiscUnif.h
-Dispersion.cpp
-Dispersion.h
-Documentation.cpp
-Drift.cpp
-Drift.h
-DynamicModel.h
-echo_ostream.h
-ElasticScatter.cpp
-ElasticScatter.h
-ElectronBunch.cpp
-ElectronBunch.h
-ElementRepository.cpp
-ElementRepository.h
-EMField.cpp
-EMField.h
-EquilibriumDistribution.cpp
-EquilibriumDistribution.h
-erfcc.cpp
-ErLang.cpp
-Erlang.h
-FlukaCollimationOutput.cpp
-FlukaCollimationOutput.h
-FrameModifier.cpp
-FrameModifier.h
-Gamma.cpp
-GeneralRotation.cpp
-GeneralRotation.h
-Geom.cpp
-GeometryObject3D.h
-GeometryPatch.h
-Geom.h
-Histogram.cpp
-Histogram.h
-HollowElectronLens.cpp
-HollowElectronLens.h
-HollowELensProcess.cpp
-HollowELensProcess.h
-HypGeom.cpp
-HypGeom.h
-IdentityRotation.cpp
-IdentityRotation.h
-IndirectChannels.h
-InterpolatedApertures.cpp
-InterpolatedApertures.h
-Interpolation.cpp
-Interpolation.h
-Klystron.cpp
-Klystron.h
-Landau.cpp
-Landau.h
-LatticeFrame.cpp
-LatticeFrame.h
-LatticeFunctions.cpp
-LatticeFunctions.h
-LCAVintegrator.cpp
-LCAVintegrator.h
-LinearAlgebra.cpp
-LinearAlgebra.h
-LinearFBSystem.cpp
-LinearFBSystem.h
-LinearParticleMap.cpp
-LinearParticleMap.h
-LogNorm.cpp
-LogNorm.h
-LossMapCollimationOutput.cpp
-LossMapCollimationOutput.h
-MADInterface.cpp
-MADInterface.h
-MADKeyMap.cpp
-MADKeyMap.h
-MagnetMover.cpp
-MagnetMover.h
-Marker.cpp
-Marker.h
-Material.cpp
-MaterialDatabase.cpp
-MaterialDatabase.h
-Material.h
-MaterialMixture.cpp
-MaterialMixture.h
-MatrixMaps.cpp
-MatrixMaps.h
-MatrixPrinter.cpp
-MatrixPrinter.h
-Measurement.h
-merlin_config.h
-MerlinException.h
-MerlinIO.cpp
-MerlinIO.h
-MerlinProfile.cpp
-MerlinProfile.h
-MLCG.cpp
-MLCG.h
-ModelElement.h
-Monitor.cpp
-Monitor.h
-MonitorProcess.cpp
-MonitorProcess.h
-MultiNormal.h
-MultipoleField.cpp
-MultipoleField.h
-MuonBunch.cpp
-MuonBunch.h
-MVCMatrix.h
-NANCheckProcess.cpp
-NANCheckProcess.h
-NegExp.cpp
-NegExp.h
-Normal.cpp
-Normal.h
-NormalTransform.cpp
-NormalTransform.h
-NumericalConstants.cpp
-NumericalConstants.h
-OPFormat.cpp
-OPFormat.h
-ParticleBunchConstructor.cpp
-ParticleBunchConstructor.h
-ParticleBunchConverter.cpp
-ParticleBunch.cpp
-ParticleBunch.h
-ParticleBunchProcess.h
-ParticleBunchTypes.h
-ParticleBunchUtilities.cpp
-ParticleBunchUtilities.h
-ParticleComponentTracker.h
-ParticleMapComponent.cpp
-ParticleMapComponent.h
-ParticleMap.h
-ParticleMapPI.cpp
-ParticleMapPI.h
-ParticleTracker.h
-PatchFrame.h
-PhaseAdvance.cpp
-PhaseAdvance.h
-PhotonSpectrumGen.cpp
-PhysicalConstants.cpp
-PhysicalConstants.h
-PhysicalUnits.cpp
-PhysicalUnits.h
-Poisson.cpp
-Poisson.h
-ProcessStepManager.cpp
-ProcessStepManager.h
-ProtonBunch.cpp
-ProtonBunch.h
-PSmoments.h
-PSTypes.h
-PSvector.cpp
-PSvector.h
-PSvectorTransform3D.cpp
-PSvectorTransform3D.h
-Random.h
-RandomNG.cpp
-RandomNG.h
-Range.h
-RectangularGeometry.cpp
-RectangularGeometry.h
-RectEllipseAperture.cpp
-RectEllipseAperture.h
-RectMultipole.cpp
-RectMultipoleField.h
-RectMultipole.h
-RectSWRF.h
-RectTWRF.h
-ReferenceParticle.h
-ResistiveWakePotentials.h
-RFAcceleratingField.h
-RFStructure.cpp
-RFStructure.h
-RingDeltaTProcess.cpp
-RingDeltaTProcess.h
-ring_iterator.h
-RMap.cpp
-RMap.h
-RMSProfileMonitor.cpp
-RMSProfileMonitor.h
-RndInt.h
-RNG.cpp
-RNG.h
-Rot3Drep.cpp
-Rot3Drep.h
-Rotation3D.h
-RotationMatrix.h
-RotationType.h
-RTMap.cpp
-RTMap.h
-RWChannelState.cpp
-RWChannelState.h
-ScatteringModel.cpp
-ScatteringModel.h
-ScatteringModelsMerlin.cpp
-ScatteringModelsMerlin.h
-ScatteringProcess.cpp
-ScatteringProcess.h
-ScatterParticle.cpp
-ScatterProton.h
-SectorBend.cpp
-SectorBend.h
-SequenceFrame.cpp
-SequenceFrame.h
-SimpleApertures.cpp
-SimpleApertures.h
-SimpleATL.cpp
-SimpleATL.h
-SimpleDrift.h
-SimpleSolenoid.h
-SliceMacroParticle.cpp
-SliceMacroParticle.h
-SMPBunchConstructor.cpp
-SMPBunchConstructor.h
-SMPBunchConverter.cpp
-SMPBunch.cpp
-SMPBunch.h
-SMPBunchProcess.h
-SMPComponentTracker.cpp
-SMPComponentTracker.h
-SMPStdIntegrators.cpp
-SMPStdIntegrators.h
-SMPTracker.h
-SMPTransform3D.cpp
-SMPTransform3D.h
-SMPWakeFieldProcess.cpp
-SMPWakeFieldProcess.h
-Solenoid.cpp
-Solenoid.h
-Space2D.h
-Space3D.h
-SpinParticleProcess.cpp
-SpinParticleProcess.h
-StableOrbits.cpp
-StableOrbits.h
-StandardMultipoles.cpp
-StandardMultipoles.h
-StdChannelDefs.cpp
-StdIntegrators.cpp
-StdIntegrators.h
-StringPattern.cpp
-StringPattern.h
-SupportStructure.cpp
-SupportStructure.h
-svdcmp.h
-SWRFfield.cpp
-SWRFfield.h
-SWRFStructure.cpp
-SWRFStructure.h
-SymplecticIntegrators.cpp
-SymplecticIntegrators.h
-SynchRadParticleProcess.cpp
-SynchRadParticleProcess.h
-table1.txt
-tableL0.txt
-tableL1.txt
-tableL2.txt
-tableL3.txt
-tableL4.txt
-tableL5.txt
-tableT1.txt
-tableT2m10.txt
-tableT2m1.txt
-tableT2m2.txt
-tableT2m3.txt
-tableT2m4.txt
-tableT2m5.txt
-tableT2m6.txt
-tableT2m7.txt
-tableT2m8.txt
-tableT2m9.txt
-tableT2.txt
-tableT3.txt
-tableT4.txt
-tableT5.txt
-table.txt
-TaperedCollimatorPotentials.h
-tblas.h
-TComponentFrame.h
-TCovMtrx.h
-TemplateComponents.h
-Timing.h
-TLAS.h
-TLASimp.h
-TMatrixLib.h
-TrackingOutputAV.cpp
-TrackingOutputAV.h
-TrackingSimulation.cpp
-TrackingSimulation.h
-TransferMatrix.cpp
-TransferMatrix.h
-Transform2D.h
-Transform3D.cpp
-Transform3D.h
-Transformable.cpp
-Transformable.h
-TransportIntegrators.cpp
-TransportMatrix.cpp
-TransportMatrix.h
-TransportRMap.h
-TransportRMaps.cpp
-TransRFfield.cpp
-TransRFfield.h
-TransRFIntegrator.cpp
-TransRFIntegrator.h
-TransverseRFStructure.cpp
-TransverseRFStructure.h
-TTrackSim.h
-TWRFfield.cpp
-TWRFfield.h
-TWRFStructure.cpp
-TWRFStructure.h
-Uniform.cpp
-Uniform.h
-utils.h
-VectorTags.h
-WakeFieldProcess.cpp
-WakeFieldProcess.h
-WakePotentials.h
-Weibull.cpp
-Weibull.h
-XTFFInterface.cpp
-XTFFInterface.h
+
+| Source File                     | Recent Check for *some* `doxygen` documentation? | Date of Check |
+|---------------------------------|--------------------------------------------------|---------------|
+| AcceleratorComponent.cpp        |                                                  |               |
+| AcceleratorComponent.h          |                                                  |               |
+| AcceleratorErrors.cpp           |                                                  |               |
+| AcceleratorErrors.h             |                                                  |               |
+| AcceleratorGeometry.cpp         |                                                  |               |
+| AcceleratorGeometry.h           |                                                  |               |
+| AcceleratorModelConstructor.cpp |                                                  |               |
+| AcceleratorModelConstructor.h   |                                                  |               |
+| AcceleratorModel.cpp            |                                                  |               |
+| AcceleratorModel.h              |                                                  |               |
+| AcceleratorSupport.cpp          |                                                  |               |
+| AcceleratorSupport.h            |                                                  |               |
+| ACG.cpp                         |                                                  |               |
+| ACG.h                           |                                                  |               |
+| algorithm.h                     |                                                  |               |
+| AMBufferManager.h               |                                                  |               |
+| ApertureConfiguration.cpp       |                                                  |               |
+| ApertureConfiguration.h         |                                                  |               |
+| Aperture.cpp                    |                                                  |               |
+| Aperture.h                      |                                                  |               |
+| ApertureSurvey.cpp              |                                                  |               |
+| ApertureSurvey.h                |                                                  |               |
+| ArcGeometry.cpp                 |                                                  |               |
+| ArcGeometry.h                   |                                                  |               |
+| ArcMultipoleField.h             |                                                  |               |
+| ATL2D.cpp                       |                                                  |               |
+| ATL2D.h                         |                                                  |               |
+| AxisRotations.cpp               |                                                  |               |
+| AxisRotations.h                 |                                                  |               |
+| BasicTransportMaps.cpp          |                                                  |               |
+| BasicTransportMaps.h            |                                                  |               |
+| BeamData.h                      |                                                  |               |
+| Bessel.cpp                      |                                                  |               |
+| BetatronTunes.cpp               |                                                  |               |
+| BetatronTunes.cpp.2             |                                                  |               |
+| BetatronTunes.h                 |                                                  |               |
+| BetatronTunes.h.2               |                                                  |               |
+| Binomial.cpp                    |                                                  |               |
+| Binomial.h                      |                                                  |               |
+| BPMChannel.cpp                  |                                                  |               |
+| BPMChannelCtor.cpp              |                                                  |               |
+| BPMChannelCtor.h                |                                                  |               |
+| BPMChannel.h                    |                                                  |               |
+| BPM.cpp                         |                                                  |               |
+| BPMDataBuffer.cpp               |                                                  |               |
+| BPMDataBuffer.h                 |                                                  |               |
+| BPMDataBufferServer.cpp         |                                                  |               |
+| BPMDataBufferServer.h           |                                                  |               |
+| BPM.h                           |                                                  |               |
+| BunchConstructor.h              |                                                  |               |
+| BunchConverter.h                |                                                  |               |
+| BunchFilter.cpp                 |                                                  |               |
+| BunchFilter.h                   |                                                  |               |
+| Bunch.h                         |                                                  |               |
+| BunchProcess.h                  |                                                  |               |
+| BzField.cpp                     |                                                  |               |
+| BzField.h                       |                                                  |               |
+| CCFailureProcess.cpp            |                                                  |               |
+| CCFailureProcess.h              |                                                  |               |
+| CenteredGeometry.h              |                                                  |               |
+| Channels.cpp                    |                                                  |               |
+| ChannelServer.cpp               |                                                  |               |
+| ChannelServer.h                 |                                                  |               |
+| Channels.h                      |                                                  |               |
+| ClosedOrbit.cpp                 |                                                  |               |
+| ClosedOrbit.h                   |                                                  |               |
+| CollimateParticleProcess.cpp    |                                                  |               |
+| CollimateParticleProcess.h      |                                                  |               |
+| CollimateProtonProcess.cpp      |                                                  |               |
+| CollimateProtonProcess.h        |                                                  |               |
+| CollimationOutput.cpp           |                                                  |               |
+| CollimationOutput.h             |                                                  |               |
+| CollimatorAperture.cpp          |                                                  |               |
+| CollimatorAperture.h            |                                                  |               |
+| Collimator.cpp                  |                                                  |               |
+| CollimatorDatabase.cpp          |                                                  |               |
+| CollimatorDatabase.h            |                                                  |               |
+| Collimator.h                    |                                                  |               |
+| CollimatorPotentialModels.cpp   |                                                  |               |
+| CollimatorPotentialModels.h     |                                                  |               |
+| CollimatorTable.h               |                                                  |               |
+| CollimatorWakePotentials.h      |                                                  |               |
+| CollimatorWakeProcess.cpp       |                                                  |               |
+| CollimatorWakeProcess.h         |                                                  |               |
+| CombinedWakeRF.h                |                                                  |               |
+| ComplexDef.h                    |                                                  |               |
+| Complex.h                       |                                                  |               |
+| ComponentFrame.cpp              |                                                  |               |
+| ComponentFrame.h                |                                                  |               |
+| ComponentIntegrator.h           |                                                  |               |
+| Components.h                    |                                                  |               |
+| ComponentStepper.cpp            |                                                  |               |
+| ComponentStepper.h              |                                                  |               |
+| ComponentTracker.cpp            |                                                  |               |
+| ComponentTracker.h              |                                                  |               |
+| CompositeMaterial.cpp           |                                                  |               |
+| CompositeMaterial.h             |                                                  |               |
+| ConstructSrot.cpp               |                                                  |               |
+| ConstructSrot.h                 |                                                  |               |
+| copyright.txt                   |                                                  |               |
+| CorrectorDipoles.cpp            |                                                  |               |
+| CorrectorDipoles.h              |                                                  |               |
+| CorrectorWinding.cpp            |                                                  |               |
+| CorrectorWinding.h              |                                                  |               |
+| CoulombScatter.h                |                                                  |               |
+| CouplerWakeFieldProcess.cpp     |                                                  |               |
+| CouplerWakeFieldProcess.h       |                                                  |               |
+| CPUFeatures.cpp                 |                                                  |               |
+| CPUFeatures.h                   |                                                  |               |
+| CrabMarker.cpp                  |                                                  |               |
+| CrabMarker.h                    |                                                  |               |
+| CrossSections.cpp               |                                                  |               |
+| CrossSections.h                 |                                                  |               |
+| deleters.h                      |                                                  |               |
+| DiffractiveScatter.cpp          | ✓                                                | 2017-08-04    |
+| DiffractiveScatter.h            | ✓                                                | 2017-08-04    |
+| DiscUnif.cpp                    |                                                  |               |
+| DiscUnif.h                      |                                                  |               |
+| Dispersion.cpp                  |                                                  |               |
+| Dispersion.h                    |                                                  |               |
+| Documentation.cpp               |                                                  |               |
+| Drift.cpp                       |                                                  |               |
+| Drift.h                         |                                                  |               |
+| DynamicModel.h                  |                                                  |               |
+| echo_ostream.h                  |                                                  |               |
+| ElasticScatter.cpp              |                                                  |               |
+| ElasticScatter.h                |                                                  |               |
+| ElectronBunch.cpp               |                                                  |               |
+| ElectronBunch.h                 |                                                  |               |
+| ElementRepository.cpp           |                                                  |               |
+| ElementRepository.h             |                                                  |               |
+| EMField.cpp                     |                                                  |               |
+| EMField.h                       |                                                  |               |
+| EquilibriumDistribution.cpp     |                                                  |               |
+| EquilibriumDistribution.h       |                                                  |               |
+| erfcc.cpp                       |                                                  |               |
+| ErLang.cpp                      |                                                  |               |
+| Erlang.h                        |                                                  |               |
+| FlukaCollimationOutput.cpp      |                                                  |               |
+| FlukaCollimationOutput.h        |                                                  |               |
+| FrameModifier.cpp               |                                                  |               |
+| FrameModifier.h                 |                                                  |               |
+| Gamma.cpp                       |                                                  |               |
+| GeneralRotation.cpp             |                                                  |               |
+| GeneralRotation.h               |                                                  |               |
+| Geom.cpp                        |                                                  |               |
+| GeometryObject3D.h              |                                                  |               |
+| GeometryPatch.h                 |                                                  |               |
+| Geom.h                          |                                                  |               |
+| Histogram.cpp                   |                                                  |               |
+| Histogram.h                     |                                                  |               |
+| HollowElectronLens.cpp          |                                                  |               |
+| HollowElectronLens.h            |                                                  |               |
+| HollowELensProcess.cpp          |                                                  |               |
+| HollowELensProcess.h            |                                                  |               |
+| HypGeom.cpp                     |                                                  |               |
+| HypGeom.h                       |                                                  |               |
+| IdentityRotation.cpp            |                                                  |               |
+| IdentityRotation.h              |                                                  |               |
+| IndirectChannels.h              |                                                  |               |
+| InterpolatedApertures.cpp       |                                                  |               |
+| InterpolatedApertures.h         |                                                  |               |
+| Interpolation.cpp               |                                                  |               |
+| Interpolation.h                 |                                                  |               |
+| Klystron.cpp                    |                                                  |               |
+| Klystron.h                      |                                                  |               |
+| Landau.cpp                      |                                                  |               |
+| Landau.h                        |                                                  |               |
+| LatticeFrame.cpp                |                                                  |               |
+| LatticeFrame.h                  |                                                  |               |
+| LatticeFunctions.cpp            |                                                  |               |
+| LatticeFunctions.h              |                                                  |               |
+| LCAVintegrator.cpp              |                                                  |               |
+| LCAVintegrator.h                |                                                  |               |
+| LinearAlgebra.cpp               |                                                  |               |
+| LinearAlgebra.h                 |                                                  |               |
+| LinearFBSystem.cpp              |                                                  |               |
+| LinearFBSystem.h                |                                                  |               |
+| LinearParticleMap.cpp           |                                                  |               |
+| LinearParticleMap.h             |                                                  |               |
+| LogNorm.cpp                     |                                                  |               |
+| LogNorm.h                       |                                                  |               |
+| LossMapCollimationOutput.cpp    |                                                  |               |
+| LossMapCollimationOutput.h      |                                                  |               |
+| MADInterface.cpp                |                                                  |               |
+| MADInterface.h                  |                                                  |               |
+| MADKeyMap.cpp                   |                                                  |               |
+| MADKeyMap.h                     |                                                  |               |
+| MagnetMover.cpp                 |                                                  |               |
+| MagnetMover.h                   |                                                  |               |
+| Marker.cpp                      |                                                  |               |
+| Marker.h                        |                                                  |               |
+| Material.cpp                    |                                                  |               |
+| MaterialDatabase.cpp            |                                                  |               |
+| MaterialDatabase.h              |                                                  |               |
+| Material.h                      |                                                  |               |
+| MaterialMixture.cpp             |                                                  |               |
+| MaterialMixture.h               |                                                  |               |
+| MatrixMaps.cpp                  |                                                  |               |
+| MatrixMaps.h                    |                                                  |               |
+| MatrixPrinter.cpp               |                                                  |               |
+| MatrixPrinter.h                 |                                                  |               |
+| Measurement.h                   |                                                  |               |
+| merlin_config.h                 |                                                  |               |
+| MerlinException.h               |                                                  |               |
+| MerlinIO.cpp                    |                                                  |               |
+| MerlinIO.h                      |                                                  |               |
+| MerlinProfile.cpp               |                                                  |               |
+| MerlinProfile.h                 |                                                  |               |
+| MLCG.cpp                        |                                                  |               |
+| MLCG.h                          |                                                  |               |
+| ModelElement.h                  |                                                  |               |
+| Monitor.cpp                     |                                                  |               |
+| Monitor.h                       |                                                  |               |
+| MonitorProcess.cpp              |                                                  |               |
+| MonitorProcess.h                |                                                  |               |
+| MultiNormal.h                   |                                                  |               |
+| MultipoleField.cpp              |                                                  |               |
+| MultipoleField.h                |                                                  |               |
+| MuonBunch.cpp                   |                                                  |               |
+| MuonBunch.h                     |                                                  |               |
+| MVCMatrix.h                     |                                                  |               |
+| NANCheckProcess.cpp             |                                                  |               |
+| NANCheckProcess.h               |                                                  |               |
+| NegExp.cpp                      |                                                  |               |
+| NegExp.h                        |                                                  |               |
+| Normal.cpp                      |                                                  |               |
+| Normal.h                        |                                                  |               |
+| NormalTransform.cpp             |                                                  |               |
+| NormalTransform.h               |                                                  |               |
+| NumericalConstants.cpp          |                                                  |               |
+| NumericalConstants.h            |                                                  |               |
+| OPFormat.cpp                    |                                                  |               |
+| OPFormat.h                      |                                                  |               |
+| ParticleBunchConstructor.cpp    |                                                  |               |
+| ParticleBunchConstructor.h      |                                                  |               |
+| ParticleBunchConverter.cpp      |                                                  |               |
+| ParticleBunch.cpp               |                                                  |               |
+| ParticleBunch.h                 |                                                  |               |
+| ParticleBunchProcess.h          |                                                  |               |
+| ParticleBunchTypes.h            |                                                  |               |
+| ParticleBunchUtilities.cpp      |                                                  |               |
+| ParticleBunchUtilities.h        |                                                  |               |
+| ParticleComponentTracker.h      |                                                  |               |
+| ParticleMapComponent.cpp        |                                                  |               |
+| ParticleMapComponent.h          |                                                  |               |
+| ParticleMap.h                   |                                                  |               |
+| ParticleMapPI.cpp               |                                                  |               |
+| ParticleMapPI.h                 |                                                  |               |
+| ParticleTracker.h               |                                                  |               |
+| PatchFrame.h                    |                                                  |               |
+| PhaseAdvance.cpp                |                                                  |               |
+| PhaseAdvance.h                  |                                                  |               |
+| PhotonSpectrumGen.cpp           |                                                  |               |
+| PhysicalConstants.cpp           |                                                  |               |
+| PhysicalConstants.h             |                                                  |               |
+| PhysicalUnits.cpp               |                                                  |               |
+| PhysicalUnits.h                 |                                                  |               |
+| Poisson.cpp                     |                                                  |               |
+| Poisson.h                       |                                                  |               |
+| ProcessStepManager.cpp          |                                                  |               |
+| ProcessStepManager.h            |                                                  |               |
+| ProtonBunch.cpp                 |                                                  |               |
+| ProtonBunch.h                   |                                                  |               |
+| PSmoments.h                     |                                                  |               |
+| PSTypes.h                       |                                                  |               |
+| PSvector.cpp                    |                                                  |               |
+| PSvector.h                      |                                                  |               |
+| PSvectorTransform3D.cpp         |                                                  |               |
+| PSvectorTransform3D.h           |                                                  |               |
+| Random.h                        |                                                  |               |
+| RandomNG.cpp                    |                                                  |               |
+| RandomNG.h                      |                                                  |               |
+| Range.h                         |                                                  |               |
+| RectangularGeometry.cpp         |                                                  |               |
+| RectangularGeometry.h           |                                                  |               |
+| RectEllipseAperture.cpp         |                                                  |               |
+| RectEllipseAperture.h           |                                                  |               |
+| RectMultipole.cpp               |                                                  |               |
+| RectMultipoleField.h            |                                                  |               |
+| RectMultipole.h                 |                                                  |               |
+| RectSWRF.h                      |                                                  |               |
+| RectTWRF.h                      |                                                  |               |
+| ReferenceParticle.h             |                                                  |               |
+| ResistiveWakePotentials.h       |                                                  |               |
+| RFAcceleratingField.h           |                                                  |               |
+| RFStructure.cpp                 |                                                  |               |
+| RFStructure.h                   |                                                  |               |
+| RingDeltaTProcess.cpp           |                                                  |               |
+| RingDeltaTProcess.h             |                                                  |               |
+| ring_iterator.h                 |                                                  |               |
+| RMap.cpp                        |                                                  |               |
+| RMap.h                          |                                                  |               |
+| RMSProfileMonitor.cpp           |                                                  |               |
+| RMSProfileMonitor.h             |                                                  |               |
+| RndInt.h                        |                                                  |               |
+| RNG.cpp                         |                                                  |               |
+| RNG.h                           |                                                  |               |
+| Rot3Drep.cpp                    |                                                  |               |
+| Rot3Drep.h                      |                                                  |               |
+| Rotation3D.h                    |                                                  |               |
+| RotationMatrix.h                |                                                  |               |
+| RotationType.h                  |                                                  |               |
+| RTMap.cpp                       |                                                  |               |
+| RTMap.h                         |                                                  |               |
+| RWChannelState.cpp              |                                                  |               |
+| RWChannelState.h                |                                                  |               |
+| ScatteringModel.cpp             |                                                  |               |
+| ScatteringModel.h               |                                                  |               |
+| ScatteringModelsMerlin.cpp      |                                                  |               |
+| ScatteringModelsMerlin.h        |                                                  |               |
+| ScatteringProcess.cpp           |                                                  |               |
+| ScatteringProcess.h             |                                                  |               |
+| ScatterParticle.cpp             |                                                  |               |
+| ScatterProton.h                 |                                                  |               |
+| SectorBend.cpp                  |                                                  |               |
+| SectorBend.h                    |                                                  |               |
+| SequenceFrame.cpp               |                                                  |               |
+| SequenceFrame.h                 |                                                  |               |
+| SimpleApertures.cpp             |                                                  |               |
+| SimpleApertures.h               |                                                  |               |
+| SimpleATL.cpp                   |                                                  |               |
+| SimpleATL.h                     |                                                  |               |
+| SimpleDrift.h                   |                                                  |               |
+| SimpleSolenoid.h                |                                                  |               |
+| SliceMacroParticle.cpp          |                                                  |               |
+| SliceMacroParticle.h            |                                                  |               |
+| SMPBunchConstructor.cpp         |                                                  |               |
+| SMPBunchConstructor.h           |                                                  |               |
+| SMPBunchConverter.cpp           |                                                  |               |
+| SMPBunch.cpp                    |                                                  |               |
+| SMPBunch.h                      |                                                  |               |
+| SMPBunchProcess.h               |                                                  |               |
+| SMPComponentTracker.cpp         |                                                  |               |
+| SMPComponentTracker.h           |                                                  |               |
+| SMPStdIntegrators.cpp           |                                                  |               |
+| SMPStdIntegrators.h             |                                                  |               |
+| SMPTracker.h                    |                                                  |               |
+| SMPTransform3D.cpp              |                                                  |               |
+| SMPTransform3D.h                |                                                  |               |
+| SMPWakeFieldProcess.cpp         |                                                  |               |
+| SMPWakeFieldProcess.h           |                                                  |               |
+| Solenoid.cpp                    |                                                  |               |
+| Solenoid.h                      |                                                  |               |
+| Space2D.h                       |                                                  |               |
+| Space3D.h                       |                                                  |               |
+| SpinParticleProcess.cpp         |                                                  |               |
+| SpinParticleProcess.h           |                                                  |               |
+| StableOrbits.cpp                |                                                  |               |
+| StableOrbits.h                  |                                                  |               |
+| StandardMultipoles.cpp          |                                                  |               |
+| StandardMultipoles.h            |                                                  |               |
+| StdChannelDefs.cpp              |                                                  |               |
+| StdIntegrators.cpp              |                                                  |               |
+| StdIntegrators.h                |                                                  |               |
+| StringPattern.cpp               |                                                  |               |
+| StringPattern.h                 |                                                  |               |
+| SupportStructure.cpp            |                                                  |               |
+| SupportStructure.h              |                                                  |               |
+| svdcmp.h                        |                                                  |               |
+| SWRFfield.cpp                   |                                                  |               |
+| SWRFfield.h                     |                                                  |               |
+| SWRFStructure.cpp               |                                                  |               |
+| SWRFStructure.h                 |                                                  |               |
+| SymplecticIntegrators.cpp       |                                                  |               |
+| SymplecticIntegrators.h         |                                                  |               |
+| SynchRadParticleProcess.cpp     |                                                  |               |
+| SynchRadParticleProcess.h       |                                                  |               |
+| table1.txt                      |                                                  |               |
+| tableL0.txt                     |                                                  |               |
+| tableL1.txt                     |                                                  |               |
+| tableL2.txt                     |                                                  |               |
+| tableL3.txt                     |                                                  |               |
+| tableL4.txt                     |                                                  |               |
+| tableL5.txt                     |                                                  |               |
+| tableT1.txt                     |                                                  |               |
+| tableT2m10.txt                  |                                                  |               |
+| tableT2m1.txt                   |                                                  |               |
+| tableT2m2.txt                   |                                                  |               |
+| tableT2m3.txt                   |                                                  |               |
+| tableT2m4.txt                   |                                                  |               |
+| tableT2m5.txt                   |                                                  |               |
+| tableT2m6.txt                   |                                                  |               |
+| tableT2m7.txt                   |                                                  |               |
+| tableT2m8.txt                   |                                                  |               |
+| tableT2m9.txt                   |                                                  |               |
+| tableT2.txt                     |                                                  |               |
+| tableT3.txt                     |                                                  |               |
+| tableT4.txt                     |                                                  |               |
+| tableT5.txt                     |                                                  |               |
+| table.txt                       |                                                  |               |
+| TaperedCollimatorPotentials.h   |                                                  |               |
+| tblas.h                         |                                                  |               |
+| TComponentFrame.h               |                                                  |               |
+| TCovMtrx.h                      |                                                  |               |
+| TemplateComponents.h            |                                                  |               |
+| Timing.h                        |                                                  |               |
+| TLAS.h                          |                                                  |               |
+| TLASimp.h                       |                                                  |               |
+| TMatrixLib.h                    |                                                  |               |
+| TrackingOutputAV.cpp            |                                                  |               |
+| TrackingOutputAV.h              |                                                  |               |
+| TrackingSimulation.cpp          |                                                  |               |
+| TrackingSimulation.h            |                                                  |               |
+| TransferMatrix.cpp              |                                                  |               |
+| TransferMatrix.h                |                                                  |               |
+| Transform2D.h                   |                                                  |               |
+| Transform3D.cpp                 |                                                  |               |
+| Transform3D.h                   |                                                  |               |
+| Transformable.cpp               |                                                  |               |
+| Transformable.h                 |                                                  |               |
+| TransportIntegrators.cpp        |                                                  |               |
+| TransportMatrix.cpp             |                                                  |               |
+| TransportMatrix.h               |                                                  |               |
+| TransportRMap.h                 |                                                  |               |
+| TransportRMaps.cpp              |                                                  |               |
+| TransRFfield.cpp                |                                                  |               |
+| TransRFfield.h                  |                                                  |               |
+| TransRFIntegrator.cpp           |                                                  |               |
+| TransRFIntegrator.h             |                                                  |               |
+| TransverseRFStructure.cpp       |                                                  |               |
+| TransverseRFStructure.h         |                                                  |               |
+| TTrackSim.h                     |                                                  |               |
+| TWRFfield.cpp                   |                                                  |               |
+| TWRFfield.h                     |                                                  |               |
+| TWRFStructure.cpp               |                                                  |               |
+| TWRFStructure.h                 |                                                  |               |
+| Uniform.cpp                     |                                                  |               |
+| Uniform.h                       |                                                  |               |
+| utils.h                         |                                                  |               |
+| VectorTags.h                    |                                                  |               |
+| WakeFieldProcess.cpp            |                                                  |               |
+| WakeFieldProcess.h              |                                                  |               |
+| WakePotentials.h                |                                                  |               |
+| Weibull.cpp                     |                                                  |               |
+| Weibull.h                       |                                                  |               |
+| XTFFInterface.cpp               |                                                  |               |
+| XTFFInterface.h                 |                                                  |               |
