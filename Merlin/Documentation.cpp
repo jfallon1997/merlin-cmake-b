@@ -68,7 +68,7 @@
 * By default cmake will generate unix makefiles.
 * To generate Xcode files the appropriate generator must be specified when using cmake as:
 *
-*     cmake -G Xcode`
+*     cmake -G Xcode
 *
 * One can then run:
 *
