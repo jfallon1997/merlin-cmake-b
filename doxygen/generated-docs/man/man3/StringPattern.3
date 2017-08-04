@@ -1,0 +1,48 @@
+.TH "StringPattern" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+StringPattern
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStringPattern\fP (const std::string &s)"
+.br
+.ti -1c
+.RI "bool \fBMatch\fP (const std::string &s) const"
+.br
+.ti -1c
+.RI "bool \fBoperator()\fP (const std::string &s) const"
+.br
+.ti -1c
+.RI "\fBoperator string\fP () const"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBStringPattern\fP &rhs) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBStringPattern\fP &rhs) const"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static char \fBwcchar\fP = '*'"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBStringPattern\fP &pattern)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

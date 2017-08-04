@@ -1,0 +1,102 @@
+\hypertarget{classInterpolatedCircularAperture}{}\section{Interpolated\+Circular\+Aperture Class Reference}
+\label{classInterpolatedCircularAperture}\index{Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}}
+Inheritance diagram for Interpolated\+Circular\+Aperture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classInterpolatedCircularAperture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInterpolatedCircularAperture_ace9034e16c850e8522a092016fba70d5}\label{classInterpolatedCircularAperture_ace9034e16c850e8522a092016fba70d5}} 
+{\bfseries Interpolated\+Circular\+Aperture} (std\+::vector$<$ \hyperlink{structInterpolatedAperture_1_1ap}{ap} $>$ Element\+Aperture\+List)
+\item 
+\mbox{\Hypertarget{classInterpolatedCircularAperture_a0d6548d2b63b73f1936663742a7f925c}\label{classInterpolatedCircularAperture_a0d6548d2b63b73f1936663742a7f925c}} 
+double {\bfseries Get\+Radius} () const
+\item 
+\mbox{\Hypertarget{classInterpolatedCircularAperture_ae7797994de32856e7bc2d04ce43e86e1}\label{classInterpolatedCircularAperture_ae7797994de32856e7bc2d04ce43e86e1}} 
+double {\bfseries Get\+Diameter} () const
+\item 
+\mbox{\Hypertarget{classInterpolatedCircularAperture_a89abff39be85ea5173ef3c5c036a02bb}\label{classInterpolatedCircularAperture_a89abff39be85ea5173ef3c5c036a02bb}} 
+void {\bfseries Set\+Radius} (double r)
+\item 
+\mbox{\Hypertarget{classInterpolatedCircularAperture_a3becf78e1850d7cfaea826794be0ff38}\label{classInterpolatedCircularAperture_a3becf78e1850d7cfaea826794be0ff38}} 
+void {\bfseries Set\+Diameter} (double d)
+\item 
+virtual bool \hyperlink{classInterpolatedCircularAperture_aeb31875191b05bd63bd00fe11294a432}{Point\+Inside} (double x, double y, double z) const
+\item 
+virtual double \hyperlink{classInterpolatedCircularAperture_a4c614ba51b5da0e01808f719f6a7511f}{Get\+Radius\+At} (double phi, double z) const
+\item 
+virtual std\+::string \hyperlink{classInterpolatedCircularAperture_ad6c2112ec4e0bd1b21b679e3fab08704}{Get\+Aperture\+Type} () const
+\item 
+virtual void \hyperlink{classInterpolatedCircularAperture_af32b8d603ed9dd511c3b00a045400795}{printout} (std\+::ostream \&out) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInterpolatedCircularAperture_ad6c2112ec4e0bd1b21b679e3fab08704}\label{classInterpolatedCircularAperture_ad6c2112ec4e0bd1b21b679e3fab08704}} 
+\index{Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}!Get\+Aperture\+Type@{Get\+Aperture\+Type}}
+\index{Get\+Aperture\+Type@{Get\+Aperture\+Type}!Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}}
+\subsubsection{\texorpdfstring{Get\+Aperture\+Type()}{GetApertureType()}}
+{\footnotesize\ttfamily std\+::string Interpolated\+Circular\+Aperture\+::\+Get\+Aperture\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the type of the aperture. \begin{DoxyReturn}{Returns}
+A string containing the type of the aperture. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAperture_ad7af612271a0586feea83c38549dfb75}{Aperture}.
+
+\mbox{\Hypertarget{classInterpolatedCircularAperture_a4c614ba51b5da0e01808f719f6a7511f}\label{classInterpolatedCircularAperture_a4c614ba51b5da0e01808f719f6a7511f}} 
+\index{Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}!Get\+Radius\+At@{Get\+Radius\+At}}
+\index{Get\+Radius\+At@{Get\+Radius\+At}!Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}}
+\subsubsection{\texorpdfstring{Get\+Radius\+At()}{GetRadiusAt()}}
+{\footnotesize\ttfamily double Interpolated\+Circular\+Aperture\+::\+Get\+Radius\+At (\begin{DoxyParamCaption}\item[{double}]{phi,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the radius to the aperture at location z and angle phi. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em phi} & The angle. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z position of the particle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double containing the aperture radius. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAperture_ad0ea7907d393ec1e6a8303343fe9dd29}{Aperture}.
+
+\mbox{\Hypertarget{classInterpolatedCircularAperture_aeb31875191b05bd63bd00fe11294a432}\label{classInterpolatedCircularAperture_aeb31875191b05bd63bd00fe11294a432}} 
+\index{Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}!Point\+Inside@{Point\+Inside}}
+\index{Point\+Inside@{Point\+Inside}!Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}}
+\subsubsection{\texorpdfstring{Point\+Inside()}{PointInside()}}
+{\footnotesize\ttfamily bool Interpolated\+Circular\+Aperture\+::\+Point\+Inside (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hyperlink{classInterpolatedCircularAperture}{Interpolated\+Circular\+Aperture} 
+
+Implements \hyperlink{classAperture_a77854d058bf8a00cfeb7a6d766dc0028}{Aperture}.
+
+\mbox{\Hypertarget{classInterpolatedCircularAperture_af32b8d603ed9dd511c3b00a045400795}\label{classInterpolatedCircularAperture_af32b8d603ed9dd511c3b00a045400795}} 
+\index{Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}!printout@{printout}}
+\index{printout@{printout}!Interpolated\+Circular\+Aperture@{Interpolated\+Circular\+Aperture}}
+\subsubsection{\texorpdfstring{printout()}{printout()}}
+{\footnotesize\ttfamily void Interpolated\+Circular\+Aperture\+::printout (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints out the \hyperlink{classAperture}{Aperture} parameters to a specified stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em out} & The output stream to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAperture_aff2f276b93bb2cb94e559e1c4901e38e}{Aperture}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Interpolated\+Apertures.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Interpolated\+Apertures.\+cpp\end{DoxyCompactItemize}

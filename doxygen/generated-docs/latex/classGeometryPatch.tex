@@ -1,0 +1,112 @@
+\hypertarget{classGeometryPatch}{}\section{Geometry\+Patch Class Reference}
+\label{classGeometryPatch}\index{Geometry\+Patch@{Geometry\+Patch}}
+Inheritance diagram for Geometry\+Patch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classGeometryPatch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classGeometryPatch_ae45360bf4f4a8bad9189eb34bca2a919}{Get\+Geometry\+Transform} (double s0, double s) const
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classGeometryPatch_a461f15c9a93cc4473463191c9d0f6465}{Get\+Geometry\+Transform} (\hyperlink{classAcceleratorGeometry_a5c1661938176102f235836f5a8be6034}{Boundary\+Plane} p) const
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classGeometryPatch_a94c4c26b1a43acc6a34b29d00a229d70}{Get\+Total\+Geometry\+Transform} () const
+\item 
+virtual Extent \hyperlink{classGeometryPatch_a814a517dd837f92d7f26628562047cb2}{Get\+Geometry\+Extent} () const
+\item 
+virtual double \hyperlink{classGeometryPatch_ae2d9aef3fc3df96fdf0340124f099997}{Get\+Geometry\+Length} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGeometryPatch_a814a517dd837f92d7f26628562047cb2}\label{classGeometryPatch_a814a517dd837f92d7f26628562047cb2}} 
+\index{Geometry\+Patch@{Geometry\+Patch}!Get\+Geometry\+Extent@{Get\+Geometry\+Extent}}
+\index{Get\+Geometry\+Extent@{Get\+Geometry\+Extent}!Geometry\+Patch@{Geometry\+Patch}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Extent()}{GetGeometryExtent()}}
+{\footnotesize\ttfamily virtual Extent Geometry\+Patch\+::\+Get\+Geometry\+Extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the local extent of this geometry. \begin{DoxyReturn}{Returns}
+A pair giving the extent of this geometry. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_a2db830fe927af3c9cba59b8452370bfb}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classGeometryPatch_ae2d9aef3fc3df96fdf0340124f099997}\label{classGeometryPatch_ae2d9aef3fc3df96fdf0340124f099997}} 
+\index{Geometry\+Patch@{Geometry\+Patch}!Get\+Geometry\+Length@{Get\+Geometry\+Length}}
+\index{Get\+Geometry\+Length@{Get\+Geometry\+Length}!Geometry\+Patch@{Geometry\+Patch}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Length()}{GetGeometryLength()}}
+{\footnotesize\ttfamily virtual double Geometry\+Patch\+::\+Get\+Geometry\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the total arc-\/length of the geometry. \begin{DoxyReturn}{Returns}
+A double giving the total length of this geometry. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_abc36f96d542e0d9db592f8e7ee455769}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classGeometryPatch_ae45360bf4f4a8bad9189eb34bca2a919}\label{classGeometryPatch_ae45360bf4f4a8bad9189eb34bca2a919}} 
+\index{Geometry\+Patch@{Geometry\+Patch}!Get\+Geometry\+Transform@{Get\+Geometry\+Transform}}
+\index{Get\+Geometry\+Transform@{Get\+Geometry\+Transform}!Geometry\+Patch@{Geometry\+Patch}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Transform()}{GetGeometryTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classTransform3D}{Transform3D} Geometry\+Patch\+::\+Get\+Geometry\+Transform (\begin{DoxyParamCaption}\item[{double}]{s0,  }\item[{double}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return the three-\/dimensional transformation from the frame at s0 to the frame at s. s and s0 are in the geometry\textquotesingle{}s s-\/frame, and must be within the geometry extents. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s0} & The location at which the transform should be evalutated from. \\
+\hline
+\mbox{\tt in}  & {\em s} & The location at which the transform should be evalutated to. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throws} & a Beyond\+Extent exception if the requested s values are outside the geometry extent. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+The 3D transformation from the entrance to the exit of this geometry. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_abf9c17cd1f84ac3e41973c85a65004de}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classGeometryPatch_a461f15c9a93cc4473463191c9d0f6465}\label{classGeometryPatch_a461f15c9a93cc4473463191c9d0f6465}} 
+\index{Geometry\+Patch@{Geometry\+Patch}!Get\+Geometry\+Transform@{Get\+Geometry\+Transform}}
+\index{Get\+Geometry\+Transform@{Get\+Geometry\+Transform}!Geometry\+Patch@{Geometry\+Patch}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Transform()}{GetGeometryTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classTransform3D}{Transform3D} Geometry\+Patch\+::\+Get\+Geometry\+Transform (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorGeometry_a5c1661938176102f235836f5a8be6034}{Boundary\+Plane}}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the transformation from the geometry origin to the specified boundary plane. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & The chosen Boundary\+Plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 3D transformation from the geometry origin to a specified boundary plane (extrance or exit). 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_af26654f89c4bff1b516d2c6d6bb68871}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classGeometryPatch_a94c4c26b1a43acc6a34b29d00a229d70}\label{classGeometryPatch_a94c4c26b1a43acc6a34b29d00a229d70}} 
+\index{Geometry\+Patch@{Geometry\+Patch}!Get\+Total\+Geometry\+Transform@{Get\+Total\+Geometry\+Transform}}
+\index{Get\+Total\+Geometry\+Transform@{Get\+Total\+Geometry\+Transform}!Geometry\+Patch@{Geometry\+Patch}}
+\subsubsection{\texorpdfstring{Get\+Total\+Geometry\+Transform()}{GetTotalGeometryTransform()}}
+{\footnotesize\ttfamily virtual \hyperlink{classTransform3D}{Transform3D} Geometry\+Patch\+::\+Get\+Total\+Geometry\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the transformation from the entrance plane frame to the exit plane frame. \begin{DoxyReturn}{Returns}
+The 3D transformation from the entrance to the exit of this geometry. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorGeometry_a9bffb8262fc3b28195e1e25fbfb2b8ba}{Accelerator\+Geometry}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Geometry\+Patch.\+h\end{DoxyCompactItemize}

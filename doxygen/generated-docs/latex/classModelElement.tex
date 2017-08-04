@@ -1,0 +1,157 @@
+\hypertarget{classModelElement}{}\section{Model\+Element Class Reference}
+\label{classModelElement}\index{Model\+Element@{Model\+Element}}
+
+
+{\ttfamily \#include $<$Model\+Element.\+h$>$}
+
+Inheritance diagram for Model\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.850633cm]{classModelElement}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classModelElement_ac9c52abd91d0352df179d0719b63e060}{Model\+Element} (const std\+::string \&a\+Name=\char`\"{}$<$U\+N\+N\+A\+M\+ED$>$\char`\"{})
+\item 
+virtual const std\+::string \& \hyperlink{classModelElement_ae2bb7fbbbde063a49a02ea6fe22d92c4}{Get\+Name} () const
+\item 
+virtual const std\+::string \& \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Get\+Type} () const =0
+\item 
+std\+::string \hyperlink{classModelElement_a838ca2cdb62831a812704e6a9a9c7401}{Get\+Qualified\+Name} () const
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Copy} () const =0
+\item 
+void \hyperlink{classModelElement_a6ee25b15570805484cdde49e66b910de}{Set\+Name} (const std\+::string \&name)
+\item 
+size\+\_\+t \hyperlink{classModelElement_a97fe4db8a9b82b5778e4286044ccacf8}{Get\+Beamline\+Indecies} (std\+::vector$<$ size\+\_\+t $>$ \&ivec) const
+\item 
+\mbox{\Hypertarget{classModelElement_ac397920ee1bc4a9c8a6eff01205f11dd}\label{classModelElement_ac397920ee1bc4a9c8a6eff01205f11dd}} 
+virtual void {\bfseries Append\+Beamline\+Indecies} (std\+::vector$<$ size\+\_\+t $>$ \&ivec) const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classModelElement_a1898eee7e930e5aff788e13fa4619529}{Init} (const std\+::string \&a\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Root class for all elements/components which are used to construct an \hyperlink{classAcceleratorModel}{Accelerator\+Model}. All \hyperlink{classModelElement}{Model\+Element} objects are characterised by a type string and an identifier (name). The type string identifies the type of element (class), while the name is specific to an instance of that element type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModelElement_ac9c52abd91d0352df179d0719b63e060}\label{classModelElement_ac9c52abd91d0352df179d0719b63e060}} 
+\index{Model\+Element@{Model\+Element}!Model\+Element@{Model\+Element}}
+\index{Model\+Element@{Model\+Element}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Model\+Element()}{ModelElement()}}
+{\footnotesize\ttfamily Model\+Element\+::\+Model\+Element (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{a\+Name = {\ttfamily \char`\"{}$<$UNNAMED$>$\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor taking the name of the element. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a\+Name} & A string containing the name of the element \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}\label{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}} 
+\index{Model\+Element@{Model\+Element}!Copy@{Copy}}
+\index{Copy@{Copy}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily virtual \hyperlink{classModelElement}{Model\+Element}$\ast$ Model\+Element\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual constructor. 
+
+Implemented in \hyperlink{classDecapole_a050b4c993227a975118da09b638ec450}{Decapole}, \hyperlink{classSkewSextupole_ac580c5b90fa653d51fd2f7288d65a9c7}{Skew\+Sextupole}, \hyperlink{classOctupole_a41df65c2095e03ee2347a7b3b986baa1}{Octupole}, \hyperlink{classSectorBend_a0f6e6636cd2db549f55f3d630223f9c6}{Sector\+Bend}, \hyperlink{classSkewQuadrupole_af5c7ad09d1966dfd71144e6e08942a53}{Skew\+Quadrupole}, \hyperlink{classBPM_a21bba21422046a434a38268c0cb5ada6}{B\+PM}, \hyperlink{classSimpleMount_a73ed116b3cceff1dd3cb71722f117139}{Simple\+Mount}, \hyperlink{classSextupole_ad2dad4cec1619235b9341c9d8fb855a8}{Sextupole}, \hyperlink{classRMSProfileMonitor_a44abc9eaa3a638c8fffadc81a3728b6e}{R\+M\+S\+Profile\+Monitor}, \hyperlink{classGirderMount_aa33c58a633237a7a54faa73ba73b4185}{Girder\+Mount}, \hyperlink{classMonitor_a66d7932308a7206eeefc552bd3f5b1f6}{Monitor}, \hyperlink{classCollimator_a82e63d47e1688d84f2e8f2fc3d247700}{Collimator}, \hyperlink{classKlystron_a2cb5bf0328cf1f47d0d7bff0a0b55f16}{Klystron}, \hyperlink{classComponentFrame_a24f6aea39b57e4b10a764877d1be6b7f}{Component\+Frame}, \hyperlink{classQuadrupole_aed92f774f225e5dbc2b88d3f928d6d9e}{Quadrupole}, \hyperlink{classMagnetMover_aff87bd41b6b3f0e158ccfd4f2a03aaf5}{Magnet\+Mover}, \hyperlink{classSolenoid_a712906ddbcacc761559736d01b04b513}{Solenoid}, \hyperlink{classSequenceFrame_a89a9046c330fa9955cd2e6b67b5c64f7}{Sequence\+Frame}, \hyperlink{classParticleTracking_1_1ParticleMapComponent_ac5e2a2ba7a0d7e29d7dc0ee023e300b0}{Particle\+Tracking\+::\+Particle\+Map\+Component}, \hyperlink{classYCor_a3abe7858695c36ee89e50836d0a908b8}{Y\+Cor}, \hyperlink{classTransverseRFStructure_a834a1ab102f7173c459a4e801f28e25b}{Transverse\+R\+F\+Structure}, \hyperlink{classPatchFrame_a4103f544750beb79b95795c6be388c1d}{Patch\+Frame}, \hyperlink{classDrift_ae47df31297596e13944364d602c95ce5}{Drift}, \hyperlink{classTWRFStructure_a46eda3c195425b6cc0dc6377e08a9df9}{T\+W\+R\+F\+Structure}, \hyperlink{classHollowElectronLens_a95d48cbadab7dcc58a1d4c1d9895e8d3}{Hollow\+Electron\+Lens}, \hyperlink{classCrabMarker_acd6d5d5a310e985f191443b42d8abc72}{Crab\+Marker}, \hyperlink{classMarker_a79a35a1eac386b87a456cbfff265c9ec}{Marker}, \hyperlink{classSWRFStructure_a7dac196eefbb13ccb9e5f40e2af40356}{S\+W\+R\+F\+Structure}, \hyperlink{classCorrectorWinding_adb8096ea0f8eb3743747fada685cc62c}{Corrector\+Winding}, \hyperlink{classTComponentFrame_a83b3faa024200e7d628451e1f8b50900}{T\+Component\+Frame$<$ T $>$}, \hyperlink{classFrameModifier_a26eef02b3d5e008da70d9cece9f018e4}{Frame\+Modifier}, and \hyperlink{classXCor_a8c84be893f565bd2dac6cf24da38873f}{X\+Cor}.
+
+\mbox{\Hypertarget{classModelElement_a97fe4db8a9b82b5778e4286044ccacf8}\label{classModelElement_a97fe4db8a9b82b5778e4286044ccacf8}} 
+\index{Model\+Element@{Model\+Element}!Get\+Beamline\+Indecies@{Get\+Beamline\+Indecies}}
+\index{Get\+Beamline\+Indecies@{Get\+Beamline\+Indecies}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Get\+Beamline\+Indecies()}{GetBeamlineIndecies()}}
+{\footnotesize\ttfamily size\+\_\+t Model\+Element\+::\+Get\+Beamline\+Indecies (\begin{DoxyParamCaption}\item[{std\+::vector$<$ size\+\_\+t $>$ \&}]{ivec }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns in ivec an ordered list of beamline indecies associated with this \hyperlink{classModelElement}{Model\+Element}. Returns the length of ivec. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ivec} & The ordered list of beamline indecies associated with this \hyperlink{classModelElement}{Model\+Element}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of ivec 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelElement_ae2bb7fbbbde063a49a02ea6fe22d92c4}\label{classModelElement_ae2bb7fbbbde063a49a02ea6fe22d92c4}} 
+\index{Model\+Element@{Model\+Element}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const std\+::string \& Model\+Element\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return the name of the element. \begin{DoxyReturn}{Returns}
+A string containing the name of the element. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classComponentFrame_a32bc80a48e64f286ee07519e17220248}{Component\+Frame}, \hyperlink{classPatchFrame_a51ebb7649aa5fc1403bcd70925d7c85f}{Patch\+Frame}, and \hyperlink{classCorrectorWinding_afb8a04514388b2b9b0e640b606f8f47c}{Corrector\+Winding}.
+
+\mbox{\Hypertarget{classModelElement_a838ca2cdb62831a812704e6a9a9c7401}\label{classModelElement_a838ca2cdb62831a812704e6a9a9c7401}} 
+\index{Model\+Element@{Model\+Element}!Get\+Qualified\+Name@{Get\+Qualified\+Name}}
+\index{Get\+Qualified\+Name@{Get\+Qualified\+Name}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Get\+Qualified\+Name()}{GetQualifiedName()}}
+{\footnotesize\ttfamily std\+::string Model\+Element\+::\+Get\+Qualified\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the qualified name of the component. The qualified name has the form typestr.\+namestr. \begin{DoxyReturn}{Returns}
+A string containing the qualified name of the element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}\label{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}} 
+\index{Model\+Element@{Model\+Element}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Model\+Element\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classDecapole_af39bab6b0dd2177c83cc8dd548401103}{Decapole}, \hyperlink{classSkewSextupole_ae10ab2f55d9cf84bdab2cb2f707c8758}{Skew\+Sextupole}, \hyperlink{classOctupole_a6fc17a6bae176112451bb7aa8d31438c}{Octupole}, \hyperlink{classSectorBend_a4721383872aa001dc557acb546f25929}{Sector\+Bend}, \hyperlink{classSkewQuadrupole_a12f3bb5618dfc4516cf975c01f634a22}{Skew\+Quadrupole}, \hyperlink{classBPM_a1fbab5ffd976674ed24ef5833caaf7ee}{B\+PM}, \hyperlink{classSimpleMount_afc88ec17aa2aea7f526bb7f52913f96a}{Simple\+Mount}, \hyperlink{classSextupole_a7553de8e94eb0567f0e0b4f74183b8f2}{Sextupole}, \hyperlink{classRMSProfileMonitor_ab97d742126deccadd878c402291a6263}{R\+M\+S\+Profile\+Monitor}, \hyperlink{classGirderMount_af23acf9dc5a5aa1bf3eb246fd6fcbca1}{Girder\+Mount}, \hyperlink{classMonitor_a8408f173bef0f0c0dd89b6624c84f66b}{Monitor}, \hyperlink{classSequenceFrame_a062ab78de738251ac5af6c62b470edcf}{Sequence\+Frame}, \hyperlink{classKlystron_a77d772abd8172d0de103bd14c838f6fc}{Klystron}, \hyperlink{classQuadrupole_aa8d08b76a82688cbb9161b120114faff}{Quadrupole}, \hyperlink{classComponentFrame_ab87e0e461ced7eb26a6c58bd1b04cf05}{Component\+Frame}, \hyperlink{classCollimator_aab811743031565147b965ca9b9fdfbc4}{Collimator}, \hyperlink{classYCor_afd6affaaca36f2c9a096eea1f6a1a767}{Y\+Cor}, \hyperlink{classMagnetMover_a01e7a7b50824532e141fa18ba58c2758}{Magnet\+Mover}, \hyperlink{classSolenoid_ac120a84dc2b8e02ad747d818b3bf66af}{Solenoid}, \hyperlink{classParticleTracking_1_1ParticleMapComponent_ac16294b88ccb64111e35174e2c369b88}{Particle\+Tracking\+::\+Particle\+Map\+Component}, \hyperlink{classMarker_a3fc5e5a8665da63bc18a28c604c71036}{Marker}, \hyperlink{classXCor_a7b8f33e0c46765aaf030ddc24dcdd91b}{X\+Cor}, \hyperlink{classCorrectorWinding_a299195a163660e3bd13e15437a91dd91}{Corrector\+Winding}, \hyperlink{classPatchFrame_a1ef493fda343de4400b198097db32f20}{Patch\+Frame}, \hyperlink{classFrameModifier_aeed9502abd0561668d9d654a08fef546}{Frame\+Modifier}, \hyperlink{classTransverseRFStructure_a3dbe71ac560ebc89a02d869d3dd7999d}{Transverse\+R\+F\+Structure}, \hyperlink{classDrift_a9f5e7d0aafd8689a4420b3d5e7b6879e}{Drift}, \hyperlink{classTWRFStructure_ae3eb08e80bfac82a5a1ba43ce367a71f}{T\+W\+R\+F\+Structure}, \hyperlink{classHollowElectronLens_add07b8f08bad11edfb3df87be488e9ff}{Hollow\+Electron\+Lens}, \hyperlink{classCrabMarker_a45ab65449808d5072eb033858c2d961a}{Crab\+Marker}, and \hyperlink{classSWRFStructure_aad97277c40295deeda896f9d710330e7}{S\+W\+R\+F\+Structure}.
+
+\mbox{\Hypertarget{classModelElement_a1898eee7e930e5aff788e13fa4619529}\label{classModelElement_a1898eee7e930e5aff788e13fa4619529}} 
+\index{Model\+Element@{Model\+Element}!Init@{Init}}
+\index{Init@{Init}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Model\+Element\+::\+Init (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{a\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Initialise the \hyperlink{classModelElement}{Model\+Element} with the specified name. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a\+Name} & A string containing the element name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelElement_a6ee25b15570805484cdde49e66b910de}\label{classModelElement_a6ee25b15570805484cdde49e66b910de}} 
+\index{Model\+Element@{Model\+Element}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
+{\footnotesize\ttfamily void Model\+Element\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the name of the component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & A string containing the element name. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classModelElement_aada171ead2085c75b592cf07d91bc5c2}\label{classModelElement_aada171ead2085c75b592cf07d91bc5c2}} 
+\index{Model\+Element@{Model\+Element}!id@{id}}
+\index{id@{id}!Model\+Element@{Model\+Element}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily std\+::string Model\+Element\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name of the element. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Model\+Element.\+h\end{DoxyCompactItemize}

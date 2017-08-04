@@ -1,0 +1,127 @@
+.TH "SectorBend" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SectorBend
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBTAccCompGF< G, F >\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBPoleFace\fP"
+.br
+.ti -1c
+.RI "class \fBPoleFaceInfo\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSectorBend\fP (const string &\fBid\fP, double len, double h, double b0)"
+.br
+.ti -1c
+.RI "virtual int \fBGetIndex\fP () const"
+.br
+.ti -1c
+.RI "virtual const string & \fBGetType\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBRotateY180\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBPrepareTracker\fP (\fBComponentTracker\fP &aTracker)"
+.br
+.ti -1c
+.RI "virtual \fBModelElement\fP * \fBCopy\fP () const"
+.br
+.ti -1c
+.RI "const \fBPoleFaceInfo\fP & \fBGetPoleFaceInfo\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetPoleFaceInfo\fP (\fBPoleFace\fP *entr, \fBPoleFace\fP *exit)"
+.br
+.ti -1c
+.RI "void \fBSetPoleFaceInfo\fP (\fBPoleFace\fP *pf)"
+.br
+.ti -1c
+.RI "double \fBGetMatchedMomentum\fP (double q) const"
+.br
+.ti -1c
+.RI "double \fBGetB0\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetB1\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetB0\fP (double By)"
+.br
+.ti -1c
+.RI "void \fBSetB1\fP (double b1)"
+.br
+.ti -1c
+.RI "void \fBSetFieldStrength\fP (double b)"
+.br
+.ti -1c
+.RI "double \fBGetFieldStrength\fP () const"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const int \fBID\fP = \fBUniqueIndex\fP()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBModelElement\fP * SectorBend::Copy () const\fC [virtual]\fP"
+Virtual constructor\&. 
+.PP
+Implements \fBModelElement\fP\&.
+.SS "int SectorBend::GetIndex () const\fC [virtual]\fP"
+Returns the unique index for this class of accelerator components\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+An integer containing the unique index for this \fBAcceleratorComponent\fP type\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAcceleratorComponent\fP\&.
+.SS "const string & SectorBend::GetType () const\fC [virtual]\fP"
+Return the type string for the element\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A string containing the type of the element\&. 
+.RE
+.PP
+
+.PP
+Implements \fBModelElement\fP\&.
+.SS "void SectorBend::PrepareTracker (\fBComponentTracker\fP & aTracker)\fC [virtual]\fP"
+Primary tracking interface\&. Prepares the specified Tracker object for tracking this component\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaTracker\fP The tracker to prepare\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAcceleratorComponent\fP\&.
+.SS "void SectorBend::RotateY180 ()\fC [virtual]\fP"
+Rotates the component 180 degrees about its local Y axis\&. 
+.PP
+Implements \fBAcceleratorComponent\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

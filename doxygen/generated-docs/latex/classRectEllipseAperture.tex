@@ -1,0 +1,129 @@
+\hypertarget{classRectEllipseAperture}{}\section{Rect\+Ellipse\+Aperture Class Reference}
+\label{classRectEllipseAperture}\index{Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}}
+
+
+{\ttfamily \#include $<$Rect\+Ellipse\+Aperture.\+h$>$}
+
+Inheritance diagram for Rect\+Ellipse\+Aperture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRectEllipseAperture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRectEllipseAperture_a806557895c0a3df2e4e6e5e6aa577c19}\label{classRectEllipseAperture_a806557895c0a3df2e4e6e5e6aa577c19}} 
+{\bfseries Rect\+Ellipse\+Aperture} (double rhw, double rhh, double ehh, double ehv)
+\item 
+bool \hyperlink{classRectEllipseAperture_ac3cc7fae775b055d74ea185a77b08c7f}{Point\+Inside} (double x, double y, double z) const
+\item 
+double \hyperlink{classRectEllipseAperture_a3e6ea0e15b7a9f026bc7ead70efe5e18}{Get\+Radius\+At} (double phi, double z) const
+\item 
+std\+::string \hyperlink{classRectEllipseAperture_a983dec943872b82aa91f74cd10558207}{Get\+Aperture\+Type} () const
+\item 
+virtual void \hyperlink{classRectEllipseAperture_a13285bdfb9c849fe94cd261ae1bfffe4}{printout} (std\+::ostream \&out) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRectEllipseAperture_a18a4d399eecff1b88d2a1c2873241b5c}\label{classRectEllipseAperture_a18a4d399eecff1b88d2a1c2873241b5c}} 
+const double {\bfseries Rect\+Half\+Width}
+\item 
+\mbox{\Hypertarget{classRectEllipseAperture_a6291fe35ddea612090a0cc4cbe611b35}\label{classRectEllipseAperture_a6291fe35ddea612090a0cc4cbe611b35}} 
+const double {\bfseries Rect\+Half\+Height}
+\item 
+\mbox{\Hypertarget{classRectEllipseAperture_af4117212b527262c395e65d414cb8725}\label{classRectEllipseAperture_af4117212b527262c395e65d414cb8725}} 
+const double {\bfseries Ellipse\+Half\+Horizontal}
+\item 
+\mbox{\Hypertarget{classRectEllipseAperture_a86196d64d0b4f36d7abd5cd13376ef20}\label{classRectEllipseAperture_a86196d64d0b4f36d7abd5cd13376ef20}} 
+const double {\bfseries Ellipse\+Half\+Vertical}
+\item 
+\mbox{\Hypertarget{classRectEllipseAperture_a31610fc966b9ec09a8e86d65b7bac708}\label{classRectEllipseAperture_a31610fc966b9ec09a8e86d65b7bac708}} 
+const double {\bfseries E\+H\+H2}
+\item 
+\mbox{\Hypertarget{classRectEllipseAperture_a05b1938a5cfac44daa43a9d283719f66}\label{classRectEllipseAperture_a05b1938a5cfac44daa43a9d283719f66}} 
+const double {\bfseries HV}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Rectellipse \hyperlink{classAperture}{Aperture} This class defines the L\+HC beam screen 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRectEllipseAperture_a983dec943872b82aa91f74cd10558207}\label{classRectEllipseAperture_a983dec943872b82aa91f74cd10558207}} 
+\index{Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}!Get\+Aperture\+Type@{Get\+Aperture\+Type}}
+\index{Get\+Aperture\+Type@{Get\+Aperture\+Type}!Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}}
+\subsubsection{\texorpdfstring{Get\+Aperture\+Type()}{GetApertureType()}}
+{\footnotesize\ttfamily std\+::string Rect\+Ellipse\+Aperture\+::\+Get\+Aperture\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the type of the aperture. \begin{DoxyReturn}{Returns}
+A string containing the type of the aperture. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAperture_ad7af612271a0586feea83c38549dfb75}{Aperture}.
+
+\mbox{\Hypertarget{classRectEllipseAperture_a3e6ea0e15b7a9f026bc7ead70efe5e18}\label{classRectEllipseAperture_a3e6ea0e15b7a9f026bc7ead70efe5e18}} 
+\index{Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}!Get\+Radius\+At@{Get\+Radius\+At}}
+\index{Get\+Radius\+At@{Get\+Radius\+At}!Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}}
+\subsubsection{\texorpdfstring{Get\+Radius\+At()}{GetRadiusAt()}}
+{\footnotesize\ttfamily double Rect\+Ellipse\+Aperture\+::\+Get\+Radius\+At (\begin{DoxyParamCaption}\item[{double}]{phi,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the radius to the aperture at location z and angle phi. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em phi} & The angle. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z position of the particle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double containing the aperture radius. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAperture_ad0ea7907d393ec1e6a8303343fe9dd29}{Aperture}.
+
+\mbox{\Hypertarget{classRectEllipseAperture_ac3cc7fae775b055d74ea185a77b08c7f}\label{classRectEllipseAperture_ac3cc7fae775b055d74ea185a77b08c7f}} 
+\index{Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}!Point\+Inside@{Point\+Inside}}
+\index{Point\+Inside@{Point\+Inside}!Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}}
+\subsubsection{\texorpdfstring{Point\+Inside()}{PointInside()}}
+{\footnotesize\ttfamily bool Rect\+Ellipse\+Aperture\+::\+Point\+Inside (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if the point (x,y,z) is within the aperture. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x coordinate of the particle \\
+\hline
+\mbox{\tt in}  & {\em y} & The y coordinate of the particle \\
+\hline
+\mbox{\tt in}  & {\em z} & The z coordinate of the particle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool set to true if the specified point, is within the \hyperlink{classAperture}{Aperture}. false if it is not. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAperture_a77854d058bf8a00cfeb7a6d766dc0028}{Aperture}.
+
+\mbox{\Hypertarget{classRectEllipseAperture_a13285bdfb9c849fe94cd261ae1bfffe4}\label{classRectEllipseAperture_a13285bdfb9c849fe94cd261ae1bfffe4}} 
+\index{Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}!printout@{printout}}
+\index{printout@{printout}!Rect\+Ellipse\+Aperture@{Rect\+Ellipse\+Aperture}}
+\subsubsection{\texorpdfstring{printout()}{printout()}}
+{\footnotesize\ttfamily void Rect\+Ellipse\+Aperture\+::printout (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints out the \hyperlink{classAperture}{Aperture} parameters to a specified stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em out} & The output stream to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAperture_aff2f276b93bb2cb94e559e1c4901e38e}{Aperture}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Rect\+Ellipse\+Aperture.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Rect\+Ellipse\+Aperture.\+cpp\end{DoxyCompactItemize}

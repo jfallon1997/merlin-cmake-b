@@ -1,0 +1,136 @@
+.TH "AcceleratorErrors" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AcceleratorErrors
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AcceleratorErrors\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAcceleratorErrors\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetErrors\fP (double xrms=0, double yrms=0, double zrms=0, double meanx=0, double meany=0, double meanz=0)"
+.br
+.ti -1c
+.RI "void \fBAddErrors\fP (double xrms=0, double yrms=0, double zrms=0, double meanx=0, double meany=0, double meanz=0)"
+.br
+.ti -1c
+.RI "void \fBApplyShifts\fP (\fBAcceleratorModel::Beamline\fP &b, const string &p)"
+.br
+.ti -1c
+.RI "void \fBApplyRotations\fP (\fBAcceleratorModel::Beamline\fP &b, const string &p)"
+.br
+.ti -1c
+.RI "void \fBReport\fP (ostream *l)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A class to apply random normally distributed errors to a beamline\&. Both shift (transverse and longitudinal) and rotational errors can be generated\&. 
+.PP
+\fBAuthor:\fP
+.RS 4
+Dirk Kruecker 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+2008-12-01 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AcceleratorErrors::AcceleratorErrors ()\fC [inline]\fP"
+Constructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "void AcceleratorErrors::AddErrors (double xrms = \fC0\fP, double yrms = \fC0\fP, double zrms = \fC0\fP, double meanx = \fC0\fP, double meany = \fC0\fP, double meanz = \fC0\fP)\fC [inline]\fP"
+Set the errors to apply to a Beamline\&. This function does NOT clear out any previous \fBLatticeFrame\fP movements that have been applied\&. It will add to any movements that have been applied\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBSetErrors\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxrms\fP The root mean square value for x errors\&. 
+.br
+\fIyrms\fP The root mean square value for y errors\&. 
+.br
+\fIzrms\fP The root mean square value for z errors\&. 
+.br
+\fImeanx\fP The root mean square value for x errors\&. 
+.br
+\fImeany\fP The root mean square value for y errors\&. 
+.br
+\fImeanz\fP The root mean square value for z errors\&. 
+.RE
+.PP
+
+.SS "void AcceleratorErrors::ApplyRotations (\fBAcceleratorModel::Beamline\fP & b, const string & p)"
+Apply the set rotational errors to all elements matching a string pattern to a selected (sub) Beamline\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIb\fP The Beamline to apply the rotational errors to\&. 
+.br
+\fIp\fP The string pattern for the names of elements to match for the application of errors\&. 
+.RE
+.PP
+
+.SS "void AcceleratorErrors::ApplyShifts (\fBAcceleratorModel::Beamline\fP & b, const string & p)"
+Apply the set shift errors to all elements matching a string pattern to a selected (sub) Beamline\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIb\fP The Beamline to apply the shift errors to\&. 
+.br
+\fIp\fP The string pattern for the names of elements to match for the application of errors\&. 
+.RE
+.PP
+
+.SS "void AcceleratorErrors::Report (ostream * l)\fC [inline]\fP"
+Sets the log stream to output logging information to\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIl\fP The stream to use for output\&. 
+.RE
+.PP
+
+.SS "void AcceleratorErrors::SetErrors (double xrms = \fC0\fP, double yrms = \fC0\fP, double zrms = \fC0\fP, double meanx = \fC0\fP, double meany = \fC0\fP, double meanz = \fC0\fP)\fC [inline]\fP"
+Set the errors to apply to a Beamline\&. This function clears out any previous \fBLatticeFrame\fP movements that have been applied\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBAddErrors\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxrms\fP The root mean square value for x errors\&. 
+.br
+\fIyrms\fP The root mean square value for y errors\&. 
+.br
+\fIzrms\fP The root mean square value for z errors\&. 
+.br
+\fImeanx\fP The root mean square value for x errors\&. 
+.br
+\fImeany\fP The root mean square value for y errors\&. 
+.br
+\fImeanz\fP The root mean square value for z errors\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

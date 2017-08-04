@@ -1,0 +1,62 @@
+.TH "AcceleratorModelConstructor" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AcceleratorModelConstructor
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::stack< \fBSequenceFrame\fP *> \fBFrameStack\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBNewModel\fP ()"
+.br
+.ti -1c
+.RI "\fBAcceleratorModel\fP * \fBGetModel\fP ()"
+.br
+.ti -1c
+.RI "void \fBNewFrame\fP (\fBSequenceFrame\fP *aFrame)"
+.br
+.ti -1c
+.RI "void \fBEndFrame\fP ()"
+.br
+.ti -1c
+.RI "template<class T > T * \fBAppendComponent\fP (T &acc, double d=0)"
+.br
+.ti -1c
+.RI "template<class T > T * \fBAppendComponent\fP (T *acc, double d=0)"
+.br
+.ti -1c
+.RI "void \fBAppendComponentFrame\fP (\fBComponentFrame\fP *cf)"
+.br
+.ti -1c
+.RI "void \fBAppendFrame\fP (\fBSequenceFrame\fP *aFrame)"
+.br
+.ti -1c
+.RI "\fBSequenceFrame\fP & \fBGetCurrentFrame\fP () const"
+.br
+.ti -1c
+.RI "int \fBGetCurrentFrameDepth\fP () const"
+.br
+.ti -1c
+.RI "void \fBAppendDrift\fP (double d)"
+.br
+.ti -1c
+.RI "void \fBAddModelElement\fP (\fBModelElement\fP *element)"
+.br
+.ti -1c
+.RI "void \fBReportStatistics\fP (std::ostream &os) const"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

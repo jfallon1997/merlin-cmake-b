@@ -1,0 +1,105 @@
+\hypertarget{classSMPTracking_1_1SMPBunch}{}\section{S\+M\+P\+Tracking\+:\+:S\+M\+P\+Bunch Class Reference}
+\label{classSMPTracking_1_1SMPBunch}\index{S\+M\+P\+Tracking\+::\+S\+M\+P\+Bunch@{S\+M\+P\+Tracking\+::\+S\+M\+P\+Bunch}}
+Inheritance diagram for S\+M\+P\+Tracking\+:\+:S\+M\+P\+Bunch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSMPTracking_1_1SMPBunch}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_acd83925dbd01de0b6bbd33ad5e5cae2c}\label{classSMPTracking_1_1SMPBunch_acd83925dbd01de0b6bbd33ad5e5cae2c}} 
+typedef \hyperlink{classSMPTracking_1_1SliceMacroParticle}{Slice\+Macro\+Particle} {\bfseries particle\+\_\+type}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a9eec160cf0fb9452b2ddd47c32bb7ea0}\label{classSMPTracking_1_1SMPBunch_a9eec160cf0fb9452b2ddd47c32bb7ea0}} 
+typedef std\+::vector$<$ \hyperlink{classSMPTracking_1_1SliceMacroParticle}{Slice\+Macro\+Particle} $>$ {\bfseries Slice\+M\+P\+Array}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a8ac235d083bc784780af9fe8268de68f}\label{classSMPTracking_1_1SMPBunch_a8ac235d083bc784780af9fe8268de68f}} 
+typedef Slice\+M\+P\+Array\+::iterator {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a9619611b635f2e91e9b7f70798272d3e}\label{classSMPTracking_1_1SMPBunch_a9619611b635f2e91e9b7f70798272d3e}} 
+typedef Slice\+M\+P\+Array\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a6d6b5fedb2d000476c62fed71dacb543}\label{classSMPTracking_1_1SMPBunch_a6d6b5fedb2d000476c62fed71dacb543}} 
+typedef \hyperlink{classSMPTracking_1_1SliceMacroParticle}{particle\+\_\+type} {\bfseries value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a61a520293b451d0f560cc2c4c16adc63}\label{classSMPTracking_1_1SMPBunch_a61a520293b451d0f560cc2c4c16adc63}} 
+{\bfseries S\+M\+P\+Bunch} (double p, double q)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a1fcd27d12e3f562557aa622d9891c5a9}\label{classSMPTracking_1_1SMPBunch_a1fcd27d12e3f562557aa622d9891c5a9}} 
+{\bfseries S\+M\+P\+Bunch} (const std\+::string \&fname)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a30caf121c33728c4fd2305cd5608a291}\label{classSMPTracking_1_1SMPBunch_a30caf121c33728c4fd2305cd5608a291}} 
+virtual double {\bfseries Get\+Total\+Charge} () const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a0e0e4c827faf5c22dbdfe9fecd63afa7}\label{classSMPTracking_1_1SMPBunch_a0e0e4c827faf5c22dbdfe9fecd63afa7}} 
+virtual \hyperlink{classTPSMoments}{P\+Smoments} \& {\bfseries Get\+Moments} (\hyperlink{classTPSMoments}{P\+Smoments} \&sigma) const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_aedf1b5b50f7988c1418f54f6b2ee7c2e}\label{classSMPTracking_1_1SMPBunch_aedf1b5b50f7988c1418f54f6b2ee7c2e}} 
+virtual \hyperlink{classTPSMoments_3_011_01_4}{P\+Smoments2D} \& {\bfseries Get\+Projected\+Moments} (P\+Scoord u, P\+Scoord v, \hyperlink{classTPSMoments_3_011_01_4}{P\+Smoments2D} \&sigma) const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_ac695e06b67ecb0a09078ba211c56970a}\label{classSMPTracking_1_1SMPBunch_ac695e06b67ecb0a09078ba211c56970a}} 
+virtual \hyperlink{classPSvector}{P\+Svector} \& {\bfseries Get\+Centroid} (\hyperlink{classPSvector}{P\+Svector} \&p) const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a607959fe1d114f1aa235ccbb77fe8691}\label{classSMPTracking_1_1SMPBunch_a607959fe1d114f1aa235ccbb77fe8691}} 
+virtual \hyperlink{classTVec2D}{Point2D} {\bfseries Get\+Projected\+Centroid} (P\+Scoord u, P\+Scoord v) const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_aa311d476b5559c4dddeb465b5803857c}\label{classSMPTracking_1_1SMPBunch_aa311d476b5559c4dddeb465b5803857c}} 
+void {\bfseries Adjust\+Centroid} (const \hyperlink{classPSvector}{P\+Svector} \&)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a6418d9e6af2764e95d75ea635f6b18a1}\label{classSMPTracking_1_1SMPBunch_a6418d9e6af2764e95d75ea635f6b18a1}} 
+virtual double {\bfseries Adjust\+Ref\+Momentum\+To\+Mean} ()
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a866c05bad3e512c353aab282b88dadfd}\label{classSMPTracking_1_1SMPBunch_a866c05bad3e512c353aab282b88dadfd}} 
+virtual double {\bfseries Adjust\+Ref\+Time\+To\+Mean} ()
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a8ec8f9e3bd6019cc5991937691c8ad0a}\label{classSMPTracking_1_1SMPBunch_a8ec8f9e3bd6019cc5991937691c8ad0a}} 
+virtual void {\bfseries Output} (std\+::ostream \&os) const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a8d97a43f30a16c9462695b1ed28ac9a6}\label{classSMPTracking_1_1SMPBunch_a8d97a43f30a16c9462695b1ed28ac9a6}} 
+virtual Histogram \& {\bfseries Project\+Distribution} (P\+Scoord axis, Histogram \&hist) const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_ae8ba3c3ca84f1d04e9b8e1211be81085}\label{classSMPTracking_1_1SMPBunch_ae8ba3c3ca84f1d04e9b8e1211be81085}} 
+virtual bool {\bfseries Apply\+Transformation} (const \hyperlink{classTransform3D}{Transform3D} \&t)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a7ab74083bb72dde291981686c559fb05}\label{classSMPTracking_1_1SMPBunch_a7ab74083bb72dde291981686c559fb05}} 
+void {\bfseries Add\+Particle} (const \hyperlink{classSMPTracking_1_1SliceMacroParticle}{Slice\+Macro\+Particle} \&p, bool do\+\_\+sort=false)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a7ca43610247d2f4bdcee706a9e75c480}\label{classSMPTracking_1_1SMPBunch_a7ca43610247d2f4bdcee706a9e75c480}} 
+void {\bfseries Sort\+By\+CT} ()
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a1e9b44d85e3c8f60c02693f5a36874b7}\label{classSMPTracking_1_1SMPBunch_a1e9b44d85e3c8f60c02693f5a36874b7}} 
+const Slice\+M\+P\+Array \& {\bfseries Get\+Slices} () const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a11905dc454784efe383800634e34575e}\label{classSMPTracking_1_1SMPBunch_a11905dc454784efe383800634e34575e}} 
+size\+\_\+t {\bfseries Size} () const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_aa82f6a7b11b8d3584e8db46f474a5f28}\label{classSMPTracking_1_1SMPBunch_aa82f6a7b11b8d3584e8db46f474a5f28}} 
+\hyperlink{classSMPTracking_1_1SliceMacroParticle}{Slice\+Macro\+Particle} \& {\bfseries Get} (size\+\_\+t i)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a1de284864c1648809b1a45848b9e8d74}\label{classSMPTracking_1_1SMPBunch_a1de284864c1648809b1a45848b9e8d74}} 
+const \hyperlink{classSMPTracking_1_1SliceMacroParticle}{Slice\+Macro\+Particle} \& {\bfseries Get} (size\+\_\+t i) const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a9c04dd6d79a6fbedeaa60e6ce1cd9f9c}\label{classSMPTracking_1_1SMPBunch_a9c04dd6d79a6fbedeaa60e6ce1cd9f9c}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a162a15d2e8d181ccd3d84846da756ae6}\label{classSMPTracking_1_1SMPBunch_a162a15d2e8d181ccd3d84846da756ae6}} 
+iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_aac93bcef780e7cfb7e8aff8ac34ec19f}\label{classSMPTracking_1_1SMPBunch_aac93bcef780e7cfb7e8aff8ac34ec19f}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1SMPBunch_a884191c44c3e9992c9ed9bf87e5e4659}\label{classSMPTracking_1_1SMPBunch_a884191c44c3e9992c9ed9bf87e5e4659}} 
+const\+\_\+iterator {\bfseries end} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/S\+M\+P\+Bunch.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/S\+M\+P\+Bunch.\+cpp\end{DoxyCompactItemize}

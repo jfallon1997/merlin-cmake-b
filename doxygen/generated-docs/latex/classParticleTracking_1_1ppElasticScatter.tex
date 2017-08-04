@@ -1,0 +1,133 @@
+\hypertarget{classParticleTracking_1_1ppElasticScatter}{}\section{Particle\+Tracking\+:\+:pp\+Elastic\+Scatter Class Reference}
+\label{classParticleTracking_1_1ppElasticScatter}\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+
+
+{\ttfamily \#include $<$Elastic\+Scatter.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticleTracking_1_1ppElasticScatter_a930b5acccec4e874db62a1e02d57bc91}{pp\+Elastic\+Scatter} ()
+\item 
+void \hyperlink{classParticleTracking_1_1ppElasticScatter_a95591a767306079a5737f57196139913}{Generate\+T\+Distribution} (double energy)
+\item 
+double \hyperlink{classParticleTracking_1_1ppElasticScatter_a7ca2a62dcdda44c0164cd0f4123bb140}{SelectT} ()
+\item 
+void \hyperlink{classParticleTracking_1_1ppElasticScatter_a0fc4f960f8ace37fe3c40f7c0e4bf97f}{Set\+T\+Min} (double tmin)
+\item 
+void \hyperlink{classParticleTracking_1_1ppElasticScatter_adabfe6cd2a5037abc49907b0e0307ecb}{Set\+T\+Max} (double)
+\item 
+void \hyperlink{classParticleTracking_1_1ppElasticScatter_ace72bdc553b86f4b2f29af9c14aa0b7c}{Set\+Step\+Size} (double)
+\item 
+double \hyperlink{classParticleTracking_1_1ppElasticScatter_a016346b9a16ef5c2b350f55dacc0d1b8}{Get\+T\+Min} () const
+\item 
+double \hyperlink{classParticleTracking_1_1ppElasticScatter_ace630973adc2e78e6db1a4e3cad947a1}{Get\+T\+Max} () const
+\item 
+double \hyperlink{classParticleTracking_1_1ppElasticScatter_af79d46e64c83d0953d4e42e0352d3945}{Get\+Step\+Size} () const
+\item 
+double \hyperlink{classParticleTracking_1_1ppElasticScatter_abcd733dbd562e6cf8ad66ab2dd087a28}{Get\+Elastic\+Cross\+Section} () const
+\item 
+double \hyperlink{classParticleTracking_1_1ppElasticScatter_ad65098d6677e1867b24f8ab815d173b9}{Get\+Elastic\+Cross\+SectionN} () const
+\item 
+double \hyperlink{classParticleTracking_1_1ppElasticScatter_a86e3e9ad3f0d852e1e2244be5db49547}{Pomeron\+Scatter} (double t\+\_\+input, double energy, bool em)
+\item 
+void \hyperlink{classParticleTracking_1_1ppElasticScatter_a064b2815b165071e41183abd2e0ff5c7}{Enable\+Debug} (bool)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for all things relating to proton-\/proton elastic scattering. This includes, generation of differential cross sections. Integration of the differential cross sections. Generation of momentum transfer t values for calculation of scattering angles. Multiple scattering models 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_a930b5acccec4e874db62a1e02d57bc91}\label{classParticleTracking_1_1ppElasticScatter_a930b5acccec4e874db62a1e02d57bc91}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!pp\+Elastic\+Scatter@{pp\+Elastic\+Scatter}}
+\index{pp\+Elastic\+Scatter@{pp\+Elastic\+Scatter}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{pp\+Elastic\+Scatter()}{ppElasticScatter()}}
+{\footnotesize\ttfamily Particle\+Tracking\+::pp\+Elastic\+Scatter\+::pp\+Elastic\+Scatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+class constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_a064b2815b165071e41183abd2e0ff5c7}\label{classParticleTracking_1_1ppElasticScatter_a064b2815b165071e41183abd2e0ff5c7}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Enable\+Debug@{Enable\+Debug}}
+\index{Enable\+Debug@{Enable\+Debug}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Enable\+Debug()}{EnableDebug()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Enable\+Debug (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+Debug toggle -\/ set to true or false to enable/disable debugging output \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_a95591a767306079a5737f57196139913}\label{classParticleTracking_1_1ppElasticScatter_a95591a767306079a5737f57196139913}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Generate\+T\+Distribution@{Generate\+T\+Distribution}}
+\index{Generate\+T\+Distribution@{Generate\+T\+Distribution}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Generate\+T\+Distribution()}{GenerateTDistribution()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Generate\+T\+Distribution (\begin{DoxyParamCaption}\item[{double}]{energy }\end{DoxyParamCaption})}
+
+Generates the requried differential cross sections and integrates for the specified energy \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_abcd733dbd562e6cf8ad66ab2dd087a28}\label{classParticleTracking_1_1ppElasticScatter_abcd733dbd562e6cf8ad66ab2dd087a28}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Get\+Elastic\+Cross\+Section@{Get\+Elastic\+Cross\+Section}}
+\index{Get\+Elastic\+Cross\+Section@{Get\+Elastic\+Cross\+Section}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Get\+Elastic\+Cross\+Section()}{GetElasticCrossSection()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Get\+Elastic\+Cross\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the Integrated elastic cross section \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_ad65098d6677e1867b24f8ab815d173b9}\label{classParticleTracking_1_1ppElasticScatter_ad65098d6677e1867b24f8ab815d173b9}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Get\+Elastic\+Cross\+SectionN@{Get\+Elastic\+Cross\+SectionN}}
+\index{Get\+Elastic\+Cross\+SectionN@{Get\+Elastic\+Cross\+SectionN}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Get\+Elastic\+Cross\+Section\+N()}{GetElasticCrossSectionN()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Get\+Elastic\+Cross\+SectionN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the Integrated elastic cross section \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_af79d46e64c83d0953d4e42e0352d3945}\label{classParticleTracking_1_1ppElasticScatter_af79d46e64c83d0953d4e42e0352d3945}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Get\+Step\+Size@{Get\+Step\+Size}}
+\index{Get\+Step\+Size@{Get\+Step\+Size}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Get\+Step\+Size()}{GetStepSize()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Get\+Step\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the currently set step size \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_ace630973adc2e78e6db1a4e3cad947a1}\label{classParticleTracking_1_1ppElasticScatter_ace630973adc2e78e6db1a4e3cad947a1}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Get\+T\+Max@{Get\+T\+Max}}
+\index{Get\+T\+Max@{Get\+T\+Max}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Get\+T\+Max()}{GetTMax()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Get\+T\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the currently set maximum t value \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_a016346b9a16ef5c2b350f55dacc0d1b8}\label{classParticleTracking_1_1ppElasticScatter_a016346b9a16ef5c2b350f55dacc0d1b8}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Get\+T\+Min@{Get\+T\+Min}}
+\index{Get\+T\+Min@{Get\+T\+Min}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Get\+T\+Min()}{GetTMin()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Get\+T\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the currently set minimum t value \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_a86e3e9ad3f0d852e1e2244be5db49547}\label{classParticleTracking_1_1ppElasticScatter_a86e3e9ad3f0d852e1e2244be5db49547}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Pomeron\+Scatter@{Pomeron\+Scatter}}
+\index{Pomeron\+Scatter@{Pomeron\+Scatter}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Pomeron\+Scatter()}{PomeronScatter()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Pomeron\+Scatter (\begin{DoxyParamCaption}\item[{double}]{t\+\_\+input,  }\item[{double}]{energy,  }\item[{bool}]{em }\end{DoxyParamCaption})}
+
+Generates the differential cross section at a given t value and energy The energy is the sqrt(s) of the interaction \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_a7ca2a62dcdda44c0164cd0f4123bb140}\label{classParticleTracking_1_1ppElasticScatter_a7ca2a62dcdda44c0164cd0f4123bb140}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!SelectT@{SelectT}}
+\index{SelectT@{SelectT}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Select\+T()}{SelectT()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+SelectT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Picks a t value from the generated distribution (including interpolation) \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_ace72bdc553b86f4b2f29af9c14aa0b7c}\label{classParticleTracking_1_1ppElasticScatter_ace72bdc553b86f4b2f29af9c14aa0b7c}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Set\+Step\+Size@{Set\+Step\+Size}}
+\index{Set\+Step\+Size@{Set\+Step\+Size}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Set\+Step\+Size()}{SetStepSize()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Set\+Step\+Size (\begin{DoxyParamCaption}\item[{double}]{Step\+Size }\end{DoxyParamCaption})}
+
+Sets the step size in t for the differential cross section generation \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_adabfe6cd2a5037abc49907b0e0307ecb}\label{classParticleTracking_1_1ppElasticScatter_adabfe6cd2a5037abc49907b0e0307ecb}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Set\+T\+Max@{Set\+T\+Max}}
+\index{Set\+T\+Max@{Set\+T\+Max}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Set\+T\+Max()}{SetTMax()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Set\+T\+Max (\begin{DoxyParamCaption}\item[{double}]{tmax }\end{DoxyParamCaption})}
+
+Sets the maximum t value for generation \mbox{\Hypertarget{classParticleTracking_1_1ppElasticScatter_a0fc4f960f8ace37fe3c40f7c0e4bf97f}\label{classParticleTracking_1_1ppElasticScatter_a0fc4f960f8ace37fe3c40f7c0e4bf97f}} 
+\index{Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}!Set\+T\+Min@{Set\+T\+Min}}
+\index{Set\+T\+Min@{Set\+T\+Min}!Particle\+Tracking\+::pp\+Elastic\+Scatter@{Particle\+Tracking\+::pp\+Elastic\+Scatter}}
+\subsubsection{\texorpdfstring{Set\+T\+Min()}{SetTMin()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Elastic\+Scatter\+::\+Set\+T\+Min (\begin{DoxyParamCaption}\item[{double}]{tmin }\end{DoxyParamCaption})}
+
+Sets the minimum t value for generation 
+\begin{DoxyParams}{Parameters}
+{\em tmin} & the minumum t value to generate\\
+\hline
+\end{DoxyParams}
+Sets the minimum t value for generation 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Elastic\+Scatter.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Elastic\+Scatter.\+cpp\end{DoxyCompactItemize}

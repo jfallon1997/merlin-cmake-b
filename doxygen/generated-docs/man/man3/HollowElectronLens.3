@@ -1,0 +1,196 @@
+.TH "HollowElectronLens" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HollowElectronLens
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDrift\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHollowElectronLens\fP (const string &\fBid\fP, double len, int mode, double current, double beta_e, double rigidity, double length_e)"
+.br
+.ti -1c
+.RI "virtual const string & \fBGetType\fP () const"
+.br
+.ti -1c
+.RI "virtual int \fBGetIndex\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBPrepareTracker\fP (\fBComponentTracker\fP &aTracker)"
+.br
+.ti -1c
+.RI "virtual void \fBRotateY180\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBModelElement\fP * \fBCopy\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetRmax\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetRmin\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBSetRmax\fP (double rmax)"
+.br
+.ti -1c
+.RI "virtual void \fBSetRmin\fP (double rmin)"
+.br
+.ti -1c
+.RI "void \fBSetRadii\fP (double rmin, double rmax)"
+.br
+.ti -1c
+.RI "virtual void \fBSetEffectiveLength\fP (double l_e)"
+.br
+.ti -1c
+.RI "virtual void \fBSetOpMode\fP (OperationMode mode)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAC\fP (double tune, double deltatune, double tunevarperstep, double turnsperstep, double multi)"
+.br
+.ti -1c
+.RI "virtual void \fBSetTurnskip\fP (int skip)"
+.br
+.ti -1c
+.RI "virtual void \fBSetRadialProfile\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetPerfectProfile\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetLHCRadialProfile\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetElectronDirection\fP (bool dir)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBCurrent\fP"
+.br
+.ti -1c
+.RI "double \fBElectronBeta\fP"
+.br
+.ti -1c
+.RI "double \fBRigidity\fP"
+.br
+.ti -1c
+.RI "double \fBEffectiveLength\fP"
+.br
+.ti -1c
+.RI "double \fBSigma_x\fP"
+.br
+.ti -1c
+.RI "double \fBXOffset\fP"
+.br
+.ti -1c
+.RI "double \fBYOffset\fP"
+.br
+.ti -1c
+.RI "double \fBTune\fP"
+.br
+.ti -1c
+.RI "double \fBDeltaTune\fP"
+.br
+.ti -1c
+.RI "double \fBTuneVarPerStep\fP"
+.br
+.ti -1c
+.RI "double \fBTurnsPerStep\fP"
+.br
+.ti -1c
+.RI "double \fBMultiplier\fP"
+.br
+.ti -1c
+.RI "double \fBNstep\fP"
+.br
+.ti -1c
+.RI "int \fBTurn\fP"
+.br
+.ti -1c
+.RI "int \fBSkipTurn\fP"
+.br
+.ti -1c
+.RI "double \fBMinTune\fP"
+.br
+.ti -1c
+.RI "bool \fBACSet\fP"
+.br
+.ti -1c
+.RI "bool \fBSimpleProfile\fP"
+.br
+.ti -1c
+.RI "bool \fBAlignedToOrbit\fP"
+.br
+.ti -1c
+.RI "bool \fBElectronDirection\fP"
+.br
+.ti -1c
+.RI "bool \fBLHC_Radial\fP"
+.br
+.ti -1c
+.RI "OperationMode \fBOMode\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const int \fBID\fP = \fBUniqueIndex\fP()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBModelElement\fP * HollowElectronLens::Copy () const\fC [virtual]\fP"
+Virtual constructor\&. 
+.PP
+Reimplemented from \fBDrift\fP\&.
+.SS "int HollowElectronLens::GetIndex () const\fC [virtual]\fP"
+Returns the unique index for this class of accelerator components\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+An integer containing the unique index for this \fBAcceleratorComponent\fP type\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBDrift\fP\&.
+.SS "const string & HollowElectronLens::GetType () const\fC [virtual]\fP"
+Return the type string for the element\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A string containing the type of the element\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBDrift\fP\&.
+.SS "void HollowElectronLens::PrepareTracker (\fBComponentTracker\fP & aTracker)\fC [virtual]\fP"
+Primary tracking interface\&. Prepares the specified Tracker object for tracking this component\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaTracker\fP The tracker to prepare\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBDrift\fP\&.
+.SS "void HollowElectronLens::RotateY180 ()\fC [virtual]\fP"
+Rotates the component 180 degrees about its local Y axis\&. 
+.PP
+Reimplemented from \fBDrift\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

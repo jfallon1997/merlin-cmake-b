@@ -1,0 +1,136 @@
+.TH "CollimatorDatabase" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CollimatorDatabase
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCollimatorData\fP"
+.br
+.ti -1c
+.RI "struct \fBFlukaData\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCollimatorDatabase\fP (string, \fBMaterialDatabase\fP *, bool use_sigma)"
+.br
+.ti -1c
+.RI "double \fBConfigureCollimators\fP (\fBAcceleratorModel\fP *model, double emittance_x, double emittance_y, \fBLatticeFunctionTable\fP *twiss)"
+.br
+.ti -1c
+.RI "void \fBConfigureCollimators\fP (\fBAcceleratorModel\fP *model)"
+.br
+.ti -1c
+.RI "void \fBSelectImpactFactor\fP (string pcoll, double impact)"
+.br
+.ti -1c
+.RI "void \fBSetLogFile\fP (ostream &os)"
+.br
+.ti -1c
+.RI "void \fBEnableLogging\fP (bool)"
+.br
+.ti -1c
+.RI "void \fBSetErrorLogFile\fP (ostream &os)"
+.br
+.ti -1c
+.RI "void \fBEnableErrorLogging\fP (bool)"
+.br
+.ti -1c
+.RI "void \fBMatchBeamEnvelope\fP (bool)"
+.br
+.ti -1c
+.RI "void \fBMatchReferenceOrbit\fP (bool)"
+.br
+.ti -1c
+.RI "void \fBEnableJawFlattnessErrors\fP (bool)"
+.br
+.ti -1c
+.RI "void \fBEnableJawAlignmentErrors\fP (bool)"
+.br
+.ti -1c
+.RI "void \fBSetJawPositionError\fP (double)"
+.br
+.ti -1c
+.RI "void \fBSetJawAngleError\fP (double)"
+.br
+.ti -1c
+.RI "void \fBOutputFlukaDatabase\fP (std::ostream *os)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCollimatorData\fP * \fBCollData\fP"
+.br
+.ti -1c
+.RI "size_t \fBnumber_collimators\fP"
+.br
+.ti -1c
+.RI "bool \fBuse_sigma\fP"
+.br
+.ti -1c
+.RI "vector< \fBFlukaData\fP * > \fBStoredFlukaData\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBPrimaryCollimator\fP"
+.br
+.ti -1c
+.RI "double \fBRequestedImpactFactor\fP"
+.br
+.ti -1c
+.RI "double \fBImpactSigma\fP"
+.br
+.ti -1c
+.RI "ostream * \fBlog\fP"
+.br
+.ti -1c
+.RI "bool \fBlogFlag\fP"
+.br
+.ti -1c
+.RI "ostream * \fBErrorLog\fP"
+.br
+.ti -1c
+.RI "bool \fBErrorLogFlag\fP"
+.br
+.ti -1c
+.RI "bool \fBOneSideJawTCDQA\fP"
+.br
+.ti -1c
+.RI "bool \fBEnableMatchBeamEnvelope\fP"
+.br
+.ti -1c
+.RI "bool \fBEnableMatchReferenceOrbit\fP"
+.br
+.ti -1c
+.RI "bool \fBJawFlattnessErrors\fP"
+.br
+.ti -1c
+.RI "bool \fBJawAlignmentErrors\fP"
+.br
+.ti -1c
+.RI "bool \fBEnableResistiveCollimatorWakes\fP"
+.br
+.ti -1c
+.RI "double \fBAngleError\fP"
+.br
+.ti -1c
+.RI "double \fBPositionError\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

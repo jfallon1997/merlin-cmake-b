@@ -1,0 +1,64 @@
+.TH "ParticleTracking::MonitorProcess" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ParticleTracking::MonitorProcess
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MonitorProcess\&.h>\fP
+.PP
+Inherits \fBTBunchProc< B >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMonitorProcess\fP (const string &aID='MONITOR', int prio=0, const string &prefix='')"
+.br
+.ti -1c
+.RI "void \fBSetPrefix\fP (const string &prefix)"
+.br
+.RI "Set the output file name prefix\&. "
+.ti -1c
+.RI "void \fBAddElement\fP (const string e)"
+.br
+.RI "Add element at which to record\&. "
+.ti -1c
+.RI "void \fBInitialiseProcess\fP (\fBBunch\fP &bunch)"
+.br
+.ti -1c
+.RI "void \fBDoProcess\fP (const double ds)"
+.br
+.ti -1c
+.RI "double \fBGetMaxAllowedStepSize\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetCurrentComponent\fP (\fBAcceleratorComponent\fP &component)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A process for recording particle coordinates at elements
+.PP
+Can be attached to the tracker to record particle coordinates at all or specific elements to files\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MonitorProcess::MonitorProcess (const string & aID = \fC'MONITOR'\fP, int prio = \fC0\fP, const string & prefix = \fC''\fP)"
+Create a \fBMonitorProcess\fP
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaID\fP Process ID 
+.br
+\fIprio\fP Process priority 
+.br
+\fIprefix\fP Output file name prefix 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

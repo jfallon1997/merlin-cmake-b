@@ -1,0 +1,107 @@
+\hypertarget{classTransverseRFStructure}{}\section{Transverse\+R\+F\+Structure Class Reference}
+\label{classTransverseRFStructure}\index{Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}}
+Inheritance diagram for Transverse\+R\+F\+Structure\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classTransverseRFStructure}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTransverseRFStructure_a12d4bab955f848bd33cd221d2d395d3e}\label{classTransverseRFStructure_a12d4bab955f848bd33cd221d2d395d3e}} 
+{\bfseries Transverse\+R\+F\+Structure} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, double f, double Epk, double phi=0, double theta=0)
+\item 
+\mbox{\Hypertarget{classTransverseRFStructure_a1763ac780fc775e254e4e72e9f3d2692}\label{classTransverseRFStructure_a1763ac780fc775e254e4e72e9f3d2692}} 
+double {\bfseries Get\+Field\+Orientation} () const
+\item 
+\mbox{\Hypertarget{classTransverseRFStructure_a247be9e9850b88403f9f0c498b7397c6}\label{classTransverseRFStructure_a247be9e9850b88403f9f0c498b7397c6}} 
+void {\bfseries Set\+Field\+Orientation} (double)
+\item 
+virtual const string \& \hyperlink{classTransverseRFStructure_a3dbe71ac560ebc89a02d869d3dd7999d}{Get\+Type} () const
+\item 
+virtual int \hyperlink{classTransverseRFStructure_ab19fe781495285c2b088da81fe3ccff0}{Get\+Index} () const
+\item 
+virtual void \hyperlink{classTransverseRFStructure_aa06fabec5aff45f5ac71c5a29f70ca3c}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual void \hyperlink{classTransverseRFStructure_a1b016853604d6d2f1c21af600ff52fe0}{Rotate\+Y180} ()
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classTransverseRFStructure_a834a1ab102f7173c459a4e801f28e25b}{Copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTransverseRFStructure_a8626c8088b860131155e8690f2560b28}\label{classTransverseRFStructure_a8626c8088b860131155e8690f2560b28}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransverseRFStructure_a834a1ab102f7173c459a4e801f28e25b}\label{classTransverseRFStructure_a834a1ab102f7173c459a4e801f28e25b}} 
+\index{Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}!Copy@{Copy}}
+\index{Copy@{Copy}!Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Transverse\+R\+F\+Structure\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+\mbox{\Hypertarget{classTransverseRFStructure_ab19fe781495285c2b088da81fe3ccff0}\label{classTransverseRFStructure_ab19fe781495285c2b088da81fe3ccff0}} 
+\index{Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Transverse\+R\+F\+Structure\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_abd1490171ac9af6004d3da01fb3b95fb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classTransverseRFStructure_a3dbe71ac560ebc89a02d869d3dd7999d}\label{classTransverseRFStructure_a3dbe71ac560ebc89a02d869d3dd7999d}} 
+\index{Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Transverse\+R\+F\+Structure\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+\mbox{\Hypertarget{classTransverseRFStructure_aa06fabec5aff45f5ac71c5a29f70ca3c}\label{classTransverseRFStructure_aa06fabec5aff45f5ac71c5a29f70ca3c}} 
+\index{Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Transverse\+R\+F\+Structure\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_ab897c54689ac946f40c3ad0716ddd4bb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classTransverseRFStructure_a1b016853604d6d2f1c21af600ff52fe0}\label{classTransverseRFStructure_a1b016853604d6d2f1c21af600ff52fe0}} 
+\index{Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!Transverse\+R\+F\+Structure@{Transverse\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void Transverse\+R\+F\+Structure\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Implements \hyperlink{classAcceleratorComponent_a8bf0d39b56578ca99f286ca1504b9072}{Accelerator\+Component}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Transverse\+R\+F\+Structure.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Transverse\+R\+F\+Structure.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,265 @@
+\hypertarget{classParticleTracking_1_1CollimateParticleProcess}{}\section{Particle\+Tracking\+:\+:Collimate\+Particle\+Process Class Reference}
+\label{classParticleTracking_1_1CollimateParticleProcess}\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+
+
+{\ttfamily \#include $<$Collimate\+Particle\+Process.\+h$>$}
+
+Inheritance diagram for Particle\+Tracking\+:\+:Collimate\+Particle\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classParticleTracking_1_1CollimateParticleProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef map$<$ string, int $>$ \hyperlink{classParticleTracking_1_1CollimateParticleProcess_ac2ecc4232755ca120567b420af5b1dc8}{I\+D\+T\+BL}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticleTracking_1_1CollimateParticleProcess_ae93c881a9b08429d74a06627c55d4cd4}{Collimate\+Particle\+Process} (int priority, int mode, std\+::ostream $\ast$osp=nullptr)
+\item 
+virtual void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_a884a7d80cda58ee50cdaa4ec2fb56b62}{Initialise\+Process} (\hyperlink{classBunch}{Bunch} \&bunch)
+\item 
+virtual void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_ab3f22a0f67414d883f33e39dab7d763b}{Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+virtual void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_a0e987f9ad599b59c82751cceff1b97f9}{Do\+Process} (double ds)
+\item 
+virtual double \hyperlink{classParticleTracking_1_1CollimateParticleProcess_a26262dec26f0c35658a2a968a1583b81}{Get\+Max\+Allowed\+Step\+Size} () const
+\item 
+void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_a6ce4a520f7eb912bdfa635ef26614733}{Scatter\+At\+Collimator} (bool tf)
+\item 
+void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_a621e89e37cda11077f18dc3ff4980de8}{Create\+Particle\+Loss\+Files} (bool flg, string fprefix=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_ab6d43f1bec63763099ef71a003ceaef4}{Index\+Particles} (bool index)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ad048cb54a8e9e365e6102e0b4029aba0}\label{classParticleTracking_1_1CollimateParticleProcess_ad048cb54a8e9e365e6102e0b4029aba0}} 
+void {\bfseries Index\+Particles} (std\+::list$<$ size\+\_\+t $>$ \&an\+Index)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a80f6d0e9bbd8afda5e94ddc0d8be4203}\label{classParticleTracking_1_1CollimateParticleProcess_a80f6d0e9bbd8afda5e94ddc0d8be4203}} 
+const std\+::list$<$ size\+\_\+t $>$ \& {\bfseries Get\+Indecies} () const
+\item 
+void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_ae00a6eaeda4b46eb25a1bc28e399b4f8}{Set\+Loss\+Threshold} (double losspc)
+\item 
+void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_af9bcc2aff428281af1d79011d6978685}{Set\+Log\+Stream} (std\+::ostream $\ast$an\+Os)
+\item 
+void \hyperlink{classParticleTracking_1_1CollimateParticleProcess_a12c96ec3f91752f211c135f96ba2248c}{Enable\+Imperfections} (bool)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a5fb0f7680678f9301a7328012b4ca345}\label{classParticleTracking_1_1CollimateParticleProcess_a5fb0f7680678f9301a7328012b4ca345}} 
+virtual double {\bfseries Get\+Output\+Bin\+Size} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_aa615fc6c8eb385a5a1d7ff563b64571f}\label{classParticleTracking_1_1CollimateParticleProcess_aa615fc6c8eb385a5a1d7ff563b64571f}} 
+virtual void {\bfseries Set\+Output\+Bin\+Size} (double)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ac996f3bfacd5358da92209ca517bf4e3}\label{classParticleTracking_1_1CollimateParticleProcess_ac996f3bfacd5358da92209ca517bf4e3}} 
+virtual void {\bfseries Set\+Collimation\+Output} (\hyperlink{classParticleTracking_1_1CollimationOutput}{Collimation\+Output} $\ast$odb)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a4f49392ff553cbadb600c5813ee26c76}\label{classParticleTracking_1_1CollimateParticleProcess_a4f49392ff553cbadb600c5813ee26c76}} 
+std\+::vector$<$ \hyperlink{classParticleTracking_1_1CollimationOutput}{Collimation\+Output} $\ast$ $>$ {\bfseries Collimation\+Output\+Vector}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a1da526fdda9ded05c1fa0e6127a6ae85}\label{classParticleTracking_1_1CollimateParticleProcess_a1da526fdda9ded05c1fa0e6127a6ae85}} 
+std\+::vector$<$ \hyperlink{classParticleTracking_1_1CollimationOutput}{Collimation\+Output} $\ast$ $>$\+::iterator {\bfseries Collimation\+Output\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_adc2ef32a6f444a0083b4e44d23441503}\label{classParticleTracking_1_1CollimateParticleProcess_adc2ef32a6f444a0083b4e44d23441503}} 
+double {\bfseries Get\+Bin\+Size} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_afee90888d5dc01760302786c74ebb5b1}\label{classParticleTracking_1_1CollimateParticleProcess_afee90888d5dc01760302786c74ebb5b1}} 
+int {\bfseries cmode}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a1ad8e990f6603de53341ddf8810a5ce0}\label{classParticleTracking_1_1CollimateParticleProcess_a1ad8e990f6603de53341ddf8810a5ce0}} 
+std\+::ostream $\ast$ {\bfseries os}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a248fe2a4e249f9f75a8905b2a6bf4584}\label{classParticleTracking_1_1CollimateParticleProcess_a248fe2a4e249f9f75a8905b2a6bf4584}} 
+bool {\bfseries create\+Loss\+Files}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a80462e8bff6f6db8a6e3e0b41bdf2d1b}\label{classParticleTracking_1_1CollimateParticleProcess_a80462e8bff6f6db8a6e3e0b41bdf2d1b}} 
+string {\bfseries file\+\_\+prefix}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a3302a12aa91cf298e26d956a6addb6b3}\label{classParticleTracking_1_1CollimateParticleProcess_a3302a12aa91cf298e26d956a6addb6b3}} 
+double {\bfseries loss\+Threshold}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_aba22f330c790e143d7120066544e1dc0}\label{classParticleTracking_1_1CollimateParticleProcess_aba22f330c790e143d7120066544e1dc0}} 
+size\+\_\+t {\bfseries nstart}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a0ca088327b33f967861164ffbcecb151}\label{classParticleTracking_1_1CollimateParticleProcess_a0ca088327b33f967861164ffbcecb151}} 
+std\+::list$<$ size\+\_\+t $>$ $\ast$ {\bfseries pindex}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ad306056a5b618f3864010d273d17e3ad}\label{classParticleTracking_1_1CollimateParticleProcess_ad306056a5b618f3864010d273d17e3ad}} 
+\hyperlink{classParticleTracking_1_1CollimateParticleProcess_ac2ecc4232755ca120567b420af5b1dc8}{I\+D\+T\+BL} {\bfseries idtbl}
+\item 
+P\+Svector\+Array \hyperlink{classParticleTracking_1_1CollimateParticleProcess_acb74939dca67e8da645bf20aaef0e26c}{Input\+Array}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a8307d83a64674534ecdd944a27db7dfe}\label{classParticleTracking_1_1CollimateParticleProcess_a8307d83a64674534ecdd944a27db7dfe}} 
+double {\bfseries s\+\_\+total}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a634bec0a65c8f12e4e90cc022324e665}\label{classParticleTracking_1_1CollimateParticleProcess_a634bec0a65c8f12e4e90cc022324e665}} 
+double {\bfseries s}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a5a32a5153ed9d7625fd4aa553440e98d}\label{classParticleTracking_1_1CollimateParticleProcess_a5a32a5153ed9d7625fd4aa553440e98d}} 
+double {\bfseries next\+\_\+s}
+\item 
+double \hyperlink{classParticleTracking_1_1CollimateParticleProcess_aa43743501b217f519067dce6e51b7cae}{len}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a132d2896b273060ded3c90d5a299fae3}\label{classParticleTracking_1_1CollimateParticleProcess_a132d2896b273060ded3c90d5a299fae3}} 
+bool {\bfseries is\+\_\+collimator}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_aa5a72c6b9ea9312a914ec295591bd0bb}\label{classParticleTracking_1_1CollimateParticleProcess_aa5a72c6b9ea9312a914ec295591bd0bb}} 
+bool {\bfseries at\+\_\+entr}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a0a51123f486fc70fc0d47155a2c85af8}\label{classParticleTracking_1_1CollimateParticleProcess_a0a51123f486fc70fc0d47155a2c85af8}} 
+bool {\bfseries at\+\_\+cent}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a5e451b17d714a378029ed16a051a9f32}\label{classParticleTracking_1_1CollimateParticleProcess_a5e451b17d714a378029ed16a051a9f32}} 
+bool {\bfseries at\+\_\+exit}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ada6ce19e4650dc38c70317c49e6a4869}\label{classParticleTracking_1_1CollimateParticleProcess_ada6ce19e4650dc38c70317c49e6a4869}} 
+size\+\_\+t {\bfseries nlost}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a594a82c8e53c9fc5ed2667c87d8f8bb9}\label{classParticleTracking_1_1CollimateParticleProcess_a594a82c8e53c9fc5ed2667c87d8f8bb9}} 
+bool {\bfseries Collimation\+Output\+Set}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a3ed5b3d85099b62085da0b2edd2993e7}\label{classParticleTracking_1_1CollimateParticleProcess_a3ed5b3d85099b62085da0b2edd2993e7}} 
+int {\bfseries Col\+Par\+Pro\+Turn}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a62aaf5e4ceb58f6b70a90549d712fffe}\label{classParticleTracking_1_1CollimateParticleProcess_a62aaf5e4ceb58f6b70a90549d712fffe}} 
+std\+::string {\bfseries First\+Element\+Name}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a925643d41849280b5fbd885e06f3fbc3}\label{classParticleTracking_1_1CollimateParticleProcess_a925643d41849280b5fbd885e06f3fbc3}} 
+double {\bfseries First\+ElementS}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ae5e80a65d12aba3ab2b80b65ab91cf54}\label{classParticleTracking_1_1CollimateParticleProcess_ae5e80a65d12aba3ab2b80b65ab91cf54}} 
+bool {\bfseries First\+Element\+Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A process which effectively collimates the particle beam, given the aperture of the current component. Collimation within a component can occur at one or more positions\+:
+
+C\+O\+L\+L\+\_\+\+A\+T\+\_\+\+E\+N\+T\+R\+A\+N\+CE, C\+O\+L\+L\+\_\+\+A\+T\+\_\+\+C\+E\+N\+T\+ER, C\+O\+L\+L\+\_\+\+A\+T\+\_\+\+E\+X\+IT 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ac2ecc4232755ca120567b420af5b1dc8}\label{classParticleTracking_1_1CollimateParticleProcess_ac2ecc4232755ca120567b420af5b1dc8}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!I\+D\+T\+BL@{I\+D\+T\+BL}}
+\index{I\+D\+T\+BL@{I\+D\+T\+BL}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{I\+D\+T\+BL}{IDTBL}}
+{\footnotesize\ttfamily typedef map$<$string,int$>$ \hyperlink{classParticleTracking_1_1CollimateParticleProcess_ac2ecc4232755ca120567b420af5b1dc8}{Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+I\+D\+T\+BL}}
+
+Used to generate unique filenames for particle loss data files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ae93c881a9b08429d74a06627c55d4cd4}\label{classParticleTracking_1_1CollimateParticleProcess_ae93c881a9b08429d74a06627c55d4cd4}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Collimate\+Particle\+Process@{Collimate\+Particle\+Process}}
+\index{Collimate\+Particle\+Process@{Collimate\+Particle\+Process}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Collimate\+Particle\+Process()}{CollimateParticleProcess()}}
+{\footnotesize\ttfamily Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Collimate\+Particle\+Process (\begin{DoxyParamCaption}\item[{int}]{priority,  }\item[{int}]{mode,  }\item[{std\+::ostream $\ast$}]{osp = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Constructor taking the collimation mode, and the output stream pointer to which to print the results. mode can be a logical OR combination of the collimation modes. A nullptr for osp (default) suppresses output. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a621e89e37cda11077f18dc3ff4980de8}\label{classParticleTracking_1_1CollimateParticleProcess_a621e89e37cda11077f18dc3ff4980de8}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Create\+Particle\+Loss\+Files@{Create\+Particle\+Loss\+Files}}
+\index{Create\+Particle\+Loss\+Files@{Create\+Particle\+Loss\+Files}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Create\+Particle\+Loss\+Files()}{CreateParticleLossFiles()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Create\+Particle\+Loss\+Files (\begin{DoxyParamCaption}\item[{bool}]{flg,  }\item[{string}]{fprefix = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If flg is true, then files are generated containing the lost (collimated) particles. The file names have the form \{fprefix.\}type.\+id.\+n.\+loss, where the string fprefix is optional, type.\+id is the qualified name of the element where the particle loss occurs, and n is an occurrence count for like-\/named elements (starting with n=1). \mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a0e987f9ad599b59c82751cceff1b97f9}\label{classParticleTracking_1_1CollimateParticleProcess_a0e987f9ad599b59c82751cceff1b97f9}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Do\+Process@{Do\+Process}}
+\index{Do\+Process@{Do\+Process}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Do\+Process()}{DoProcess()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Do\+Process (\begin{DoxyParamCaption}\item[{double}]{ds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Preform the process for the specified step ds. 
+
+Implements \hyperlink{classBunchProcess}{Bunch\+Process}.
+
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a12c96ec3f91752f211c135f96ba2248c}\label{classParticleTracking_1_1CollimateParticleProcess_a12c96ec3f91752f211c135f96ba2248c}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Enable\+Imperfections@{Enable\+Imperfections}}
+\index{Enable\+Imperfections@{Enable\+Imperfections}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Enable\+Imperfections()}{EnableImperfections()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Enable\+Imperfections (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+Enable collimator jaw imperfections \mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a26262dec26f0c35658a2a968a1583b81}\label{classParticleTracking_1_1CollimateParticleProcess_a26262dec26f0c35658a2a968a1583b81}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Get\+Max\+Allowed\+Step\+Size@{Get\+Max\+Allowed\+Step\+Size}}
+\index{Get\+Max\+Allowed\+Step\+Size@{Get\+Max\+Allowed\+Step\+Size}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Get\+Max\+Allowed\+Step\+Size()}{GetMaxAllowedStepSize()}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Get\+Max\+Allowed\+Step\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the current maximum step length for this process. 
+
+Implements \hyperlink{classBunchProcess}{Bunch\+Process}.
+
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ab6d43f1bec63763099ef71a003ceaef4}\label{classParticleTracking_1_1CollimateParticleProcess_ab6d43f1bec63763099ef71a003ceaef4}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Index\+Particles@{Index\+Particles}}
+\index{Index\+Particles@{Index\+Particles}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Index\+Particles()}{IndexParticles()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Index\+Particles (\begin{DoxyParamCaption}\item[{bool}]{index }\end{DoxyParamCaption})}
+
+If index is true, then the initial particles are sequential indexed (1..n). These index values for each particle are then maintained, and output during any particle output operation (as the first column). The indexing allows particles to be traced back to the original cooridinates. \mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a884a7d80cda58ee50cdaa4ec2fb56b62}\label{classParticleTracking_1_1CollimateParticleProcess_a884a7d80cda58ee50cdaa4ec2fb56b62}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Initialise\+Process@{Initialise\+Process}}
+\index{Initialise\+Process@{Initialise\+Process}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Initialise\+Process()}{InitialiseProcess()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Initialise\+Process (\begin{DoxyParamCaption}\item[{\hyperlink{classBunch}{Bunch} \&}]{bunch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Initialise this process with the specified \hyperlink{classBunch}{Bunch}. If bunch is not a \hyperlink{classParticleTracking_1_1ParticleBunch}{Particle\+Bunch} object, the process becomes inactive. 
+
+Reimplemented from \hyperlink{classTBunchProc}{T\+Bunch\+Proc$<$ B $>$}.
+
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_a6ce4a520f7eb912bdfa635ef26614733}\label{classParticleTracking_1_1CollimateParticleProcess_a6ce4a520f7eb912bdfa635ef26614733}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Scatter\+At\+Collimator@{Scatter\+At\+Collimator}}
+\index{Scatter\+At\+Collimator@{Scatter\+At\+Collimator}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Scatter\+At\+Collimator()}{ScatterAtCollimator()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Scatter\+At\+Collimator (\begin{DoxyParamCaption}\item[{bool}]{tf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If set to true, the process scatters the particles in energy and angle at a \hyperlink{classCollimator}{Collimator} element, if the particle is outside the aperture. \mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ab3f22a0f67414d883f33e39dab7d763b}\label{classParticleTracking_1_1CollimateParticleProcess_ab3f22a0f67414d883f33e39dab7d763b}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Set\+Current\+Component@{Set\+Current\+Component}}
+\index{Set\+Current\+Component@{Set\+Current\+Component}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Set\+Current\+Component()}{SetCurrentComponent()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Set\+Current\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the current accelerator component. 
+
+Reimplemented from \hyperlink{classBunchProcess}{Bunch\+Process}.
+
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_af9bcc2aff428281af1d79011d6978685}\label{classParticleTracking_1_1CollimateParticleProcess_af9bcc2aff428281af1d79011d6978685}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Set\+Log\+Stream@{Set\+Log\+Stream}}
+\index{Set\+Log\+Stream@{Set\+Log\+Stream}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Set\+Log\+Stream()}{SetLogStream()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Set\+Log\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{an\+Os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the log stream for the process. A nullptr turns logging off. \mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_ae00a6eaeda4b46eb25a1bc28e399b4f8}\label{classParticleTracking_1_1CollimateParticleProcess_ae00a6eaeda4b46eb25a1bc28e399b4f8}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Set\+Loss\+Threshold@{Set\+Loss\+Threshold}}
+\index{Set\+Loss\+Threshold@{Set\+Loss\+Threshold}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Set\+Loss\+Threshold()}{SetLossThreshold()}}
+{\footnotesize\ttfamily void Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Set\+Loss\+Threshold (\begin{DoxyParamCaption}\item[{double}]{losspc }\end{DoxyParamCaption})}
+
+Sets the threshold for particle loss before the process throws Particle\+Loss\+Threshold exception. The value is in \% of the initial particle number (default = 100\%). 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_acb74939dca67e8da645bf20aaef0e26c}\label{classParticleTracking_1_1CollimateParticleProcess_acb74939dca67e8da645bf20aaef0e26c}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!Input\+Array@{Input\+Array}}
+\index{Input\+Array@{Input\+Array}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{Input\+Array}{InputArray}}
+{\footnotesize\ttfamily P\+Svector\+Array Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::\+Input\+Array\hspace{0.3cm}{\ttfamily [protected]}}
+
+The input array \mbox{\Hypertarget{classParticleTracking_1_1CollimateParticleProcess_aa43743501b217f519067dce6e51b7cae}\label{classParticleTracking_1_1CollimateParticleProcess_aa43743501b217f519067dce6e51b7cae}} 
+\index{Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}!len@{len}}
+\index{len@{len}!Particle\+Tracking\+::\+Collimate\+Particle\+Process@{Particle\+Tracking\+::\+Collimate\+Particle\+Process}}
+\subsubsection{\texorpdfstring{len}{len}}
+{\footnotesize\ttfamily double Particle\+Tracking\+::\+Collimate\+Particle\+Process\+::len\hspace{0.3cm}{\ttfamily [protected]}}
+
+physical length 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Collimate\+Particle\+Process.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Collimate\+Particle\+Process.\+cpp\end{DoxyCompactItemize}

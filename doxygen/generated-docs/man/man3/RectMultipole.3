@@ -1,0 +1,88 @@
+.TH "RectMultipole" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RectMultipole
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBTAccCompGF< G, F >\fP\&.
+.PP
+Inherited by \fBDecapole\fP, \fBOctupole\fP, \fBQuadrupole\fP, \fBSextupole\fP, \fBSkewQuadrupole\fP, \fBSkewSextupole\fP, \fBXCor\fP, and \fBYCor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetFieldStrength\fP (double b)"
+.br
+.ti -1c
+.RI "double \fBGetFieldStrength\fP () const"
+.br
+.ti -1c
+.RI "int \fBGetPrimaryPoleNo\fP () const"
+.br
+.ti -1c
+.RI "virtual int \fBGetIndex\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBPrepareTracker\fP (\fBComponentTracker\fP &aTracker)"
+.br
+.ti -1c
+.RI "virtual void \fBRotateY180\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const int \fBID\fP = \fBUniqueIndex\fP()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRectMultipole\fP (const string &\fBid\fP, double length, int npole, double b, double r0, bool skew=false)"
+.br
+.ti -1c
+.RI "\fBRectMultipole\fP (const string &\fBid\fP, double len, int np, double b, bool skew=false)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Function Documentation"
+.PP 
+.SS "int RectMultipole::GetIndex () const\fC [virtual]\fP"
+Returns the unique index for this class of accelerator components\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+An integer containing the unique index for this \fBAcceleratorComponent\fP type\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAcceleratorComponent\fP\&.
+.PP
+Reimplemented in \fBDecapole\fP, \fBSkewSextupole\fP, \fBOctupole\fP, \fBSkewQuadrupole\fP, \fBSextupole\fP, \fBQuadrupole\fP, \fBYCor\fP, and \fBXCor\fP\&.
+.SS "void RectMultipole::PrepareTracker (\fBComponentTracker\fP & aTracker)\fC [virtual]\fP"
+Primary tracking interface\&. Prepares the specified Tracker object for tracking this component\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaTracker\fP The tracker to prepare\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAcceleratorComponent\fP\&.
+.PP
+Reimplemented in \fBDecapole\fP, \fBSkewSextupole\fP, \fBOctupole\fP, \fBSkewQuadrupole\fP, \fBSextupole\fP, \fBYCor\fP, \fBQuadrupole\fP, and \fBXCor\fP\&.
+.SS "void RectMultipole::RotateY180 ()\fC [virtual]\fP"
+Rotates the component 180 degrees about its local Y axis\&. 
+.PP
+Implements \fBAcceleratorComponent\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

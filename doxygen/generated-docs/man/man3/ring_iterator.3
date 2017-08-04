@@ -1,0 +1,59 @@
+.TH "ring_iterator< C, I >" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ring_iterator< C, I >
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef C::value_type & \fBreference_type\fP"
+.br
+.ti -1c
+.RI "typedef C::value_type * \fBpointer_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBring_iterator\fP (C &c, I itor)"
+.br
+.ti -1c
+.RI "\fBring_iterator\fP & \fBoperator++\fP ()"
+.br
+.ti -1c
+.RI "\fBring_iterator\fP \fBoperator++\fP (int)"
+.br
+.ti -1c
+.RI "\fBring_iterator\fP & \fBoperator\-\-\fP ()"
+.br
+.ti -1c
+.RI "\fBring_iterator\fP \fBoperator\-\-\fP (int)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBring_iterator\fP< C, I > &rhs) const"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBring_iterator\fP< C, I > &rhs) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const I &rhs) const"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const I &rhs) const"
+.br
+.ti -1c
+.RI "reference_type \fBoperator*\fP ()"
+.br
+.ti -1c
+.RI "pointer_type \fBoperator\->\fP ()"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,108 @@
+\hypertarget{classEMField}{}\section{E\+M\+Field Class Reference}
+\label{classEMField}\index{E\+M\+Field@{E\+M\+Field}}
+
+
+{\ttfamily \#include $<$E\+M\+Field.\+h$>$}
+
+Inheritance diagram for E\+M\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEMField}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classEMField_a6b0decf0b473356a847f72d73c291878}{$\sim$\+E\+M\+Field} ()
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classEMField_ab1ce822878e2facc77f836e3eeea7fd8}{Get\+B\+Field\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, double t=0) const =0
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classEMField_a3b1045b1ab38a337478c9a94ac6c1852}{Get\+E\+Field\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, double t=0) const =0
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classEMField_aa00f4f213a55c9223f6ca08463a57691}{Get\+Force\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, const \hyperlink{classTVec3D}{Vector3D} \&v, double q, double t=0) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an electro-\/magnetic field region. The field is defined in a implicit rectangular coordinate frame (x,y,z). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEMField_a6b0decf0b473356a847f72d73c291878}\label{classEMField_a6b0decf0b473356a847f72d73c291878}} 
+\index{E\+M\+Field@{E\+M\+Field}!````~E\+M\+Field@{$\sim$\+E\+M\+Field}}
+\index{````~E\+M\+Field@{$\sim$\+E\+M\+Field}!E\+M\+Field@{E\+M\+Field}}
+\subsubsection{\texorpdfstring{$\sim$\+E\+M\+Field()}{~EMField()}}
+{\footnotesize\ttfamily E\+M\+Field\+::$\sim$\+E\+M\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEMField_ab1ce822878e2facc77f836e3eeea7fd8}\label{classEMField_ab1ce822878e2facc77f836e3eeea7fd8}} 
+\index{E\+M\+Field@{E\+M\+Field}!Get\+B\+Field\+At@{Get\+B\+Field\+At}}
+\index{Get\+B\+Field\+At@{Get\+B\+Field\+At}!E\+M\+Field@{E\+M\+Field}}
+\subsubsection{\texorpdfstring{Get\+B\+Field\+At()}{GetBFieldAt()}}
+{\footnotesize\ttfamily virtual \hyperlink{classTVec3D}{Vector3D} E\+M\+Field\+::\+Get\+B\+Field\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the magnetic field at the point x and time t. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the magnetic field. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classMultipoleField_aa3dd644cac091d6f384196245bfbb7dd}{Multipole\+Field}, \hyperlink{classTransverseRFfield_a2611f12fe6dea94c5aaa57267396bcb0}{Transverse\+R\+Ffield}, \hyperlink{classSWRFfield_a95ebdd2f637626f2015d37680f7c00d0}{S\+W\+R\+Ffield}, \hyperlink{classTWRFfield_af7323274ea32ee6c91d447e5dcdd1f89}{T\+W\+R\+Ffield}, and \hyperlink{classBzField_a9903383be440aa99b504f5585ddd65f9}{Bz\+Field}.
+
+\mbox{\Hypertarget{classEMField_a3b1045b1ab38a337478c9a94ac6c1852}\label{classEMField_a3b1045b1ab38a337478c9a94ac6c1852}} 
+\index{E\+M\+Field@{E\+M\+Field}!Get\+E\+Field\+At@{Get\+E\+Field\+At}}
+\index{Get\+E\+Field\+At@{Get\+E\+Field\+At}!E\+M\+Field@{E\+M\+Field}}
+\subsubsection{\texorpdfstring{Get\+E\+Field\+At()}{GetEFieldAt()}}
+{\footnotesize\ttfamily virtual \hyperlink{classTVec3D}{Vector3D} E\+M\+Field\+::\+Get\+E\+Field\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the electric field at the point x and time t 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the electric field. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classMultipoleField_a73c52e27189c14b69d6cae9e1bb8bad0}{Multipole\+Field}, \hyperlink{classTransverseRFfield_a3efd2da8ae985720208f3d439ffabfac}{Transverse\+R\+Ffield}, \hyperlink{classSWRFfield_ac40ae5a64589c9e36c0fc826633851bb}{S\+W\+R\+Ffield}, \hyperlink{classTWRFfield_a36c281b70fb42827fe16450863b81cc2}{T\+W\+R\+Ffield}, and \hyperlink{classBzField_a05df21f7fec6b866936b6c8c70883bf0}{Bz\+Field}.
+
+\mbox{\Hypertarget{classEMField_aa00f4f213a55c9223f6ca08463a57691}\label{classEMField_aa00f4f213a55c9223f6ca08463a57691}} 
+\index{E\+M\+Field@{E\+M\+Field}!Get\+Force\+At@{Get\+Force\+At}}
+\index{Get\+Force\+At@{Get\+Force\+At}!E\+M\+Field@{E\+M\+Field}}
+\subsubsection{\texorpdfstring{Get\+Force\+At()}{GetForceAt()}}
+{\footnotesize\ttfamily \hyperlink{classTVec3D}{Vector3D} E\+M\+Field\+::\+Get\+Force\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{const \hyperlink{classTVec3D}{Vector3D} \&}]{v,  }\item[{double}]{q,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the force due to this field on a particle of charge q with position x and velocity v at time t. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em v} & The velocity of the particle. \\
+\hline
+\mbox{\tt in}  & {\em q} & The charge of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the force on a particle of charge q. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classMultipoleField_a0f0e87ad80978757fd7f14a37086162b}{Multipole\+Field}, \hyperlink{classTransverseRFfield_a3251fc6bd5c3393ae47956a55036e1e8}{Transverse\+R\+Ffield}, \hyperlink{classSWRFfield_a72eee724db2bc2e21d100bb0c684a590}{S\+W\+R\+Ffield}, and \hyperlink{classTWRFfield_a9674bc165692a22af4edd4ce928c202c}{T\+W\+R\+Ffield}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/E\+M\+Field.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/E\+M\+Field.\+cpp\end{DoxyCompactItemize}

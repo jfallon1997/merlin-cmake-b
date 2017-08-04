@@ -1,0 +1,116 @@
+\hypertarget{classCrabMarker}{}\section{Crab\+Marker Class Reference}
+\label{classCrabMarker}\index{Crab\+Marker@{Crab\+Marker}}
+Inheritance diagram for Crab\+Marker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classCrabMarker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCrabMarker_ae029d5f0fce67401d5274cf7b19c193c}\label{classCrabMarker_ae029d5f0fce67401d5274cf7b19c193c}} 
+{\bfseries Crab\+Marker} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len)
+\item 
+\mbox{\Hypertarget{classCrabMarker_a5fcb632e0f9788dec2494a3d8e67fa71}\label{classCrabMarker_a5fcb632e0f9788dec2494a3d8e67fa71}} 
+{\bfseries Crab\+Marker} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, double mux, double muy)
+\item 
+virtual const string \& \hyperlink{classCrabMarker_a45ab65449808d5072eb033858c2d961a}{Get\+Type} () const
+\item 
+virtual int \hyperlink{classCrabMarker_ae8678c41613db9792f84faf3feb88f2b}{Get\+Index} () const
+\item 
+virtual void \hyperlink{classCrabMarker_ab29822625603a198dc7623979ed1bb3b}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual void \hyperlink{classCrabMarker_a4b60620517f65b4e1f557300a3dbe89b}{Rotate\+Y180} ()
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classCrabMarker_acd6d5d5a310e985f191443b42d8abc72}{Copy} () const
+\item 
+\mbox{\Hypertarget{classCrabMarker_a11d4fee61122e5c5ce49aefac64de104}\label{classCrabMarker_a11d4fee61122e5c5ce49aefac64de104}} 
+double {\bfseries Get\+MuX} () const
+\item 
+\mbox{\Hypertarget{classCrabMarker_aeb4bdc05a12bf74a267006b6c8296ff5}\label{classCrabMarker_aeb4bdc05a12bf74a267006b6c8296ff5}} 
+double {\bfseries Get\+MuY} () const
+\item 
+\mbox{\Hypertarget{classCrabMarker_a69706d4550b59d629de7d407e8acb378}\label{classCrabMarker_a69706d4550b59d629de7d407e8acb378}} 
+void {\bfseries Set\+MuX} (double mux)
+\item 
+\mbox{\Hypertarget{classCrabMarker_a0a6ced78b027536a8418a2c9496a0795}\label{classCrabMarker_a0a6ced78b027536a8418a2c9496a0795}} 
+void {\bfseries Set\+MuY} (double muy)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCrabMarker_a117b834252f16859870333f898179929}\label{classCrabMarker_a117b834252f16859870333f898179929}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCrabMarker_acd6d5d5a310e985f191443b42d8abc72}\label{classCrabMarker_acd6d5d5a310e985f191443b42d8abc72}} 
+\index{Crab\+Marker@{Crab\+Marker}!Copy@{Copy}}
+\index{Copy@{Copy}!Crab\+Marker@{Crab\+Marker}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Crab\+Marker\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Reimplemented from \hyperlink{classDrift_ae47df31297596e13944364d602c95ce5}{Drift}.
+
+\mbox{\Hypertarget{classCrabMarker_ae8678c41613db9792f84faf3feb88f2b}\label{classCrabMarker_ae8678c41613db9792f84faf3feb88f2b}} 
+\index{Crab\+Marker@{Crab\+Marker}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Crab\+Marker@{Crab\+Marker}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Crab\+Marker\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classDrift_a19bc19d48348912f8693e3ebbf9e92f2}{Drift}.
+
+\mbox{\Hypertarget{classCrabMarker_a45ab65449808d5072eb033858c2d961a}\label{classCrabMarker_a45ab65449808d5072eb033858c2d961a}} 
+\index{Crab\+Marker@{Crab\+Marker}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Crab\+Marker@{Crab\+Marker}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Crab\+Marker\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classDrift_a9f5e7d0aafd8689a4420b3d5e7b6879e}{Drift}.
+
+\mbox{\Hypertarget{classCrabMarker_ab29822625603a198dc7623979ed1bb3b}\label{classCrabMarker_ab29822625603a198dc7623979ed1bb3b}} 
+\index{Crab\+Marker@{Crab\+Marker}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Crab\+Marker@{Crab\+Marker}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Crab\+Marker\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classDrift_a9f3925549a0c7c99b39a1abea8546642}{Drift}.
+
+\mbox{\Hypertarget{classCrabMarker_a4b60620517f65b4e1f557300a3dbe89b}\label{classCrabMarker_a4b60620517f65b4e1f557300a3dbe89b}} 
+\index{Crab\+Marker@{Crab\+Marker}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!Crab\+Marker@{Crab\+Marker}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void Crab\+Marker\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Reimplemented from \hyperlink{classDrift_abf387eddfcabfc81b186080f6301ce60}{Drift}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Crab\+Marker.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Crab\+Marker.\+cpp\end{DoxyCompactItemize}

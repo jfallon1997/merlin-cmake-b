@@ -1,0 +1,249 @@
+.TH "ParticleTracking::ProtonBunch" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ParticleTracking::ProtonBunch
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBParticleTracking::ParticleBunch\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBscatMode\fP { \fBSixTrack\fP, \fBSixTrackIoniz\fP, \fBSixTrackElastic\fP, \fBSixTrackSD\fP, \fBMerlin\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProtonBunch\fP (double P0, double \fBQ\fP, PSvectorArray &particles)"
+.br
+.ti -1c
+.RI "\fBProtonBunch\fP (double P0, double \fBQ\fP, std::istream &is)"
+.br
+.ti -1c
+.RI "\fBProtonBunch\fP (double P0, double Qm=1)"
+.br
+.ti -1c
+.RI "virtual bool \fBIsStable\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetParticleMass\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetParticleMassMeV\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetParticleLifetime\fP () const"
+.br
+.ti -1c
+.RI "int \fBScatter\fP (\fBParticle\fP &pi, double x, const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "void \fBset\fP ()"
+.br
+.ti -1c
+.RI "void \fBreport\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnableScatteringPhysics\fP (\fBscatMode\fP)"
+.br
+.ti -1c
+.RI "int \fBScatterSixtrack\fP (\fBPSvector\fP &pi, double x, const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "int \fBScatterSixtrackAdvancedIonization\fP (\fBPSvector\fP &pi, double x, const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "int \fBScatterSixtrackAdvancedElastic\fP (\fBPSvector\fP &pi, double x, const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "int \fBScatterSixtrackAdvancedSingleDiffraction\fP (\fBPSvector\fP &pi, double x, const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "int \fBScatterMerlin\fP (\fBPSvector\fP &pi, double x, const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "void \fBConfigureScatter\fP (const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "void \fBConfigureScatterMerlin\fP (const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "void \fBConfigureScatterSixtrack\fP (const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "void \fBConfigureScatterSixtrackAdvancedIonization\fP (const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "void \fBConfigureScatterSixtrackAdvancedElastic\fP (const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "void \fBConfigureScatterSixtrackAdvancedSingleDiffraction\fP (const \fBAperture\fP *ap)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int(* \fBScatterFunctionPointer\fP )(\fBParticle\fP &p, double x, const \fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "double \fBA\fP"
+.br
+.ti -1c
+.RI "double \fBZ\fP"
+.br
+.ti -1c
+.RI "double \fBE0\fP"
+.br
+.ti -1c
+.RI "double \fBX0\fP"
+.br
+.ti -1c
+.RI "double \fBrho\fP"
+.br
+.ti -1c
+.RI "double \fBlambda_tot\fP"
+.br
+.ti -1c
+.RI "double \fBb_pp\fP"
+.br
+.ti -1c
+.RI "double \fBb_N\fP"
+.br
+.ti -1c
+.RI "double \fBt_low_cut\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_pN_total\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_pN_elastic\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_pn_elastic\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_pn_SingleDiffractive\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_Rutherford\fP"
+.br
+.ti -1c
+.RI "double \fBcenter_of_mass_squared\fP"
+.br
+.ti -1c
+.RI "double \fBI\fP"
+.br
+.ti -1c
+.RI "double \fBtmax\fP"
+.br
+.ti -1c
+.RI "double \fBC\fP"
+.br
+.ti -1c
+.RI "double \fBC0\fP"
+.br
+.ti -1c
+.RI "double \fBC1\fP"
+.br
+.ti -1c
+.RI "double \fBdelta\fP"
+.br
+.ti -1c
+.RI "double \fBdEdx\fP"
+.br
+.ti -1c
+.RI "double \fBxi0\fP"
+.br
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "bool \fBGotElastic\fP"
+.br
+.ti -1c
+.RI "\fBppElasticScatter\fP * \fBElasticScatter\fP"
+.br
+.ti -1c
+.RI "bool \fBGotDiffractive\fP"
+.br
+.ti -1c
+.RI "\fBppDiffractiveScatter\fP * \fBDiffractiveScatter\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBParticleTracking::ProtonBunch::scatMode\fP"
+Select the Scattering physics mode 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ParticleTracking::ProtonBunch::ProtonBunch (double P0, double Q, PSvectorArray & particles)\fC [inline]\fP"
+Constructs a \fBProtonBunch\fP using the specified momentum, total charge and the particle array\&. Note that on exit, particles is empty\&. 
+.SS "ParticleTracking::ProtonBunch::ProtonBunch (double P0, double Q, std::istream & is)\fC [inline]\fP"
+Read phase space vectors from specified input stream\&. 
+.SS "ParticleTracking::ProtonBunch::ProtonBunch (double P0, double Qm = \fC1\fP)\fC [inline]\fP"
+Constructs an empty \fBProtonBunch\fP with the specified momentum P0 and charge per macro particle Qm (default = +1)\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void ProtonBunch::ConfigureScatterMerlin (const \fBAperture\fP * ap)"
+The proton momentum
+.PP
+The proton total energy
+.PP
+The proton gamma factor
+.PP
+The proton beta
+.PP
+The proton kinetic energy
+.PP
+Generate the elastic differential cross section for the proton energy
+.PP
+Generate the Single Diffractive differential cross section for the proton energy
+.PP
+We have now read the material properties, now to scale these if required to the current energy scale etc
+.PP
+The total elastic cross section
+.SS "void ProtonBunch::ConfigureScatterSixtrackAdvancedElastic (const \fBAperture\fP * ap)"
+Generate the elastic differential cross section for the proton energy
+.PP
+The total elastic cross section
+.SS "void ProtonBunch::ConfigureScatterSixtrackAdvancedIonization (const \fBAperture\fP * ap)"
+The proton gamma factor
+.PP
+The proton beta
+.SS "void ProtonBunch::ConfigureScatterSixtrackAdvancedSingleDiffraction (const \fBAperture\fP * ap)"
+Generate the Single Diffractive differential cross section for the proton energy
+.SS "int ProtonBunch::Scatter (\fBParticle\fP &, double length, const \fBAperture\fP *)\fC [virtual]\fP"
+Per-particle type scattering\&. This virtual function will be replaced in specific particle bunch classes to enable the relevant physics for each particle type (protons, electrons, etc)\&. 
+.PP
+Reimplemented from \fBParticleTracking::ParticleBunch\fP\&.
+.SS "int ProtonBunch::ScatterMerlin (\fBPSvector\fP & pi, double x, const \fBAperture\fP * ap)"
+Scatter in x
+.PP
+Scatter in y
+.PP
+Check we are still inside the collimator If not, the particle leaves
+.PP
+Point process nuclear interactions
+.PP
+Elastic scatter pN (proton - Nucleus)
+.PP
+Elastic scatter pn (proton - nucleon)
+.PP
+Single Diffractive
+.PP
+Rutherford coulomb scattering
+.PP
+Inelastic interaction - no more proton :(
+.PP
+We use the p\&.ct() coordinate to set the exact position of the proton loss within the collimator - used for output\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

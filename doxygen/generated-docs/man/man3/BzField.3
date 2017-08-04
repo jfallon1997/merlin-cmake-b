@@ -1,0 +1,71 @@
+.TH "BzField" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BzField
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEMField\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBzField\fP (double B)"
+.br
+.ti -1c
+.RI "double \fBGetStrength\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBVector3D\fP \fBGetBFieldAt\fP (const \fBPoint3D\fP &x, double t=0) const"
+.br
+.ti -1c
+.RI "virtual \fBVector3D\fP \fBGetEFieldAt\fP (const \fBPoint3D\fP &x, double t=0) const"
+.br
+.ti -1c
+.RI "void \fBSetStrength\fP (double B)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBVector3D\fP BzField::GetBFieldAt (const \fBPoint3D\fP & x, double t = \fC0\fP) const\fC [virtual]\fP"
+Returns the magnetic field at the point x and time t\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP The location of the particle\&. 
+.br
+\fIt\fP The time when the force is applied\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Vector3D containing the magnetic field\&. 
+.RE
+.PP
+
+.PP
+Implements \fBEMField\fP\&.
+.SS "\fBVector3D\fP BzField::GetEFieldAt (const \fBPoint3D\fP & x, double t = \fC0\fP) const\fC [virtual]\fP"
+Returns the electric field at the point x and time t 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP The location of the particle\&. 
+.br
+\fIt\fP The time when the force is applied\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Vector3D containing the electric field\&. 
+.RE
+.PP
+
+.PP
+Implements \fBEMField\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

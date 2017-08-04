@@ -1,0 +1,100 @@
+.TH "TLAS::SubVector< T >" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TLAS::SubVector< T >
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef T \fBvalue_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBVector\fP< T > \fBvector_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBMatrix\fP< T > \fBmatrix_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "T & \fBoperator()\fP (Subscript i)"
+.br
+.ti -1c
+.RI "const T & \fBoperator()\fP (Subscript i) const"
+.br
+.ti -1c
+.RI "T & \fBoperator[]\fP (Subscript i)"
+.br
+.ti -1c
+.RI "const T & \fBoperator[]\fP (Subscript i) const"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator=\fP (const \fBVector\fP< T > &v)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator=\fP (const T &s)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator=\fP (const \fBConstSubVector\fP< T > &sv)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator+=\fP (const T &s)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator\-=\fP (const T &s)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator*=\fP (const T &s)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator/=\fP (const T &s)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator+=\fP (const \fBVector\fP< T > &v)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator\-=\fP (const \fBVector\fP< T > &v)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator*=\fP (const \fBVector\fP< T > &v)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > & \fBoperator/=\fP (const \fBVector\fP< T > &v)"
+.br
+.ti -1c
+.RI "\fBoperator Vector< T >\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator ConstSubVector< T >\fP () const"
+.br
+.ti -1c
+.RI "Dimension \fBsize\fP () const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVEC_TYPE_DEFS\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBMatrix< T >\fP"
+.br
+.ti -1c
+.RI "class \fBVector< T >\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

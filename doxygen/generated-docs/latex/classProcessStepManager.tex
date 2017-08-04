@@ -1,0 +1,72 @@
+\hypertarget{classProcessStepManager}{}\section{Process\+Step\+Manager Class Reference}
+\label{classProcessStepManager}\index{Process\+Step\+Manager@{Process\+Step\+Manager}}
+
+
+{\ttfamily \#include $<$Process\+Step\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classProcessStepManager_aecc48b51ff3d561b5e7e0e82d23b38b5}{Initialise} (\hyperlink{classBunch}{Bunch} \&bunch)
+\item 
+void \hyperlink{classProcessStepManager_acddc7adda6f07df634362afd97711a4e}{Track} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+double \hyperlink{classProcessStepManager_ad8f5321c873d121e5419b6dc47313c00}{Get\+Integrated\+Length} ()
+\item 
+void \hyperlink{classProcessStepManager_ae4c8d521e07847880da29ebe02fc8f2d}{Add\+Process} (\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$a\+Process)
+\item 
+bool \hyperlink{classProcessStepManager_a9795861d03d6eff0fecc49c98821f197}{Remove\+Process} (\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$a\+Process)
+\item 
+void \hyperlink{classProcessStepManager_ab113f9ed035177beed45fe372a78843c}{Clear\+Processes} ()
+\item 
+\mbox{\Hypertarget{classProcessStepManager_a25456ece693d527e96040e0c834fd9ec}\label{classProcessStepManager_a25456ece693d527e96040e0c834fd9ec}} 
+void {\bfseries Set\+Log\+Stream} (std\+::ostream $\ast$os)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Responsible for coordinating the tracking of a bunch through a single \hyperlink{classAcceleratorComponent}{Accelerator\+Component}. Tracking occurs by the application of a series of processes, which effectively intergrate the bunch motion along the beamline. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProcessStepManager_ae4c8d521e07847880da29ebe02fc8f2d}\label{classProcessStepManager_ae4c8d521e07847880da29ebe02fc8f2d}} 
+\index{Process\+Step\+Manager@{Process\+Step\+Manager}!Add\+Process@{Add\+Process}}
+\index{Add\+Process@{Add\+Process}!Process\+Step\+Manager@{Process\+Step\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Process()}{AddProcess()}}
+{\footnotesize\ttfamily void Process\+Step\+Manager\+::\+Add\+Process (\begin{DoxyParamCaption}\item[{\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$}]{a\+Process }\end{DoxyParamCaption})}
+
+Add a process. \mbox{\Hypertarget{classProcessStepManager_ab113f9ed035177beed45fe372a78843c}\label{classProcessStepManager_ab113f9ed035177beed45fe372a78843c}} 
+\index{Process\+Step\+Manager@{Process\+Step\+Manager}!Clear\+Processes@{Clear\+Processes}}
+\index{Clear\+Processes@{Clear\+Processes}!Process\+Step\+Manager@{Process\+Step\+Manager}}
+\subsubsection{\texorpdfstring{Clear\+Processes()}{ClearProcesses()}}
+{\footnotesize\ttfamily void Process\+Step\+Manager\+::\+Clear\+Processes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove and destroys all processes in the current process table. \mbox{\Hypertarget{classProcessStepManager_ad8f5321c873d121e5419b6dc47313c00}\label{classProcessStepManager_ad8f5321c873d121e5419b6dc47313c00}} 
+\index{Process\+Step\+Manager@{Process\+Step\+Manager}!Get\+Integrated\+Length@{Get\+Integrated\+Length}}
+\index{Get\+Integrated\+Length@{Get\+Integrated\+Length}!Process\+Step\+Manager@{Process\+Step\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Integrated\+Length()}{GetIntegratedLength()}}
+{\footnotesize\ttfamily double Process\+Step\+Manager\+::\+Get\+Integrated\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the total length integrated since the last call to \hyperlink{classProcessStepManager_aecc48b51ff3d561b5e7e0e82d23b38b5}{Initialise(\+Bunch\&)}. \mbox{\Hypertarget{classProcessStepManager_aecc48b51ff3d561b5e7e0e82d23b38b5}\label{classProcessStepManager_aecc48b51ff3d561b5e7e0e82d23b38b5}} 
+\index{Process\+Step\+Manager@{Process\+Step\+Manager}!Initialise@{Initialise}}
+\index{Initialise@{Initialise}!Process\+Step\+Manager@{Process\+Step\+Manager}}
+\subsubsection{\texorpdfstring{Initialise()}{Initialise()}}
+{\footnotesize\ttfamily void Process\+Step\+Manager\+::\+Initialise (\begin{DoxyParamCaption}\item[{\hyperlink{classBunch}{Bunch} \&}]{bunch }\end{DoxyParamCaption})}
+
+Initialise the step manager with the specified (initial) bunch. \mbox{\Hypertarget{classProcessStepManager_a9795861d03d6eff0fecc49c98821f197}\label{classProcessStepManager_a9795861d03d6eff0fecc49c98821f197}} 
+\index{Process\+Step\+Manager@{Process\+Step\+Manager}!Remove\+Process@{Remove\+Process}}
+\index{Remove\+Process@{Remove\+Process}!Process\+Step\+Manager@{Process\+Step\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+Process()}{RemoveProcess()}}
+{\footnotesize\ttfamily bool Process\+Step\+Manager\+::\+Remove\+Process (\begin{DoxyParamCaption}\item[{\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$}]{a\+Process }\end{DoxyParamCaption})}
+
+Remove a\+Process from the current process table. Returns true if a\+Process was present, otherwise false. \mbox{\Hypertarget{classProcessStepManager_acddc7adda6f07df634362afd97711a4e}\label{classProcessStepManager_acddc7adda6f07df634362afd97711a4e}} 
+\index{Process\+Step\+Manager@{Process\+Step\+Manager}!Track@{Track}}
+\index{Track@{Track}!Process\+Step\+Manager@{Process\+Step\+Manager}}
+\subsubsection{\texorpdfstring{Track()}{Track()}}
+{\footnotesize\ttfamily void Process\+Step\+Manager\+::\+Track (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&}]{component }\end{DoxyParamCaption})}
+
+Track the specified component. The current bunch object is updated accordingly. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Process\+Step\+Manager.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Process\+Step\+Manager.\+cpp\end{DoxyCompactItemize}

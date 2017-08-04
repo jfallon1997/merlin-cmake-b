@@ -1,0 +1,110 @@
+.TH "CollimatorAperture" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CollimatorAperture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBRectangularAperture\fP\&.
+.PP
+Inherited by \fBCollimatorApertureWithErrors\fP, \fBOneSidedUnalignedCollimatorAperture\fP, and \fBUnalignedCollimatorAperture\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCollimatorAperture\fP (double w, double h, double t, \fBMaterial\fP *m, double length, double x_offset_entry=0\&.0, double y_offset_entry=0\&.0)"
+.br
+.ti -1c
+.RI "void \fBSetExitWidth\fP (double)"
+.br
+.ti -1c
+.RI "void \fBSetExitHeight\fP (double)"
+.br
+.ti -1c
+.RI "void \fBSetExitXOffset\fP (double)"
+.br
+.ti -1c
+.RI "void \fBSetExitYOffset\fP (double)"
+.br
+.ti -1c
+.RI "double \fBGetFullEntranceHeight\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetFullEntranceWidth\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetFullExitHeight\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetFullExitWidth\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetEntranceXOffset\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetEntranceYOffset\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetExitXOffset\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetExitYOffset\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetCollimatorTilt\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBPointInside\fP (double x, double y, double z) const"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBalpha\fP"
+.br
+.ti -1c
+.RI "double \fBCollimatorLength\fP"
+.br
+.ti -1c
+.RI "double \fBjaw_length\fP"
+.br
+.ti -1c
+.RI "double \fBx_offset_entry\fP"
+.br
+.ti -1c
+.RI "double \fBy_offset_entry\fP"
+.br
+.ti -1c
+.RI "double \fBx_offset_exit\fP"
+.br
+.ti -1c
+.RI "double \fBy_offset_exit\fP"
+.br
+.ti -1c
+.RI "double \fBw_exit\fP"
+.br
+.ti -1c
+.RI "double \fBh_exit\fP"
+.br
+.ti -1c
+.RI "double \fBcosalpha\fP"
+.br
+.ti -1c
+.RI "double \fBsinalpha\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "bool CollimatorAperture::PointInside (double x, double y, double z) const\fC [inline]\fP, \fC [virtual]\fP"
+Returns true if the point (x,y,z) is within the aperture\&. The z coordinate is ignored\&. 
+.PP
+Reimplemented from \fBRectangularAperture\fP\&.
+.PP
+Reimplemented in \fBOneSidedUnalignedCollimatorAperture\fP, and \fBUnalignedCollimatorAperture\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

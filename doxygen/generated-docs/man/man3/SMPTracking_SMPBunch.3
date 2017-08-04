@@ -1,0 +1,108 @@
+.TH "SMPTracking::SMPBunch" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SMPTracking::SMPBunch
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBBunch\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBSliceMacroParticle\fP \fBparticle_type\fP"
+.br
+.ti -1c
+.RI "typedef std::vector< \fBSliceMacroParticle\fP > \fBSliceMPArray\fP"
+.br
+.ti -1c
+.RI "typedef SliceMPArray::iterator \fBiterator\fP"
+.br
+.ti -1c
+.RI "typedef SliceMPArray::const_iterator \fBconst_iterator\fP"
+.br
+.ti -1c
+.RI "typedef \fBparticle_type\fP \fBvalue_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSMPBunch\fP (double p, double q)"
+.br
+.ti -1c
+.RI "\fBSMPBunch\fP (const std::string &fname)"
+.br
+.ti -1c
+.RI "virtual double \fBGetTotalCharge\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBPSmoments\fP & \fBGetMoments\fP (\fBPSmoments\fP &sigma) const"
+.br
+.ti -1c
+.RI "virtual \fBPSmoments2D\fP & \fBGetProjectedMoments\fP (PScoord u, PScoord v, \fBPSmoments2D\fP &sigma) const"
+.br
+.ti -1c
+.RI "virtual \fBPSvector\fP & \fBGetCentroid\fP (\fBPSvector\fP &p) const"
+.br
+.ti -1c
+.RI "virtual \fBPoint2D\fP \fBGetProjectedCentroid\fP (PScoord u, PScoord v) const"
+.br
+.ti -1c
+.RI "void \fBAdjustCentroid\fP (const \fBPSvector\fP &)"
+.br
+.ti -1c
+.RI "virtual double \fBAdjustRefMomentumToMean\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBAdjustRefTimeToMean\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOutput\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "virtual Histogram & \fBProjectDistribution\fP (PScoord axis, Histogram &hist) const"
+.br
+.ti -1c
+.RI "virtual bool \fBApplyTransformation\fP (const \fBTransform3D\fP &t)"
+.br
+.ti -1c
+.RI "void \fBAddParticle\fP (const \fBSliceMacroParticle\fP &p, bool do_sort=false)"
+.br
+.ti -1c
+.RI "void \fBSortByCT\fP ()"
+.br
+.ti -1c
+.RI "const SliceMPArray & \fBGetSlices\fP () const"
+.br
+.ti -1c
+.RI "size_t \fBSize\fP () const"
+.br
+.ti -1c
+.RI "\fBSliceMacroParticle\fP & \fBGet\fP (size_t i)"
+.br
+.ti -1c
+.RI "const \fBSliceMacroParticle\fP & \fBGet\fP (size_t i) const"
+.br
+.ti -1c
+.RI "iterator \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "iterator \fBend\fP ()"
+.br
+.ti -1c
+.RI "const_iterator \fBbegin\fP () const"
+.br
+.ti -1c
+.RI "const_iterator \fBend\fP () const"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,91 @@
+\hypertarget{classRandGenerator}{}\section{Rand\+Generator Class Reference}
+\label{classRandGenerator}\index{Rand\+Generator@{Rand\+Generator}}
+
+
+{\ttfamily \#include $<$Random\+N\+G.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRandGenerator_acd2c183bfe581a86e0eca06dfde7e833}\label{classRandGenerator_acd2c183bfe581a86e0eca06dfde7e833}} 
+{\bfseries Rand\+Generator} (unsigned iseed=0)
+\item 
+\mbox{\Hypertarget{classRandGenerator_a421d4e9c40a075f130b123f0214039ba}\label{classRandGenerator_a421d4e9c40a075f130b123f0214039ba}} 
+unsigned {\bfseries get\+Seed} () const
+\item 
+void \hyperlink{classRandGenerator_a7f8d9a54d46bc0bf9ab5b3bf5e369396}{reset} ()
+\item 
+void \hyperlink{classRandGenerator_a32087c36d8e6d3edda4775532d921132}{reset} (unsigned iseed)
+\item 
+double \hyperlink{classRandGenerator_a581d2a0a543b4df67361487a2c05125d}{normal} (double mean, double variance)
+\item 
+double \hyperlink{classRandGenerator_a0cc4c8abf0dd7d376a6574ec25617a41}{normal} (double mean, double variance, double cutoff)
+\item 
+double \hyperlink{classRandGenerator_a7a6a4584608b9a834c83767606204695}{uniform} (double low, double high)
+\item 
+double \hyperlink{classRandGenerator_a73dbeaf8bc87bb14c4a5be15c554f08f}{poisson} (double u)
+\item 
+double \hyperlink{classRandGenerator_a3469bd4f50eafa47d6b60441f4b3207b}{landau} ()
+\item 
+void \hyperlink{classRandGenerator_a9267feee8104be313e92a678c9f75bb2}{init} (unsigned iseed=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class which represents a single random number generator. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandGenerator_a9267feee8104be313e92a678c9f75bb2}\label{classRandGenerator_a9267feee8104be313e92a678c9f75bb2}} 
+\index{Rand\+Generator@{Rand\+Generator}!init@{init}}
+\index{init@{init}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Rand\+Generator\+::init (\begin{DoxyParamCaption}\item[{unsigned}]{iseed = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Initialised the generator. Should be called before any other generator function. \mbox{\Hypertarget{classRandGenerator_a3469bd4f50eafa47d6b60441f4b3207b}\label{classRandGenerator_a3469bd4f50eafa47d6b60441f4b3207b}} 
+\index{Rand\+Generator@{Rand\+Generator}!landau@{landau}}
+\index{landau@{landau}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{landau()}{landau()}}
+{\footnotesize\ttfamily double Rand\+Generator\+::landau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates a landau random number. \mbox{\Hypertarget{classRandGenerator_a581d2a0a543b4df67361487a2c05125d}\label{classRandGenerator_a581d2a0a543b4df67361487a2c05125d}} 
+\index{Rand\+Generator@{Rand\+Generator}!normal@{normal}}
+\index{normal@{normal}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{normal()}{normal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Rand\+Generator\+::normal (\begin{DoxyParamCaption}\item[{double}]{mean,  }\item[{double}]{variance }\end{DoxyParamCaption})}
+
+Generates a random number from a uniform (Gaussian) distribution with the specified mean and variance. \mbox{\Hypertarget{classRandGenerator_a0cc4c8abf0dd7d376a6574ec25617a41}\label{classRandGenerator_a0cc4c8abf0dd7d376a6574ec25617a41}} 
+\index{Rand\+Generator@{Rand\+Generator}!normal@{normal}}
+\index{normal@{normal}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{normal()}{normal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Rand\+Generator\+::normal (\begin{DoxyParamCaption}\item[{double}]{mean,  }\item[{double}]{variance,  }\item[{double}]{cutoff }\end{DoxyParamCaption})}
+
+Generates a random number from a uniform (Gaussian) distribution with the specified mean and variance. The resulting distribution is truncated to +/-\/cutoff standard deviations. \mbox{\Hypertarget{classRandGenerator_a73dbeaf8bc87bb14c4a5be15c554f08f}\label{classRandGenerator_a73dbeaf8bc87bb14c4a5be15c554f08f}} 
+\index{Rand\+Generator@{Rand\+Generator}!poisson@{poisson}}
+\index{poisson@{poisson}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{poisson()}{poisson()}}
+{\footnotesize\ttfamily double Rand\+Generator\+::poisson (\begin{DoxyParamCaption}\item[{double}]{u }\end{DoxyParamCaption})}
+
+Generates a poisson random number. \mbox{\Hypertarget{classRandGenerator_a7f8d9a54d46bc0bf9ab5b3bf5e369396}\label{classRandGenerator_a7f8d9a54d46bc0bf9ab5b3bf5e369396}} 
+\index{Rand\+Generator@{Rand\+Generator}!reset@{reset}}
+\index{reset@{reset}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rand\+Generator\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the seed for the generators to the last supplied seed value. \mbox{\Hypertarget{classRandGenerator_a32087c36d8e6d3edda4775532d921132}\label{classRandGenerator_a32087c36d8e6d3edda4775532d921132}} 
+\index{Rand\+Generator@{Rand\+Generator}!reset@{reset}}
+\index{reset@{reset}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rand\+Generator\+::reset (\begin{DoxyParamCaption}\item[{unsigned}]{iseed }\end{DoxyParamCaption})}
+
+Resets the initial seed for the generator. \mbox{\Hypertarget{classRandGenerator_a7a6a4584608b9a834c83767606204695}\label{classRandGenerator_a7a6a4584608b9a834c83767606204695}} 
+\index{Rand\+Generator@{Rand\+Generator}!uniform@{uniform}}
+\index{uniform@{uniform}!Rand\+Generator@{Rand\+Generator}}
+\subsubsection{\texorpdfstring{uniform()}{uniform()}}
+{\footnotesize\ttfamily double Rand\+Generator\+::uniform (\begin{DoxyParamCaption}\item[{double}]{low,  }\item[{double}]{high }\end{DoxyParamCaption})}
+
+Generates a uniform random number in the range $\vert$low,high$>$ inclusive. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Random\+N\+G.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Random\+N\+G.\+cpp\end{DoxyCompactItemize}

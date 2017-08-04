@@ -1,0 +1,123 @@
+\hypertarget{classComponentFrame}{}\section{Component\+Frame Class Reference}
+\label{classComponentFrame}\index{Component\+Frame@{Component\+Frame}}
+Inheritance diagram for Component\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classComponentFrame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentFrame_a72c737f7b560d3914d87f3716331bcc8}\label{classComponentFrame_a72c737f7b560d3914d87f3716331bcc8}} 
+{\bfseries Component\+Frame} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&ac, const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classComponentFrame_a375129b6b8d2fdc5597612ad1d50d3f8}\label{classComponentFrame_a375129b6b8d2fdc5597612ad1d50d3f8}} 
+{\bfseries Component\+Frame} (const \hyperlink{classComponentFrame}{Component\+Frame} \&rhs)
+\item 
+\mbox{\Hypertarget{classComponentFrame_a625e7460564cd2d4352c9d8c50b9d20c}\label{classComponentFrame_a625e7460564cd2d4352c9d8c50b9d20c}} 
+\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \& {\bfseries Get\+Component} ()
+\item 
+\mbox{\Hypertarget{classComponentFrame_a4fc89e92e4184017cd9e2847cc1aa670}\label{classComponentFrame_a4fc89e92e4184017cd9e2847cc1aa670}} 
+const \hyperlink{classAcceleratorComponent}{Accelerator\+Component} \& {\bfseries Get\+Component} () const
+\item 
+\mbox{\Hypertarget{classComponentFrame_ac986b27ff10603bc444d24adf9083048}\label{classComponentFrame_ac986b27ff10603bc444d24adf9083048}} 
+bool {\bfseries Is\+Component} () const
+\item 
+\mbox{\Hypertarget{classComponentFrame_aedbeb7e7ee6174ca0bb87e811507d010}\label{classComponentFrame_aedbeb7e7ee6174ca0bb87e811507d010}} 
+virtual const \hyperlink{classTransform3D}{Transform3D} $\ast$ {\bfseries Get\+Entrance\+Geometry\+Patch} () const
+\item 
+\mbox{\Hypertarget{classComponentFrame_aebc675ac7af1342156b86e2a655212f3}\label{classComponentFrame_aebc675ac7af1342156b86e2a655212f3}} 
+virtual const \hyperlink{classTransform3D}{Transform3D} $\ast$ {\bfseries Get\+Exit\+Geometry\+Patch} () const
+\item 
+\mbox{\Hypertarget{classComponentFrame_ab9bb6673e9023fe21fe3e82eee581fce}\label{classComponentFrame_ab9bb6673e9023fe21fe3e82eee581fce}} 
+virtual void {\bfseries Invalidate} () const
+\item 
+virtual const string \& \hyperlink{classComponentFrame_a32bc80a48e64f286ee07519e17220248}{Get\+Name} () const
+\item 
+virtual const string \& \hyperlink{classComponentFrame_ab87e0e461ced7eb26a6c58bd1b04cf05}{Get\+Type} () const
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classComponentFrame_a24f6aea39b57e4b10a764877d1be6b7f}{Copy} () const
+\item 
+\mbox{\Hypertarget{classComponentFrame_a433281bac0ba719835fd42cc2b44c06f}\label{classComponentFrame_a433281bac0ba719835fd42cc2b44c06f}} 
+void {\bfseries Set\+Beamline\+Index} (size\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classComponentFrame_ae1ca4721d618ffb3b8a050cc4d747286}\label{classComponentFrame_ae1ca4721d618ffb3b8a050cc4d747286}} 
+size\+\_\+t {\bfseries Get\+Beamline\+Index} () const
+\item 
+\mbox{\Hypertarget{classComponentFrame_a466620bbb459f94c54dee5e0b0c211a1}\label{classComponentFrame_a466620bbb459f94c54dee5e0b0c211a1}} 
+void {\bfseries Append\+Beamline\+Indecies} (std\+::vector$<$ size\+\_\+t $>$ \&) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentFrame_a93ced219a99cf00a814bd72477add2d1}\label{classComponentFrame_a93ced219a99cf00a814bd72477add2d1}} 
+{\bfseries Component\+Frame} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} $\ast$ac, const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classComponentFrame_abe2f16cb15154490aeb3ec7c25168b0d}\label{classComponentFrame_abe2f16cb15154490aeb3ec7c25168b0d}} 
+virtual bool {\bfseries Is\+Boundary\+Plane} (\hyperlink{classAcceleratorGeometry_a5c1661938176102f235836f5a8be6034}{Boundary\+Plane} p, const \hyperlink{classLatticeFrame}{Lattice\+Frame} $\ast$a\+Sub\+Frame) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentFrame_acec711896d0568a381fea3f05066a4a6}\label{classComponentFrame_acec711896d0568a381fea3f05066a4a6}} 
+\hyperlink{classAcceleratorComponent}{Accelerator\+Component} $\ast$ {\bfseries the\+Component}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classComponentFrame_a24f6aea39b57e4b10a764877d1be6b7f}\label{classComponentFrame_a24f6aea39b57e4b10a764877d1be6b7f}} 
+\index{Component\+Frame@{Component\+Frame}!Copy@{Copy}}
+\index{Copy@{Copy}!Component\+Frame@{Component\+Frame}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Component\+Frame\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+
+
+Reimplemented in \hyperlink{classPatchFrame_a4103f544750beb79b95795c6be388c1d}{Patch\+Frame}, and \hyperlink{classTComponentFrame_a83b3faa024200e7d628451e1f8b50900}{T\+Component\+Frame$<$ T $>$}.
+
+\mbox{\Hypertarget{classComponentFrame_a32bc80a48e64f286ee07519e17220248}\label{classComponentFrame_a32bc80a48e64f286ee07519e17220248}} 
+\index{Component\+Frame@{Component\+Frame}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Component\+Frame@{Component\+Frame}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const string \& Component\+Frame\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return the name of the element. \begin{DoxyReturn}{Returns}
+A string containing the name of the element. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classModelElement_ae2bb7fbbbde063a49a02ea6fe22d92c4}{Model\+Element}.
+
+
+
+Reimplemented in \hyperlink{classPatchFrame_a51ebb7649aa5fc1403bcd70925d7c85f}{Patch\+Frame}.
+
+\mbox{\Hypertarget{classComponentFrame_ab87e0e461ced7eb26a6c58bd1b04cf05}\label{classComponentFrame_ab87e0e461ced7eb26a6c58bd1b04cf05}} 
+\index{Component\+Frame@{Component\+Frame}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Component\+Frame@{Component\+Frame}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Component\+Frame\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+
+
+Reimplemented in \hyperlink{classPatchFrame_a1ef493fda343de4400b198097db32f20}{Patch\+Frame}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Component\+Frame.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Component\+Frame.\+cpp\end{DoxyCompactItemize}

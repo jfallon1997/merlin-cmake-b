@@ -1,0 +1,332 @@
+.TH "AcceleratorComponent" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AcceleratorComponent
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AcceleratorComponent\&.h>\fP
+.PP
+Inherits \fBModelElement\fP\&.
+.PP
+Inherited by \fBMarker\fP, \fBParticleTracking::ParticleMapComponent\fP, \fBTAccCompG< G >\fP, and \fBTAccCompG< RectangularGeometry >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual int \fBGetIndex\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetLength\fP () const"
+.br
+.ti -1c
+.RI "const \fBAcceleratorGeometry\fP * \fBGetGeometry\fP () const"
+.br
+.ti -1c
+.RI "const \fBEMField\fP * \fBGetEMField\fP () const"
+.br
+.ti -1c
+.RI "\fBAperture\fP * \fBGetAperture\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetAperture\fP (\fBAperture\fP *ap)"
+.br
+.ti -1c
+.RI "\fBWakePotentials\fP * \fBGetWakePotentials\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetWakePotentials\fP (\fBWakePotentials\fP *wp)"
+.br
+.ti -1c
+.RI "virtual void \fBPrepareTracker\fP (\fBComponentTracker\fP &aTracker)"
+.br
+.ti -1c
+.RI "virtual void \fBRotateY180\fP ()=0"
+.br
+.ti -1c
+.RI "void \fBSetBeamlineIndex\fP (size_t n)"
+.br
+.ti -1c
+.RI "size_t \fBGetBeamlineIndex\fP () const"
+.br
+.ti -1c
+.RI "void \fBAppendBeamlineIndecies\fP (std::vector< size_t > &) const"
+.br
+.ti -1c
+.RI "void \fBSetComponentLatticePosition\fP (double \fBposition\fP)"
+.br
+.ti -1c
+.RI "double \fBGetComponentLatticePosition\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetCollID\fP (int n)"
+.br
+.ti -1c
+.RI "int \fBGetCollID\fP () const"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static int \fBTotalComponentNumber\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const int \fBID\fP = \fBUniqueIndex\fP()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAcceleratorComponent\fP (const string &aName=string())"
+.br
+.ti -1c
+.RI "\fBAcceleratorComponent\fP (const string &aName, \fBAcceleratorGeometry\fP *aGeom, \fBEMField\fP *aField)"
+.br
+.in -1c
+.SS "Static Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static int \fBUniqueIndex\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBEMField\fP * \fBitsField\fP"
+.br
+.ti -1c
+.RI "\fBAcceleratorGeometry\fP * \fBitsGeometry\fP"
+.br
+.ti -1c
+.RI "\fBAperture\fP * \fBitsAperture\fP"
+.br
+.ti -1c
+.RI "\fBWakePotentials\fP * \fBitsWakes\fP"
+.br
+.ti -1c
+.RI "double \fBposition\fP"
+.br
+.ti -1c
+.RI "size_t \fBblI\fP"
+.br
+.ti -1c
+.RI "int \fBColl_ID\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+An \fBAcceleratorComponent\fP represents any component which can be placed in an accelerator lattice\&. Typically, a lattice model is constructed as an ordered sequence of AcceleratorComponents\&. AcceleratorComponents can be associated with a geometry (an \fBAcceleratorGeometry\fP object) and a em field (an \fBEMField\fP Region object), which when taken together uniquely define the field properties for the component\&. Component 'tracking' is supported via the funtion PrepareTracker(Tracker&), which sets up a Tracker object to track the component\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AcceleratorComponent::AcceleratorComponent (const string & aName = \fCstring()\fP)\fC [inline]\fP, \fC [explicit]\fP, \fC [protected]\fP"
+Protected constructors used by derived classes\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaName\fP The name of the \fBAcceleratorComponent\fP 
+.RE
+.PP
+
+.SS "AcceleratorComponent::AcceleratorComponent (const string & aName, \fBAcceleratorGeometry\fP * aGeom, \fBEMField\fP * aField)\fC [inline]\fP, \fC [protected]\fP"
+Protected constructors used by derived classes\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaName\fP The name of the \fBAcceleratorComponent\fP 
+.br
+\fIaGeom\fP The \fBAcceleratorGeometry\fP of the \fBAcceleratorComponent\fP 
+.br
+\fIaField\fP The \fBEMField\fP of the \fBAcceleratorComponent\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAperture\fP * AcceleratorComponent::GetAperture () const\fC [inline]\fP"
+Returns a pointer to the aperture of this element\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The \fBAperture\fP associated with this element\&. 
+.RE
+.PP
+
+.SS "size_t AcceleratorComponent::GetBeamlineIndex () const\fC [inline]\fP"
+Get the unique beamline index for this frame\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A size_t containing the unique beamline index\&. 
+.RE
+.PP
+
+.SS "int AcceleratorComponent::GetCollID () const\fC [inline]\fP"
+Get the \fBCollimator\fP ID\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+An integer containing the \fBCollimator\fP ID\&. 
+.RE
+.PP
+
+.SS "double AcceleratorComponent::GetComponentLatticePosition () const\fC [inline]\fP"
+Get the distance from the start of the lattice to the START of the element\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A double containing the position of the start of the lattice element\&. 
+.RE
+.PP
+
+.SS "const \fBEMField\fP * AcceleratorComponent::GetEMField () const\fC [inline]\fP"
+Returns a pointer to this components field\&. A nullptr is returned if the component has no field\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The \fBEMField\fP associated with this element\&. 
+.RE
+.PP
+
+.SS "const \fBAcceleratorGeometry\fP * AcceleratorComponent::GetGeometry () const\fC [inline]\fP"
+Returns a pointer to the this components geometry\&. Returns a nullptr if no geometry is associated with this component\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The \fBAcceleratorGeometry\fP associated with this element\&. 
+.RE
+.PP
+
+.SS "int AcceleratorComponent::GetIndex () const\fC [virtual]\fP"
+Returns the unique index for this class of accelerator components\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+An integer containing the unique index for this \fBAcceleratorComponent\fP type\&. 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBDecapole\fP, \fBSkewSextupole\fP, \fBOctupole\fP, \fBSectorBend\fP, \fBSkewQuadrupole\fP, \fBBPM\fP, \fBSextupole\fP, \fBRMSProfileMonitor\fP, \fBMonitor\fP, \fBCollimator\fP, \fBSolenoid\fP, \fBQuadrupole\fP, \fBParticleTracking::ParticleMapComponent\fP, \fBYCor\fP, \fBRectMultipole\fP, \fBTransverseRFStructure\fP, \fBMarker\fP, \fBDrift\fP, \fBTWRFStructure\fP, \fBHollowElectronLens\fP, \fBXCor\fP, \fBCrabMarker\fP, and \fBSWRFStructure\fP\&.
+.SS "double AcceleratorComponent::GetLength () const"
+Returns the geometry length of the component\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A double containing the length of this component\&. 
+.RE
+.PP
+
+.SS "\fBWakePotentials\fP * AcceleratorComponent::GetWakePotentials () const\fC [inline]\fP"
+Returns the wake potentials associated with this element\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The \fBWakePotentials\fP associated with this element\&. 
+.RE
+.PP
+
+.SS "void AcceleratorComponent::PrepareTracker (\fBComponentTracker\fP & aTracker)\fC [virtual]\fP"
+Primary tracking interface\&. Prepares the specified Tracker object for tracking this component\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaTracker\fP The tracker to prepare\&. 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBDecapole\fP, \fBSkewSextupole\fP, \fBSectorBend\fP, \fBOctupole\fP, \fBSkewQuadrupole\fP, \fBBPM\fP, \fBRMSProfileMonitor\fP, \fBSextupole\fP, \fBMonitor\fP, \fBCollimator\fP, \fBParticleTracking::ParticleMapComponent\fP, \fBSolenoid\fP, \fBYCor\fP, \fBQuadrupole\fP, \fBRectMultipole\fP, \fBTransverseRFStructure\fP, \fBXCor\fP, \fBDrift\fP, \fBTWRFStructure\fP, \fBHollowElectronLens\fP, \fBCrabMarker\fP, \fBSWRFStructure\fP, and \fBMarker\fP\&.
+.SS "virtual void AcceleratorComponent::RotateY180 ()\fC [pure virtual]\fP"
+Rotates the component 180 degrees about its local Y axis\&. 
+.PP
+Implemented in \fBSectorBend\fP, \fBCollimator\fP, \fBParticleTracking::ParticleMapComponent\fP, \fBMonitor\fP, \fBRectMultipole\fP, \fBSolenoid\fP, \fBTransverseRFStructure\fP, \fBMarker\fP, \fBDrift\fP, \fBTWRFStructure\fP, \fBHollowElectronLens\fP, \fBCrabMarker\fP, and \fBSWRFStructure\fP\&.
+.SS "void AcceleratorComponent::SetAperture (\fBAperture\fP * ap)\fC [inline]\fP"
+Sets the aperture of this element 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIap\fP A pointer to an \fBAperture\fP class to associate with this component 
+.RE
+.PP
+
+.SS "void AcceleratorComponent::SetBeamlineIndex (size_t n)\fC [inline]\fP"
+Set the uniques beamline index for this frame\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP The beamline index\&. 
+.RE
+.PP
+
+.SS "void AcceleratorComponent::SetCollID (int n)\fC [inline]\fP"
+\fBCollimator\fP ID for FLUKA output AV+HR 09\&.11\&.15 N\&.B\&. These values can only be set or got in \fBCollimator\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP The value of the \fBCollimator\fP ID to set\&. 
+.RE
+.PP
+
+.SS "void AcceleratorComponent::SetComponentLatticePosition (double position)\fC [inline]\fP"
+Set the distance from the start of the lattice to the START of the element\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIposition\fP The position of the start of the lattice element\&. 
+.RE
+.PP
+
+.SS "void AcceleratorComponent::SetWakePotentials (\fBWakePotentials\fP * wp)\fC [inline]\fP"
+Sets the wake potentials associated with this cavity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwp\fP A pointer to a \fBWakePotentials\fP class to associate with this component 
+.RE
+.PP
+
+.SS "int AcceleratorComponent::TotalComponentNumber ()\fC [inline]\fP, \fC [static]\fP"
+Returns the total number of distinct component types in the system\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+An integer containing the total number of types of element types that exist\&. 
+.RE
+.PP
+
+.SS "int AcceleratorComponent::UniqueIndex ()\fC [static]\fP, \fC [protected]\fP"
+Used by derived classes to generate a unique index\&. All derived classes should have a static member ID of type IndexType which should be initialised as follows:
+.PP
+IndexType component::ID = \fBUniqueIndex()\fP; 
+.SH "Member Data Documentation"
+.PP 
+.SS "size_t AcceleratorComponent::blI\fC [protected]\fP"
+beamline index associated with this component 
+.SS "int AcceleratorComponent::Coll_ID\fC [protected]\fP"
+\fBCollimator\fP ID for FLUKA output AV+HR 09\&.11\&.15 N\&.B\&. These values can only be set or got in \fBCollimator\fP 
+.SS "const int AcceleratorComponent::ID = \fBUniqueIndex\fP()\fC [static]\fP"
+Unique index for an Accelerator component\&. 
+.SS "\fBAperture\fP* AcceleratorComponent::itsAperture\fC [protected]\fP"
+A pointer to the \fBAperture\fP for this component 
+.SS "\fBEMField\fP* AcceleratorComponent::itsField\fC [protected]\fP"
+A pointer to the Electromagnetic field for this component 
+.SS "\fBAcceleratorGeometry\fP* AcceleratorComponent::itsGeometry\fC [protected]\fP"
+A pointer to the geometry for this component 
+.SS "\fBWakePotentials\fP* AcceleratorComponent::itsWakes\fC [protected]\fP"
+A pointer to the Wake potentials for this component 
+.SS "double AcceleratorComponent::position\fC [protected]\fP"
+The position of this element relative to a user defined location (the start of the user generated lattice)\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

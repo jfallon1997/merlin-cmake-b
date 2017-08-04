@@ -1,0 +1,242 @@
+.TH "ParticleTracking" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ParticleTracking
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBApplyDeltaT\fP"
+.br
+.ti -1c
+.RI "struct \fBApplyRFMap\fP"
+.br
+.ti -1c
+.RI "class \fBCCFailureProcess\fP"
+.br
+.ti -1c
+.RI "class \fBCollimateParticleProcess\fP"
+.br
+.ti -1c
+.RI "class \fBCollimateProtonProcess\fP"
+.br
+.ti -1c
+.RI "class \fBCollimationOutput\fP"
+.br
+.ti -1c
+.RI "class \fBCollimatorWakeProcess\fP"
+.br
+.ti -1c
+.RI "class \fBCouplerWakeFieldProcess\fP"
+.br
+.ti -1c
+.RI "struct \fBDriftMap\fP"
+.br
+.ti -1c
+.RI "class \fBElectronBunch\fP"
+.br
+.ti -1c
+.RI "struct \fBEntranceFieldMap\fP"
+.br
+.ti -1c
+.RI "class \fBExcessiveParticleLoss\fP"
+.br
+.ti -1c
+.RI "class \fBFlukaCollimationOutput\fP"
+.br
+.ti -1c
+.RI "class \fBHollowELensProcess\fP"
+.br
+.ti -1c
+.RI "class \fBHorizontalHaloParticleBunchFilter\fP"
+.br
+.ti -1c
+.RI "class \fBLCAVIntegrator\fP"
+.br
+.ti -1c
+.RI "struct \fBLCAVMap\fP"
+.br
+.ti -1c
+.RI "class \fBLinearParticleMap\fP"
+.br
+.ti -1c
+.RI "struct \fBLossData\fP"
+.br
+.ti -1c
+.RI "class \fBLossMapCollimationOutput\fP"
+.br
+.ti -1c
+.RI "class \fBMonitorProcess\fP"
+.br
+.ti -1c
+.RI "class \fBMuonBunch\fP"
+.br
+.ti -1c
+.RI "class \fBNANCheckProcess\fP"
+.br
+.ti -1c
+.RI "class \fBParticleBunch\fP"
+.br
+.ti -1c
+.RI "class \fBParticleBunchConstructor\fP"
+.br
+.ti -1c
+.RI "class \fBParticleBunchFilter\fP"
+.br
+.ti -1c
+.RI "class \fBParticleMap\fP"
+.br
+.ti -1c
+.RI "class \fBParticleMapCI\fP"
+.br
+.ti -1c
+.RI "class \fBParticleMapComponent\fP"
+.br
+.ti -1c
+.RI "class \fBppDiffractiveScatter\fP"
+.br
+.ti -1c
+.RI "class \fBppElasticScatter\fP"
+.br
+.ti -1c
+.RI "class \fBProtonBunch\fP"
+.br
+.ti -1c
+.RI "class \fBRingDeltaTProcess\fP"
+.br
+.ti -1c
+.RI "class \fBSynchRadParticleProcess\fP"
+.br
+.ti -1c
+.RI "class \fBTransRFIntegrator\fP"
+.br
+.ti -1c
+.RI "struct \fBTRFMap\fP"
+.br
+.ti -1c
+.RI "class \fBVerticalHaloParticleBunchFilter\fP"
+.br
+.ti -1c
+.RI "class \fBWakeFieldProcess\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBPSvector\fP \fBParticle\fP"
+.br
+.ti -1c
+.RI "typedef \fBTBunchProc\fP< \fBParticleBunch\fP > \fBParticleBunchProcess\fP"
+.br
+.ti -1c
+.RI "typedef \fBTBunchCMPTracker\fP< \fBParticleBunch\fP > \fBParticleComponentTracker\fP"
+.br
+.ti -1c
+.RI "typedef \fBTTrackSim\fP< \fBParticleComponentTracker\fP > \fBParticleTracker\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBOutputType\fP { \fBnearestelement\fP, \fBprecise\fP, \fBtencm\fP }"
+.br
+.ti -1c
+.RI "enum \fBDistributionType\fP { \fBnormalDistribution\fP, \fBflatDistribution\fP, \fBringDistribution\fP, \fBskewHaloDistribution\fP, \fBhorizontalHaloDistribution1\fP, \fBverticalHaloDistribution1\fP, \fBhorizontalHaloDistribution2\fP, \fBverticalHaloDistribution2\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBCompare_LossData\fP (const \fBLossData\fP &a, const \fBLossData\fP &b)"
+.br
+.ti -1c
+.RI "bool \fBMerge_LossData\fP (const \fBLossData\fP &a, const \fBLossData\fP &b)"
+.br
+.ti -1c
+.RI "pair< double, double > \fBCoulombScatter\fP (double x, double theta0)"
+.br
+.ti -1c
+.RI "void \fB__attribute__\fP ((optimize('O3,unsafe\-math\-optimizations'))) ppDiffractiveScatter"
+.br
+.ti -1c
+.RI "std::complex< double > \fBRCdiv\fP (double x, std::complex< double > a)"
+.br
+.ti -1c
+.RI "double \fBRandomGauss\fP (double variance, double cutoff)"
+.br
+.ti -1c
+.RI "size_t \fBParticleBinList\fP (\fBParticleBunch\fP &bunch, double zmin, double zmax, size_t nbins, vector< ParticleBunch::iterator > &pbins, vector< double > &hd, vector< double > &hdp, vector< double > *c)"
+.br
+.ti -1c
+.RI "size_t \fBParticleBunchDistribution\fP (\fBParticleBunch\fP &bunch, PScoord u, double umin, double umax, double du, vector< double > &bins, bool normalise, bool truncate)"
+.br
+.ti -1c
+.RI "size_t \fBParticleBinList\fP (\fBParticleBunch\fP &bunch, double zmin, double zmax, size_t nbins, std::vector< ParticleBunch::iterator > &pbins, vector< double > &hd, vector< double > &hdp, vector< double > *c=nullptr)"
+.br
+.ti -1c
+.RI "size_t \fBParticleBunchDistribution\fP (\fBParticleBunch\fP &bunch, PScoord u, double umin, double umax, double du, std::vector< double > &bins, bool normalise, bool truncate)"
+.br
+.ti -1c
+.RI "int \fBpowi\fP (int i, int j)"
+.br
+.ti -1c
+.RI "void \fBsavgol\fP (vector< double > &c, int nl, int nr, int ld, int m)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "double \fBQ\fP [3] = {0\&.26,0\&.56,0\&.18}"
+.br
+.ti -1c
+.RI "double \fBq\fP [3] = {8\&.38,3\&.78,1\&.36}"
+.br
+.ti -1c
+.RI "double \fBapr0\fP =0\&.1"
+.br
+.ti -1c
+.RI "double \fBapr1\fP =0\&.25"
+.br
+.ti -1c
+.RI "double \fBapr2\fP =0\&.821595"
+.br
+.ti -1c
+.RI "double \fBapr3\fP =0\&.904556"
+.br
+.ti -1c
+.RI "double \fBpar\fP [12]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Include for the vector class for storing the cross section tables\&. Include for complex numbers Include for the interpolation classes, to interpolate cross section values\&.
+.PP
+Include for the Elastic scattering class Include for the math headers - required for exp, sin, other mathmatical functions Include for io - std::cout etc Include for file output Include for the max() algorithm Include for assorted numerial constants Include for assorted Physical constants Include for assorted Physical units Include for the random number generator Pulls in <complex> and \fBComplex\fP std::complex<double> typedef 
+.SH "Function Documentation"
+.PP 
+.SS "void ParticleTracking::__attribute__ ((optimize('O3,unsafe\-math\-optimizations')))"
+Generates the elastic differential cross section Places the results into the vectors t and DSig 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIenergy\fP sqrt s 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "double ParticleTracking::apr0 =0\&.1"
+trajectory slope parameters\&. 
+.SS "double ParticleTracking::Q[3] = {0\&.26,0\&.56,0\&.18}"
+Form factor^2 fit to experimental data 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

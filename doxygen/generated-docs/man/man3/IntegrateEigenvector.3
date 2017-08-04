@@ -1,0 +1,53 @@
+.TH "IntegrateEigenvector" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IntegrateEigenvector
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBIntegrateWithGradient\fP, and \fBIntegrateZeroGradient\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBIntegral\fP (\fBComplexVector\fP &Ek, \fBSectorBend\fP *sb, double p0)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBpolint\fP (double xa[], double ya[], int n, double x, double &y, double &dy)"
+.br
+.ti -1c
+.RI "double \fBtrapzd\fP (double a, double b, int n)"
+.br
+.ti -1c
+.RI "double \fBqromb\fP (double a, double b)"
+.br
+.ti -1c
+.RI "virtual double \fBfunc\fP (double s)=0"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBComplexVector\fP \fBek\fP"
+.br
+.ti -1c
+.RI "\fBComplex\fP \fBk\fP"
+.br
+.ti -1c
+.RI "double \fBh\fP"
+.br
+.ti -1c
+.RI "double \fBtanE1\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,47 @@
+\hypertarget{classWakePotentials}{}\section{Wake\+Potentials Class Reference}
+\label{classWakePotentials}\index{Wake\+Potentials@{Wake\+Potentials}}
+
+
+{\ttfamily \#include $<$Wake\+Potentials.\+h$>$}
+
+Inheritance diagram for Wake\+Potentials\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.898305cm]{classWakePotentials}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWakePotentials_a8a60c2f4a9e7edd4d92ce08b572a2534}\label{classWakePotentials_a8a60c2f4a9e7edd4d92ce08b572a2534}} 
+{\bfseries Wake\+Potentials} (double r, double s)
+\item 
+\mbox{\Hypertarget{classWakePotentials_aa016a1abfdb88720c1342572a630271d}\label{classWakePotentials_aa016a1abfdb88720c1342572a630271d}} 
+virtual double {\bfseries Wlong} (double z) const =0
+\item 
+\mbox{\Hypertarget{classWakePotentials_a72ac725b39f1505d35e08b2575354b43}\label{classWakePotentials_a72ac725b39f1505d35e08b2575354b43}} 
+virtual double {\bfseries Wtrans} (double z) const =0
+\item 
+\mbox{\Hypertarget{classWakePotentials_a53bb1ca5a2c9e3bbeb92ed09f00e5ecb}\label{classWakePotentials_a53bb1ca5a2c9e3bbeb92ed09f00e5ecb}} 
+bool {\bfseries Is\+\_\+\+C\+SR} () const
+\item 
+\mbox{\Hypertarget{classWakePotentials_a3081f53b237908cac75506e18ea5e128}\label{classWakePotentials_a3081f53b237908cac75506e18ea5e128}} 
+\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$ {\bfseries Get\+Expected\+Process} () const
+\item 
+\mbox{\Hypertarget{classWakePotentials_a95f1a3ad1e385f3f25154a20f811b05f}\label{classWakePotentials_a95f1a3ad1e385f3f25154a20f811b05f}} 
+void {\bfseries Set\+Expected\+Process} (\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$p)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWakePotentials_ab0b9403febdba5b88e843761da1d43de}\label{classWakePotentials_ab0b9403febdba5b88e843761da1d43de}} 
+bool {\bfseries csr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for calculating the longitudinal and transverse single-\/bunch wakefield potentials (Greens functions). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Wake\+Potentials.\+h\end{DoxyCompactItemize}

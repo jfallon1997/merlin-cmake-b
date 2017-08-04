@@ -1,0 +1,89 @@
+\hypertarget{classTTrnsProc}{}\section{T\+Trns\+Proc$<$ T $>$ Class Template Reference}
+\label{classTTrnsProc}\index{T\+Trns\+Proc$<$ T $>$@{T\+Trns\+Proc$<$ T $>$}}
+
+
+{\ttfamily \#include $<$T\+Track\+Sim.\+h$>$}
+
+Inheritance diagram for T\+Trns\+Proc$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTTrnsProc}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTTrnsProc_a04c71e69a15b15e734c5a9ce9a146188}\label{classTTrnsProc_a04c71e69a15b15e734c5a9ce9a146188}} 
+typedef \+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ T\+::bunch\+\_\+type {\bfseries bunch\+\_\+type}
+\item 
+\mbox{\Hypertarget{classTTrnsProc_a4bab78611a7f9201c18b51e5eb0a523e}\label{classTTrnsProc_a4bab78611a7f9201c18b51e5eb0a523e}} 
+typedef \+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ T\+::\+B\+\_\+\+Integrator {\bfseries integrator\+\_\+type}
+\item 
+\mbox{\Hypertarget{classTTrnsProc_a89caed69db83a57cd465edf0a7289084}\label{classTTrnsProc_a89caed69db83a57cd465edf0a7289084}} 
+typedef \+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ T\+::\+I\+Set\+Base {\bfseries integrator\+\_\+set\+\_\+base}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTTrnsProc_afbcef160143ed7d5994327d0ab188135}{T\+Trns\+Proc} ()
+\item 
+\hyperlink{classTTrnsProc_a2016e23535409041dae3df438dba63d3}{T\+Trns\+Proc} (const integrator\+\_\+set\+\_\+base \&iset)
+\item 
+bool \hyperlink{classTTrnsProc_ac8fea60c9ccdfc1ae17f3a90f181e54b}{Register\+Integrator} (integrator\+\_\+type $\ast$intg)
+\item 
+\mbox{\Hypertarget{classTTrnsProc_a52a0b2085d6284bf16472e359baf09b7}\label{classTTrnsProc_a52a0b2085d6284bf16472e359baf09b7}} 
+void {\bfseries Initialise\+Process} (\hyperlink{classBunch}{Bunch} \&bunch)
+\item 
+\mbox{\Hypertarget{classTTrnsProc_a9a419b219489add9ebe44dcff0f866ab}\label{classTTrnsProc_a9a419b219489add9ebe44dcff0f866ab}} 
+void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+\mbox{\Hypertarget{classTTrnsProc_a75102db7909aaf354ece752c93318128}\label{classTTrnsProc_a75102db7909aaf354ece752c93318128}} 
+void {\bfseries Do\+Process} (double ds)
+\item 
+\mbox{\Hypertarget{classTTrnsProc_a21d12d58a7b61e2d447f30a7d8a47b49}\label{classTTrnsProc_a21d12d58a7b61e2d447f30a7d8a47b49}} 
+double {\bfseries Get\+Max\+Allowed\+Step\+Size} () const
+\item 
+\mbox{\Hypertarget{classTTrnsProc_ad3607bdbb1860668739a8a9e8c97bc76}\label{classTTrnsProc_ad3607bdbb1860668739a8a9e8c97bc76}} 
+void {\bfseries Set\+Integrator\+Set} (const integrator\+\_\+set\+\_\+base $\ast$iset)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class T\+Trns\+Proc$<$ T $>$}
+
+Transport process template function. Defines a transport \hyperlink{classBunchProcess}{Bunch\+Process} which uses a concrete \hyperlink{classComponentTracker}{Component\+Tracker} class to track provide the tracking.
+
+Template argument T must be a valid concrete \hyperlink{classComponentTracker}{Component\+Tracker} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTTrnsProc_afbcef160143ed7d5994327d0ab188135}\label{classTTrnsProc_afbcef160143ed7d5994327d0ab188135}} 
+\index{T\+Trns\+Proc@{T\+Trns\+Proc}!T\+Trns\+Proc@{T\+Trns\+Proc}}
+\index{T\+Trns\+Proc@{T\+Trns\+Proc}!T\+Trns\+Proc@{T\+Trns\+Proc}}
+\subsubsection{\texorpdfstring{T\+Trns\+Proc()}{TTrnsProc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classTTrnsProc}{T\+Trns\+Proc}$<$ T $>$\+::\hyperlink{classTTrnsProc}{T\+Trns\+Proc} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct process using the default integrator set \mbox{\Hypertarget{classTTrnsProc_a2016e23535409041dae3df438dba63d3}\label{classTTrnsProc_a2016e23535409041dae3df438dba63d3}} 
+\index{T\+Trns\+Proc@{T\+Trns\+Proc}!T\+Trns\+Proc@{T\+Trns\+Proc}}
+\index{T\+Trns\+Proc@{T\+Trns\+Proc}!T\+Trns\+Proc@{T\+Trns\+Proc}}
+\subsubsection{\texorpdfstring{T\+Trns\+Proc()}{TTrnsProc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classTTrnsProc}{T\+Trns\+Proc}$<$ T $>$\+::\hyperlink{classTTrnsProc}{T\+Trns\+Proc} (\begin{DoxyParamCaption}\item[{const integrator\+\_\+set\+\_\+base \&}]{iset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct process using an explicit integrator set 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTTrnsProc_ac8fea60c9ccdfc1ae17f3a90f181e54b}\label{classTTrnsProc_ac8fea60c9ccdfc1ae17f3a90f181e54b}} 
+\index{T\+Trns\+Proc@{T\+Trns\+Proc}!Register\+Integrator@{Register\+Integrator}}
+\index{Register\+Integrator@{Register\+Integrator}!T\+Trns\+Proc@{T\+Trns\+Proc}}
+\subsubsection{\texorpdfstring{Register\+Integrator()}{RegisterIntegrator()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{classTTrnsProc}{T\+Trns\+Proc}$<$ T $>$\+::Register\+Integrator (\begin{DoxyParamCaption}\item[{integrator\+\_\+type $\ast$}]{intg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Register an addition (or override) integrator. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/T\+Track\+Sim.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+.TH "Bunch" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Bunch
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBReferenceParticle\fP\&.
+.PP
+Inherited by \fBParticleTracking::ParticleBunch\fP, and \fBSMPTracking::SMPBunch\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBunch\fP (double p, double q)"
+.br
+.ti -1c
+.RI "virtual double \fBGetTotalCharge\fP () const =0"
+.br
+.ti -1c
+.RI "virtual \fBPSmoments\fP & \fBGetMoments\fP (\fBPSmoments\fP &sigma) const =0"
+.br
+.ti -1c
+.RI "\fBPSmoments\fP \fBGetMoments\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBPSmoments2D\fP & \fBGetProjectedMoments\fP (PScoord u, PScoord v, \fBPSmoments2D\fP &sigma) const =0"
+.br
+.ti -1c
+.RI "virtual \fBPSvector\fP & \fBGetCentroid\fP (\fBPSvector\fP &p) const =0"
+.br
+.ti -1c
+.RI "virtual \fBPoint2D\fP \fBGetProjectedCentroid\fP (PScoord u, PScoord v) const =0"
+.br
+.ti -1c
+.RI "virtual double \fBAdjustRefMomentumToMean\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBAdjustRefTimeToMean\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBOutput\fP (std::ostream &os) const =0"
+.br
+.ti -1c
+.RI "virtual Histogram & \fBProjectDistribution\fP (PScoord axis, Histogram &hist) const =0"
+.br
+.ti -1c
+.RI "virtual bool \fBApplyTransformation\fP (const \fBTransform3D\fP &t)=0"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

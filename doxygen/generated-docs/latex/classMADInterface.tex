@@ -1,0 +1,116 @@
+\hypertarget{classMADInterface}{}\section{M\+A\+D\+Interface Class Reference}
+\label{classMADInterface}\index{M\+A\+D\+Interface@{M\+A\+D\+Interface}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMADInterface_a83058e0a3e17b68ba952ec3b524dde50}\label{classMADInterface_a83058e0a3e17b68ba952ec3b524dde50}} 
+{\bfseries M\+A\+D\+Interface} (const std\+::string \&mad\+File\+Name=\char`\"{}\char`\"{}, double P0=0)
+\item 
+\mbox{\Hypertarget{classMADInterface_aa98b0a328ef5966b194ca68a51125879}\label{classMADInterface_aa98b0a328ef5966b194ca68a51125879}} 
+\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$ {\bfseries Construct\+Model} ()
+\item 
+\mbox{\Hypertarget{classMADInterface_a5d3ebaf2fc9e7c0d8e16d7cd8baa3042}\label{classMADInterface_a5d3ebaf2fc9e7c0d8e16d7cd8baa3042}} 
+void {\bfseries Set\+Log\+File} (ostream \&os)
+\item 
+\mbox{\Hypertarget{classMADInterface_ab3b9413e5a8a0587f94c51cb4f9543b7}\label{classMADInterface_ab3b9413e5a8a0587f94c51cb4f9543b7}} 
+void {\bfseries Set\+Logging\+On} ()
+\item 
+\mbox{\Hypertarget{classMADInterface_a6a0bd36881fcdf534852f170134d2617}\label{classMADInterface_a6a0bd36881fcdf534852f170134d2617}} 
+void {\bfseries Set\+Logging\+Off} ()
+\item 
+\mbox{\Hypertarget{classMADInterface_a03079d581da500028096a54371999c0e}\label{classMADInterface_a03079d581da500028096a54371999c0e}} 
+void {\bfseries Set\+Single\+Cell\+RF} (bool scrf)
+\item 
+\mbox{\Hypertarget{classMADInterface_ada2648cc56d210d98cde1e5fe688aeec}\label{classMADInterface_ada2648cc56d210d98cde1e5fe688aeec}} 
+void {\bfseries Honour\+Mad\+Structure} (bool flg)
+\item 
+\mbox{\Hypertarget{classMADInterface_a1b6de40f551ca56bfbcb04eb945e55fc}\label{classMADInterface_a1b6de40f551ca56bfbcb04eb945e55fc}} 
+void {\bfseries Construct\+Flat\+Lattice} (bool flg)
+\item 
+\mbox{\Hypertarget{classMADInterface_a42aa6fb84925ebeb8dbc70bccb2b881b}\label{classMADInterface_a42aa6fb84925ebeb8dbc70bccb2b881b}} 
+void {\bfseries Construct\+Apertures} (bool flg)
+\item 
+\mbox{\Hypertarget{classMADInterface_a74261494d192474c43f0dd3577ffa7e8}\label{classMADInterface_a74261494d192474c43f0dd3577ffa7e8}} 
+void {\bfseries Ignore\+Zero\+Length\+Type} (const string \&mad\+Type)
+\item 
+\mbox{\Hypertarget{classMADInterface_a5f9cd10f2e8d5371cf34e3dbf167fa72}\label{classMADInterface_a5f9cd10f2e8d5371cf34e3dbf167fa72}} 
+void {\bfseries Scale\+For\+Synch\+Rad} (bool scale\+SR)
+\item 
+\mbox{\Hypertarget{classMADInterface_a7e0fbeb4772d867f0126ee63c92547e8}\label{classMADInterface_a7e0fbeb4772d867f0126ee63c92547e8}} 
+void {\bfseries Treat\+Type\+As\+Drift} (const std\+::string \&typestr)
+\item 
+\mbox{\Hypertarget{classMADInterface_a093ee774fb5a1237872b7fea3d9c3746}\label{classMADInterface_a093ee774fb5a1237872b7fea3d9c3746}} 
+void {\bfseries Append\+Model} (const std\+::string \&fname, double pref)
+\item 
+\mbox{\Hypertarget{classMADInterface_a4d9b830ead435b36a3d16e965dc4cb26}\label{classMADInterface_a4d9b830ead435b36a3d16e965dc4cb26}} 
+\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$ {\bfseries Get\+Model} ()
+\item 
+\mbox{\Hypertarget{classMADInterface_a1a7cb78ddf64a25920067637cbd82ec0}\label{classMADInterface_a1a7cb78ddf64a25920067637cbd82ec0}} 
+void {\bfseries Construct\+New\+Frame} (const string \&name)
+\item 
+\mbox{\Hypertarget{classMADInterface_abe0f2699c216150de8568551ec20ddc0}\label{classMADInterface_abe0f2699c216150de8568551ec20ddc0}} 
+void {\bfseries End\+Frame} (const string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMADInterface_ad05b1c2a40e639a4727db03cf012d8bf}\label{classMADInterface_ad05b1c2a40e639a4727db03cf012d8bf}} 
+double {\bfseries Read\+Component} ()
+\item 
+\mbox{\Hypertarget{classMADInterface_a91ec92a381cf1998b15036a50d321a50}\label{classMADInterface_a91ec92a381cf1998b15036a50d321a50}} 
+void {\bfseries Initialise} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMADInterface_a2ab42ab2c9a23b816c44a7b99218e885}\label{classMADInterface_a2ab42ab2c9a23b816c44a7b99218e885}} 
+double {\bfseries energy}
+\item 
+\mbox{\Hypertarget{classMADInterface_a34c551eac2474df1d886f9bed292bcc0}\label{classMADInterface_a34c551eac2474df1d886f9bed292bcc0}} 
+std\+::string {\bfseries filename}
+\item 
+\mbox{\Hypertarget{classMADInterface_a7ca8265e03528e52c4cc6fe5d3fc925b}\label{classMADInterface_a7ca8265e03528e52c4cc6fe5d3fc925b}} 
+ifstream $\ast$ {\bfseries ifs}
+\item 
+\mbox{\Hypertarget{classMADInterface_a10cee32b471875f95f63773b273ccce6}\label{classMADInterface_a10cee32b471875f95f63773b273ccce6}} 
+ostream $\ast$ {\bfseries log}
+\item 
+\mbox{\Hypertarget{classMADInterface_a22ca3d722e39990917a4360913610f44}\label{classMADInterface_a22ca3d722e39990917a4360913610f44}} 
+bool {\bfseries log\+Flag}
+\item 
+\mbox{\Hypertarget{classMADInterface_a45f77a21bd68d0a06669740c5ea664e8}\label{classMADInterface_a45f77a21bd68d0a06669740c5ea664e8}} 
+bool {\bfseries flat\+Lattice}
+\item 
+\mbox{\Hypertarget{classMADInterface_a037a808f7945080bc8007e4d5102c21e}\label{classMADInterface_a037a808f7945080bc8007e4d5102c21e}} 
+bool {\bfseries hon\+Mad\+Structs}
+\item 
+\mbox{\Hypertarget{classMADInterface_a339e67bace2fe6783e7232d460043c75}\label{classMADInterface_a339e67bace2fe6783e7232d460043c75}} 
+bool {\bfseries inc\+Apertures}
+\item 
+\mbox{\Hypertarget{classMADInterface_aa7bd7401dc9642e3549d136d9595e3c7}\label{classMADInterface_aa7bd7401dc9642e3549d136d9595e3c7}} 
+bool {\bfseries inc\+\_\+sr}
+\item 
+\mbox{\Hypertarget{classMADInterface_a24e7babcea40fa122c8386f3f46e0748}\label{classMADInterface_a24e7babcea40fa122c8386f3f46e0748}} 
+std\+::set$<$ std\+::string $>$ {\bfseries zero\+Lengths}
+\item 
+\mbox{\Hypertarget{classMADInterface_a470da79cc20dfe838f3704f5edf51b4f}\label{classMADInterface_a470da79cc20dfe838f3704f5edf51b4f}} 
+std\+::set$<$ std\+::string $>$ {\bfseries drift\+Types}
+\item 
+\mbox{\Hypertarget{classMADInterface_a1e401441c398fed4d27f063d04e16894}\label{classMADInterface_a1e401441c398fed4d27f063d04e16894}} 
+\hyperlink{classAcceleratorModelConstructor}{Accelerator\+Model\+Constructor} $\ast$ {\bfseries ctor}
+\item 
+\mbox{\Hypertarget{classMADInterface_a2a001e8bd03ad7db347ba10aa875a529}\label{classMADInterface_a2a001e8bd03ad7db347ba10aa875a529}} 
+\hyperlink{classMADKeyMap}{M\+A\+D\+Key\+Map} $\ast$ {\bfseries prm\+Map}
+\item 
+\mbox{\Hypertarget{classMADInterface_af333f3fffe3d1c34dae3f51726bc00aa}\label{classMADInterface_af333f3fffe3d1c34dae3f51726bc00aa}} 
+double {\bfseries z}
+\item 
+\mbox{\Hypertarget{classMADInterface_ab29d618ca9b6420f4d10672fc334a8ca}\label{classMADInterface_ab29d618ca9b6420f4d10672fc334a8ca}} 
+bool {\bfseries single\+\_\+cell\+\_\+rf}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/M\+A\+D\+Interface.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/M\+A\+D\+Interface.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+\hypertarget{classAcceleratorModel_1_1Beamline}{}\section{Accelerator\+Model\+:\+:Beamline Class Reference}
+\label{classAcceleratorModel_1_1Beamline}\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+
+
+{\ttfamily \#include $<$Accelerator\+Model.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAcceleratorModel_1_1Beamline_1_1TRK}{T\+RK}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a3474fa3882d6c64f585fd1d31f33bbab}\label{classAcceleratorModel_1_1Beamline_a3474fa3882d6c64f585fd1d31f33bbab}} 
+{\bfseries Beamline} (Beamline\+Iterator fst, Beamline\+Iterator lst, Index fst\+\_\+i, Index lst\+\_\+i)
+\item 
+bool \hyperlink{classAcceleratorModel_1_1Beamline_acbb49274dda0a8bbc7daa0a3a845508e}{Is\+Reversed} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\T \& \hyperlink{classAcceleratorModel_1_1Beamline_af48fc0105707f1b09e5b343ffa829854}{Track} (T \&tobj)
+\item 
+Beamline\+Iterator \hyperlink{classAcceleratorModel_1_1Beamline_a1cccebda06318f2ed33b12a19cf7acba}{begin} ()
+\item 
+Const\+Beamline\+Iterator \hyperlink{classAcceleratorModel_1_1Beamline_a1580e7da07af01517c3d552464b267ed}{begin} () const
+\item 
+Beamline\+Iterator \hyperlink{classAcceleratorModel_1_1Beamline_a190fe2e2aeca28999af7b07beea84d60}{end} ()
+\item 
+Const\+Beamline\+Iterator \hyperlink{classAcceleratorModel_1_1Beamline_af0f0f0244723579b42b2e893a2273ea4}{end} () const
+\item 
+\hyperlink{classComponentFrame}{Component\+Frame} \& \hyperlink{classAcceleratorModel_1_1Beamline_a56c50274a705cd04a6059ffe384c897a}{First} ()
+\item 
+const \hyperlink{classComponentFrame}{Component\+Frame} \& \hyperlink{classAcceleratorModel_1_1Beamline_aa1a924ddf820afe8c914a4ff03893bc3}{First} () const
+\item 
+\hyperlink{classComponentFrame}{Component\+Frame} \& \hyperlink{classAcceleratorModel_1_1Beamline_aebb83c56d1f6b346f08f29cad78a4896}{Last} ()
+\item 
+const \hyperlink{classComponentFrame}{Component\+Frame} \& \hyperlink{classAcceleratorModel_1_1Beamline_a3d9e8887cc1b7cfbc0d497f749af3950}{Last} () const
+\item 
+Index \hyperlink{classAcceleratorModel_1_1Beamline_a67b5d69c05315b04b3f0fb4c28fe40a9}{first\+\_\+index} () const
+\item 
+Index \hyperlink{classAcceleratorModel_1_1Beamline_a5e20d3e994c496cf16744d0a54bd26a0}{last\+\_\+index} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the complete or contiguous sub-\/section of the accelerator lattice. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a1cccebda06318f2ed33b12a19cf7acba}\label{classAcceleratorModel_1_1Beamline_a1cccebda06318f2ed33b12a19cf7acba}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!begin@{begin}}
+\index{begin@{begin}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Beamline\+Iterator Accelerator\+Model\+::\+Beamline\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Standard library type iterator accessors. Gets a Beamline\+Iterator pointing to the first element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. \begin{DoxyReturn}{Returns}
+A Beamline\+Iterator pointing to the first element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a1580e7da07af01517c3d552464b267ed}\label{classAcceleratorModel_1_1Beamline_a1580e7da07af01517c3d552464b267ed}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!begin@{begin}}
+\index{begin@{begin}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Const\+Beamline\+Iterator Accelerator\+Model\+::\+Beamline\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a const Beamline\+Iterator pointing to the first element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. \begin{DoxyReturn}{Returns}
+A const Beamline\+Iterator pointing to the first element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a190fe2e2aeca28999af7b07beea84d60}\label{classAcceleratorModel_1_1Beamline_a190fe2e2aeca28999af7b07beea84d60}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!end@{end}}
+\index{end@{end}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Beamline\+Iterator Accelerator\+Model\+::\+Beamline\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a Beamline\+Iterator pointing to the end of the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. \begin{DoxyReturn}{Returns}
+A Beamline\+Iterator pointing to the end of the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_af0f0f0244723579b42b2e893a2273ea4}\label{classAcceleratorModel_1_1Beamline_af0f0f0244723579b42b2e893a2273ea4}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!end@{end}}
+\index{end@{end}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Const\+Beamline\+Iterator Accelerator\+Model\+::\+Beamline\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a const Beamline\+Iterator pointing to the end of the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. \begin{DoxyReturn}{Returns}
+A const Beamline\+Iterator pointing to the end of the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a56c50274a705cd04a6059ffe384c897a}\label{classAcceleratorModel_1_1Beamline_a56c50274a705cd04a6059ffe384c897a}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!First@{First}}
+\index{First@{First}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{First()}{First()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classComponentFrame}{Component\+Frame}\& Accelerator\+Model\+::\+Beamline\+::\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a reference to the first \hyperlink{classComponentFrame}{Component\+Frame}. \begin{DoxyReturn}{Returns}
+A reference to the first \hyperlink{classComponentFrame}{Component\+Frame}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_aa1a924ddf820afe8c914a4ff03893bc3}\label{classAcceleratorModel_1_1Beamline_aa1a924ddf820afe8c914a4ff03893bc3}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!First@{First}}
+\index{First@{First}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{First()}{First()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classComponentFrame}{Component\+Frame}\& Accelerator\+Model\+::\+Beamline\+::\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a const reference to the first \hyperlink{classComponentFrame}{Component\+Frame}. \begin{DoxyReturn}{Returns}
+A const reference to the first \hyperlink{classComponentFrame}{Component\+Frame}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a67b5d69c05315b04b3f0fb4c28fe40a9}\label{classAcceleratorModel_1_1Beamline_a67b5d69c05315b04b3f0fb4c28fe40a9}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!first\+\_\+index@{first\+\_\+index}}
+\index{first\+\_\+index@{first\+\_\+index}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{first\+\_\+index()}{first\_index()}}
+{\footnotesize\ttfamily Index Accelerator\+Model\+::\+Beamline\+::first\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the index of the first element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. \begin{DoxyReturn}{Returns}
+The index of the first element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_acbb49274dda0a8bbc7daa0a3a845508e}\label{classAcceleratorModel_1_1Beamline_acbb49274dda0a8bbc7daa0a3a845508e}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!Is\+Reversed@{Is\+Reversed}}
+\index{Is\+Reversed@{Is\+Reversed}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{Is\+Reversed()}{IsReversed()}}
+{\footnotesize\ttfamily bool Accelerator\+Model\+::\+Beamline\+::\+Is\+Reversed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the beamline is reversed. \begin{DoxyReturn}{Returns}
+Returns a bool set to true if the beamline is reversed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_aebb83c56d1f6b346f08f29cad78a4896}\label{classAcceleratorModel_1_1Beamline_aebb83c56d1f6b346f08f29cad78a4896}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!Last@{Last}}
+\index{Last@{Last}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{Last()}{Last()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classComponentFrame}{Component\+Frame}\& Accelerator\+Model\+::\+Beamline\+::\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a reference to the last \hyperlink{classComponentFrame}{Component\+Frame}. \begin{DoxyReturn}{Returns}
+A reference to the last \hyperlink{classComponentFrame}{Component\+Frame}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a3d9e8887cc1b7cfbc0d497f749af3950}\label{classAcceleratorModel_1_1Beamline_a3d9e8887cc1b7cfbc0d497f749af3950}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!Last@{Last}}
+\index{Last@{Last}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{Last()}{Last()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classComponentFrame}{Component\+Frame}\& Accelerator\+Model\+::\+Beamline\+::\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a const reference to the last \hyperlink{classComponentFrame}{Component\+Frame}. \begin{DoxyReturn}{Returns}
+A const reference to the last \hyperlink{classComponentFrame}{Component\+Frame}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_a5e20d3e994c496cf16744d0a54bd26a0}\label{classAcceleratorModel_1_1Beamline_a5e20d3e994c496cf16744d0a54bd26a0}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!last\+\_\+index@{last\+\_\+index}}
+\index{last\+\_\+index@{last\+\_\+index}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{last\+\_\+index()}{last\_index()}}
+{\footnotesize\ttfamily Index Accelerator\+Model\+::\+Beamline\+::last\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the index of the last element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. \begin{DoxyReturn}{Returns}
+The index of the last element in the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAcceleratorModel_1_1Beamline_af48fc0105707f1b09e5b343ffa829854}\label{classAcceleratorModel_1_1Beamline_af48fc0105707f1b09e5b343ffa829854}} 
+\index{Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}!Track@{Track}}
+\index{Track@{Track}!Accelerator\+Model\+::\+Beamline@{Accelerator\+Model\+::\+Beamline}}
+\subsubsection{\texorpdfstring{Track()}{Track()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T\& Accelerator\+Model\+::\+Beamline\+::\+Track (\begin{DoxyParamCaption}\item[{T \&}]{tobj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Template function that iterates the functor object tobj over the \hyperlink{classAcceleratorModel_1_1Beamline}{Beamline}. Returns a reference to tobj on exit. We make use of the \hyperlink{classAcceleratorModel_1_1Beamline_1_1TRK}{T\+RK} wrapper, to avoid the call to tobj\textquotesingle{}s copy constructor
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Accelerator\+Model.\+h\end{DoxyCompactItemize}

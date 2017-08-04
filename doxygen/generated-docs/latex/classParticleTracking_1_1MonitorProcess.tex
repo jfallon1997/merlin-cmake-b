@@ -1,0 +1,67 @@
+\hypertarget{classParticleTracking_1_1MonitorProcess}{}\section{Particle\+Tracking\+:\+:Monitor\+Process Class Reference}
+\label{classParticleTracking_1_1MonitorProcess}\index{Particle\+Tracking\+::\+Monitor\+Process@{Particle\+Tracking\+::\+Monitor\+Process}}
+
+
+{\ttfamily \#include $<$Monitor\+Process.\+h$>$}
+
+Inheritance diagram for Particle\+Tracking\+:\+:Monitor\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classParticleTracking_1_1MonitorProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticleTracking_1_1MonitorProcess_a666c203e1393e207f65e89d6a1a5d231}{Monitor\+Process} (const string \&a\+ID=\char`\"{}M\+O\+N\+I\+T\+OR\char`\"{}, int prio=0, const string \&prefix=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1MonitorProcess_a5eee229385d9bd491fd8fc78f02ac4bf}\label{classParticleTracking_1_1MonitorProcess_a5eee229385d9bd491fd8fc78f02ac4bf}} 
+void \hyperlink{classParticleTracking_1_1MonitorProcess_a5eee229385d9bd491fd8fc78f02ac4bf}{Set\+Prefix} (const string \&prefix)
+\begin{DoxyCompactList}\small\item\em Set the output file name prefix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParticleTracking_1_1MonitorProcess_abbc8579ca8f14f0d9a795dc5fe7e664f}\label{classParticleTracking_1_1MonitorProcess_abbc8579ca8f14f0d9a795dc5fe7e664f}} 
+void \hyperlink{classParticleTracking_1_1MonitorProcess_abbc8579ca8f14f0d9a795dc5fe7e664f}{Add\+Element} (const string e)
+\begin{DoxyCompactList}\small\item\em Add element at which to record. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParticleTracking_1_1MonitorProcess_a67766a1c348ec6cd8adb95ee8e7024bb}\label{classParticleTracking_1_1MonitorProcess_a67766a1c348ec6cd8adb95ee8e7024bb}} 
+void {\bfseries Initialise\+Process} (\hyperlink{classBunch}{Bunch} \&bunch)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1MonitorProcess_a21fedd0f57d6fc91ee86f826c3555ddf}\label{classParticleTracking_1_1MonitorProcess_a21fedd0f57d6fc91ee86f826c3555ddf}} 
+void {\bfseries Do\+Process} (const double ds)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1MonitorProcess_aae5bb4721521effd76a91a00d6a610dd}\label{classParticleTracking_1_1MonitorProcess_aae5bb4721521effd76a91a00d6a610dd}} 
+double {\bfseries Get\+Max\+Allowed\+Step\+Size} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1MonitorProcess_aaec27ae366e78b3cdfc8484f96398df8}\label{classParticleTracking_1_1MonitorProcess_aaec27ae366e78b3cdfc8484f96398df8}} 
+void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A process for recording particle coordinates at elements
+
+Can be attached to the tracker to record particle coordinates at all or specific elements to files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1MonitorProcess_a666c203e1393e207f65e89d6a1a5d231}\label{classParticleTracking_1_1MonitorProcess_a666c203e1393e207f65e89d6a1a5d231}} 
+\index{Particle\+Tracking\+::\+Monitor\+Process@{Particle\+Tracking\+::\+Monitor\+Process}!Monitor\+Process@{Monitor\+Process}}
+\index{Monitor\+Process@{Monitor\+Process}!Particle\+Tracking\+::\+Monitor\+Process@{Particle\+Tracking\+::\+Monitor\+Process}}
+\subsubsection{\texorpdfstring{Monitor\+Process()}{MonitorProcess()}}
+{\footnotesize\ttfamily Monitor\+Process\+::\+Monitor\+Process (\begin{DoxyParamCaption}\item[{const string \&}]{a\+ID = {\ttfamily \char`\"{}MONITOR\char`\"{}},  }\item[{int}]{prio = {\ttfamily 0},  }\item[{const string \&}]{prefix = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Create a \hyperlink{classParticleTracking_1_1MonitorProcess}{Monitor\+Process}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+ID} & Process ID \\
+\hline
+{\em prio} & Process priority \\
+\hline
+{\em prefix} & Output file name prefix \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Monitor\+Process.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Monitor\+Process.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+.TH "SMPTracking::SliceMacroParticle" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SMPTracking::SliceMacroParticle
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBTPSMoments< N >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSliceMacroParticle\fP (double q=0)"
+.br
+.ti -1c
+.RI "\fBSliceMacroParticle\fP (const \fBPSmoments\fP &sigma, double ct, double dp, double q)"
+.br
+.ti -1c
+.RI "double \fBQ\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetChargeWeightedCentroid\fP (PScoord i) const"
+.br
+.ti -1c
+.RI "\fBPoint2D\fP \fBGetChargeWeightedCentroid\fP (PScoord i, PScoord j) const"
+.br
+.ti -1c
+.RI "\fBPSvector\fP \fBGetChargeWeightedCentroid\fP () const"
+.br
+.ti -1c
+.RI "\fBPSvector\fP & \fBGetCentroid\fP ()"
+.br
+.ti -1c
+.RI "const \fBPSvector\fP & \fBGetCentroid\fP () const"
+.br
+.ti -1c
+.RI "void \fBRead\fP (std::istream &)"
+.br
+.ti -1c
+.RI "void \fBWrite\fP (std::ostream &) const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBSliceMacroParticle\fP &p1, const \fBSliceMacroParticle\fP &p2)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

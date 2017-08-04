@@ -1,0 +1,84 @@
+\hypertarget{classParticleTracking_1_1CCFailureProcess}{}\section{Particle\+Tracking\+:\+:C\+C\+Failure\+Process Class Reference}
+\label{classParticleTracking_1_1CCFailureProcess}\index{Particle\+Tracking\+::\+C\+C\+Failure\+Process@{Particle\+Tracking\+::\+C\+C\+Failure\+Process}}
+Inheritance diagram for Particle\+Tracking\+:\+:C\+C\+Failure\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classParticleTracking_1_1CCFailureProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a171576b7a0b0e136c7041361e657c766}\label{classParticleTracking_1_1CCFailureProcess_a171576b7a0b0e136c7041361e657c766}} 
+{\bfseries C\+C\+Failure\+Process} (int priority, int mode, \hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$model, \hyperlink{classLatticeFunctionTable}{Lattice\+Function\+Table} $\ast$twiss)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_ae6436ce8a7eca4a56f2fa2e7158d0354}\label{classParticleTracking_1_1CCFailureProcess_ae6436ce8a7eca4a56f2fa2e7158d0354}} 
+{\bfseries C\+C\+Failure\+Process} (int priority, int mode, \hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$model, \hyperlink{classLatticeFunctionTable}{Lattice\+Function\+Table} $\ast$twiss, double freq, double crossing, double phase)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a261a44ddfc6788d6bb662a302a4a048e}\label{classParticleTracking_1_1CCFailureProcess_a261a44ddfc6788d6bb662a302a4a048e}} 
+{\bfseries C\+C\+Failure\+Process} (int priority, int mode, \hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$model, \hyperlink{classLatticeFunctionTable}{Lattice\+Function\+Table} $\ast$twiss, double freq, double crossing, double phase, int non\+\_\+fail\+\_\+turn, int fail\+\_\+turn)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a06335f46c5ba7832146e63e2a3dcf654}\label{classParticleTracking_1_1CCFailureProcess_a06335f46c5ba7832146e63e2a3dcf654}} 
+virtual void {\bfseries Initialise\+Process} (\hyperlink{classBunch}{Bunch} \&bunch)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_aa44d30217e3f47d96db39466b3842739}\label{classParticleTracking_1_1CCFailureProcess_aa44d30217e3f47d96db39466b3842739}} 
+virtual void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_aa82ef6c532bfb74a99650dcc621eac9e}\label{classParticleTracking_1_1CCFailureProcess_aa82ef6c532bfb74a99650dcc621eac9e}} 
+virtual void {\bfseries Do\+Process} (double ds)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a7f8667dc8441f0fe57df127700b79606}\label{classParticleTracking_1_1CCFailureProcess_a7f8667dc8441f0fe57df127700b79606}} 
+virtual double {\bfseries Get\+Max\+Allowed\+Step\+Size} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_adc086c1b44548ee89004c64b4a7d9e18}\label{classParticleTracking_1_1CCFailureProcess_adc086c1b44548ee89004c64b4a7d9e18}} 
+virtual double {\bfseries Calc\+M\+\_\+12} (int start, int end, double deltamu, bool horizontal)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_af94d94452a58b029a4a916e475c1e5e2}\label{classParticleTracking_1_1CCFailureProcess_af94d94452a58b029a4a916e475c1e5e2}} 
+virtual double {\bfseries Calc\+M\+\_\+22} (int start, int end, double deltamu, bool horizontal)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a2bb5e086e48d9f47d88a4f5d7357470d}\label{classParticleTracking_1_1CCFailureProcess_a2bb5e086e48d9f47d88a4f5d7357470d}} 
+virtual double {\bfseries Calc\+M\+\_\+12} (int start, int end, bool horizontal)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_aefd15e7f80af1811e19e8e813279c31a}\label{classParticleTracking_1_1CCFailureProcess_aefd15e7f80af1811e19e8e813279c31a}} 
+virtual double {\bfseries Calc\+M\+\_\+22} (int start, int end, bool horizontal)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_acf1f4eb29fed5c90248291eb554e60a1}\label{classParticleTracking_1_1CCFailureProcess_acf1f4eb29fed5c90248291eb554e60a1}} 
+virtual pair$<$ double, double $>$ {\bfseries Calc\+Mu} (int element)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_aecf310c2335ed1b0ced8e24025ad55bf}\label{classParticleTracking_1_1CCFailureProcess_aecf310c2335ed1b0ced8e24025ad55bf}} 
+virtual pair$<$ double, double $>$ {\bfseries Calc\+Delta\+Mu} (int element1, int element2)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_acdf305adc230d6c2fd19e5d503151bc5}\label{classParticleTracking_1_1CCFailureProcess_acdf305adc230d6c2fd19e5d503151bc5}} 
+virtual double {\bfseries Calc\+V1} (double M12)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a4531684518c8196140b868e80bbf7973}\label{classParticleTracking_1_1CCFailureProcess_a4531684518c8196140b868e80bbf7973}} 
+virtual double {\bfseries Calc\+V1} (double deltamu, int n1, int n2, bool horizontal)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a5f3f22a7613e9ec6c6e0bbe92753027b}\label{classParticleTracking_1_1CCFailureProcess_a5f3f22a7613e9ec6c6e0bbe92753027b}} 
+virtual double {\bfseries Calc\+V2} (double V1, double M22)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_ac0f155202d76cc1c521b3126def5e1a0}\label{classParticleTracking_1_1CCFailureProcess_ac0f155202d76cc1c521b3126def5e1a0}} 
+virtual void {\bfseries Apply\+Pre\+C\+C\+Kick} (\hyperlink{classPSvector}{P\+Svector} \&p, double V, double M12, bool horizontal)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a40f00d034e33703c0825428b974ff585}\label{classParticleTracking_1_1CCFailureProcess_a40f00d034e33703c0825428b974ff585}} 
+virtual void {\bfseries Apply\+Post\+C\+C\+Kick} (\hyperlink{classPSvector}{P\+Svector} \&p, double V, double M12, bool horizontal)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_a5fc3da714963b381a84e8fad8ad301b8}\label{classParticleTracking_1_1CCFailureProcess_a5fc3da714963b381a84e8fad8ad301b8}} 
+virtual void {\bfseries Set\+Failure\+On\+Off} (bool onoff)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_abb6bbf06ce70c224d428f32282d3dc4a}\label{classParticleTracking_1_1CCFailureProcess_abb6bbf06ce70c224d428f32282d3dc4a}} 
+virtual void {\bfseries Set\+Failure\+Turns} (int ft)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_af537977e29d771616b53f85d3d20b712}\label{classParticleTracking_1_1CCFailureProcess_af537977e29d771616b53f85d3d20b712}} 
+virtual void {\bfseries Set\+Non\+Failure\+Turns} (int nft)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1CCFailureProcess_ab816440403837c79221b8a71049ce982}\label{classParticleTracking_1_1CCFailureProcess_ab816440403837c79221b8a71049ce982}} 
+virtual void {\bfseries Set\+Failure\+Planes} (bool hor, bool ver)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/C\+C\+Failure\+Process.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/C\+C\+Failure\+Process.\+cpp\end{DoxyCompactItemize}

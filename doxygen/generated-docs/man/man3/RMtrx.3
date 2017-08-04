@@ -1,0 +1,90 @@
+.TH "RMtrx" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RMtrx
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MatrixMaps\&.h>\fP
+.PP
+Inherits \fBLinMtrxBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRMtrx\fP (int ndf=3, double P=0)"
+.br
+.ti -1c
+.RI "\fBRMtrx\fP (const \fBRealMatrix\fP &RR, double P0=0)"
+.br
+.ti -1c
+.RI "void \fBSetRefMomentum\fP (double p)"
+.br
+.ti -1c
+.RI "\fBPSvector\fP & \fBApply\fP (\fBPSvector\fP &x) const"
+.br
+.ti -1c
+.RI "\fBPSvector\fP & \fBApply\fP (\fBPSvector\fP &x, double p0) const"
+.br
+.ti -1c
+.RI "PSvectorArray & \fBApply\fP (PSvectorArray &xa) const"
+.br
+.ti -1c
+.RI "PSvectorArray & \fBApply\fP (PSvectorArray &xa, double p0) const"
+.br
+.ti -1c
+.RI "\fBPSmoments\fP & \fBApply\fP (\fBPSmoments\fP &sigma) const"
+.br
+.ti -1c
+.RI "\fBPSmoments\fP & \fBApply\fP (\fBPSmoments\fP &sigma, double p0) const"
+.br
+.ti -1c
+.RI "PSmomentsArray & \fBApply\fP (PSmomentsArray &sigmaArray) const"
+.br
+.ti -1c
+.RI "PSmomentsArray & \fBApply\fP (PSmomentsArray &sigmaArray, double p0) const"
+.br
+.ti -1c
+.RI "\fBRMtrx\fP & \fBInvert\fP ()"
+.br
+.ti -1c
+.RI "\fBRMtrx\fP & \fBoperator*=\fP (const \fBRMtrx\fP &rhs)"
+.br
+.ti -1c
+.RI "double \fBoperator()\fP (int i, int j) const"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBRMtrx\fP represents a linear map which is implemented by a matrix (R matrix)\&. The map can act on single vectors or first- and second-order moments, or arrays of the above\&. The dimensionality of the map is specified in the number of degrees of freedom (1,2 or 3)\&. In addition, \fBRMtrx\fP objects are associated with a specific reference momentum, about which the map (R) is calculated\&. Functions are provided for mapping vectors or moments whose reference momenta are different from the \fBRMtrx\fP reference\&. \fBRMtrx\fP objects can be multiplied together and inverted\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RMtrx::RMtrx (int ndf = \fC3\fP, double P = \fC0\fP)\fC [inline]\fP, \fC [explicit]\fP"
+Constructor taking the reference momentum and the number of degrees of freedom (ndf) for the matrix\&. The matrix is dimensioned but not initialised\&. 
+.SS "RMtrx::RMtrx (const \fBRealMatrix\fP & RR, double P0 = \fC0\fP)\fC [inline]\fP"
+Construction from an aribrary matrix\&. The matrix should be square with dimension 2n, where n is 1,2 or 3\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBPSvector\fP & RMtrx::Apply (\fBPSvector\fP & x) const"
+Transforms the vector x by R such that x->R\&.x\&. The second form explicitly specifies the reference momentum (GeV/c) for the vector\&. Returns x\&. 
+.SS "PSvectorArray & RMtrx::Apply (PSvectorArray & xa) const"
+Transforms each vector in xa by R such that x->R\&.x\&. The second form explicitly specifies the reference momentum (GeV/c) for the vectors\&. Returns xa\&. 
+.SS "\fBPSmoments\fP & RMtrx::Apply (\fBPSmoments\fP & sigma) const"
+Transform sigma by R\&. If X,S represent the first- and second-order moments respectively, then X->R\&.X and S->R\&.S\&.R'\&. The second form explicitly specifies the reference momentum (GeV/c) for the moments\&. Returns sigma\&. 
+.SS "PSmomentsArray & RMtrx::Apply (PSmomentsArray & sigmaArray) const"
+Transforms the moments in sigmaArray by R (see apply(PSmoments&) for details)\&. The second form explicitly specifies the reference momentum (GeV/c) for the moments\&. Returns sigmaArray\&. 
+.SS "\fBRMtrx\fP & RMtrx::Invert ()"
+Invert the matrix\&. 
+.SS "double RMtrx::operator() (int i, int j) const\fC [inline]\fP"
+array-like accessor 
+.SS "\fBRMtrx\fP & RMtrx::operator*= (const \fBRMtrx\fP & rhs)"
+Dot operation\&. (\fIthis)\fP=R represents (*this)->R\&.(*this)\&. 
+.SS "void RMtrx::SetRefMomentum (double p)\fC [inline]\fP"
+Set the reference momentum 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

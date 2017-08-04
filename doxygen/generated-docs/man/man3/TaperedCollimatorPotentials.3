@@ -1,0 +1,58 @@
+.TH "TaperedCollimatorPotentials" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TaperedCollimatorPotentials
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CollimatorPotentialModels\&.h>\fP
+.PP
+Inherits \fBCollimatorWakePotentials\fP, and \fBCollimatorWakePotentials\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTaperedCollimatorPotentials\fP (int m, double aa, double bb)"
+.br
+.ti -1c
+.RI "virtual double \fBWlong\fP (double z, int m) const"
+.br
+.ti -1c
+.RI "virtual double \fBWtrans\fP (double z, int m) const"
+.br
+.ti -1c
+.RI "double \fBWlong\fP (double z) const"
+.br
+.ti -1c
+.RI "double \fBWtrans\fP (double z) const"
+.br
+.ti -1c
+.RI "\fBTaperedCollimatorPotentials\fP (int m, double rada, double radb)"
+.br
+.ti -1c
+.RI "double \fBWlong\fP (double z) const"
+.br
+.ti -1c
+.RI "double \fBWtrans\fP (double z) const"
+.br
+.ti -1c
+.RI "double \fBWlong\fP (double z, int m) const"
+.br
+.ti -1c
+.RI "double \fBWtrans\fP (double z, int m) const"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+The geometric wake potential: Steeply tapered collimator moving from aperture b to aperture a Ref\&.: B\&.W\&.Zotter and S\&.A\&.Kheifets, Impedances and Wakes in High-Energy Particle Accelerators, World Scientific (1998) 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "TaperedCollimatorPotentials::TaperedCollimatorPotentials (int m, double aa, double bb)"
+The geometric wake potential 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,58 @@
+.TH "ParticleTracking::CollimationOutput" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ParticleTracking::CollimationOutput
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CollimationOutput\&.h>\fP
+.PP
+Inherited by \fBParticleTracking::FlukaCollimationOutput\fP, and \fBParticleTracking::LossMapCollimationOutput\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCollimationOutput\fP (OutputType otype=nearestelement)"
+.br
+.ti -1c
+.RI "virtual void \fBFinalise\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBOutput\fP (std::ostream *os)"
+.br
+.ti -1c
+.RI "virtual void \fBDispose\fP (\fBAcceleratorComponent\fP &currcomponent, double pos, \fBParticle\fP &particle, int turn=0)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "OutputType \fBotype\fP"
+.br
+.ti -1c
+.RI "\fBLossData\fP \fBtemp\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBLossData\fP > \fBDeadParticles\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBLossData\fP > \fBOutputLosses\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAcceleratorComponent\fP * \fBcurrentComponent\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBCollimationOutput\fP handles the output from the collimation process, specifically lost particles\&. It is called from CollimateProtonProcess::DoScatter and allows the user to create loss map output files, root hist files, or a user specified output format\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,109 @@
+.TH "TTrackSim< T >" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TTrackSim< T >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TTrackSim\&.h>\fP
+.PP
+Inherits \fBTrackingSimulation\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef __TYPENAME__ T::bunch_type \fBbunch_type\fP"
+.br
+.ti -1c
+.RI "typedef __TYPENAME__ bunch_type::particle_type \fBparticle_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBTTrnsProc\fP< T > \fBtransport_process\fP"
+.br
+.ti -1c
+.RI "typedef __TYPENAME__ transport_process::integrator_type \fBintegrator_type\fP"
+.br
+.ti -1c
+.RI "typedef __TYPENAME__ T::ISetBase \fBintegrator_set_base\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTTrackSim\fP (const \fBAcceleratorModel::Beamline\fP &bline, bunch_type *bunch0=nullptr, bool del=false)"
+.br
+.ti -1c
+.RI "\fBTTrackSim\fP (const \fBAcceleratorModel::Beamline\fP &bline, const particle_type &p, double Pref)"
+.br
+.ti -1c
+.RI "\fBTTrackSim\fP (const \fBAcceleratorModel::RingIterator\fP &ring, bunch_type *bunch0=nullptr, bool del=false)"
+.br
+.ti -1c
+.RI "\fBTTrackSim\fP (const \fBAcceleratorModel::RingIterator\fP &ring, const particle_type &p, double Pref)"
+.br
+.ti -1c
+.RI "\fBTTrackSim\fP ()"
+.br
+.ti -1c
+.RI "bool \fBRegisterIntegrator\fP (integrator_type *intg)"
+.br
+.ti -1c
+.RI "void \fBSetInitialBunch\fP (bunch_type *pbunch0, bool del=false)"
+.br
+.ti -1c
+.RI "bunch_type * \fBTrack\fP (bunch_type *)"
+.br
+.ti -1c
+.RI "void \fBSetInitialParticle\fP (const particle_type &p, double Pref)"
+.br
+.ti -1c
+.RI "const bunch_type & \fBGetTrackedBunch\fP () const"
+.br
+.ti -1c
+.RI "bunch_type & \fBGetTrackedBunch\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetIntegratorSet\fP (const integrator_set_base *iset)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class T>
+.br
+class TTrackSim< T >"
+template class to instantiate a \fBTrackingSimulation\fP class which uses a specific concrete \fBComponentTracker\fP to track the associated bunch representation through a beamline\&.
+.PP
+Template parameter T must be a valid concrete \fBComponentTracker\fP class 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T > \fBTTrackSim\fP< T >::\fBTTrackSim\fP (const \fBAcceleratorModel::Beamline\fP & bline, bunch_type * bunch0 = \fCnullptr\fP, bool del = \fCfalse\fP)\fC [explicit]\fP"
+Constructor taking the beamline to be tracked and a pointer to the initial ParticleBunch\&. If bunch0=0 (default) the initial beam must be specified by either a call to SetInitialBeam(), or to SetInitialBeamCtor (from \fBTrackingSimulation\fP)\&. 
+.SS "template<class T > \fBTTrackSim\fP< T >::\fBTTrackSim\fP (const \fBAcceleratorModel::Beamline\fP & bline, const particle_type & p, double Pref)"
+Constructor used for single particle tracking\&. The constructor takes the beamline to be tracked, and the initial particle\&. 
+.SS "template<class T > \fBTTrackSim\fP< T >::\fBTTrackSim\fP (const \fBAcceleratorModel::RingIterator\fP & ring, bunch_type * bunch0 = \fCnullptr\fP, bool del = \fCfalse\fP)\fC [explicit]\fP"
+Constructor taking the beamline to be tracked and a pointer to the initial ParticleBunch\&. If bunch0=0 (default) the initial beam must be specified by either a call to SetInitialBeam(), or to SetInitialBeamCtor (from \fBTrackingSimulation\fP)\&. 
+.SS "template<class T > \fBTTrackSim\fP< T >::\fBTTrackSim\fP (const \fBAcceleratorModel::RingIterator\fP & ring, const particle_type & p, double Pref)"
+Constructor used for single particle tracking\&. The constructor takes the beamline to be tracked, and the initial particle\&. 
+.SS "template<class T > \fBTTrackSim\fP< T >::\fBTTrackSim\fP ()"
+Default constructor 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T> const bunch_type& \fBTTrackSim\fP< T >::GetTrackedBunch () const\fC [inline]\fP"
+Returns a reference to the current tracked bunch\&. 
+.SS "template<class T> bool \fBTTrackSim\fP< T >::RegisterIntegrator (integrator_type * intg)\fC [inline]\fP"
+Register an additional (or override) integrator\&. 
+.SS "template<class T> void \fBTTrackSim\fP< T >::SetInitialBunch (bunch_type * pbunch0, bool del = \fCfalse\fP)\fC [inline]\fP"
+Sets the initial ParticleBunch for future tracking operations\&. 
+.SS "template<class T > void \fBTTrackSim\fP< T >::SetInitialParticle (const particle_type & p, double Pref)"
+Sets the initial particle for single-particle tracking\&. 
+.SS "template<class T > __TYPENAME__ \fBTTrackSim\fP< T >::bunch_type * \fBTTrackSim\fP< T >::Track (bunch_type * aBunch)"
+Overrides the current bunch constructor and tracks the supplied bunch\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

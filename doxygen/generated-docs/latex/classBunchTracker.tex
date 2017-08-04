@@ -1,0 +1,63 @@
+\hypertarget{classBunchTracker}{}\section{Bunch\+Tracker$<$ P $>$ Class Template Reference}
+\label{classBunchTracker}\index{Bunch\+Tracker$<$ P $>$@{Bunch\+Tracker$<$ P $>$}}
+
+
+{\ttfamily \#include $<$Tracking\+Simulation.\+h$>$}
+
+Inheritance diagram for Bunch\+Tracker$<$ P $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBunchTracker}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBunchTracker_a29e2137d8cc489998b6866707b1e326b}\label{classBunchTracker_a29e2137d8cc489998b6866707b1e326b}} 
+typedef P\+::bunch\+\_\+type {\bfseries bunch\+\_\+type}
+\item 
+\mbox{\Hypertarget{classBunchTracker_a169c5a919b7864192d34f96ae5ad0b5e}\label{classBunchTracker_a169c5a919b7864192d34f96ae5ad0b5e}} 
+typedef P {\bfseries transport\+\_\+process}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBunchTracker_a724b0e1b99f6b86e8ba7922461548e18}{Bunch\+Tracker} (const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&bline)
+\item 
+\hyperlink{classBunchTracker_aac4546a7a80bd46d2e428836202e3bad}{Bunch\+Tracker} (const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&bline, bunch\+\_\+type $\ast$bunch0)
+\item 
+\mbox{\Hypertarget{classBunchTracker_abe4b943181ba4389901d7f2c608b8a63}\label{classBunchTracker_abe4b943181ba4389901d7f2c608b8a63}} 
+bunch\+\_\+type \& {\bfseries Get\+Bunch} ()
+\item 
+\mbox{\Hypertarget{classBunchTracker_a99324bea77d070cf43028114544a9e61}\label{classBunchTracker_a99324bea77d070cf43028114544a9e61}} 
+transport\+\_\+process \& {\bfseries Get\+Transport\+Process} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class P$>$\newline
+class Bunch\+Tracker$<$ P $>$}
+
+A template class which is used to implement a bunch implementation specific \hyperlink{classTrackingSimulation}{Tracking\+Simulation}. P must be a bunch specific transport process which has only a default constructor. It must also define P\+::bunch\+\_\+type which specifies the type of bunch implementation to be tracked. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBunchTracker_a724b0e1b99f6b86e8ba7922461548e18}\label{classBunchTracker_a724b0e1b99f6b86e8ba7922461548e18}} 
+\index{Bunch\+Tracker@{Bunch\+Tracker}!Bunch\+Tracker@{Bunch\+Tracker}}
+\index{Bunch\+Tracker@{Bunch\+Tracker}!Bunch\+Tracker@{Bunch\+Tracker}}
+\subsubsection{\texorpdfstring{Bunch\+Tracker()}{BunchTracker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class P $>$ \\
+\hyperlink{classBunchTracker}{Bunch\+Tracker}$<$ P $>$\+::\hyperlink{classBunchTracker}{Bunch\+Tracker} (\begin{DoxyParamCaption}\item[{const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&}]{bline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor taking the beamline to be tracked. The initial bunch must be specified by supplying a concrete \hyperlink{classBunchConstructor}{Bunch\+Constructor} via Set\+Initial\+Bunch\+Ctor. \mbox{\Hypertarget{classBunchTracker_aac4546a7a80bd46d2e428836202e3bad}\label{classBunchTracker_aac4546a7a80bd46d2e428836202e3bad}} 
+\index{Bunch\+Tracker@{Bunch\+Tracker}!Bunch\+Tracker@{Bunch\+Tracker}}
+\index{Bunch\+Tracker@{Bunch\+Tracker}!Bunch\+Tracker@{Bunch\+Tracker}}
+\subsubsection{\texorpdfstring{Bunch\+Tracker()}{BunchTracker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class P $>$ \\
+\hyperlink{classBunchTracker}{Bunch\+Tracker}$<$ P $>$\+::\hyperlink{classBunchTracker}{Bunch\+Tracker} (\begin{DoxyParamCaption}\item[{const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&}]{bline,  }\item[{bunch\+\_\+type $\ast$}]{bunch0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \hyperlink{classBunchTracker}{Bunch\+Tracker} taking the beamline to be tracked and the initial bunch to be used. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Tracking\+Simulation.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+.TH "Collimation::ScatteringModelFixed" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Collimation::ScatteringModelFixed
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ScatteringModelsMerlin\&.h>\fP
+.PP
+Inherits \fBCollimation::ScatteringModel\fP\&.
+.PP
+Inherited by \fBCollimation::ScatteringModelMerlin\fP, \fBCollimation::ScatteringModelSixTrack\fP, \fBCollimation::ScatteringModelSixTrackElastic\fP, \fBCollimation::ScatteringModelSixTrackIoniz\fP, and \fBCollimation::ScatteringModelSixTrackSD\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAddProcess\fP (\fBCollimation::ScatteringProcess\fP *S)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBis_fixed\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Base class for fixed scattering models
+.PP
+Classes derived from this should set up their scattering processes in their constructor, and then set is_fixed to true\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Collimation::ScatteringModelFixed::AddProcess (\fBCollimation::ScatteringProcess\fP * S)\fC [virtual]\fP"
+For fixed scattering models, this cannot be called from outside of the constructor\&. 
+.PP
+Reimplemented from \fBCollimation::ScatteringModel\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

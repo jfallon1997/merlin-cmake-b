@@ -1,0 +1,48 @@
+.TH "TIC_ctor< E >" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TIC_ctor< E >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBChannelServer::ChannelCtor\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef E \fBelement_type\fP"
+.br
+.ti -1c
+.RI "typedef double(E::* \fBread_f\fP) () const"
+.br
+.ti -1c
+.RI "typedef void(E::* \fBwrite_f\fP) (double)"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTIC_ctor\fP (const string &aType, const string &aKey, read_f rmf, write_f wmf=0)"
+.br
+.ti -1c
+.RI "virtual \fBROChannel\fP * \fBConstructRO\fP (\fBModelElement\fP *anElement)"
+.br
+.ti -1c
+.RI "virtual \fBRWChannel\fP * \fBConstructRW\fP (\fBModelElement\fP *anElement)"
+.br
+.ti -1c
+.RI "double \fBReadFrom\fP (const E *elmnt)"
+.br
+.ti -1c
+.RI "void \fBWriteTo\fP (E *elmnt, double value)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -2,7 +2,7 @@
  *
 * \section intro_sec Introduction
 *
-* This is the introduction.
+* MERLIN is a C++ accelerator physics library, which has been extended to be used for large scale proton collimation simulations, with the aim of providing an accurate simulation of the Large Hadron Collider (LHC) collimation system. MERLIN is used to simulate the nominal optics at 7 TeV of the LHC in order to generate loss maps, using a thick lens tracking model. 
 *
 * \section install_sec Installation
 *
@@ -40,6 +40,6 @@
 * \author James Molson
 * \author Haroon Rafique
 * \author Sam Tygier
-* \version 4.9
-* \date 2001-2016
+* \version 5.02
+* \date 2001-2017
 */

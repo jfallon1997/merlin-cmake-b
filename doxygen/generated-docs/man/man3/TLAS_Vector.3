@@ -1,0 +1,136 @@
+.TH "TLAS::Vector< T >" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TLAS::Vector< T >
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef T \fBvalue_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector\fP (Dimension n)"
+.br
+.ti -1c
+.RI "\fBVector\fP (const T &x, Dimension n)"
+.br
+.ti -1c
+.RI "\fBVector\fP (const T *p, Dimension n)"
+.br
+.ti -1c
+.RI "\fBVector\fP (const \fBVector\fP< T > &rhs)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator=\fP (const \fBVector\fP &rhs)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBcopy\fP (const \fBVector\fP &rhs)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator=\fP (const T &val)"
+.br
+.ti -1c
+.RI "Dimension \fBsize\fP () const"
+.br
+.ti -1c
+.RI "void \fBredim\fP (Dimension d)"
+.br
+.ti -1c
+.RI "T & \fBoperator[]\fP (Subscript i)"
+.br
+.ti -1c
+.RI "T & \fBoperator()\fP (Subscript i)"
+.br
+.ti -1c
+.RI "T \fBoperator[]\fP (Subscript i) const"
+.br
+.ti -1c
+.RI "T \fBoperator()\fP (Subscript i) const"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > \fBoperator()\fP (const Range &r)"
+.br
+.ti -1c
+.RI "\fBSubVector\fP< T > \fBoperator[]\fP (const Range &r)"
+.br
+.ti -1c
+.RI "\fBConstSubVector\fP< T > \fBoperator()\fP (const Range &r) const"
+.br
+.ti -1c
+.RI "\fBConstSubVector\fP< T > \fBoperator[]\fP (const Range &r) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBVector\fP< T > &v) const"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBVector\fP< T > &v) const"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator+=\fP (const T &s)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator\-=\fP (const T &s)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator*=\fP (const T &s)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator/=\fP (const T &s)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator+=\fP (const \fBVector\fP< T > &u)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator\-=\fP (const \fBVector\fP< T > &u)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator*=\fP (const \fBVector\fP< T > &u)"
+.br
+.ti -1c
+.RI "const \fBVector\fP< T > & \fBoperator/=\fP (const \fBVector\fP< T > &u)"
+.br
+.ti -1c
+.RI "iterator \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "iterator \fBend\fP ()"
+.br
+.ti -1c
+.RI "const_iterator \fBbegin\fP () const"
+.br
+.ti -1c
+.RI "const_iterator \fBend\fP () const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVEC_TYPE_DEFS\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSubVector< T >\fP"
+.br
+.ti -1c
+.RI "class \fBConstSubVector< T >\fP"
+.br
+.ti -1c
+.RI "class \fBMatrix< T >\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

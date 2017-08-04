@@ -1,0 +1,127 @@
+\hypertarget{classTLAS_1_1Vector}{}\section{T\+L\+AS\+:\+:Vector$<$ T $>$ Class Template Reference}
+\label{classTLAS_1_1Vector}\index{T\+L\+A\+S\+::\+Vector$<$ T $>$@{T\+L\+A\+S\+::\+Vector$<$ T $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a6dcbe6a636aa1d75263bbc1f14e85935}\label{classTLAS_1_1Vector_a6dcbe6a636aa1d75263bbc1f14e85935}} 
+typedef T {\bfseries value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a89a07ccfddfbea1350161b94fe27a426}\label{classTLAS_1_1Vector_a89a07ccfddfbea1350161b94fe27a426}} 
+{\bfseries Vector} (Dimension n)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_adc9ed95f59f281ab26d5dc4389990e78}\label{classTLAS_1_1Vector_adc9ed95f59f281ab26d5dc4389990e78}} 
+{\bfseries Vector} (const T \&x, Dimension n)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_af0ba54bddd1df75dfd70c2e3dfa83dc2}\label{classTLAS_1_1Vector_af0ba54bddd1df75dfd70c2e3dfa83dc2}} 
+{\bfseries Vector} (const T $\ast$p, Dimension n)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_ad3c77eaaa01e17752a69fa68e568aa05}\label{classTLAS_1_1Vector_ad3c77eaaa01e17752a69fa68e568aa05}} 
+{\bfseries Vector} (const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \&rhs)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a47a17db1fef9c5b76310d470254461b4}\label{classTLAS_1_1Vector_a47a17db1fef9c5b76310d470254461b4}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator=} (const \hyperlink{classTLAS_1_1Vector}{Vector} \&rhs)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a1465bd31f4f95904c52caccfdcc0916f}\label{classTLAS_1_1Vector_a1465bd31f4f95904c52caccfdcc0916f}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries copy} (const \hyperlink{classTLAS_1_1Vector}{Vector} \&rhs)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_adc03cf197ec8ae79d9b371920e09c795}\label{classTLAS_1_1Vector_adc03cf197ec8ae79d9b371920e09c795}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator=} (const T \&val)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a818f87944338f3403913007330402513}\label{classTLAS_1_1Vector_a818f87944338f3403913007330402513}} 
+Dimension {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a1043d428dce104ff2ae33d3eaf1af151}\label{classTLAS_1_1Vector_a1043d428dce104ff2ae33d3eaf1af151}} 
+void {\bfseries redim} (Dimension d)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_ad0ad71437f18f0105b46220ced451917}\label{classTLAS_1_1Vector_ad0ad71437f18f0105b46220ced451917}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (Subscript i)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a845dc03e5990989f8da4ce7a5309016f}\label{classTLAS_1_1Vector_a845dc03e5990989f8da4ce7a5309016f}} 
+T \& {\bfseries operator()} (Subscript i)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_afb0c652c5bd67b3b0e3e4c585dcdf422}\label{classTLAS_1_1Vector_afb0c652c5bd67b3b0e3e4c585dcdf422}} 
+T {\bfseries operator\mbox{[}$\,$\mbox{]}} (Subscript i) const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a5b04a60abde811475000b56b436fd635}\label{classTLAS_1_1Vector_a5b04a60abde811475000b56b436fd635}} 
+T {\bfseries operator()} (Subscript i) const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a9c895b00200dfb9177ccfb53007ba07c}\label{classTLAS_1_1Vector_a9c895b00200dfb9177ccfb53007ba07c}} 
+\hyperlink{classTLAS_1_1SubVector}{Sub\+Vector}$<$ T $>$ {\bfseries operator()} (const Range \&r)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a91142f437ebe19655bb30fc503ba7e49}\label{classTLAS_1_1Vector_a91142f437ebe19655bb30fc503ba7e49}} 
+\hyperlink{classTLAS_1_1SubVector}{Sub\+Vector}$<$ T $>$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (const Range \&r)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a56e26eaa87a717b447edac32f614108f}\label{classTLAS_1_1Vector_a56e26eaa87a717b447edac32f614108f}} 
+\hyperlink{classTLAS_1_1ConstSubVector}{Const\+Sub\+Vector}$<$ T $>$ {\bfseries operator()} (const Range \&r) const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_adf43cc2acf68a266688ddd9571ea75ed}\label{classTLAS_1_1Vector_adf43cc2acf68a266688ddd9571ea75ed}} 
+\hyperlink{classTLAS_1_1ConstSubVector}{Const\+Sub\+Vector}$<$ T $>$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (const Range \&r) const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_ab56f5952caf2ebd798e4e8d200abf2ed}\label{classTLAS_1_1Vector_ab56f5952caf2ebd798e4e8d200abf2ed}} 
+bool {\bfseries operator==} (const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \&v) const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_aaaa94aa70541b73a126769415ca9ca91}\label{classTLAS_1_1Vector_aaaa94aa70541b73a126769415ca9ca91}} 
+bool {\bfseries operator!=} (const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \&v) const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a4ef8ac6ab6aac02280ad030b35d9c606}\label{classTLAS_1_1Vector_a4ef8ac6ab6aac02280ad030b35d9c606}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator+=} (const T \&s)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_aafd582262b51fd9496ebc8d35b20c6db}\label{classTLAS_1_1Vector_aafd582262b51fd9496ebc8d35b20c6db}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator-\/=} (const T \&s)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_ae21cb3cc6e9993752de27f5366c380d7}\label{classTLAS_1_1Vector_ae21cb3cc6e9993752de27f5366c380d7}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator$\ast$=} (const T \&s)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a747f2e7048cbc9ab8b6adeed350f78f0}\label{classTLAS_1_1Vector_a747f2e7048cbc9ab8b6adeed350f78f0}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator/=} (const T \&s)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_ae161dedb88ccfb63590c40efe2092bb4}\label{classTLAS_1_1Vector_ae161dedb88ccfb63590c40efe2092bb4}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator+=} (const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \&u)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a845414863cb3f427afb44967c61a9f45}\label{classTLAS_1_1Vector_a845414863cb3f427afb44967c61a9f45}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator-\/=} (const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \&u)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a76169429a540fa196fd8318daa57ac36}\label{classTLAS_1_1Vector_a76169429a540fa196fd8318daa57ac36}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator$\ast$=} (const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \&u)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a810fa0897c966423471c0bba943bee06}\label{classTLAS_1_1Vector_a810fa0897c966423471c0bba943bee06}} 
+const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \& {\bfseries operator/=} (const \hyperlink{classTLAS_1_1Vector}{Vector}$<$ T $>$ \&u)
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a5332f13d47133c510d982ea8606fd758}\label{classTLAS_1_1Vector_a5332f13d47133c510d982ea8606fd758}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_aa6fd84d5ce9792005ad1cb25088835a7}\label{classTLAS_1_1Vector_aa6fd84d5ce9792005ad1cb25088835a7}} 
+iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a1e2894d7e4831ee2383c57a79112fe6f}\label{classTLAS_1_1Vector_a1e2894d7e4831ee2383c57a79112fe6f}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a0bf02b86ef83f993c90a573055633417}\label{classTLAS_1_1Vector_a0bf02b86ef83f993c90a573055633417}} 
+const\+\_\+iterator {\bfseries end} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a778bcbf4de139491f3eb19afd2491080}\label{classTLAS_1_1Vector_a778bcbf4de139491f3eb19afd2491080}} 
+{\bfseries V\+E\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+E\+FS}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_ae8eafab737fa8fc043dfc78dbbc714e9}\label{classTLAS_1_1Vector_ae8eafab737fa8fc043dfc78dbbc714e9}} 
+class {\bfseries Sub\+Vector$<$ T $>$}
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a21a6ef43038032d31a396de8c1e9aefe}\label{classTLAS_1_1Vector_a21a6ef43038032d31a396de8c1e9aefe}} 
+class {\bfseries Const\+Sub\+Vector$<$ T $>$}
+\item 
+\mbox{\Hypertarget{classTLAS_1_1Vector_a17fc06682c9f9c46f1e0e38b7af25b80}\label{classTLAS_1_1Vector_a17fc06682c9f9c46f1e0e38b7af25b80}} 
+class {\bfseries Matrix$<$ T $>$}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/T\+Matrix\+Lib.\+h\end{DoxyCompactItemize}

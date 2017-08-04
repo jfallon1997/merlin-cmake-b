@@ -1,0 +1,144 @@
+\hypertarget{classParticleTracking_1_1WakeFieldProcess}{}\section{Particle\+Tracking\+:\+:Wake\+Field\+Process Class Reference}
+\label{classParticleTracking_1_1WakeFieldProcess}\index{Particle\+Tracking\+::\+Wake\+Field\+Process@{Particle\+Tracking\+::\+Wake\+Field\+Process}}
+
+
+{\ttfamily \#include $<$Wake\+Field\+Process.\+h$>$}
+
+Inheritance diagram for Particle\+Tracking\+:\+:Wake\+Field\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classParticleTracking_1_1WakeFieldProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a99d30580bd30ed65f89b90f824f48286}\label{classParticleTracking_1_1WakeFieldProcess_a99d30580bd30ed65f89b90f824f48286}} 
+enum {\bfseries Impulse\+Location} \{ {\bfseries at\+Centre}, 
+{\bfseries at\+Exit}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a41dd0a60d75e81c6a7c3dea750b46fc1}\label{classParticleTracking_1_1WakeFieldProcess_a41dd0a60d75e81c6a7c3dea750b46fc1}} 
+{\bfseries Wake\+Field\+Process} (int prio, size\+\_\+t nb=100, double ns=3.\+0, string a\+ID=\char`\"{}W\+A\+K\+E\+F\+I\+E\+LD\char`\"{})
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_ae5a908f04f109abdfa1a16451ca9f2a9}\label{classParticleTracking_1_1WakeFieldProcess_ae5a908f04f109abdfa1a16451ca9f2a9}} 
+virtual void {\bfseries Initialise\+Process} (\hyperlink{classBunch}{Bunch} \&bunch)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a9f29981e6dc8f54513fb228b25d33038}\label{classParticleTracking_1_1WakeFieldProcess_a9f29981e6dc8f54513fb228b25d33038}} 
+virtual void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a2ad74df641b0917c485779702dab6ccb}\label{classParticleTracking_1_1WakeFieldProcess_a2ad74df641b0917c485779702dab6ccb}} 
+virtual void {\bfseries Do\+Process} (double ds)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a691495b9a80345b08e272b255bff0df0}\label{classParticleTracking_1_1WakeFieldProcess_a691495b9a80345b08e272b255bff0df0}} 
+virtual double {\bfseries Get\+Max\+Allowed\+Step\+Size} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_af9b823607eeda63d0e1767ba8a0b3541}\label{classParticleTracking_1_1WakeFieldProcess_af9b823607eeda63d0e1767ba8a0b3541}} 
+void {\bfseries Apply\+Impulse\+At} (Impulse\+Location loc)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a4c99283c0256613e38562014d0657132}\label{classParticleTracking_1_1WakeFieldProcess_a4c99283c0256613e38562014d0657132}} 
+void {\bfseries Include\+Transverse\+Wake} (bool flg)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a8a7dd612c3444919d0c63438a25c9c8a}\label{classParticleTracking_1_1WakeFieldProcess_a8a7dd612c3444919d0c63438a25c9c8a}} 
+void {\bfseries Dump\+Slice\+Centroids} (ostream \&) const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_ab840d814766c7eeae8925576f9466ddf}\label{classParticleTracking_1_1WakeFieldProcess_ab840d814766c7eeae8925576f9466ddf}} 
+void {\bfseries Set\+Filter} (int n, int m, int d)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a659230356b4d3f0f57d2d6d17e6a3415}\label{classParticleTracking_1_1WakeFieldProcess_a659230356b4d3f0f57d2d6d17e6a3415}} 
+void {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a0eed87487456a8b30834747958880317}\label{classParticleTracking_1_1WakeFieldProcess_a0eed87487456a8b30834747958880317}} 
+size\+\_\+t {\bfseries Calculate\+Qdist} ()
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a40774fddb2773cd0c21b9ab7f25f9385}\label{classParticleTracking_1_1WakeFieldProcess_a40774fddb2773cd0c21b9ab7f25f9385}} 
+virtual void {\bfseries Calculate\+WakeL} ()
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a59a41f6e7186fe7effb5522c278e911c}\label{classParticleTracking_1_1WakeFieldProcess_a59a41f6e7186fe7effb5522c278e911c}} 
+virtual void {\bfseries Calculate\+WakeT} ()
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a559c79cbaadbc0769cb208c090e57105}\label{classParticleTracking_1_1WakeFieldProcess_a559c79cbaadbc0769cb208c090e57105}} 
+virtual void {\bfseries Apply\+Wakefield} (double ds)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a254a06a8f79730bfe0a9f9403de235b6}\label{classParticleTracking_1_1WakeFieldProcess_a254a06a8f79730bfe0a9f9403de235b6}} 
+Impulse\+Location {\bfseries imploc}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a41df717d9b39be2064b7babd88e5c60f}\label{classParticleTracking_1_1WakeFieldProcess_a41df717d9b39be2064b7babd88e5c60f}} 
+double {\bfseries current\+\_\+s}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_ad3af4b5cc9fb90f2ecb897bd9f91ae48}\label{classParticleTracking_1_1WakeFieldProcess_ad3af4b5cc9fb90f2ecb897bd9f91ae48}} 
+double {\bfseries impulse\+\_\+s}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a079b212811832f409dff67033bca71d2}\label{classParticleTracking_1_1WakeFieldProcess_a079b212811832f409dff67033bca71d2}} 
+double {\bfseries clen}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_acd93b6cb4e95f1a5360577067601e674}\label{classParticleTracking_1_1WakeFieldProcess_acd93b6cb4e95f1a5360577067601e674}} 
+size\+\_\+t {\bfseries nbins}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_ae180c9720458d76f34d6581c7893e286}\label{classParticleTracking_1_1WakeFieldProcess_ae180c9720458d76f34d6581c7893e286}} 
+double {\bfseries nsig}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a161cca742606b99b9bcf1b4e189610fa}\label{classParticleTracking_1_1WakeFieldProcess_a161cca742606b99b9bcf1b4e189610fa}} 
+\hyperlink{classWakePotentials}{Wake\+Potentials} $\ast$ {\bfseries current\+Wake}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_af4d707e3b7b6e1d861854a8f981028c7}\label{classParticleTracking_1_1WakeFieldProcess_af4d707e3b7b6e1d861854a8f981028c7}} 
+std\+::vector$<$ Particle\+Bunch\+::iterator $>$ {\bfseries bunch\+Slices}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_af1d82c90b5c5b14585bf703096f6055d}\label{classParticleTracking_1_1WakeFieldProcess_af1d82c90b5c5b14585bf703096f6055d}} 
+std\+::vector$<$ double $>$ {\bfseries Qd}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_ad4ec36d0e23933f23563cb9aa1edf648}\label{classParticleTracking_1_1WakeFieldProcess_ad4ec36d0e23933f23563cb9aa1edf648}} 
+std\+::vector$<$ double $>$ {\bfseries Qdp}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a83a77503ee2b556d663f709fcd556eee}\label{classParticleTracking_1_1WakeFieldProcess_a83a77503ee2b556d663f709fcd556eee}} 
+std\+::vector$<$ double $>$ $\ast$ {\bfseries filter}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a4b407b6f5656a2e2d95302d4b0bcabca}\label{classParticleTracking_1_1WakeFieldProcess_a4b407b6f5656a2e2d95302d4b0bcabca}} 
+std\+::vector$<$ double $>$ {\bfseries wake\+\_\+x}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a9560b3cdbba78425a9c892be666b07e4}\label{classParticleTracking_1_1WakeFieldProcess_a9560b3cdbba78425a9c892be666b07e4}} 
+std\+::vector$<$ double $>$ {\bfseries wake\+\_\+y}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a2e0d65078f901191f894ff094270fc3f}\label{classParticleTracking_1_1WakeFieldProcess_a2e0d65078f901191f894ff094270fc3f}} 
+std\+::vector$<$ double $>$ {\bfseries wake\+\_\+z}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a8b64c7b759ff5ec657207a9bddf219cc}\label{classParticleTracking_1_1WakeFieldProcess_a8b64c7b759ff5ec657207a9bddf219cc}} 
+bool {\bfseries recalc}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_ad6c029b63a3bf27500ca99c2783fdb81}\label{classParticleTracking_1_1WakeFieldProcess_ad6c029b63a3bf27500ca99c2783fdb81}} 
+bool {\bfseries inc\+\_\+tw}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_aec0066fb8b62241da8dfa8123dd659b9}\label{classParticleTracking_1_1WakeFieldProcess_aec0066fb8b62241da8dfa8123dd659b9}} 
+double {\bfseries zmin}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_afcf4a8edfc33bba14e942ce3baee442b}\label{classParticleTracking_1_1WakeFieldProcess_afcf4a8edfc33bba14e942ce3baee442b}} 
+double {\bfseries zmax}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a29af178b7db2bc65485a4ab041df7557}\label{classParticleTracking_1_1WakeFieldProcess_a29af178b7db2bc65485a4ab041df7557}} 
+double {\bfseries dz}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1WakeFieldProcess_a4181227215fdf06c5b0a5ba240eedca3}\label{classParticleTracking_1_1WakeFieldProcess_a4181227215fdf06c5b0a5ba240eedca3}} 
+size\+\_\+t {\bfseries old\+Bunch\+Len}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class Wakefield\+Process Implements single-\/bunch wakefields.
+
+Modified by A.\+Wolski 12/2/2003 to include the derivative of the charge distribution for handling C\+SR wake fields.
+
+Modified by D.\+Kruecker 18.\+2.\+2008 to be used as base class for other wakefield types (collimator,coupler,...) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Wake\+Field\+Process.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Wake\+Field\+Process.\+cpp\end{DoxyCompactItemize}

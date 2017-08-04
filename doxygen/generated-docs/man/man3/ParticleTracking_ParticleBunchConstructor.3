@@ -1,0 +1,78 @@
+.TH "ParticleTracking::ParticleBunchConstructor" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ParticleTracking::ParticleBunchConstructor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ParticleBunchConstructor\&.h>\fP
+.PP
+Inherits \fBBunchConstructor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBParticleBunchConstructor\fP (const \fBBeamData\fP &beam, size_t npart, DistributionType dist=normalDistribution)"
+.br
+.ti -1c
+.RI "void \fBSetBunchData\fP (const \fBBeamData\fP &beam)"
+.br
+.ti -1c
+.RI "void \fBSetNumParticles\fP (size_t npart)"
+.br
+.ti -1c
+.RI "void \fBSetDistributionCutoff\fP (double cut)"
+.br
+.ti -1c
+.RI "void \fBSetDistributionCutoff\fP (const \fBPSvector\fP &cut)"
+.br
+.ti -1c
+.RI "virtual \fBBunch\fP * \fBConstructBunch\fP (int bunchIndex=0) const"
+.br
+.ti -1c
+.RI "virtual void \fBConstructBunchDistribution\fP (int bunchIndex=0) const"
+.br
+.ti -1c
+.RI "void \fBSetFilter\fP (\fBParticleBunchFilter\fP *filter)"
+.br
+.ti -1c
+.RI "\fBParticleBunch\fP * \fBConstructParticleBunch\fP () const"
+.br
+.ti -1c
+.RI "template<class T_bunch > T_bunch * \fBConstructParticleBunch\fP () const"
+.br
+.ti -1c
+.RI "void \fBForceCentroid\fP (bool fc)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Constructs a particle bunch with random particles taken from a 6D distribution\&. The phase space moments are supplied as a \fBBeamData\fP struct\&. The form of the distribution can be either normal (Gaussian), in which case the data supplied in the \fBBeamData\fP struct is interpreted as RMS values, or flat, in which case the data specifies the +- extents for a flat (rectangular) distribution\&.
+.PP
+An additional \fBParticleBunchFilter\fP can be specified which can further be used to modify the phase space distribution generated\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ParticleTracking::ParticleBunchConstructor::ParticleBunchConstructor (const \fBBeamData\fP & beam, size_t npart, DistributionType dist = \fCnormalDistribution\fP)"
+Constructor taking the beam data and the number of particles to generate\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBBunch\fP * ParticleTracking::ParticleBunchConstructor::ConstructBunch (int bunchIndex = \fC0\fP) const\fC [virtual]\fP"
+Constructs a new \fBParticleBunch\fP based on the current bunch parameter settings\&. Each call to ConstructBunch generates a new random distribution (seed)\&. The bunch Index is ignored in this case\&. Required due to pure virtual in \fBBunch\&.h\fP 
+.PP
+Implements \fBBunchConstructor\fP\&.
+.SS "void ParticleTracking::ParticleBunchConstructor::ForceCentroid (bool fc)"
+If fc==true, causes the centroids (means) of the particle distribution to be set to the specified centroid\&. When fc==false (default), the actually generated centroids will contain statistical variations from the desired values\&. 
+.SS "void ParticleTracking::ParticleBunchConstructor::SetBunchData (const \fBBeamData\fP & beam)"
+Sets the bunch information that will be used to generate the particle bunch\&. 
+.SS "void ParticleTracking::ParticleBunchConstructor::SetDistributionCutoff (double cut)"
+Sets the distribution cut-off in standard deviations\&. Passing 0 indicates that no cut-off be applied (default)\&. Only applies to normal distributions\&. The second form allows individual cutoffs for each of the six phase-space coordinates\&. 
+.SS "void ParticleTracking::ParticleBunchConstructor::SetFilter (\fBParticleBunchFilter\fP * filter)\fC [inline]\fP"
+Sets the filter to be used during bunch construction\&. A NULL pointer indicates no filter\&. 
+.SS "void ParticleTracking::ParticleBunchConstructor::SetNumParticles (size_t npart)"
+Sets the number of particles to be generated\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

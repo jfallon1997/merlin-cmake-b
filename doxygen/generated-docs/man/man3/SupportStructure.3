@@ -1,0 +1,48 @@
+.TH "SupportStructure" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SupportStructure
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBSequenceFrame\fP\&.
+.PP
+Inherited by \fBGirderMount\fP, and \fBSimpleMount\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBType\fP { \fBsimple\fP, \fBgirder\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSupportStructure\fP (const \fBSupportStructure\fP &rhs)"
+.br
+.ti -1c
+.RI "int \fBExportSupports\fP (AcceleratorSupportList &supports)"
+.br
+.ti -1c
+.RI "virtual \fBTransform3D\fP \fBGetLocalFrameTransform\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBConsolidateConstruction\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSupportStructure\fP (const string &\fBid\fP, Type type)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

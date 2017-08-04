@@ -1,0 +1,80 @@
+.TH "ParticleTracking::LossData" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ParticleTracking::LossData
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CollimationOutput\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBLossTypes\fP { \fBCollimator\fP, \fBCold\fP, \fBWarm\fP, \fBUndefined\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (\fBLossData\fP other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (\fBLossData\fP other) const"
+.br
+.ti -1c
+.RI "\fBLossData\fP \fBoperator+\fP (\fBLossData\fP other)"
+.br
+.ti -1c
+.RI "\fBLossData\fP \fBoperator++\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBElementName\fP"
+.br
+.ti -1c
+.RI "\fBPSvector\fP \fBp\fP"
+.br
+.ti -1c
+.RI "double \fBs\fP"
+.br
+.ti -1c
+.RI "double \fBinterval\fP"
+.br
+.ti -1c
+.RI "double \fBposition\fP"
+.br
+.ti -1c
+.RI "double \fBlength\fP"
+.br
+.ti -1c
+.RI "double \fBlost\fP"
+.br
+.ti -1c
+.RI "LossTypes \fBtemperature\fP"
+.br
+.ti -1c
+.RI "int \fBturn\fP"
+.br
+.ti -1c
+.RI "int \fBcoll_id\fP"
+.br
+.ti -1c
+.RI "double \fBangle\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Struct used to store individual lost particle data 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

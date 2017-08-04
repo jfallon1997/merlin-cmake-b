@@ -1,0 +1,141 @@
+\hypertarget{classMonitor}{}\section{Monitor Class Reference}
+\label{classMonitor}\index{Monitor@{Monitor}}
+Inheritance diagram for Monitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classMonitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMonitor_ab6b1056e847682aaa2fcccbe2c2da118}\label{classMonitor_ab6b1056e847682aaa2fcccbe2c2da118}} 
+{\bfseries Monitor} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len=0, double mpt=0)
+\item 
+\mbox{\Hypertarget{classMonitor_a897cdb3d64fa8b63299e69674af54f90}\label{classMonitor_a897cdb3d64fa8b63299e69674af54f90}} 
+virtual void {\bfseries Make\+Measurement} (const \hyperlink{classBunch}{Bunch} \&)
+\item 
+\mbox{\Hypertarget{classMonitor_a3e0fbeb41304651a275d804cf58fa972}\label{classMonitor_a3e0fbeb41304651a275d804cf58fa972}} 
+void {\bfseries Set\+Measurement\+Pt} (double mpt)
+\item 
+\mbox{\Hypertarget{classMonitor_a5a2472da4c7b0dad9dc41c9412323f75}\label{classMonitor_a5a2472da4c7b0dad9dc41c9412323f75}} 
+double {\bfseries Get\+Measurement\+Pt} () const
+\item 
+\mbox{\Hypertarget{classMonitor_a35f497be8c4c054b3f618315be69361d}\label{classMonitor_a35f497be8c4c054b3f618315be69361d}} 
+bool {\bfseries Is\+Active} () const
+\item 
+virtual void \hyperlink{classMonitor_ad4af2f46ca124bf0c958eca70a2c2769}{Rotate\+Y180} ()
+\item 
+\mbox{\Hypertarget{classMonitor_afb06f23d1f3157be6ad39fcd9f37c203}\label{classMonitor_afb06f23d1f3157be6ad39fcd9f37c203}} 
+bool {\bfseries Is\+Reflected} () const
+\item 
+\mbox{\Hypertarget{classMonitor_ade50b2f5494470571f99a8f64ac53559}\label{classMonitor_ade50b2f5494470571f99a8f64ac53559}} 
+bool {\bfseries Set\+Reflected} (bool rflg)
+\item 
+\mbox{\Hypertarget{classMonitor_a635cfa9f8db51282548e3617dd215125}\label{classMonitor_a635cfa9f8db51282548e3617dd215125}} 
+bool {\bfseries Set\+Active} (bool b)
+\item 
+virtual int \hyperlink{classMonitor_a38297eb50d06dd56201f2b48d92aa789}{Get\+Index} () const
+\item 
+virtual const string \& \hyperlink{classMonitor_a8408f173bef0f0c0dd89b6624c84f66b}{Get\+Type} () const
+\item 
+virtual void \hyperlink{classMonitor_a8d5e3ab0d68f89a51aabdcde2b01977a}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classMonitor_a66d7932308a7206eeefc552bd3f5b1f6}{Copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMonitor_a039390f890a247be2044b1be22611132}\label{classMonitor_a039390f890a247be2044b1be22611132}} 
+static bool {\bfseries all\+\_\+inactive} = false
+\item 
+\mbox{\Hypertarget{classMonitor_a4e03289570053fc98b3e290acb33868c}\label{classMonitor_a4e03289570053fc98b3e290acb33868c}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMonitor_a66d7932308a7206eeefc552bd3f5b1f6}\label{classMonitor_a66d7932308a7206eeefc552bd3f5b1f6}} 
+\index{Monitor@{Monitor}!Copy@{Copy}}
+\index{Copy@{Copy}!Monitor@{Monitor}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Monitor\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+
+
+Reimplemented in \hyperlink{classBPM_a21bba21422046a434a38268c0cb5ada6}{B\+PM}, and \hyperlink{classRMSProfileMonitor_a44abc9eaa3a638c8fffadc81a3728b6e}{R\+M\+S\+Profile\+Monitor}.
+
+\mbox{\Hypertarget{classMonitor_a38297eb50d06dd56201f2b48d92aa789}\label{classMonitor_a38297eb50d06dd56201f2b48d92aa789}} 
+\index{Monitor@{Monitor}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Monitor@{Monitor}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Monitor\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_abd1490171ac9af6004d3da01fb3b95fb}{Accelerator\+Component}.
+
+
+
+Reimplemented in \hyperlink{classBPM_acaf99f021f92252962f2fbcbc24a2679}{B\+PM}, and \hyperlink{classRMSProfileMonitor_a87a98fa994d96c393a91500320242942}{R\+M\+S\+Profile\+Monitor}.
+
+\mbox{\Hypertarget{classMonitor_a8408f173bef0f0c0dd89b6624c84f66b}\label{classMonitor_a8408f173bef0f0c0dd89b6624c84f66b}} 
+\index{Monitor@{Monitor}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Monitor@{Monitor}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Monitor\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+
+
+Reimplemented in \hyperlink{classBPM_a1fbab5ffd976674ed24ef5833caaf7ee}{B\+PM}, and \hyperlink{classRMSProfileMonitor_ab97d742126deccadd878c402291a6263}{R\+M\+S\+Profile\+Monitor}.
+
+\mbox{\Hypertarget{classMonitor_a8d5e3ab0d68f89a51aabdcde2b01977a}\label{classMonitor_a8d5e3ab0d68f89a51aabdcde2b01977a}} 
+\index{Monitor@{Monitor}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Monitor@{Monitor}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Monitor\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_ab897c54689ac946f40c3ad0716ddd4bb}{Accelerator\+Component}.
+
+
+
+Reimplemented in \hyperlink{classBPM_a3f0db54eff4f4e95fc2dd81728ea8759}{B\+PM}, and \hyperlink{classRMSProfileMonitor_ae5c6ecda857727f6ac78da99b08c88c1}{R\+M\+S\+Profile\+Monitor}.
+
+\mbox{\Hypertarget{classMonitor_ad4af2f46ca124bf0c958eca70a2c2769}\label{classMonitor_ad4af2f46ca124bf0c958eca70a2c2769}} 
+\index{Monitor@{Monitor}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!Monitor@{Monitor}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void Monitor\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Implements \hyperlink{classAcceleratorComponent_a8bf0d39b56578ca99f286ca1504b9072}{Accelerator\+Component}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Monitor.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Monitor.\+cpp\end{DoxyCompactItemize}

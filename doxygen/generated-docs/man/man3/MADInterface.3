@@ -1,0 +1,123 @@
+.TH "MADInterface" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MADInterface
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMADInterface\fP (const std::string &madFileName='', double P0=0)"
+.br
+.ti -1c
+.RI "\fBAcceleratorModel\fP * \fBConstructModel\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetLogFile\fP (ostream &os)"
+.br
+.ti -1c
+.RI "void \fBSetLoggingOn\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetLoggingOff\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetSingleCellRF\fP (bool scrf)"
+.br
+.ti -1c
+.RI "void \fBHonourMadStructure\fP (bool flg)"
+.br
+.ti -1c
+.RI "void \fBConstructFlatLattice\fP (bool flg)"
+.br
+.ti -1c
+.RI "void \fBConstructApertures\fP (bool flg)"
+.br
+.ti -1c
+.RI "void \fBIgnoreZeroLengthType\fP (const string &madType)"
+.br
+.ti -1c
+.RI "void \fBScaleForSynchRad\fP (bool scaleSR)"
+.br
+.ti -1c
+.RI "void \fBTreatTypeAsDrift\fP (const std::string &typestr)"
+.br
+.ti -1c
+.RI "void \fBAppendModel\fP (const std::string &fname, double pref)"
+.br
+.ti -1c
+.RI "\fBAcceleratorModel\fP * \fBGetModel\fP ()"
+.br
+.ti -1c
+.RI "void \fBConstructNewFrame\fP (const string &name)"
+.br
+.ti -1c
+.RI "void \fBEndFrame\fP (const string &name)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBReadComponent\fP ()"
+.br
+.ti -1c
+.RI "void \fBInitialise\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBenergy\fP"
+.br
+.ti -1c
+.RI "std::string \fBfilename\fP"
+.br
+.ti -1c
+.RI "ifstream * \fBifs\fP"
+.br
+.ti -1c
+.RI "ostream * \fBlog\fP"
+.br
+.ti -1c
+.RI "bool \fBlogFlag\fP"
+.br
+.ti -1c
+.RI "bool \fBflatLattice\fP"
+.br
+.ti -1c
+.RI "bool \fBhonMadStructs\fP"
+.br
+.ti -1c
+.RI "bool \fBincApertures\fP"
+.br
+.ti -1c
+.RI "bool \fBinc_sr\fP"
+.br
+.ti -1c
+.RI "std::set< std::string > \fBzeroLengths\fP"
+.br
+.ti -1c
+.RI "std::set< std::string > \fBdriftTypes\fP"
+.br
+.ti -1c
+.RI "\fBAcceleratorModelConstructor\fP * \fBctor\fP"
+.br
+.ti -1c
+.RI "\fBMADKeyMap\fP * \fBprmMap\fP"
+.br
+.ti -1c
+.RI "double \fBz\fP"
+.br
+.ti -1c
+.RI "bool \fBsingle_cell_rf\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

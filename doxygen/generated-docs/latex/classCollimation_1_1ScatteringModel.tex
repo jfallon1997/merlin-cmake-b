@@ -1,0 +1,119 @@
+\hypertarget{classCollimation_1_1ScatteringModel}{}\section{Collimation\+:\+:Scattering\+Model Class Reference}
+\label{classCollimation_1_1ScatteringModel}\index{Collimation\+::\+Scattering\+Model@{Collimation\+::\+Scattering\+Model}}
+
+
+{\ttfamily \#include $<$Scattering\+Model.\+h$>$}
+
+Inheritance diagram for Collimation\+:\+:Scattering\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.267925cm]{classCollimation_1_1ScatteringModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_af0f4f845010afa08e73c994f403b9594}\label{classCollimation_1_1ScatteringModel_af0f4f845010afa08e73c994f403b9594}} 
+void {\bfseries Set\+Scatter\+Type} (int st)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_ae02a9599c204920f5dad460c03f4b06b}\label{classCollimation_1_1ScatteringModel_ae02a9599c204920f5dad460c03f4b06b}} 
+double {\bfseries Path\+Length} (\hyperlink{classMaterial}{Material} $\ast$mat, double E0)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a7e66a2e5ba9751820c71d136eee6c8e5}\label{classCollimation_1_1ScatteringModel_a7e66a2e5ba9751820c71d136eee6c8e5}} 
+void {\bfseries Energy\+Loss} (\hyperlink{classPSvector}{P\+Svector} \&p, double x, \hyperlink{classMaterial}{Material} $\ast$mat, double E0)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a57f0a007a6262d51bd53c31bb9d915fc}\label{classCollimation_1_1ScatteringModel_a57f0a007a6262d51bd53c31bb9d915fc}} 
+void {\bfseries Straggle} (\hyperlink{classPSvector}{P\+Svector} \&p, double x, \hyperlink{classMaterial}{Material} $\ast$mat, double E1, double E2)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_afe215c86a71492355efc6c622872c442}\label{classCollimation_1_1ScatteringModel_afe215c86a71492355efc6c622872c442}} 
+bool {\bfseries Particle\+Scatter} (\hyperlink{classPSvector}{P\+Svector} \&p, \hyperlink{classMaterial}{Material} $\ast$mat, double E)
+\item 
+virtual void \hyperlink{classCollimation_1_1ScatteringModel_a2e670af5fbb3c40a4f294e135f14892b}{Add\+Process} (\hyperlink{classCollimation_1_1ScatteringProcess}{Collimation\+::\+Scattering\+Process} $\ast$S)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a5740bae984dbed3dfdb4fe3b356d74b5}\label{classCollimation_1_1ScatteringModel_a5740bae984dbed3dfdb4fe3b356d74b5}} 
+void {\bfseries Clear\+Processes} ()
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a7e7b3d041e2cf13e9ea4b777390c728f}\label{classCollimation_1_1ScatteringModel_a7e7b3d041e2cf13e9ea4b777390c728f}} 
+void {\bfseries Scatter\+Plot} (\hyperlink{classPSvector}{Particle\+Tracking\+::\+Particle} \&p, double z, int turn, std\+::string name)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a8be5a13d6a070fa2cec17371012a02dd}\label{classCollimation_1_1ScatteringModel_a8be5a13d6a070fa2cec17371012a02dd}} 
+void {\bfseries Set\+Scatter\+Plot} (std\+::string name, int single\+\_\+turn=0)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_accb6dd3b9b69ae4990030ef9e5160e1e}\label{classCollimation_1_1ScatteringModel_accb6dd3b9b69ae4990030ef9e5160e1e}} 
+void {\bfseries Output\+Scatter\+Plot} (std\+::string directory, int seed=0)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a252b20da3d6da6edf6ec914518fbbf2a}\label{classCollimation_1_1ScatteringModel_a252b20da3d6da6edf6ec914518fbbf2a}} 
+void {\bfseries Jaw\+Impact} (\hyperlink{classPSvector}{Particle\+Tracking\+::\+Particle} \&p, int turn, std\+::string name)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a8aaa0f301ab975acbd0fdea1c0429f45}\label{classCollimation_1_1ScatteringModel_a8aaa0f301ab975acbd0fdea1c0429f45}} 
+void {\bfseries Set\+Jaw\+Impact} (std\+::string name, int single\+\_\+turn=0)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a879816da386807aefd1e1af353e29340}\label{classCollimation_1_1ScatteringModel_a879816da386807aefd1e1af353e29340}} 
+void {\bfseries Output\+Jaw\+Impact} (std\+::string directory, int seed=0)
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_acd2f8d82c9169a5b38a48fa3b5dc1be3}\label{classCollimation_1_1ScatteringModel_acd2f8d82c9169a5b38a48fa3b5dc1be3}} 
+int {\bfseries Get\+Scattering\+Physics\+Model} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_ab4db7776e1c4bb5eecde3c4ec18c89a7}\label{classCollimation_1_1ScatteringModel_ab4db7776e1c4bb5eecde3c4ec18c89a7}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries Scatter\+Plot\+Names}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a8b423f725f0050c150d23145d38b6742}\label{classCollimation_1_1ScatteringModel_a8b423f725f0050c150d23145d38b6742}} 
+bool {\bfseries Scatter\+Plot\+\_\+on}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a8a4b6e2c421450bc04ffb1dd123322e1}\label{classCollimation_1_1ScatteringModel_a8a4b6e2c421450bc04ffb1dd123322e1}} 
+std\+::vector$<$ \hyperlink{structCollimation_1_1ScatterPlotData}{Scatter\+Plot\+Data} $\ast$ $>$ {\bfseries Stored\+Scatter\+Plot\+Data}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_afab632770a66d1d034d0ff56ce4a32f9}\label{classCollimation_1_1ScatteringModel_afab632770a66d1d034d0ff56ce4a32f9}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries Jaw\+Impact\+Names}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a63f2a7a806ad87ba868def8f7d5627f7}\label{classCollimation_1_1ScatteringModel_a63f2a7a806ad87ba868def8f7d5627f7}} 
+bool {\bfseries Jaw\+Impact\+\_\+on}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a4d145269de4166e19e31e5ba1491277e}\label{classCollimation_1_1ScatteringModel_a4d145269de4166e19e31e5ba1491277e}} 
+std\+::vector$<$ \hyperlink{structCollimation_1_1JawImpactData}{Jaw\+Impact\+Data} $\ast$ $>$ {\bfseries Stored\+Jaw\+Impact\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_af157546eccacaa7acd89c07d991050c7}\label{classCollimation_1_1ScatteringModel_af157546eccacaa7acd89c07d991050c7}} 
+std\+::vector$<$ \hyperlink{classCollimation_1_1ScatteringProcess}{Collimation\+::\+Scattering\+Process} $\ast$ $>$ {\bfseries Processes}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a609f6307d78e218887cc8bc49d278aed}\label{classCollimation_1_1ScatteringModel_a609f6307d78e218887cc8bc49d278aed}} 
+std\+::vector$<$ double $>$ {\bfseries fraction}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a3103f2bcd31c2de405014011635b333d}\label{classCollimation_1_1ScatteringModel_a3103f2bcd31c2de405014011635b333d}} 
+std\+::map$<$ std\+::string, \hyperlink{classCollimation_1_1CrossSections}{Collimation\+::\+Cross\+Sections} $\ast$$>$ {\bfseries stored\+\_\+cross\+\_\+sections}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_ab7c63c75caf2610bf007ea92d9cd7237}\label{classCollimation_1_1ScatteringModel_ab7c63c75caf2610bf007ea92d9cd7237}} 
+std\+::map$<$ std\+::string, \hyperlink{classCollimation_1_1CrossSections}{Collimation\+::\+Cross\+Sections} $\ast$$>$\+::iterator {\bfseries C\+S\+\_\+iterator}
+\item 
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_acf2c0b605b5e37b0768181632d7317b7}\label{classCollimation_1_1ScatteringModel_acf2c0b605b5e37b0768181632d7317b7}} 
+Energy\+Loss\+Mode {\bfseries energy\+\_\+loss\+\_\+mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for scattering models
+
+The user can customise a \hyperlink{classCollimation_1_1ScatteringModel}{Scattering\+Model} using \hyperlink{classCollimation_1_1ScatteringModel_a2e670af5fbb3c40a4f294e135f14892b}{Add\+Process()}, or can use the predefiend models such as \hyperlink{classCollimation_1_1ScatteringModelMerlin}{Scattering\+Model\+Merlin}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCollimation_1_1ScatteringModel_a2e670af5fbb3c40a4f294e135f14892b}\label{classCollimation_1_1ScatteringModel_a2e670af5fbb3c40a4f294e135f14892b}} 
+\index{Collimation\+::\+Scattering\+Model@{Collimation\+::\+Scattering\+Model}!Add\+Process@{Add\+Process}}
+\index{Add\+Process@{Add\+Process}!Collimation\+::\+Scattering\+Model@{Collimation\+::\+Scattering\+Model}}
+\subsubsection{\texorpdfstring{Add\+Process()}{AddProcess()}}
+{\footnotesize\ttfamily virtual void Collimation\+::\+Scattering\+Model\+::\+Add\+Process (\begin{DoxyParamCaption}\item[{\hyperlink{classCollimation_1_1ScatteringProcess}{Collimation\+::\+Scattering\+Process} $\ast$}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Add Scattering\+Processes to the model 
+
+Reimplemented in \hyperlink{classCollimation_1_1ScatteringModelFixed_a856fcbc7bc8e50339c7ba6b0d121fadd}{Collimation\+::\+Scattering\+Model\+Fixed}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Scattering\+Model.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Scattering\+Model.\+cpp\end{DoxyCompactItemize}

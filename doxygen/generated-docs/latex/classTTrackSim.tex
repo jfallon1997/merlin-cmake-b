@@ -1,0 +1,149 @@
+\hypertarget{classTTrackSim}{}\section{T\+Track\+Sim$<$ T $>$ Class Template Reference}
+\label{classTTrackSim}\index{T\+Track\+Sim$<$ T $>$@{T\+Track\+Sim$<$ T $>$}}
+
+
+{\ttfamily \#include $<$T\+Track\+Sim.\+h$>$}
+
+Inheritance diagram for T\+Track\+Sim$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTTrackSim}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTTrackSim_a93515d6708626282fa993d53ad3078e4}\label{classTTrackSim_a93515d6708626282fa993d53ad3078e4}} 
+typedef \+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ T\+::bunch\+\_\+type {\bfseries bunch\+\_\+type}
+\item 
+\mbox{\Hypertarget{classTTrackSim_aa6402ccd32454b4fb336158dd0311047}\label{classTTrackSim_aa6402ccd32454b4fb336158dd0311047}} 
+typedef \+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ bunch\+\_\+type\+::particle\+\_\+type {\bfseries particle\+\_\+type}
+\item 
+\mbox{\Hypertarget{classTTrackSim_af8cbfc672207f9641ffbfc3745a7cec8}\label{classTTrackSim_af8cbfc672207f9641ffbfc3745a7cec8}} 
+typedef \hyperlink{classTTrnsProc}{T\+Trns\+Proc}$<$ T $>$ {\bfseries transport\+\_\+process}
+\item 
+\mbox{\Hypertarget{classTTrackSim_a2213d1c1dd13edee2d7d481387a28f65}\label{classTTrackSim_a2213d1c1dd13edee2d7d481387a28f65}} 
+typedef \+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ transport\+\_\+process\+::integrator\+\_\+type {\bfseries integrator\+\_\+type}
+\item 
+\mbox{\Hypertarget{classTTrackSim_a71d23f3d78b9a70fadafc19df3e3f24d}\label{classTTrackSim_a71d23f3d78b9a70fadafc19df3e3f24d}} 
+typedef \+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ T\+::\+I\+Set\+Base {\bfseries integrator\+\_\+set\+\_\+base}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTTrackSim_a753039bec4d3e2ae3cc452daf65681f7}{T\+Track\+Sim} (const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&bline, bunch\+\_\+type $\ast$bunch0=nullptr, bool del=false)
+\item 
+\hyperlink{classTTrackSim_a49d104506d708be8efaa915a6d90070a}{T\+Track\+Sim} (const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&bline, const particle\+\_\+type \&p, double Pref)
+\item 
+\hyperlink{classTTrackSim_a3449b7c0ac9a0bc9aa5bc462cb2096bb}{T\+Track\+Sim} (const \hyperlink{classring__iterator}{Accelerator\+Model\+::\+Ring\+Iterator} \&ring, bunch\+\_\+type $\ast$bunch0=nullptr, bool del=false)
+\item 
+\hyperlink{classTTrackSim_a780f5bbaf5169f555733a6fc22f85c67}{T\+Track\+Sim} (const \hyperlink{classring__iterator}{Accelerator\+Model\+::\+Ring\+Iterator} \&ring, const particle\+\_\+type \&p, double Pref)
+\item 
+\hyperlink{classTTrackSim_a2a1ab40b2628c61bc1da6cf41349a9a7}{T\+Track\+Sim} ()
+\item 
+bool \hyperlink{classTTrackSim_aace94ccc4f443e3cbb6e113b60313ee2}{Register\+Integrator} (integrator\+\_\+type $\ast$intg)
+\item 
+void \hyperlink{classTTrackSim_abdc1a4fd2ed79de3879b1da485768a78}{Set\+Initial\+Bunch} (bunch\+\_\+type $\ast$pbunch0, bool del=false)
+\item 
+bunch\+\_\+type $\ast$ \hyperlink{classTTrackSim_a6d6155f8aca0466078fddea96da97ca1}{Track} (bunch\+\_\+type $\ast$)
+\item 
+void \hyperlink{classTTrackSim_a3d0fad764b31429f89b7c4d909c0290b}{Set\+Initial\+Particle} (const particle\+\_\+type \&p, double Pref)
+\item 
+const bunch\+\_\+type \& \hyperlink{classTTrackSim_a1166829409899f10dbd9a2ce4f703277}{Get\+Tracked\+Bunch} () const
+\item 
+\mbox{\Hypertarget{classTTrackSim_a69216bbeddea04b854bea3dada4c9eee}\label{classTTrackSim_a69216bbeddea04b854bea3dada4c9eee}} 
+bunch\+\_\+type \& {\bfseries Get\+Tracked\+Bunch} ()
+\item 
+\mbox{\Hypertarget{classTTrackSim_a33c2d33e735200a7834d1c0e305d92b6}\label{classTTrackSim_a33c2d33e735200a7834d1c0e305d92b6}} 
+void {\bfseries Set\+Integrator\+Set} (const integrator\+\_\+set\+\_\+base $\ast$iset)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class T\+Track\+Sim$<$ T $>$}
+
+template class to instantiate a \hyperlink{classTrackingSimulation}{Tracking\+Simulation} class which uses a specific concrete \hyperlink{classComponentTracker}{Component\+Tracker} to track the associated bunch representation through a beamline.
+
+Template parameter T must be a valid concrete \hyperlink{classComponentTracker}{Component\+Tracker} class 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTTrackSim_a753039bec4d3e2ae3cc452daf65681f7}\label{classTTrackSim_a753039bec4d3e2ae3cc452daf65681f7}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{T\+Track\+Sim()}{TTrackSim()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::\hyperlink{classTTrackSim}{T\+Track\+Sim} (\begin{DoxyParamCaption}\item[{const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&}]{bline,  }\item[{bunch\+\_\+type $\ast$}]{bunch0 = {\ttfamily nullptr},  }\item[{bool}]{del = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor taking the beamline to be tracked and a pointer to the initial Particle\+Bunch. If bunch0=0 (default) the initial beam must be specified by either a call to Set\+Initial\+Beam(), or to Set\+Initial\+Beam\+Ctor (from \hyperlink{classTrackingSimulation}{Tracking\+Simulation}). \mbox{\Hypertarget{classTTrackSim_a49d104506d708be8efaa915a6d90070a}\label{classTTrackSim_a49d104506d708be8efaa915a6d90070a}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{T\+Track\+Sim()}{TTrackSim()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::\hyperlink{classTTrackSim}{T\+Track\+Sim} (\begin{DoxyParamCaption}\item[{const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&}]{bline,  }\item[{const particle\+\_\+type \&}]{p,  }\item[{double}]{Pref }\end{DoxyParamCaption})}
+
+Constructor used for single particle tracking. The constructor takes the beamline to be tracked, and the initial particle. \mbox{\Hypertarget{classTTrackSim_a3449b7c0ac9a0bc9aa5bc462cb2096bb}\label{classTTrackSim_a3449b7c0ac9a0bc9aa5bc462cb2096bb}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{T\+Track\+Sim()}{TTrackSim()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::\hyperlink{classTTrackSim}{T\+Track\+Sim} (\begin{DoxyParamCaption}\item[{const \hyperlink{classring__iterator}{Accelerator\+Model\+::\+Ring\+Iterator} \&}]{ring,  }\item[{bunch\+\_\+type $\ast$}]{bunch0 = {\ttfamily nullptr},  }\item[{bool}]{del = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor taking the beamline to be tracked and a pointer to the initial Particle\+Bunch. If bunch0=0 (default) the initial beam must be specified by either a call to Set\+Initial\+Beam(), or to Set\+Initial\+Beam\+Ctor (from \hyperlink{classTrackingSimulation}{Tracking\+Simulation}). \mbox{\Hypertarget{classTTrackSim_a780f5bbaf5169f555733a6fc22f85c67}\label{classTTrackSim_a780f5bbaf5169f555733a6fc22f85c67}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{T\+Track\+Sim()}{TTrackSim()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::\hyperlink{classTTrackSim}{T\+Track\+Sim} (\begin{DoxyParamCaption}\item[{const \hyperlink{classring__iterator}{Accelerator\+Model\+::\+Ring\+Iterator} \&}]{ring,  }\item[{const particle\+\_\+type \&}]{p,  }\item[{double}]{Pref }\end{DoxyParamCaption})}
+
+Constructor used for single particle tracking. The constructor takes the beamline to be tracked, and the initial particle. \mbox{\Hypertarget{classTTrackSim_a2a1ab40b2628c61bc1da6cf41349a9a7}\label{classTTrackSim_a2a1ab40b2628c61bc1da6cf41349a9a7}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\index{T\+Track\+Sim@{T\+Track\+Sim}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{T\+Track\+Sim()}{TTrackSim()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::\hyperlink{classTTrackSim}{T\+Track\+Sim} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTTrackSim_a1166829409899f10dbd9a2ce4f703277}\label{classTTrackSim_a1166829409899f10dbd9a2ce4f703277}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!Get\+Tracked\+Bunch@{Get\+Tracked\+Bunch}}
+\index{Get\+Tracked\+Bunch@{Get\+Tracked\+Bunch}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{Get\+Tracked\+Bunch()}{GetTrackedBunch()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const bunch\+\_\+type\& \hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::Get\+Tracked\+Bunch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the current tracked bunch. \mbox{\Hypertarget{classTTrackSim_aace94ccc4f443e3cbb6e113b60313ee2}\label{classTTrackSim_aace94ccc4f443e3cbb6e113b60313ee2}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!Register\+Integrator@{Register\+Integrator}}
+\index{Register\+Integrator@{Register\+Integrator}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{Register\+Integrator()}{RegisterIntegrator()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::Register\+Integrator (\begin{DoxyParamCaption}\item[{integrator\+\_\+type $\ast$}]{intg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Register an additional (or override) integrator. \mbox{\Hypertarget{classTTrackSim_abdc1a4fd2ed79de3879b1da485768a78}\label{classTTrackSim_abdc1a4fd2ed79de3879b1da485768a78}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!Set\+Initial\+Bunch@{Set\+Initial\+Bunch}}
+\index{Set\+Initial\+Bunch@{Set\+Initial\+Bunch}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{Set\+Initial\+Bunch()}{SetInitialBunch()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::Set\+Initial\+Bunch (\begin{DoxyParamCaption}\item[{bunch\+\_\+type $\ast$}]{pbunch0,  }\item[{bool}]{del = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the initial Particle\+Bunch for future tracking operations. \mbox{\Hypertarget{classTTrackSim_a3d0fad764b31429f89b7c4d909c0290b}\label{classTTrackSim_a3d0fad764b31429f89b7c4d909c0290b}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!Set\+Initial\+Particle@{Set\+Initial\+Particle}}
+\index{Set\+Initial\+Particle@{Set\+Initial\+Particle}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{Set\+Initial\+Particle()}{SetInitialParticle()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::Set\+Initial\+Particle (\begin{DoxyParamCaption}\item[{const particle\+\_\+type \&}]{p,  }\item[{double}]{Pref }\end{DoxyParamCaption})}
+
+Sets the initial particle for single-\/particle tracking. \mbox{\Hypertarget{classTTrackSim_a6d6155f8aca0466078fddea96da97ca1}\label{classTTrackSim_a6d6155f8aca0466078fddea96da97ca1}} 
+\index{T\+Track\+Sim@{T\+Track\+Sim}!Track@{Track}}
+\index{Track@{Track}!T\+Track\+Sim@{T\+Track\+Sim}}
+\subsubsection{\texorpdfstring{Track()}{Track()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\+\_\+\+\_\+\+T\+Y\+P\+E\+N\+A\+M\+E\+\_\+\+\_\+ \hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::bunch\+\_\+type $\ast$ \hyperlink{classTTrackSim}{T\+Track\+Sim}$<$ T $>$\+::Track (\begin{DoxyParamCaption}\item[{bunch\+\_\+type $\ast$}]{a\+Bunch }\end{DoxyParamCaption})}
+
+Overrides the current bunch constructor and tracks the supplied bunch. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/T\+Track\+Sim.\+h\end{DoxyCompactItemize}

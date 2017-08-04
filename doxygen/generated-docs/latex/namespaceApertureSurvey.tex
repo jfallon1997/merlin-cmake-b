@@ -1,0 +1,94 @@
+\hypertarget{namespaceApertureSurvey}{}\section{Aperture\+Survey Namespace Reference}
+\label{namespaceApertureSurvey}\index{Aperture\+Survey@{Aperture\+Survey}}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}{Survey\+Type} \{ \hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a6ef37e5d19cd4b8187805450cc0a80ec}{points\+\_\+per\+\_\+element}, 
+\hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a33db6949b5a66c629475f89efd4adb47}{distance}, 
+\hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a071e0c893aafe8058d54ef4cf1ed1276}{abs\+\_\+distance}
+ \}\begin{DoxyCompactList}\small\item\em Mode for survey. Changes how step is interpreted. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceApertureSurvey_a793a09ef12301135ec082ea5814e67e8}{Aperture\+Survey} (\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$model, std\+::ostream $\ast$os, \hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}{Survey\+Type} mode, double step)
+\item 
+void \hyperlink{namespaceApertureSurvey_affc929ffdf9578dd74e0620638de0d2b}{Aperture\+Survey} (\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$model, string file\+\_\+name, \hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}{Survey\+Type} mode, double step)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Survey an accelerator and find the aperture at each step.
+
+At each point the aperture is measured by bisection search, using the Point\+Inside() method of the aperture attached to the element. This makes it useful for debugging the whole aperture system.
+
+Output file contains the columns\+:
+
+The element\textquotesingle{}s name, type, s\+\_\+end, length
+
+Position s
+
+\hyperlink{classAperture}{Aperture} limit in plus and minus x and y directions ap\+\_\+px ap\+\_\+mx ap\+\_\+py ap\+\_\+my 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}\label{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}} 
+\index{Aperture\+Survey@{Aperture\+Survey}!Survey\+Type@{Survey\+Type}}
+\index{Survey\+Type@{Survey\+Type}!Aperture\+Survey@{Aperture\+Survey}}
+\subsubsection{\texorpdfstring{Survey\+Type}{SurveyType}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}{Aperture\+Survey\+::\+Survey\+Type}}
+
+
+
+Mode for survey. Changes how step is interpreted. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{points\+\_\+per\+\_\+element@{points\+\_\+per\+\_\+element}!Aperture\+Survey@{Aperture\+Survey}}\index{Aperture\+Survey@{Aperture\+Survey}!points\+\_\+per\+\_\+element@{points\+\_\+per\+\_\+element}}}\mbox{\Hypertarget{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a6ef37e5d19cd4b8187805450cc0a80ec}\label{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a6ef37e5d19cd4b8187805450cc0a80ec}} 
+points\+\_\+per\+\_\+element&Record {\itshape step} times per element, e.\+g. 1\+: just at start, 2\+: start and end, 3\+: start, end and middle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{distance@{distance}!Aperture\+Survey@{Aperture\+Survey}}\index{Aperture\+Survey@{Aperture\+Survey}!distance@{distance}}}\mbox{\Hypertarget{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a33db6949b5a66c629475f89efd4adb47}\label{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a33db6949b5a66c629475f89efd4adb47}} 
+distance&Record every {\itshape step} distance, within each element. Include start and end of each element. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{abs\+\_\+distance@{abs\+\_\+distance}!Aperture\+Survey@{Aperture\+Survey}}\index{Aperture\+Survey@{Aperture\+Survey}!abs\+\_\+distance@{abs\+\_\+distance}}}\mbox{\Hypertarget{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a071e0c893aafe8058d54ef4cf1ed1276}\label{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87a071e0c893aafe8058d54ef4cf1ed1276}} 
+abs\+\_\+distance&Record every {\itshape step} distance, along {\itshape model}. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceApertureSurvey_a793a09ef12301135ec082ea5814e67e8}\label{namespaceApertureSurvey_a793a09ef12301135ec082ea5814e67e8}} 
+\index{Aperture\+Survey@{Aperture\+Survey}!Aperture\+Survey@{Aperture\+Survey}}
+\index{Aperture\+Survey@{Aperture\+Survey}!Aperture\+Survey@{Aperture\+Survey}}
+\subsubsection{\texorpdfstring{Aperture\+Survey()}{ApertureSurvey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Aperture\+Survey\+::\+Aperture\+Survey (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$}]{model,  }\item[{std\+::ostream $\ast$}]{os,  }\item[{\hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}{Survey\+Type}}]{mode,  }\item[{double}]{step }\end{DoxyParamCaption})}
+
+Run aperture survey 
+\begin{DoxyParams}{Parameters}
+{\em model} & The accelerator mode \\
+\hline
+{\em os} & Output stream \\
+\hline
+{\em mode} & Stepping mode \\
+\hline
+{\em step} & Definition depends on {\itshape mode} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceApertureSurvey_affc929ffdf9578dd74e0620638de0d2b}\label{namespaceApertureSurvey_affc929ffdf9578dd74e0620638de0d2b}} 
+\index{Aperture\+Survey@{Aperture\+Survey}!Aperture\+Survey@{Aperture\+Survey}}
+\index{Aperture\+Survey@{Aperture\+Survey}!Aperture\+Survey@{Aperture\+Survey}}
+\subsubsection{\texorpdfstring{Aperture\+Survey()}{ApertureSurvey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Aperture\+Survey\+::\+Aperture\+Survey (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$}]{model,  }\item[{string}]{file\+\_\+name,  }\item[{\hyperlink{namespaceApertureSurvey_a8824104e7e9b8cb1dd046f47a386bf87}{Survey\+Type}}]{mode,  }\item[{double}]{step }\end{DoxyParamCaption})}
+
+Run aperture survey 
+\begin{DoxyParams}{Parameters}
+{\em model} & The accelerator mode \\
+\hline
+{\em filename} & Filename to output to \\
+\hline
+{\em mode} & Stepping mode \\
+\hline
+{\em step} & Definition depends on {\itshape mode} \\
+\hline
+\end{DoxyParams}

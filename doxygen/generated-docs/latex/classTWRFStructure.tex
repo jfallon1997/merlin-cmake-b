@@ -1,0 +1,104 @@
+\hypertarget{classTWRFStructure}{}\section{T\+W\+R\+F\+Structure Class Reference}
+\label{classTWRFStructure}\index{T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}}
+Inheritance diagram for T\+W\+R\+F\+Structure\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classTWRFStructure}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTWRFStructure_a6463125a53fd669f1644428cd7dfdf9d}\label{classTWRFStructure_a6463125a53fd669f1644428cd7dfdf9d}} 
+{\bfseries T\+W\+R\+F\+Structure} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, double f, double Epk, double phi=0)
+\item 
+\mbox{\Hypertarget{classTWRFStructure_ad2f00c1f528ff704f2124e4d4f208031}\label{classTWRFStructure_ad2f00c1f528ff704f2124e4d4f208031}} 
+{\bfseries T\+W\+R\+F\+Structure} (const \hyperlink{classTWRFStructure}{T\+W\+R\+F\+Structure} \&)
+\item 
+virtual const string \& \hyperlink{classTWRFStructure_ae3eb08e80bfac82a5a1ba43ce367a71f}{Get\+Type} () const
+\item 
+virtual int \hyperlink{classTWRFStructure_a5a8ac2ad58e94158e840c5d296fbb53c}{Get\+Index} () const
+\item 
+virtual void \hyperlink{classTWRFStructure_aed3f451bc33edf90177d75c5e53d94af}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual void \hyperlink{classTWRFStructure_a04893d600099a41642de0634013c5091}{Rotate\+Y180} ()
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classTWRFStructure_a46eda3c195425b6cc0dc6377e08a9df9}{Copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTWRFStructure_ae85f3a2715b5ee3ee020a4759dd1249b}\label{classTWRFStructure_ae85f3a2715b5ee3ee020a4759dd1249b}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTWRFStructure_a46eda3c195425b6cc0dc6377e08a9df9}\label{classTWRFStructure_a46eda3c195425b6cc0dc6377e08a9df9}} 
+\index{T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}!Copy@{Copy}}
+\index{Copy@{Copy}!T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ T\+W\+R\+F\+Structure\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+\mbox{\Hypertarget{classTWRFStructure_a5a8ac2ad58e94158e840c5d296fbb53c}\label{classTWRFStructure_a5a8ac2ad58e94158e840c5d296fbb53c}} 
+\index{T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int T\+W\+R\+F\+Structure\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_abd1490171ac9af6004d3da01fb3b95fb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classTWRFStructure_ae3eb08e80bfac82a5a1ba43ce367a71f}\label{classTWRFStructure_ae3eb08e80bfac82a5a1ba43ce367a71f}} 
+\index{T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& T\+W\+R\+F\+Structure\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+\mbox{\Hypertarget{classTWRFStructure_aed3f451bc33edf90177d75c5e53d94af}\label{classTWRFStructure_aed3f451bc33edf90177d75c5e53d94af}} 
+\index{T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void T\+W\+R\+F\+Structure\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_ab897c54689ac946f40c3ad0716ddd4bb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classTWRFStructure_a04893d600099a41642de0634013c5091}\label{classTWRFStructure_a04893d600099a41642de0634013c5091}} 
+\index{T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!T\+W\+R\+F\+Structure@{T\+W\+R\+F\+Structure}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void T\+W\+R\+F\+Structure\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Implements \hyperlink{classAcceleratorComponent_a8bf0d39b56578ca99f286ca1504b9072}{Accelerator\+Component}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/T\+W\+R\+F\+Structure.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/T\+W\+R\+F\+Structure.\+cpp\end{DoxyCompactItemize}

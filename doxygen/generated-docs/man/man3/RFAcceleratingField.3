@@ -1,0 +1,72 @@
+.TH "RFAcceleratingField" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RFAcceleratingField
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEMField\fP\&.
+.PP
+Inherited by \fBSWRFfield\fP, \fBTransverseRFfield\fP, and \fBTWRFfield\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRFAcceleratingField\fP (double Epk, double f, double phase=0)"
+.br
+.ti -1c
+.RI "void \fBSetFrequency\fP (double f)"
+.br
+.ti -1c
+.RI "double \fBGetFrequency\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetPhase\fP (double phase)"
+.br
+.ti -1c
+.RI "double \fBGetPhase\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetAmplitude\fP (double Epk)"
+.br
+.ti -1c
+.RI "double \fBGetAmplitude\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBEz\fP (double z, double t) const =0"
+.br
+.ti -1c
+.RI "double \fBGetWavelength\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetK\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetFullAcceleration\fP (bool full_acceln)"
+.br
+.ti -1c
+.RI "bool \fBFullAcceleration\fP () const"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBw\fP"
+.br
+.ti -1c
+.RI "double \fBE0\fP"
+.br
+.ti -1c
+.RI "double \fBphi\fP"
+.br
+.ti -1c
+.RI "bool \fBfull_acceleration\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

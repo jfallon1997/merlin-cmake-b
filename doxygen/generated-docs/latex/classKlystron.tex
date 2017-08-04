@@ -1,0 +1,106 @@
+\hypertarget{classKlystron}{}\section{Klystron Class Reference}
+\label{classKlystron}\index{Klystron@{Klystron}}
+Inheritance diagram for Klystron\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classKlystron}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKlystron_a54ec059b3d22e65d6eb333d94210c0aa}\label{classKlystron_a54ec059b3d22e65d6eb333d94210c0aa}} 
+enum {\bfseries Mode} \{ {\bfseries vector\+\_\+sum}, 
+{\bfseries balanced}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKlystron_acaf5e3857ea7e108837baa9b84971f27}\label{classKlystron_acaf5e3857ea7e108837baa9b84971f27}} 
+{\bfseries Klystron} (const std\+::string \&a\+Name, const std\+::vector$<$ \hyperlink{classRFStructure}{R\+F\+Structure} $\ast$$>$ \&cavs, Mode m=balanced)
+\item 
+\mbox{\Hypertarget{classKlystron_ac4082acd4a409eabfe8abd389bf88b39}\label{classKlystron_ac4082acd4a409eabfe8abd389bf88b39}} 
+double {\bfseries Get\+Voltage} () const
+\item 
+\mbox{\Hypertarget{classKlystron_a1c67ed0f04a1c3f5bafc38e58300cabe}\label{classKlystron_a1c67ed0f04a1c3f5bafc38e58300cabe}} 
+double {\bfseries Get\+Phase} () const
+\item 
+\mbox{\Hypertarget{classKlystron_aaebe3c3ef31d610ef0039a89dedea4d3}\label{classKlystron_aaebe3c3ef31d610ef0039a89dedea4d3}} 
+\hyperlink{classComplex}{Complex} {\bfseries Get\+Voltage\+Phasor} () const
+\item 
+\mbox{\Hypertarget{classKlystron_a0a634244d8b903845dd9419d71b63950}\label{classKlystron_a0a634244d8b903845dd9419d71b63950}} 
+void {\bfseries Set\+Voltage} (double v)
+\item 
+\mbox{\Hypertarget{classKlystron_a2f2f40f8878361f389d86494ecaa090d}\label{classKlystron_a2f2f40f8878361f389d86494ecaa090d}} 
+void {\bfseries Set\+Phase} (double phi)
+\item 
+\mbox{\Hypertarget{classKlystron_a99f21505a2e21716cc9bc45d0740f67f}\label{classKlystron_a99f21505a2e21716cc9bc45d0740f67f}} 
+void {\bfseries Set\+Voltage\+Phasor} (const \hyperlink{classComplex}{Complex} \&)
+\item 
+\mbox{\Hypertarget{classKlystron_ab74307b431b48c0a85d16373b39a4a91}\label{classKlystron_ab74307b431b48c0a85d16373b39a4a91}} 
+size\+\_\+t {\bfseries Get\+Number\+Of\+Cavities} () const
+\item 
+virtual const std\+::string \& \hyperlink{classKlystron_a77d772abd8172d0de103bd14c838f6fc}{Get\+Type} () const
+\item 
+virtual \hyperlink{classKlystron}{Klystron} $\ast$ \hyperlink{classKlystron_a2cb5bf0328cf1f47d0d7bff0a0b55f16}{Copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKlystron_a6b7d40b02b8c2543e5be02331f44c370}\label{classKlystron_a6b7d40b02b8c2543e5be02331f44c370}} 
+void {\bfseries Adjust\+Cavities} ()
+\item 
+\mbox{\Hypertarget{classKlystron_a488e47037173ab7db3588d45e3b5704f}\label{classKlystron_a488e47037173ab7db3588d45e3b5704f}} 
+void {\bfseries Adjust\+Vector\+Sum} (double v, double phi)
+\item 
+\mbox{\Hypertarget{classKlystron_a05ddf9dc32caea3476e03c55045d2054}\label{classKlystron_a05ddf9dc32caea3476e03c55045d2054}} 
+void {\bfseries Append\+Beamline\+Indecies} (std\+::vector$<$ size\+\_\+t $>$ \&) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKlystron_ad2d66efe8ade15e9fd59b0088094d641}\label{classKlystron_ad2d66efe8ade15e9fd59b0088094d641}} 
+std\+::vector$<$ \hyperlink{classRFStructure}{R\+F\+Structure} $\ast$ $>$ {\bfseries rf\+\_\+cavs}
+\item 
+\mbox{\Hypertarget{classKlystron_a580e03399e384a48593bd6c54240f0b0}\label{classKlystron_a580e03399e384a48593bd6c54240f0b0}} 
+Mode {\bfseries kmode}
+\item 
+\mbox{\Hypertarget{classKlystron_aa2767d918b32e2752f84143c2db9da4a}\label{classKlystron_aa2767d918b32e2752f84143c2db9da4a}} 
+double {\bfseries V\+\_\+k}
+\item 
+\mbox{\Hypertarget{classKlystron_a0b97be677d940619294aba0cd31d1634}\label{classKlystron_a0b97be677d940619294aba0cd31d1634}} 
+double {\bfseries phi\+\_\+k}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKlystron_a2cb5bf0328cf1f47d0d7bff0a0b55f16}\label{classKlystron_a2cb5bf0328cf1f47d0d7bff0a0b55f16}} 
+\index{Klystron@{Klystron}!Copy@{Copy}}
+\index{Copy@{Copy}!Klystron@{Klystron}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classKlystron}{Klystron} $\ast$ Klystron\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+\mbox{\Hypertarget{classKlystron_a77d772abd8172d0de103bd14c838f6fc}\label{classKlystron_a77d772abd8172d0de103bd14c838f6fc}} 
+\index{Klystron@{Klystron}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Klystron@{Klystron}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Klystron\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Klystron.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Klystron.\+cpp\end{DoxyCompactItemize}

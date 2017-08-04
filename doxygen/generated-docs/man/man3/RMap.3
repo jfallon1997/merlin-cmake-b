@@ -1,0 +1,118 @@
+.TH "RMap" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RMap
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RMap\&.h>\fP
+.PP
+Inherited by \fBRTMap\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBLinearTermArray\fP"
+.br
+.ti -1c
+.RI "struct \fBRij\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBLinearTermArray::iterator\fP \fBitor\fP"
+.br
+.ti -1c
+.RI "typedef \fBLinearTermArray::const_iterator\fP \fBconst_itor\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRMap\fP (const \fBRealMatrix\fP &)"
+.br
+.ti -1c
+.RI "\fBPSvector\fP & \fBApply\fP (\fBPSvector\fP &) const"
+.br
+.ti -1c
+.RI "template<class T , int N> \fBTCovMtrx\fP< T, N > & \fBApply\fP (\fBTCovMtrx\fP< T, N > &S) const"
+.br
+.ti -1c
+.RI "template<int N> \fBTPSMoments\fP< N > & \fBApply\fP (\fBTPSMoments\fP< N > &S) const"
+.br
+.ti -1c
+.RI "void \fBToMatrix\fP (\fBRealMatrix\fP &, bool init=true) const"
+.br
+.ti -1c
+.RI "\fBoperator RealMatrix\fP () const"
+.br
+.ti -1c
+.RI "void \fBMatrixForm\fP (std::ostream &) const"
+.br
+.ti -1c
+.RI "double \fBoperator()\fP (int i, int j) const"
+.br
+.ti -1c
+.RI "double & \fBoperator()\fP (int i, int j)"
+.br
+.ti -1c
+.RI "void \fBAddTerm\fP (int i, int j, double v)"
+.br
+.ti -1c
+.RI "double & \fBAddTerm\fP (int i, int j)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBApply\fP (const \fBPSvector\fP &, \fBPSvector\fP &) const"
+.br
+.ti -1c
+.RI "template<class T , int N> void \fBmap2nd\fP (\fBTCovMtrx\fP< T, N > &res, const \fBRij\fP &r1, const \fBRij\fP &r2, const \fBTCovMtrx\fP< T, N > &orig) const"
+.br
+.ti -1c
+.RI "\fBitor\fP \fBFindTerm\fP (int, int)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBLinearTermArray\fP \fBrterms\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+class \fBRTMap\fP
+.PP
+A second-order TRANSPORT map for a \fBPSvector\fP
+.PP
+class \fBRTMap\fP represents both the first-order R and second-order T TRANSPORT matrices\&. For efficiency, only non-zero terms are stored\&. class \fBRMap\fP A linear phase space map\&. \fBRMap\fP represents a 6x6 matrixs (R matrix) which can map either a single \fBPSvector\fP or a SigmaMatrix (2nd-order moments), or a PSmoment object (combination of first- and second-order moments)\&. Efficiency in terms of space and speed are achieved by using a sparse-matrix representation\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBPSvector\fP& RMap::Apply (\fBPSvector\fP &) const"
+Apply to a single \fBPSvector\fP 
+.SS "template<class T , int N> \fBTCovMtrx\fP<T,N>& RMap::Apply (\fBTCovMtrx\fP< T, N > & S) const\fC [inline]\fP"
+Apply to a covariance (sigma) matrix
+.IP "\(bu" 2
+MSVC6 needs this to be defined here (inlined) for
+.IP "\(bu" 2
+the compiler to correctly compile it! 
+.PP
+
+.SS "template<class T , int N> void RMap::map2nd (\fBTCovMtrx\fP< T, N > & res, const \fBRij\fP & r1, const \fBRij\fP & r2, const \fBTCovMtrx\fP< T, N > & orig) const\fC [inline]\fP, \fC [protected]\fP"
+helper function used to map second order moments 
+.SS "void RMap::MatrixForm (std::ostream & os) const"
+Output (matrix form) 
+.SS "void RMap::ToMatrix (\fBRealMatrix\fP & R, bool init = \fCtrue\fP) const"
+Conversion to a matrix 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,50 @@
+.TH "Collimation::ScatteringProcess" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Collimation::ScatteringProcess
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBCollimation::ElasticpN\fP, \fBCollimation::Elasticpn\fP, \fBCollimation::Inelastic\fP, \fBCollimation::Rutherford\fP, \fBCollimation::SingleDiffractive\fP, \fBCollimation::SixTrackElasticpn\fP, \fBCollimation::SixTrackElasticpN\fP, \fBCollimation::SixTrackRutherford\fP, and \fBCollimation::SixTrackSingleDiffractive\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBScatter\fP (\fBPSvector\fP &p, double E)=0"
+.br
+.ti -1c
+.RI "virtual void \fBConfigure\fP (\fBMaterial\fP *matin, \fBCrossSections\fP *CSin)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetProcessType\fP () const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBsigma\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBE0\fP"
+.br
+.ti -1c
+.RI "\fBMaterial\fP * \fBmat\fP"
+.br
+.ti -1c
+.RI "\fBCrossSections\fP * \fBcs\fP"
+.br
+.ti -1c
+.RI "double \fBt\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,81 @@
+\hypertarget{classParticleTracking_1_1SynchRadParticleProcess}{}\section{Particle\+Tracking\+:\+:Synch\+Rad\+Particle\+Process Class Reference}
+\label{classParticleTracking_1_1SynchRadParticleProcess}\index{Particle\+Tracking\+::\+Synch\+Rad\+Particle\+Process@{Particle\+Tracking\+::\+Synch\+Rad\+Particle\+Process}}
+Inheritance diagram for Particle\+Tracking\+:\+:Synch\+Rad\+Particle\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classParticleTracking_1_1SynchRadParticleProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_ae8a003f6488a6d41dd87c7fec6cb815e}\label{classParticleTracking_1_1SynchRadParticleProcess_ae8a003f6488a6d41dd87c7fec6cb815e}} 
+typedef double($\ast$ {\bfseries Photon\+Generator}) (double)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a28007b064c890de5cb590c4a3dfdd5f1}\label{classParticleTracking_1_1SynchRadParticleProcess_a28007b064c890de5cb590c4a3dfdd5f1}} 
+{\bfseries Synch\+Rad\+Particle\+Process} (int prio, bool q=false)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a9332768fa75f302fbf0abcd93f71a00b}\label{classParticleTracking_1_1SynchRadParticleProcess_a9332768fa75f302fbf0abcd93f71a00b}} 
+virtual void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_acd05cebb9fd326111e4c7991d24435f8}\label{classParticleTracking_1_1SynchRadParticleProcess_acd05cebb9fd326111e4c7991d24435f8}} 
+virtual void {\bfseries Do\+Process} (double ds)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_ad68ce4b8c82dabc9edfe329e1d3aa4a3}\label{classParticleTracking_1_1SynchRadParticleProcess_ad68ce4b8c82dabc9edfe329e1d3aa4a3}} 
+virtual double {\bfseries Get\+Max\+Allowed\+Step\+Size} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_abe6b014b4f84ca3db776d96a759b99dd}\label{classParticleTracking_1_1SynchRadParticleProcess_abe6b014b4f84ca3db776d96a759b99dd}} 
+void {\bfseries Include\+Quad\+Radiation} (bool quadsr)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a58e774a5ba356cea1279e982b17d66f9}\label{classParticleTracking_1_1SynchRadParticleProcess_a58e774a5ba356cea1279e982b17d66f9}} 
+void {\bfseries Set\+Num\+Component\+Steps} (int n)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a44f214e439bda279a4d159557b9a444b}\label{classParticleTracking_1_1SynchRadParticleProcess_a44f214e439bda279a4d159557b9a444b}} 
+void {\bfseries Set\+Max\+Component\+Step\+Size} (double ds\+\_\+max)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_abca6bd09eb81dfebb3952ad6ca5b5369}\label{classParticleTracking_1_1SynchRadParticleProcess_abca6bd09eb81dfebb3952ad6ca5b5369}} 
+void {\bfseries Generate\+Photons} (bool gp)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a024838de880be22f695ed9acc6f687b9}\label{classParticleTracking_1_1SynchRadParticleProcess_a024838de880be22f695ed9acc6f687b9}} 
+void {\bfseries Adjust\+Bunch\+Reference\+Energy} (bool flg)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a98407ef45df9976efcc41d3be55d3eda}\label{classParticleTracking_1_1SynchRadParticleProcess_a98407ef45df9976efcc41d3be55d3eda}} 
+static void {\bfseries Set\+Photon\+Generator} (Photon\+Generator pg)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_aedf6577e9c1eee50279a45f3970c6ab3}\label{classParticleTracking_1_1SynchRadParticleProcess_aedf6577e9c1eee50279a45f3970c6ab3}} 
+static void {\bfseries Use\+Symplectic\+Variables} (bool flg)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a6ea54c01412941738ca6491401a6558b}\label{classParticleTracking_1_1SynchRadParticleProcess_a6ea54c01412941738ca6491401a6558b}} 
+double {\bfseries P\+H\+O\+T\+C\+O\+N\+S\+T1}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a6bf5eaaf60305b255c7bcc264ffac1b3}\label{classParticleTracking_1_1SynchRadParticleProcess_a6bf5eaaf60305b255c7bcc264ffac1b3}} 
+double {\bfseries P\+H\+O\+T\+C\+O\+N\+S\+T2}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a1d20d234322172e3a07d4b21b9e412ef}\label{classParticleTracking_1_1SynchRadParticleProcess_a1d20d234322172e3a07d4b21b9e412ef}} 
+double {\bfseries Particle\+Mass\+MeV}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_ae59f8c8b49962762fae62876db84a8e1}\label{classParticleTracking_1_1SynchRadParticleProcess_ae59f8c8b49962762fae62876db84a8e1}} 
+static Photon\+Generator {\bfseries pgen} = H\+B\+Spectrum\+Gen
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1SynchRadParticleProcess_a7d76a71a1865586206417c8aaa561e53}\label{classParticleTracking_1_1SynchRadParticleProcess_a7d76a71a1865586206417c8aaa561e53}} 
+static bool {\bfseries symp\+Vars} = false
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Synch\+Rad\+Particle\+Process.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Synch\+Rad\+Particle\+Process.\+cpp\end{DoxyCompactItemize}

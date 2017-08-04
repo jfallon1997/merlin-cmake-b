@@ -1,0 +1,176 @@
+\hypertarget{classTrackingSimulation}{}\section{Tracking\+Simulation Class Reference}
+\label{classTrackingSimulation}\index{Tracking\+Simulation@{Tracking\+Simulation}}
+
+
+{\ttfamily \#include $<$Tracking\+Simulation.\+h$>$}
+
+Inheritance diagram for Tracking\+Simulation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTrackingSimulation}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a67244bc98b227fb1c2070676f6c756be}\label{classTrackingSimulation_a67244bc98b227fb1c2070676f6c756be}} 
+typedef T\+Stepper$<$ Accelerator\+Model\+::\+Beamline\+Iterator $>$ {\bfseries Beamline\+Stepper}
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a1a3a7c3290939897054b0ebbad8f58bd}\label{classTrackingSimulation_a1a3a7c3290939897054b0ebbad8f58bd}} 
+typedef T\+Stepper$<$ \hyperlink{classring__iterator}{Accelerator\+Model\+::\+Ring\+Iterator} $>$ {\bfseries Ring\+Stepper}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a010336b6818d9ebb4797e26d64ce25ae}\label{classTrackingSimulation_a010336b6818d9ebb4797e26d64ce25ae}} 
+{\bfseries Tracking\+Simulation} (const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&bline)
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a474372bb03f6807d7918d2c0279449ec}\label{classTrackingSimulation_a474372bb03f6807d7918d2c0279449ec}} 
+{\bfseries Tracking\+Simulation} (const \hyperlink{classring__iterator}{Accelerator\+Model\+::\+Ring\+Iterator} \&a\+Ring)
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a1a060049a6ac624dc4c5cfbe870627eb}\label{classTrackingSimulation_a1a060049a6ac624dc4c5cfbe870627eb}} 
+void {\bfseries Set\+Beamline} (const \hyperlink{classAcceleratorModel_1_1Beamline}{Accelerator\+Model\+::\+Beamline} \&bline)
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_ae22339fedd68dfde347660af0c6ed974}\label{classTrackingSimulation_ae22339fedd68dfde347660af0c6ed974}} 
+void {\bfseries Set\+Ring} (const \hyperlink{classring__iterator}{Accelerator\+Model\+::\+Ring\+Iterator} \&a\+Ring)
+\item 
+virtual \hyperlink{classBunch}{Bunch} \& \hyperlink{classTrackingSimulation_a09502165e1c358b1b30ff35a26910a1d}{Run} ()
+\item 
+virtual \hyperlink{classBunch}{Bunch} \& \hyperlink{classTrackingSimulation_ae618402f5a2bb8215da464157e5675e6}{Continue} ()
+\item 
+void \hyperlink{classTrackingSimulation_a26e85f3096ca9fffd3362a2b8ccc6ef5}{Add\+Process} (\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$proc)
+\item 
+bool \hyperlink{classTrackingSimulation_a235e5a69ec05d1351e623fee1f9c054f}{Remove\+Process} (\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$proc)
+\item 
+void \hyperlink{classTrackingSimulation_a18356dbb48aec5142fecf20fc0582b92}{Assume\+Flat\+Lattice} (bool flat)
+\item 
+void \hyperlink{classTrackingSimulation_aafcbefd77e9db2baad4d473771f98817}{Inject\+Beam\+On\+Axis} (bool on\+Axis)
+\item 
+void \hyperlink{classTrackingSimulation_a0de2bbd2e382637a6372db08f6d69ffc}{Set\+Initial\+Bunch\+Ctor} (\hyperlink{classBunchConstructor}{Bunch\+Constructor} $\ast$bctor)
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a23bebfbc54a23874a793b8d41958ad3d}\label{classTrackingSimulation_a23bebfbc54a23874a793b8d41958ad3d}} 
+void {\bfseries Set\+Log\+Stream} (ostream \&os)
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_aaaf9d07bb92e8eed2d18ef4b30488a53}\label{classTrackingSimulation_aaaf9d07bb92e8eed2d18ef4b30488a53}} 
+void {\bfseries Set\+Logging\+On} ()
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a6c49eae5c98bf03804767bfb1a61079e}\label{classTrackingSimulation_a6c49eae5c98bf03804767bfb1a61079e}} 
+void {\bfseries Set\+Logging\+Off} ()
+\item 
+void \hyperlink{classTrackingSimulation_a5a2703dbc6eaaf1e35abfa327ddfbdf9}{Handle\+Exceptions} (bool handle)
+\item 
+void \hyperlink{classTrackingSimulation_a30cc7ce6c637e8b1ce909288e1a13d61}{Init\+Stepper} (bool gen\+New\+Bunch=true)
+\item 
+void \hyperlink{classTrackingSimulation_ab7456d24ba873db3a5b7d61912d1f551}{Init\+Stepper} (\hyperlink{classBunch}{Bunch} $\ast$a\+Bunch)
+\item 
+bool \hyperlink{classTrackingSimulation_a374d51e700bf2cdab374a6679c9bfe53}{Step\+Component} ()
+\item 
+\hyperlink{classComponentFrame}{Component\+Frame} \& \hyperlink{classTrackingSimulation_aa48c7809cc42ad03aaf5a8173ca0ca94}{Get\+Current\+Frame} ()
+\item 
+\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \& \hyperlink{classTrackingSimulation_a66d2ecb8dc7a799b92cc5e4d179defb2}{Get\+Current\+Component} ()
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a41892aa76f68e136a2de50e7f30c45e3}\label{classTrackingSimulation_a41892aa76f68e136a2de50e7f30c45e3}} 
+void {\bfseries Set\+Output} (\hyperlink{classSimulationOutput}{Simulation\+Output} $\ast$simout)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_a415ec3f11cdba0a038a232d7f3996e1f}\label{classTrackingSimulation_a415ec3f11cdba0a038a232d7f3996e1f}} 
+\hyperlink{classBunch}{Bunch} \& {\bfseries Do\+Run} (bool new\+\_\+bunch, bool do\+\_\+init)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrackingSimulation_ab67eba68a43968f06b09537c85676634}\label{classTrackingSimulation_ab67eba68a43968f06b09537c85676634}} 
+\hyperlink{classBunch}{Bunch} $\ast$ {\bfseries bunch}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A beam dynamics simulation. \hyperlink{classTrackingSimulation}{Tracking\+Simulation} tracks a \hyperlink{classBunch}{Bunch} object through a specified Beamline (single pass). Tracking is performed by one or more \hyperlink{classBunchProcess}{Bunch\+Process} objects, one of which is generally a transport process which is responsible for \char`\"{}tracking\char`\"{} the concrete \hyperlink{classBunch}{Bunch} implementation through the Beamline components. The initial \hyperlink{classBunch}{Bunch} is generated on each Run using the supplied \hyperlink{classBunchConstructor}{Bunch\+Constructor}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTrackingSimulation_a26e85f3096ca9fffd3362a2b8ccc6ef5}\label{classTrackingSimulation_a26e85f3096ca9fffd3362a2b8ccc6ef5}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Add\+Process@{Add\+Process}}
+\index{Add\+Process@{Add\+Process}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Add\+Process()}{AddProcess()}}
+{\footnotesize\ttfamily void Tracking\+Simulation\+::\+Add\+Process (\begin{DoxyParamCaption}\item[{\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$}]{proc }\end{DoxyParamCaption})}
+
+Add a \hyperlink{classBunchProcess}{Bunch\+Process} to the simulation. \mbox{\Hypertarget{classTrackingSimulation_a18356dbb48aec5142fecf20fc0582b92}\label{classTrackingSimulation_a18356dbb48aec5142fecf20fc0582b92}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Assume\+Flat\+Lattice@{Assume\+Flat\+Lattice}}
+\index{Assume\+Flat\+Lattice@{Assume\+Flat\+Lattice}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Assume\+Flat\+Lattice()}{AssumeFlatLattice()}}
+{\footnotesize\ttfamily void Tracking\+Simulation\+::\+Assume\+Flat\+Lattice (\begin{DoxyParamCaption}\item[{bool}]{flat }\end{DoxyParamCaption})}
+
+if flat is true, the simulation ignores all coordinate transformations between lattice components. If flat is false (default), the simulation applies all necessary in-\/ and out-\/transformations for each component in the beamline. \mbox{\Hypertarget{classTrackingSimulation_ae618402f5a2bb8215da464157e5675e6}\label{classTrackingSimulation_ae618402f5a2bb8215da464157e5675e6}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Continue@{Continue}}
+\index{Continue@{Continue}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Continue()}{Continue()}}
+{\footnotesize\ttfamily \hyperlink{classBunch}{Bunch} \& Tracking\+Simulation\+::\+Continue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Run the simulation again without constructing a new bunch or (re-\/)initialising the Bunch\+Processes. This function can only be called after an initial \hyperlink{classTrackingSimulation_a09502165e1c358b1b30ff35a26910a1d}{Run()} method is called. \mbox{\Hypertarget{classTrackingSimulation_a66d2ecb8dc7a799b92cc5e4d179defb2}\label{classTrackingSimulation_a66d2ecb8dc7a799b92cc5e4d179defb2}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Get\+Current\+Component@{Get\+Current\+Component}}
+\index{Get\+Current\+Component@{Get\+Current\+Component}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Get\+Current\+Component()}{GetCurrentComponent()}}
+{\footnotesize\ttfamily \hyperlink{classAcceleratorComponent}{Accelerator\+Component}\& Tracking\+Simulation\+::\+Get\+Current\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current component, i.\+e. that component that is about to be tracked by a call to \hyperlink{classTrackingSimulation_a374d51e700bf2cdab374a6679c9bfe53}{Step\+Component()}. \mbox{\Hypertarget{classTrackingSimulation_aa48c7809cc42ad03aaf5a8173ca0ca94}\label{classTrackingSimulation_aa48c7809cc42ad03aaf5a8173ca0ca94}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Get\+Current\+Frame@{Get\+Current\+Frame}}
+\index{Get\+Current\+Frame@{Get\+Current\+Frame}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Get\+Current\+Frame()}{GetCurrentFrame()}}
+{\footnotesize\ttfamily \hyperlink{classComponentFrame}{Component\+Frame}\& Tracking\+Simulation\+::\+Get\+Current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current frame, i.\+e. that frame that is about to be tracked by a call to \hyperlink{classTrackingSimulation_a374d51e700bf2cdab374a6679c9bfe53}{Step\+Component()}. \mbox{\Hypertarget{classTrackingSimulation_a5a2703dbc6eaaf1e35abfa327ddfbdf9}\label{classTrackingSimulation_a5a2703dbc6eaaf1e35abfa327ddfbdf9}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Handle\+Exceptions@{Handle\+Exceptions}}
+\index{Handle\+Exceptions@{Handle\+Exceptions}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Handle\+Exceptions()}{HandleExceptions()}}
+{\footnotesize\ttfamily void Tracking\+Simulation\+::\+Handle\+Exceptions (\begin{DoxyParamCaption}\item[{bool}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If handle==true, then any \hyperlink{classMerlinException}{Merlin\+Exception} thrown while the simulation is running is handled locally, and \hyperlink{classTrackingSimulation_a09502165e1c358b1b30ff35a26910a1d}{Run()} command exits normally. If false, any exception is re-\/thrown. \mbox{\Hypertarget{classTrackingSimulation_a30cc7ce6c637e8b1ce909288e1a13d61}\label{classTrackingSimulation_a30cc7ce6c637e8b1ce909288e1a13d61}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Init\+Stepper@{Init\+Stepper}}
+\index{Init\+Stepper@{Init\+Stepper}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Init\+Stepper()}{InitStepper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Tracking\+Simulation\+::\+Init\+Stepper (\begin{DoxyParamCaption}\item[{bool}]{gen\+New\+Bunch = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Initialise a new bunch object for tracking, and resets the current frame to the first frame of the beamline. \mbox{\Hypertarget{classTrackingSimulation_ab7456d24ba873db3a5b7d61912d1f551}\label{classTrackingSimulation_ab7456d24ba873db3a5b7d61912d1f551}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Init\+Stepper@{Init\+Stepper}}
+\index{Init\+Stepper@{Init\+Stepper}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Init\+Stepper()}{InitStepper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Tracking\+Simulation\+::\+Init\+Stepper (\begin{DoxyParamCaption}\item[{\hyperlink{classBunch}{Bunch} $\ast$}]{a\+Bunch }\end{DoxyParamCaption})}
+
+Sets the specified bunch for tracking, and resets the current frame to the first frame of the beamline. \mbox{\Hypertarget{classTrackingSimulation_aafcbefd77e9db2baad4d473771f98817}\label{classTrackingSimulation_aafcbefd77e9db2baad4d473771f98817}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Inject\+Beam\+On\+Axis@{Inject\+Beam\+On\+Axis}}
+\index{Inject\+Beam\+On\+Axis@{Inject\+Beam\+On\+Axis}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Inject\+Beam\+On\+Axis()}{InjectBeamOnAxis()}}
+{\footnotesize\ttfamily void Tracking\+Simulation\+::\+Inject\+Beam\+On\+Axis (\begin{DoxyParamCaption}\item[{bool}]{on\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If on\+Axis is true, tracking simulation ignores any coordination transformation for the first component frame tracked. This effectively injects the \textquotesingle{}beam\textquotesingle{} on the local components axis, irrespective of its alignment state. \mbox{\Hypertarget{classTrackingSimulation_a235e5a69ec05d1351e623fee1f9c054f}\label{classTrackingSimulation_a235e5a69ec05d1351e623fee1f9c054f}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Remove\+Process@{Remove\+Process}}
+\index{Remove\+Process@{Remove\+Process}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Remove\+Process()}{RemoveProcess()}}
+{\footnotesize\ttfamily bool Tracking\+Simulation\+::\+Remove\+Process (\begin{DoxyParamCaption}\item[{\hyperlink{classBunchProcess}{Bunch\+Process} $\ast$}]{proc }\end{DoxyParamCaption})}
+
+Remove the specified \hyperlink{classBunchProcess}{Bunch\+Process} from the simulation. Returns true if successful. \mbox{\Hypertarget{classTrackingSimulation_a09502165e1c358b1b30ff35a26910a1d}\label{classTrackingSimulation_a09502165e1c358b1b30ff35a26910a1d}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Run@{Run}}
+\index{Run@{Run}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily \hyperlink{classBunch}{Bunch} \& Tracking\+Simulation\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Run the simulation. A new bunch is constructed using the current \hyperlink{classBunchConstructor}{Bunch\+Constructor} object, and all the processes are initialised. \mbox{\Hypertarget{classTrackingSimulation_a0de2bbd2e382637a6372db08f6d69ffc}\label{classTrackingSimulation_a0de2bbd2e382637a6372db08f6d69ffc}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Set\+Initial\+Bunch\+Ctor@{Set\+Initial\+Bunch\+Ctor}}
+\index{Set\+Initial\+Bunch\+Ctor@{Set\+Initial\+Bunch\+Ctor}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Set\+Initial\+Bunch\+Ctor()}{SetInitialBunchCtor()}}
+{\footnotesize\ttfamily void Tracking\+Simulation\+::\+Set\+Initial\+Bunch\+Ctor (\begin{DoxyParamCaption}\item[{\hyperlink{classBunchConstructor}{Bunch\+Constructor} $\ast$}]{bctor }\end{DoxyParamCaption})}
+
+Sets the initial bunch constructor. \mbox{\Hypertarget{classTrackingSimulation_a374d51e700bf2cdab374a6679c9bfe53}\label{classTrackingSimulation_a374d51e700bf2cdab374a6679c9bfe53}} 
+\index{Tracking\+Simulation@{Tracking\+Simulation}!Step\+Component@{Step\+Component}}
+\index{Step\+Component@{Step\+Component}!Tracking\+Simulation@{Tracking\+Simulation}}
+\subsubsection{\texorpdfstring{Step\+Component()}{StepComponent()}}
+{\footnotesize\ttfamily bool Tracking\+Simulation\+::\+Step\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Track the bunch though the next \hyperlink{classComponentFrame}{Component\+Frame} in the beamline. Returns false if that component is the last in the beamline. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Tracking\+Simulation.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Tracking\+Simulation.\+cpp\end{DoxyCompactItemize}

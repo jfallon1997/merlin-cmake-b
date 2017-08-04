@@ -1,0 +1,131 @@
+\hypertarget{classCollimator}{}\section{Collimator Class Reference}
+\label{classCollimator}\index{Collimator@{Collimator}}
+Inheritance diagram for Collimator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classCollimator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCollimator_ab48a84c675c70f019d22135d487c2196}\label{classCollimator_ab48a84c675c70f019d22135d487c2196}} 
+{\bfseries Collimator} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len)
+\item 
+\mbox{\Hypertarget{classCollimator_ad2ccfcac873485325e5d3ab81d6074bc}\label{classCollimator_ad2ccfcac873485325e5d3ab81d6074bc}} 
+{\bfseries Collimator} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, double rad\+Length)
+\item 
+\mbox{\Hypertarget{classCollimator_a62fb8545803efcdfe2ec6e4148efe56b}\label{classCollimator_a62fb8545803efcdfe2ec6e4148efe56b}} 
+{\bfseries Collimator} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, \hyperlink{classMaterial}{Material} $\ast$pp, double P0)
+\item 
+\mbox{\Hypertarget{classCollimator_a5ee805434a47d85f881fd34bf659c4c5}\label{classCollimator_a5ee805434a47d85f881fd34bf659c4c5}} 
+double {\bfseries Get\+Num\+Rad\+Lengths} () const
+\item 
+\mbox{\Hypertarget{classCollimator_a7e3d4a833345b797ab162809cc8317bd}\label{classCollimator_a7e3d4a833345b797ab162809cc8317bd}} 
+double {\bfseries Get\+Material\+Radiation\+Length} () const
+\item 
+virtual const string \& \hyperlink{classCollimator_aab811743031565147b965ca9b9fdfbc4}{Get\+Type} () const
+\item 
+virtual int \hyperlink{classCollimator_a158a9d8999d55a27efe4e56e5af8b56a}{Get\+Index} () const
+\item 
+virtual void \hyperlink{classCollimator_acbcf691bfcf53d652d14b9381c711fe7}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual void \hyperlink{classCollimator_a89d782779f8e57af28eeb963078bbf20}{Rotate\+Y180} ()
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classCollimator_a82e63d47e1688d84f2e8f2fc3d247700}{Copy} () const
+\item 
+\mbox{\Hypertarget{classCollimator_af3b0682b5f87377f653370e38d831edb}\label{classCollimator_af3b0682b5f87377f653370e38d831edb}} 
+virtual void {\bfseries Set\+Coll\+ID} (int n)
+\item 
+\mbox{\Hypertarget{classCollimator_a7efb007cd0aa46b4e15260a983eb3fd4}\label{classCollimator_a7efb007cd0aa46b4e15260a983eb3fd4}} 
+virtual int {\bfseries Get\+Coll\+ID} ()
+\item 
+\mbox{\Hypertarget{classCollimator_a023abea4e74906fd0e2b6d74a7d679b6}\label{classCollimator_a023abea4e74906fd0e2b6d74a7d679b6}} 
+virtual void {\bfseries Set\+Material} (\hyperlink{classMaterial}{Material} $\ast$pp)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCollimator_afa138af5a4dc2f3bea288b00ab8daf6c}\label{classCollimator_afa138af5a4dc2f3bea288b00ab8daf6c}} 
+bool {\bfseries scatter\+\_\+at\+\_\+this\+\_\+collimator}
+\item 
+\mbox{\Hypertarget{classCollimator_ac4c4bda4b1e20e8b9a943c168bbaa18b}\label{classCollimator_ac4c4bda4b1e20e8b9a943c168bbaa18b}} 
+\hyperlink{classMaterial}{Material} $\ast$ {\bfseries p}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCollimator_ac20290ce8e9880c343436e04166c05fb}\label{classCollimator_ac20290ce8e9880c343436e04166c05fb}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCollimator_a82e63d47e1688d84f2e8f2fc3d247700}\label{classCollimator_a82e63d47e1688d84f2e8f2fc3d247700}} 
+\index{Collimator@{Collimator}!Copy@{Copy}}
+\index{Copy@{Copy}!Collimator@{Collimator}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Collimator\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Reimplemented from \hyperlink{classDrift_ae47df31297596e13944364d602c95ce5}{Drift}.
+
+\mbox{\Hypertarget{classCollimator_a158a9d8999d55a27efe4e56e5af8b56a}\label{classCollimator_a158a9d8999d55a27efe4e56e5af8b56a}} 
+\index{Collimator@{Collimator}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Collimator@{Collimator}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Collimator\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classDrift_a19bc19d48348912f8693e3ebbf9e92f2}{Drift}.
+
+\mbox{\Hypertarget{classCollimator_aab811743031565147b965ca9b9fdfbc4}\label{classCollimator_aab811743031565147b965ca9b9fdfbc4}} 
+\index{Collimator@{Collimator}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Collimator@{Collimator}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Collimator\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classDrift_a9f5e7d0aafd8689a4420b3d5e7b6879e}{Drift}.
+
+\mbox{\Hypertarget{classCollimator_acbcf691bfcf53d652d14b9381c711fe7}\label{classCollimator_acbcf691bfcf53d652d14b9381c711fe7}} 
+\index{Collimator@{Collimator}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Collimator@{Collimator}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Collimator\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classDrift_a9f3925549a0c7c99b39a1abea8546642}{Drift}.
+
+\mbox{\Hypertarget{classCollimator_a89d782779f8e57af28eeb963078bbf20}\label{classCollimator_a89d782779f8e57af28eeb963078bbf20}} 
+\index{Collimator@{Collimator}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!Collimator@{Collimator}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void Collimator\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Reimplemented from \hyperlink{classDrift_abf387eddfcabfc81b186080f6301ce60}{Drift}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Collimator.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Collimator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+\hypertarget{classArcGeometry}{}\section{Arc\+Geometry Class Reference}
+\label{classArcGeometry}\index{Arc\+Geometry@{Arc\+Geometry}}
+Inheritance diagram for Arc\+Geometry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classArcGeometry}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArcGeometry_ab2831b04e62efcd40d0f2f14985828f0}\label{classArcGeometry_ab2831b04e62efcd40d0f2f14985828f0}} 
+{\bfseries Arc\+Geometry} (double l, double curv)
+\item 
+\mbox{\Hypertarget{classArcGeometry_a0a285ce6fb24e94c734be8529f33f023}\label{classArcGeometry_a0a285ce6fb24e94c734be8529f33f023}} 
+double {\bfseries Get\+Curvature} () const
+\item 
+\mbox{\Hypertarget{classArcGeometry_ab8816547aaf9ef2993af2daee51758e1}\label{classArcGeometry_ab8816547aaf9ef2993af2daee51758e1}} 
+double {\bfseries Get\+Angle} () const
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classArcGeometry_affd534869f6f79b4b271a07b51145b7c}{Get\+Geometry\+Transform} (double s0, double s) const
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classArcGeometry_aaa665b9dba9b879f38cb5e4a97967533}{Get\+Geometry\+Transform} (\hyperlink{classAcceleratorGeometry_a5c1661938176102f235836f5a8be6034}{Boundary\+Plane} p) const
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classArcGeometry_aceed7dd7294528003f4bd9f624ef6c9b}{Get\+Total\+Geometry\+Transform} () const
+\item 
+\mbox{\Hypertarget{classArcGeometry_afced48a170ee36a2a87277148e3617c1}\label{classArcGeometry_afced48a170ee36a2a87277148e3617c1}} 
+void {\bfseries Set\+Curvature} (double curv)
+\item 
+\mbox{\Hypertarget{classArcGeometry_a4a41e90600cbd47c308df598438e99a0}\label{classArcGeometry_a4a41e90600cbd47c308df598438e99a0}} 
+void {\bfseries Set\+Tilt} (double t)
+\item 
+\mbox{\Hypertarget{classArcGeometry_a339d9b840cb94a4aef516989e3149ed2}\label{classArcGeometry_a339d9b840cb94a4aef516989e3149ed2}} 
+double {\bfseries Get\+Tilt} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classArcGeometry_affd534869f6f79b4b271a07b51145b7c}\label{classArcGeometry_affd534869f6f79b4b271a07b51145b7c}} 
+\index{Arc\+Geometry@{Arc\+Geometry}!Get\+Geometry\+Transform@{Get\+Geometry\+Transform}}
+\index{Get\+Geometry\+Transform@{Get\+Geometry\+Transform}!Arc\+Geometry@{Arc\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Transform()}{GetGeometryTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classTransform3D}{Transform3D} Arc\+Geometry\+::\+Get\+Geometry\+Transform (\begin{DoxyParamCaption}\item[{double}]{s0,  }\item[{double}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the three-\/dimensional transformation from the frame at s0 to the frame at s. s and s0 are in the geometry\textquotesingle{}s s-\/frame, and must be within the geometry extents. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s0} & The location at which the transform should be evalutated from. \\
+\hline
+\mbox{\tt in}  & {\em s} & The location at which the transform should be evalutated to. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throws} & a Beyond\+Extent exception if the requested s values are outside the geometry extent. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+The 3D transformation from the entrance to the exit of this geometry. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_abf9c17cd1f84ac3e41973c85a65004de}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classArcGeometry_aaa665b9dba9b879f38cb5e4a97967533}\label{classArcGeometry_aaa665b9dba9b879f38cb5e4a97967533}} 
+\index{Arc\+Geometry@{Arc\+Geometry}!Get\+Geometry\+Transform@{Get\+Geometry\+Transform}}
+\index{Get\+Geometry\+Transform@{Get\+Geometry\+Transform}!Arc\+Geometry@{Arc\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Transform()}{GetGeometryTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classTransform3D}{Transform3D} Arc\+Geometry\+::\+Get\+Geometry\+Transform (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorGeometry_a5c1661938176102f235836f5a8be6034}{Boundary\+Plane}}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the transformation from the geometry origin to the specified boundary plane. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & The chosen Boundary\+Plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 3D transformation from the geometry origin to a specified boundary plane (extrance or exit). 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_af26654f89c4bff1b516d2c6d6bb68871}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classArcGeometry_aceed7dd7294528003f4bd9f624ef6c9b}\label{classArcGeometry_aceed7dd7294528003f4bd9f624ef6c9b}} 
+\index{Arc\+Geometry@{Arc\+Geometry}!Get\+Total\+Geometry\+Transform@{Get\+Total\+Geometry\+Transform}}
+\index{Get\+Total\+Geometry\+Transform@{Get\+Total\+Geometry\+Transform}!Arc\+Geometry@{Arc\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Total\+Geometry\+Transform()}{GetTotalGeometryTransform()}}
+{\footnotesize\ttfamily \hyperlink{classTransform3D}{Transform3D} Arc\+Geometry\+::\+Get\+Total\+Geometry\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the transformation from the entrance plane frame to the exit plane frame. \begin{DoxyReturn}{Returns}
+The 3D transformation from the entrance to the exit of this geometry. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorGeometry_a9bffb8262fc3b28195e1e25fbfb2b8ba}{Accelerator\+Geometry}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Arc\+Geometry.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Arc\+Geometry.\+cpp\end{DoxyCompactItemize}

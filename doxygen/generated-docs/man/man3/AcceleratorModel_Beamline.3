@@ -1,0 +1,170 @@
+.TH "AcceleratorModel::Beamline" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AcceleratorModel::Beamline
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AcceleratorModel\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBTRK\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBeamline\fP (BeamlineIterator fst, BeamlineIterator lst, Index fst_i, Index lst_i)"
+.br
+.ti -1c
+.RI "bool \fBIsReversed\fP ()"
+.br
+.ti -1c
+.RI "template<class T > T & \fBTrack\fP (T &tobj)"
+.br
+.ti -1c
+.RI "BeamlineIterator \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "ConstBeamlineIterator \fBbegin\fP () const"
+.br
+.ti -1c
+.RI "BeamlineIterator \fBend\fP ()"
+.br
+.ti -1c
+.RI "ConstBeamlineIterator \fBend\fP () const"
+.br
+.ti -1c
+.RI "\fBComponentFrame\fP & \fBFirst\fP ()"
+.br
+.ti -1c
+.RI "const \fBComponentFrame\fP & \fBFirst\fP () const"
+.br
+.ti -1c
+.RI "\fBComponentFrame\fP & \fBLast\fP ()"
+.br
+.ti -1c
+.RI "const \fBComponentFrame\fP & \fBLast\fP () const"
+.br
+.ti -1c
+.RI "Index \fBfirst_index\fP () const"
+.br
+.ti -1c
+.RI "Index \fBlast_index\fP () const"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents the complete or contiguous sub-section of the accelerator lattice\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "BeamlineIterator AcceleratorModel::Beamline::begin ()\fC [inline]\fP"
+Standard library type iterator accessors\&. Gets a BeamlineIterator pointing to the first element in the \fBBeamline\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A BeamlineIterator pointing to the first element in the \fBBeamline\fP\&. 
+.RE
+.PP
+
+.SS "ConstBeamlineIterator AcceleratorModel::Beamline::begin () const\fC [inline]\fP"
+Gets a const BeamlineIterator pointing to the first element in the \fBBeamline\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A const BeamlineIterator pointing to the first element in the \fBBeamline\fP\&. 
+.RE
+.PP
+
+.SS "BeamlineIterator AcceleratorModel::Beamline::end ()\fC [inline]\fP"
+Gets a BeamlineIterator pointing to the end of the \fBBeamline\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A BeamlineIterator pointing to the end of the \fBBeamline\fP\&. 
+.RE
+.PP
+
+.SS "ConstBeamlineIterator AcceleratorModel::Beamline::end () const\fC [inline]\fP"
+Gets a const BeamlineIterator pointing to the end of the \fBBeamline\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A const BeamlineIterator pointing to the end of the \fBBeamline\fP\&. 
+.RE
+.PP
+
+.SS "\fBComponentFrame\fP& AcceleratorModel::Beamline::First ()\fC [inline]\fP"
+Gets a reference to the first \fBComponentFrame\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A reference to the first \fBComponentFrame\fP\&. 
+.RE
+.PP
+
+.SS "const \fBComponentFrame\fP& AcceleratorModel::Beamline::First () const\fC [inline]\fP"
+Gets a const reference to the first \fBComponentFrame\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A const reference to the first \fBComponentFrame\fP\&. 
+.RE
+.PP
+
+.SS "Index AcceleratorModel::Beamline::first_index () const\fC [inline]\fP"
+Gets the index of the first element in the \fBBeamline\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The index of the first element in the \fBBeamline\fP\&. 
+.RE
+.PP
+
+.SS "bool AcceleratorModel::Beamline::IsReversed ()\fC [inline]\fP"
+Checks if the beamline is reversed\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Returns a bool set to true if the beamline is reversed\&. 
+.RE
+.PP
+
+.SS "\fBComponentFrame\fP& AcceleratorModel::Beamline::Last ()\fC [inline]\fP"
+Gets a reference to the last \fBComponentFrame\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A reference to the last \fBComponentFrame\fP\&. 
+.RE
+.PP
+
+.SS "const \fBComponentFrame\fP& AcceleratorModel::Beamline::Last () const\fC [inline]\fP"
+Gets a const reference to the last \fBComponentFrame\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A const reference to the last \fBComponentFrame\fP\&. 
+.RE
+.PP
+
+.SS "Index AcceleratorModel::Beamline::last_index () const\fC [inline]\fP"
+Gets the index of the last element in the \fBBeamline\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The index of the last element in the \fBBeamline\fP\&. 
+.RE
+.PP
+
+.SS "template<class T > T& AcceleratorModel::Beamline::Track (T & tobj)\fC [inline]\fP"
+Template function that iterates the functor object tobj over the \fBBeamline\fP\&. Returns a reference to tobj on exit\&. We make use of the \fBTRK\fP wrapper, to avoid the call to tobj's copy constructor
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

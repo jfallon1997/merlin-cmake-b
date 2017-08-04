@@ -1,0 +1,70 @@
+.TH "InterpolatedAperture" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InterpolatedAperture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBInterpolatedCircularAperture\fP, \fBInterpolatedEllipticalAperture\fP, \fBInterpolatedOctagonalAperture\fP, and \fBInterpolatedRectEllipseAperture\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBap\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef size_t \fBApertureClass_t\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBInterpolatedAperture\fP (std::vector< \fBap\fP > ApertureListInput)"
+.br
+.ti -1c
+.RI "std::vector< \fBap\fP > \fBGetApertureList\fP () const"
+.br
+.ti -1c
+.RI "void \fBAddS\fP (double s)"
+.br
+.ti -1c
+.RI "void \fBAddAp1\fP (double ap1)"
+.br
+.ti -1c
+.RI "void \fBAddAp2\fP (double ap2)"
+.br
+.ti -1c
+.RI "void \fBAddAp3\fP (double ap3)"
+.br
+.ti -1c
+.RI "void \fBAddAp4\fP (double ap4)"
+.br
+.ti -1c
+.RI "void \fBAddEntry\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBap\fP \fBApertureEntry\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBap\fP > \fBApertureList\fP"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef size_t \fBInterpolatedAperture::ApertureClass_t\fP"
+Typedef for access to the enum 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

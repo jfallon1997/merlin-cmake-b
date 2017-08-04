@@ -1,0 +1,222 @@
+\hypertarget{classApertureConfiguration}{}\section{Aperture\+Configuration Class Reference}
+\label{classApertureConfiguration}\index{Aperture\+Configuration@{Aperture\+Configuration}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structApertureConfiguration_1_1ap}{ap}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef size\+\_\+t \hyperlink{classApertureConfiguration_a84c9eaffaf4394f1538d2ec57a85c706}{Aperture\+Class\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classApertureConfiguration_ac9b95b8adbd178d7345cd147000d7038}{Aperture\+Configuration} ()
+\item 
+\hyperlink{classApertureConfiguration_affd6ff3a6500fb8b7aecc5d8cc7d5ab5}{Aperture\+Configuration} (std\+::string Input\+File\+Name)
+\item 
+void \hyperlink{classApertureConfiguration_a23e6989301d2c88027decc4c6cf63049}{Load\+Aperture\+Configuration} (std\+::string Input\+File\+Name)
+\item 
+void \hyperlink{classApertureConfiguration_ac57cc418854b69b0893c8a0c36386ace}{Output\+Aperture\+List} (std\+::ostream \&os)
+\item 
+void \hyperlink{classApertureConfiguration_af954151209360897a506d914f922f03f}{Configure\+Element\+Apertures} (\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$)
+\item 
+void \hyperlink{classApertureConfiguration_a18b3907d726e2ef8731d6fe9a8a50ea4}{Delete\+All\+Apertures} (\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$Model)
+\item 
+void \hyperlink{classApertureConfiguration_a2def09944077a1c8048ea201256234a5}{Set\+Log\+File} (ostream \&os)
+\item 
+void \hyperlink{classApertureConfiguration_acbb9431d139a07249cf0487f8fd4753b}{Enable\+Logging} (bool flag)
+\item 
+void \hyperlink{classApertureConfiguration_a71fec510b3f362a5307ffde2fb876ab7}{Set\+Default\+Aperture} (\hyperlink{classAperture}{Aperture} $\ast$\hyperlink{structApertureConfiguration_1_1ap}{ap})
+\item 
+void \hyperlink{classApertureConfiguration_a24391451e6a25bc59ea448bdf06bb1b4}{Enable\+Default\+Aperture} (bool flag)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream $\ast$ \hyperlink{classApertureConfiguration_a14da0e53d6b7306ad417dfa51f4d7470}{log}
+\item 
+bool \hyperlink{classApertureConfiguration_ad4005122e0a206a8376407ed8c54c0f6}{log\+Flag}
+\item 
+\hyperlink{structApertureConfiguration_1_1ap}{ap} \hyperlink{classApertureConfiguration_a20692047dd6ec339da5bf9e80f9f9f3c}{Aperture\+Entry}
+\item 
+std\+::vector$<$ \hyperlink{structApertureConfiguration_1_1ap}{ap} $>$ \hyperlink{classApertureConfiguration_a4b70556fb8ac55e8fb5d3d3e0b75b039}{Aperture\+List}
+\item 
+\hyperlink{classAperture}{Aperture} $\ast$ \hyperlink{classApertureConfiguration_a3b08ff20e5bbbb3d28d73048e1933f9f}{Default\+Aperture}
+\item 
+\mbox{\Hypertarget{classApertureConfiguration_ac7d2024a3d3b062f50733c2106fba998}\label{classApertureConfiguration_ac7d2024a3d3b062f50733c2106fba998}} 
+bool {\bfseries Default\+Aperture\+Flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classApertureConfiguration_a84c9eaffaf4394f1538d2ec57a85c706}\label{classApertureConfiguration_a84c9eaffaf4394f1538d2ec57a85c706}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Aperture\+Class\+\_\+t@{Aperture\+Class\+\_\+t}}
+\index{Aperture\+Class\+\_\+t@{Aperture\+Class\+\_\+t}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Aperture\+Class\+\_\+t}{ApertureClass\_t}}
+{\footnotesize\ttfamily typedef size\+\_\+t \hyperlink{classApertureConfiguration_a84c9eaffaf4394f1538d2ec57a85c706}{Aperture\+Configuration\+::\+Aperture\+Class\+\_\+t}}
+
+Typedef for access to the enum 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classApertureConfiguration_ac9b95b8adbd178d7345cd147000d7038}\label{classApertureConfiguration_ac9b95b8adbd178d7345cd147000d7038}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Aperture\+Configuration@{Aperture\+Configuration}}
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Aperture\+Configuration()}{ApertureConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Aperture\+Configuration\+::\+Aperture\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{classApertureConfiguration_affd6ff3a6500fb8b7aecc5d8cc7d5ab5}\label{classApertureConfiguration_affd6ff3a6500fb8b7aecc5d8cc7d5ab5}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Aperture\+Configuration@{Aperture\+Configuration}}
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Aperture\+Configuration()}{ApertureConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Aperture\+Configuration\+::\+Aperture\+Configuration (\begin{DoxyParamCaption}\item[{std\+::string}]{Input\+File\+Name }\end{DoxyParamCaption})}
+
+Constructor with an input file to load 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Input\+File\+Name} & The name of the aperture file to load \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classApertureConfiguration_af954151209360897a506d914f922f03f}\label{classApertureConfiguration_af954151209360897a506d914f922f03f}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Configure\+Element\+Apertures@{Configure\+Element\+Apertures}}
+\index{Configure\+Element\+Apertures@{Configure\+Element\+Apertures}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Configure\+Element\+Apertures()}{ConfigureElementApertures()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Configure\+Element\+Apertures (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$}]{Model }\end{DoxyParamCaption})}
+
+Configures the beam pipe for a given accelerator model 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Model} & A pointer to the \hyperlink{classAcceleratorModel}{Accelerator\+Model} class to add the apertures to \\
+\hline
+\end{DoxyParams}
+Elements -\/ The container with all \hyperlink{classAcceleratorComponent}{Accelerator\+Component} entries comp -\/ Iterator to all \hyperlink{classAcceleratorComponent}{Accelerator\+Component} entries
+
+Aperture\+List -\/ The container with all \hyperlink{classAperture}{Aperture} entries itr -\/ Iterator to all \hyperlink{classAperture}{Aperture} entries.
+
+This\+Element\+Aperture -\/ The container for the current element \hyperlink{classAperture}{Aperture}.
+
+Give magnets and other fixed elements a set aperture. Give drifts interpolated apertures.
+
+3 possible cases 1\+: First entry in the element (or accelerator) 2\+: Entries within an element 3\+: Final entry within an element (or accelerator)
+
+Now move on to assigning the correct type of aperture.
+
+Check if all values are constant\mbox{\Hypertarget{classApertureConfiguration_a18b3907d726e2ef8731d6fe9a8a50ea4}\label{classApertureConfiguration_a18b3907d726e2ef8731d6fe9a8a50ea4}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Delete\+All\+Apertures@{Delete\+All\+Apertures}}
+\index{Delete\+All\+Apertures@{Delete\+All\+Apertures}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Delete\+All\+Apertures()}{DeleteAllApertures()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Delete\+All\+Apertures (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$}]{Model }\end{DoxyParamCaption})}
+
+Deletes all apertures currently attached to the given accelerator model 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Model} & A pointer to the \hyperlink{classAcceleratorModel}{Accelerator\+Model} class to add the apertures to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApertureConfiguration_a24391451e6a25bc59ea448bdf06bb1b4}\label{classApertureConfiguration_a24391451e6a25bc59ea448bdf06bb1b4}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Enable\+Default\+Aperture@{Enable\+Default\+Aperture}}
+\index{Enable\+Default\+Aperture@{Enable\+Default\+Aperture}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Enable\+Default\+Aperture()}{EnableDefaultAperture()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Enable\+Default\+Aperture (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+Enable/disable use of the default aperture where it is not possible to clearly select an aperture type (e.\+g. O\+C\+T\+A\+G\+ON -\/$>$ R\+E\+C\+T\+E\+L\+L\+I\+P\+SE joins) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em flag} & A bool to enable or disable the usage of the default aperture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApertureConfiguration_acbb9431d139a07249cf0487f8fd4753b}\label{classApertureConfiguration_acbb9431d139a07249cf0487f8fd4753b}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Enable\+Logging@{Enable\+Logging}}
+\index{Enable\+Logging@{Enable\+Logging}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Enable\+Logging()}{EnableLogging()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Enable\+Logging (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+Enable/disable logging 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em flag} & The requested logging state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApertureConfiguration_a23e6989301d2c88027decc4c6cf63049}\label{classApertureConfiguration_a23e6989301d2c88027decc4c6cf63049}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Load\+Aperture\+Configuration@{Load\+Aperture\+Configuration}}
+\index{Load\+Aperture\+Configuration@{Load\+Aperture\+Configuration}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Load\+Aperture\+Configuration()}{LoadApertureConfiguration()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Load\+Aperture\+Configuration (\begin{DoxyParamCaption}\item[{std\+::string}]{Input\+File\+Name }\end{DoxyParamCaption})}
+
+Load the \hyperlink{classAperture}{Aperture} settings from an input file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Input\+File\+Name} & The name of the aperture file to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApertureConfiguration_ac57cc418854b69b0893c8a0c36386ace}\label{classApertureConfiguration_ac57cc418854b69b0893c8a0c36386ace}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Output\+Aperture\+List@{Output\+Aperture\+List}}
+\index{Output\+Aperture\+List@{Output\+Aperture\+List}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Output\+Aperture\+List()}{OutputApertureList()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Output\+Aperture\+List (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+Dumps the input file back out 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & The name of the stream to output to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApertureConfiguration_a71fec510b3f362a5307ffde2fb876ab7}\label{classApertureConfiguration_a71fec510b3f362a5307ffde2fb876ab7}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Set\+Default\+Aperture@{Set\+Default\+Aperture}}
+\index{Set\+Default\+Aperture@{Set\+Default\+Aperture}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Set\+Default\+Aperture()}{SetDefaultAperture()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Set\+Default\+Aperture (\begin{DoxyParamCaption}\item[{\hyperlink{classAperture}{Aperture} $\ast$}]{ap }\end{DoxyParamCaption})}
+
+Set a default class of aperture to use in ambiguous cases 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em flag} & The requested logging state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApertureConfiguration_a2def09944077a1c8048ea201256234a5}\label{classApertureConfiguration_a2def09944077a1c8048ea201256234a5}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Set\+Log\+File@{Set\+Log\+File}}
+\index{Set\+Log\+File@{Set\+Log\+File}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Set\+Log\+File()}{SetLogFile()}}
+{\footnotesize\ttfamily void Aperture\+Configuration\+::\+Set\+Log\+File (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption})}
+
+Set the stream for the collimator settings log. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & The stream to log the generated aperture to \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classApertureConfiguration_a20692047dd6ec339da5bf9e80f9f9f3c}\label{classApertureConfiguration_a20692047dd6ec339da5bf9e80f9f9f3c}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Aperture\+Entry@{Aperture\+Entry}}
+\index{Aperture\+Entry@{Aperture\+Entry}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Aperture\+Entry}{ApertureEntry}}
+{\footnotesize\ttfamily \hyperlink{structApertureConfiguration_1_1ap}{ap} Aperture\+Configuration\+::\+Aperture\+Entry}
+
+One aperture entry \mbox{\Hypertarget{classApertureConfiguration_a4b70556fb8ac55e8fb5d3d3e0b75b039}\label{classApertureConfiguration_a4b70556fb8ac55e8fb5d3d3e0b75b039}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Aperture\+List@{Aperture\+List}}
+\index{Aperture\+List@{Aperture\+List}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Aperture\+List}{ApertureList}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structApertureConfiguration_1_1ap}{ap}$>$ Aperture\+Configuration\+::\+Aperture\+List}
+
+The global list of \hyperlink{classAperture}{Aperture} entries \mbox{\Hypertarget{classApertureConfiguration_a3b08ff20e5bbbb3d28d73048e1933f9f}\label{classApertureConfiguration_a3b08ff20e5bbbb3d28d73048e1933f9f}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!Default\+Aperture@{Default\+Aperture}}
+\index{Default\+Aperture@{Default\+Aperture}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{Default\+Aperture}{DefaultAperture}}
+{\footnotesize\ttfamily \hyperlink{classAperture}{Aperture}$\ast$ Aperture\+Configuration\+::\+Default\+Aperture}
+
+A pointer to a default aperture entry \mbox{\Hypertarget{classApertureConfiguration_a14da0e53d6b7306ad417dfa51f4d7470}\label{classApertureConfiguration_a14da0e53d6b7306ad417dfa51f4d7470}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!log@{log}}
+\index{log@{log}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily std\+::ostream$\ast$ Aperture\+Configuration\+::log}
+
+The output log file \mbox{\Hypertarget{classApertureConfiguration_ad4005122e0a206a8376407ed8c54c0f6}\label{classApertureConfiguration_ad4005122e0a206a8376407ed8c54c0f6}} 
+\index{Aperture\+Configuration@{Aperture\+Configuration}!log\+Flag@{log\+Flag}}
+\index{log\+Flag@{log\+Flag}!Aperture\+Configuration@{Aperture\+Configuration}}
+\subsubsection{\texorpdfstring{log\+Flag}{logFlag}}
+{\footnotesize\ttfamily bool Aperture\+Configuration\+::log\+Flag}
+
+Enable/disable logging 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Aperture\+Configuration.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Aperture\+Configuration.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{classEllipticalAperture}{}\section{Elliptical\+Aperture Class Reference}
+\label{classEllipticalAperture}\index{Elliptical\+Aperture@{Elliptical\+Aperture}}
+
+
+{\ttfamily \#include $<$Simple\+Apertures.\+h$>$}
+
+Inheritance diagram for Elliptical\+Aperture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEllipticalAperture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEllipticalAperture_a4eed40d814a493a2260d0db04c8cf663}\label{classEllipticalAperture_a4eed40d814a493a2260d0db04c8cf663}} 
+{\bfseries Elliptical\+Aperture} (double width, double height)
+\item 
+\mbox{\Hypertarget{classEllipticalAperture_a1552d434f593fc0c9ea91ef2c958f533}\label{classEllipticalAperture_a1552d434f593fc0c9ea91ef2c958f533}} 
+double {\bfseries Get\+Half\+Width} () const
+\item 
+\mbox{\Hypertarget{classEllipticalAperture_a86aa77eab0fb05163f178ebcdb4f4bed}\label{classEllipticalAperture_a86aa77eab0fb05163f178ebcdb4f4bed}} 
+double {\bfseries Get\+Half\+Height} () const
+\item 
+virtual bool \hyperlink{classEllipticalAperture_ad2ac194f4f03d5e590a7640afa69ace9}{Point\+Inside} (double x, double y, double z) const
+\item 
+virtual double \hyperlink{classEllipticalAperture_aec41ce72d82e004b8de123e37d3b11e9}{Get\+Radius\+At} (double phi, double z) const
+\item 
+virtual std\+::string \hyperlink{classEllipticalAperture_a8c56e3ab5e8483dd42ed6e35855409df}{Get\+Aperture\+Type} () const
+\item 
+virtual void \hyperlink{classEllipticalAperture_af45343465b84072027de770839bbd73d}{printout} (std\+::ostream \&out) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents an aperture with an elliptical cross-\/section. The aperture is assumed extruded along its geometry. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEllipticalAperture_a8c56e3ab5e8483dd42ed6e35855409df}\label{classEllipticalAperture_a8c56e3ab5e8483dd42ed6e35855409df}} 
+\index{Elliptical\+Aperture@{Elliptical\+Aperture}!Get\+Aperture\+Type@{Get\+Aperture\+Type}}
+\index{Get\+Aperture\+Type@{Get\+Aperture\+Type}!Elliptical\+Aperture@{Elliptical\+Aperture}}
+\subsubsection{\texorpdfstring{Get\+Aperture\+Type()}{GetApertureType()}}
+{\footnotesize\ttfamily std\+::string Elliptical\+Aperture\+::\+Get\+Aperture\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the type of the aperture. \begin{DoxyReturn}{Returns}
+A string containing the type of the aperture. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAperture_ad7af612271a0586feea83c38549dfb75}{Aperture}.
+
+\mbox{\Hypertarget{classEllipticalAperture_aec41ce72d82e004b8de123e37d3b11e9}\label{classEllipticalAperture_aec41ce72d82e004b8de123e37d3b11e9}} 
+\index{Elliptical\+Aperture@{Elliptical\+Aperture}!Get\+Radius\+At@{Get\+Radius\+At}}
+\index{Get\+Radius\+At@{Get\+Radius\+At}!Elliptical\+Aperture@{Elliptical\+Aperture}}
+\subsubsection{\texorpdfstring{Get\+Radius\+At()}{GetRadiusAt()}}
+{\footnotesize\ttfamily double Elliptical\+Aperture\+::\+Get\+Radius\+At (\begin{DoxyParamCaption}\item[{double}]{phi,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the radius to the aperture at the angle phi. The z coordinate is ignored.
+
+Elliptical \hyperlink{classAperture}{Aperture} Functions 
+
+Implements \hyperlink{classAperture_ad0ea7907d393ec1e6a8303343fe9dd29}{Aperture}.
+
+\mbox{\Hypertarget{classEllipticalAperture_ad2ac194f4f03d5e590a7640afa69ace9}\label{classEllipticalAperture_ad2ac194f4f03d5e590a7640afa69ace9}} 
+\index{Elliptical\+Aperture@{Elliptical\+Aperture}!Point\+Inside@{Point\+Inside}}
+\index{Point\+Inside@{Point\+Inside}!Elliptical\+Aperture@{Elliptical\+Aperture}}
+\subsubsection{\texorpdfstring{Point\+Inside()}{PointInside()}}
+{\footnotesize\ttfamily bool Elliptical\+Aperture\+::\+Point\+Inside (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if the point (x,y,z) is within the aperture. The z coordinate is ignored. 
+
+Implements \hyperlink{classAperture_a77854d058bf8a00cfeb7a6d766dc0028}{Aperture}.
+
+\mbox{\Hypertarget{classEllipticalAperture_af45343465b84072027de770839bbd73d}\label{classEllipticalAperture_af45343465b84072027de770839bbd73d}} 
+\index{Elliptical\+Aperture@{Elliptical\+Aperture}!printout@{printout}}
+\index{printout@{printout}!Elliptical\+Aperture@{Elliptical\+Aperture}}
+\subsubsection{\texorpdfstring{printout()}{printout()}}
+{\footnotesize\ttfamily void Elliptical\+Aperture\+::printout (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints out the \hyperlink{classAperture}{Aperture} parameters to a specified stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em out} & The output stream to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAperture_aff2f276b93bb2cb94e559e1c4901e38e}{Aperture}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Simple\+Apertures.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Simple\+Apertures.\+cpp\end{DoxyCompactItemize}

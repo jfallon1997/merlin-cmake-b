@@ -1,0 +1,197 @@
+.TH "ApertureConfiguration" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ApertureConfiguration
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBap\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef size_t \fBApertureClass_t\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBApertureConfiguration\fP ()"
+.br
+.ti -1c
+.RI "\fBApertureConfiguration\fP (std::string InputFileName)"
+.br
+.ti -1c
+.RI "void \fBLoadApertureConfiguration\fP (std::string InputFileName)"
+.br
+.ti -1c
+.RI "void \fBOutputApertureList\fP (std::ostream &os)"
+.br
+.ti -1c
+.RI "void \fBConfigureElementApertures\fP (\fBAcceleratorModel\fP *)"
+.br
+.ti -1c
+.RI "void \fBDeleteAllApertures\fP (\fBAcceleratorModel\fP *Model)"
+.br
+.ti -1c
+.RI "void \fBSetLogFile\fP (ostream &os)"
+.br
+.ti -1c
+.RI "void \fBEnableLogging\fP (bool flag)"
+.br
+.ti -1c
+.RI "void \fBSetDefaultAperture\fP (\fBAperture\fP *\fBap\fP)"
+.br
+.ti -1c
+.RI "void \fBEnableDefaultAperture\fP (bool flag)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::ostream * \fBlog\fP"
+.br
+.ti -1c
+.RI "bool \fBlogFlag\fP"
+.br
+.ti -1c
+.RI "\fBap\fP \fBApertureEntry\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBap\fP > \fBApertureList\fP"
+.br
+.ti -1c
+.RI "\fBAperture\fP * \fBDefaultAperture\fP"
+.br
+.ti -1c
+.RI "bool \fBDefaultApertureFlag\fP"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef size_t \fBApertureConfiguration::ApertureClass_t\fP"
+Typedef for access to the enum 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ApertureConfiguration::ApertureConfiguration ()"
+Constructor 
+.SS "ApertureConfiguration::ApertureConfiguration (std::string InputFileName)"
+Constructor with an input file to load 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIInputFileName\fP The name of the aperture file to load 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ApertureConfiguration::ConfigureElementApertures (\fBAcceleratorModel\fP * Model)"
+Configures the beam pipe for a given accelerator model 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIModel\fP A pointer to the \fBAcceleratorModel\fP class to add the apertures to 
+.RE
+.PP
+Elements - The container with all \fBAcceleratorComponent\fP entries comp - Iterator to all \fBAcceleratorComponent\fP entries
+.PP
+ApertureList - The container with all \fBAperture\fP entries itr - Iterator to all \fBAperture\fP entries\&.
+.PP
+ThisElementAperture - The container for the current element \fBAperture\fP\&.
+.PP
+Give magnets and other fixed elements a set aperture\&. Give drifts interpolated apertures\&.
+.PP
+3 possible cases 1: First entry in the element (or accelerator) 2: Entries within an element 3: Final entry within an element (or accelerator)
+.PP
+Now move on to assigning the correct type of aperture\&.
+.PP
+Check if all values are constant
+.SS "void ApertureConfiguration::DeleteAllApertures (\fBAcceleratorModel\fP * Model)"
+Deletes all apertures currently attached to the given accelerator model 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIModel\fP A pointer to the \fBAcceleratorModel\fP class to add the apertures to 
+.RE
+.PP
+
+.SS "void ApertureConfiguration::EnableDefaultAperture (bool flag)"
+Enable/disable use of the default aperture where it is not possible to clearly select an aperture type (e\&.g\&. OCTAGON -> RECTELLIPSE joins) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIflag\fP A bool to enable or disable the usage of the default aperture 
+.RE
+.PP
+
+.SS "void ApertureConfiguration::EnableLogging (bool flag)"
+Enable/disable logging 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIflag\fP The requested logging state 
+.RE
+.PP
+
+.SS "void ApertureConfiguration::LoadApertureConfiguration (std::string InputFileName)"
+Load the \fBAperture\fP settings from an input file\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIInputFileName\fP The name of the aperture file to load 
+.RE
+.PP
+
+.SS "void ApertureConfiguration::OutputApertureList (std::ostream & os)"
+Dumps the input file back out 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIos\fP The name of the stream to output to 
+.RE
+.PP
+
+.SS "void ApertureConfiguration::SetDefaultAperture (\fBAperture\fP * ap)"
+Set a default class of aperture to use in ambiguous cases 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIflag\fP The requested logging state 
+.RE
+.PP
+
+.SS "void ApertureConfiguration::SetLogFile (ostream & os)"
+Set the stream for the collimator settings log\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIos\fP The stream to log the generated aperture to 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBap\fP ApertureConfiguration::ApertureEntry"
+One aperture entry 
+.SS "std::vector<\fBap\fP> ApertureConfiguration::ApertureList"
+The global list of \fBAperture\fP entries 
+.SS "\fBAperture\fP* ApertureConfiguration::DefaultAperture"
+A pointer to a default aperture entry 
+.SS "std::ostream* ApertureConfiguration::log"
+The output log file 
+.SS "bool ApertureConfiguration::logFlag"
+Enable/disable logging 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

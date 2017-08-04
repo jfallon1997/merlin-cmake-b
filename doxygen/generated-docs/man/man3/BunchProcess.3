@@ -1,0 +1,55 @@
+.TH "BunchProcess" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BunchProcess
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBTBunchProc< B >\fP, and \fBTBunchProc< __TYPENAME__ T::bunch_type >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBunchProcess\fP (const string &anID, int aPriority=0)"
+.br
+.ti -1c
+.RI "void \fBSetPriority\fP (int p)"
+.br
+.ti -1c
+.RI "int \fBGetPriority\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBInitialiseProcess\fP (\fBBunch\fP &bunch)=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetCurrentComponent\fP (\fBAcceleratorComponent\fP &component)"
+.br
+.ti -1c
+.RI "virtual void \fBDoProcess\fP (double ds)=0"
+.br
+.ti -1c
+.RI "virtual double \fBGetMaxAllowedStepSize\fP () const =0"
+.br
+.ti -1c
+.RI "bool \fBIsActive\fP () const"
+.br
+.ti -1c
+.RI "const string & \fBGetID\fP () const"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBactive\fP"
+.br
+.ti -1c
+.RI "\fBAcceleratorComponent\fP * \fBcurrentComponent\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

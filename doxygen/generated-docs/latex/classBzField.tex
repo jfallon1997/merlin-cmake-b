@@ -1,0 +1,73 @@
+\hypertarget{classBzField}{}\section{Bz\+Field Class Reference}
+\label{classBzField}\index{Bz\+Field@{Bz\+Field}}
+Inheritance diagram for Bz\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBzField}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBzField_a0d34ffdce32cfd2323417a73082de638}\label{classBzField_a0d34ffdce32cfd2323417a73082de638}} 
+{\bfseries Bz\+Field} (double B)
+\item 
+\mbox{\Hypertarget{classBzField_a5469af2716fcda0e6111410413fe5cde}\label{classBzField_a5469af2716fcda0e6111410413fe5cde}} 
+double {\bfseries Get\+Strength} () const
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classBzField_a9903383be440aa99b504f5585ddd65f9}{Get\+B\+Field\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, double t=0) const
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classBzField_a05df21f7fec6b866936b6c8c70883bf0}{Get\+E\+Field\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, double t=0) const
+\item 
+\mbox{\Hypertarget{classBzField_a585e0732eb58207e6d1e6f0d1c680921}\label{classBzField_a585e0732eb58207e6d1e6f0d1c680921}} 
+void {\bfseries Set\+Strength} (double B)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBzField_a9903383be440aa99b504f5585ddd65f9}\label{classBzField_a9903383be440aa99b504f5585ddd65f9}} 
+\index{Bz\+Field@{Bz\+Field}!Get\+B\+Field\+At@{Get\+B\+Field\+At}}
+\index{Get\+B\+Field\+At@{Get\+B\+Field\+At}!Bz\+Field@{Bz\+Field}}
+\subsubsection{\texorpdfstring{Get\+B\+Field\+At()}{GetBFieldAt()}}
+{\footnotesize\ttfamily \hyperlink{classTVec3D}{Vector3D} Bz\+Field\+::\+Get\+B\+Field\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the magnetic field at the point x and time t. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the magnetic field. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEMField_ab1ce822878e2facc77f836e3eeea7fd8}{E\+M\+Field}.
+
+\mbox{\Hypertarget{classBzField_a05df21f7fec6b866936b6c8c70883bf0}\label{classBzField_a05df21f7fec6b866936b6c8c70883bf0}} 
+\index{Bz\+Field@{Bz\+Field}!Get\+E\+Field\+At@{Get\+E\+Field\+At}}
+\index{Get\+E\+Field\+At@{Get\+E\+Field\+At}!Bz\+Field@{Bz\+Field}}
+\subsubsection{\texorpdfstring{Get\+E\+Field\+At()}{GetEFieldAt()}}
+{\footnotesize\ttfamily \hyperlink{classTVec3D}{Vector3D} Bz\+Field\+::\+Get\+E\+Field\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the electric field at the point x and time t 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the electric field. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEMField_a3b1045b1ab38a337478c9a94ac6c1852}{E\+M\+Field}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Bz\+Field.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Bz\+Field.\+cpp\end{DoxyCompactItemize}

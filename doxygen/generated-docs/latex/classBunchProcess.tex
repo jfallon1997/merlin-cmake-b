@@ -1,0 +1,52 @@
+\hypertarget{classBunchProcess}{}\section{Bunch\+Process Class Reference}
+\label{classBunchProcess}\index{Bunch\+Process@{Bunch\+Process}}
+Inheritance diagram for Bunch\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.593220cm]{classBunchProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBunchProcess_a5ec5af6ed253cd2f92dab04a6ee7a301}\label{classBunchProcess_a5ec5af6ed253cd2f92dab04a6ee7a301}} 
+{\bfseries Bunch\+Process} (const string \&an\+ID, int a\+Priority=0)
+\item 
+\mbox{\Hypertarget{classBunchProcess_aa3110b3448fb4c5ce859f6dd0cc5a1eb}\label{classBunchProcess_aa3110b3448fb4c5ce859f6dd0cc5a1eb}} 
+void {\bfseries Set\+Priority} (int p)
+\item 
+\mbox{\Hypertarget{classBunchProcess_a29d3480447a2035719f43b1c95d51a20}\label{classBunchProcess_a29d3480447a2035719f43b1c95d51a20}} 
+int {\bfseries Get\+Priority} () const
+\item 
+\mbox{\Hypertarget{classBunchProcess_a8c8732d2cc71b545387a27cc8adc74ff}\label{classBunchProcess_a8c8732d2cc71b545387a27cc8adc74ff}} 
+virtual void {\bfseries Initialise\+Process} (\hyperlink{classBunch}{Bunch} \&bunch)=0
+\item 
+\mbox{\Hypertarget{classBunchProcess_a319a4b99d3b042832af4f18a733403fd}\label{classBunchProcess_a319a4b99d3b042832af4f18a733403fd}} 
+virtual void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+\mbox{\Hypertarget{classBunchProcess_a8add569705fe42dac0dbc1504d774901}\label{classBunchProcess_a8add569705fe42dac0dbc1504d774901}} 
+virtual void {\bfseries Do\+Process} (double ds)=0
+\item 
+\mbox{\Hypertarget{classBunchProcess_a6bfda24adc7b189da4affba9b01b8240}\label{classBunchProcess_a6bfda24adc7b189da4affba9b01b8240}} 
+virtual double {\bfseries Get\+Max\+Allowed\+Step\+Size} () const =0
+\item 
+\mbox{\Hypertarget{classBunchProcess_af6dcbeb4426b78109b73db2d3adcb8e5}\label{classBunchProcess_af6dcbeb4426b78109b73db2d3adcb8e5}} 
+bool {\bfseries Is\+Active} () const
+\item 
+\mbox{\Hypertarget{classBunchProcess_a416caaff14b5ca631fe262baf83ccf1a}\label{classBunchProcess_a416caaff14b5ca631fe262baf83ccf1a}} 
+const string \& {\bfseries Get\+ID} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBunchProcess_a1195731a895d235e3bb209a9d68403e2}\label{classBunchProcess_a1195731a895d235e3bb209a9d68403e2}} 
+bool {\bfseries active}
+\item 
+\mbox{\Hypertarget{classBunchProcess_a296359b6cf1acd671709188cee5a39f4}\label{classBunchProcess_a296359b6cf1acd671709188cee5a39f4}} 
+\hyperlink{classAcceleratorComponent}{Accelerator\+Component} $\ast$ {\bfseries current\+Component}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Bunch\+Process.\+h\end{DoxyCompactItemize}

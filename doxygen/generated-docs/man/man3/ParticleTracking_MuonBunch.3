@@ -1,0 +1,54 @@
+.TH "ParticleTracking::MuonBunch" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ParticleTracking::MuonBunch
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBParticleTracking::ParticleBunch\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMuonBunch\fP (double P0, double \fBQ\fP, PSvectorArray &particles)"
+.br
+.ti -1c
+.RI "\fBMuonBunch\fP (double P0, double \fBQ\fP, std::istream &is)"
+.br
+.ti -1c
+.RI "\fBMuonBunch\fP (double P0, double Qm=1)"
+.br
+.ti -1c
+.RI "virtual bool \fBIsStable\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetParticleMass\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetParticleMassMeV\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetParticleLifetime\fP () const"
+.br
+.ti -1c
+.RI "void \fBset\fP ()"
+.br
+.ti -1c
+.RI "void \fBreport\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ParticleTracking::MuonBunch::MuonBunch (double P0, double Q, PSvectorArray & particles)\fC [inline]\fP"
+Constructs a \fBMuonBunch\fP using the specified momentum, total charge and the particle array\&. Note that on exit, particles is empty\&. 
+.SS "ParticleTracking::MuonBunch::MuonBunch (double P0, double Q, std::istream & is)\fC [inline]\fP"
+Read phase space vectors from specified input stream\&. 
+.SS "ParticleTracking::MuonBunch::MuonBunch (double P0, double Qm = \fC1\fP)\fC [inline]\fP"
+Constructs an empty \fBMuonBunch\fP with the specified momentum P0 and charge per macro particle Qm (default = +1)\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

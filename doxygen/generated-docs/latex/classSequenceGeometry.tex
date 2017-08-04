@@ -1,0 +1,133 @@
+\hypertarget{classSequenceGeometry}{}\section{Sequence\+Geometry Class Reference}
+\label{classSequenceGeometry}\index{Sequence\+Geometry@{Sequence\+Geometry}}
+Inheritance diagram for Sequence\+Geometry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSequenceGeometry}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSequenceGeometry_ad8b3d2a91d2b866d14456da2758ffaa9}\label{classSequenceGeometry_ad8b3d2a91d2b866d14456da2758ffaa9}} 
+{\bfseries Sequence\+Geometry} (Sequence\+Frame\+::\+Frame\+List $\ast$frames, Sequence\+Frame\+::\+Origin origin)
+\item 
+\mbox{\Hypertarget{classSequenceGeometry_a257f581205514d2291e6d58855e32d20}\label{classSequenceGeometry_a257f581205514d2291e6d58855e32d20}} 
+{\bfseries Sequence\+Geometry} (const \hyperlink{classSequenceGeometry}{Sequence\+Geometry} \&rhs)
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classSequenceGeometry_a7531d4e915026c4978f12190d6908167}{Get\+Geometry\+Transform} (double s0, double s) const
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classSequenceGeometry_a4dc3260e63d8fff7b22d7d7908741b1f}{Get\+Geometry\+Transform} (\hyperlink{classAcceleratorGeometry_a5c1661938176102f235836f5a8be6034}{Boundary\+Plane} p) const
+\item 
+virtual \hyperlink{classTransform3D}{Transform3D} \hyperlink{classSequenceGeometry_a8c7221a5186be9cefe0f7fc674447e71}{Get\+Total\+Geometry\+Transform} () const
+\item 
+virtual Accelerator\+Geometry\+::\+Extent \hyperlink{classSequenceGeometry_a1d904b73570a03e3496dbbd574b8fde0}{Get\+Geometry\+Extent} () const
+\item 
+virtual double \hyperlink{classSequenceGeometry_a322e113ebda69e6c42af9415f3c964d9}{Get\+Geometry\+Length} () const
+\item 
+\mbox{\Hypertarget{classSequenceGeometry_a8c97eef645ac4e917143dc8780f046cf}\label{classSequenceGeometry_a8c97eef645ac4e917143dc8780f046cf}} 
+void {\bfseries Calculate\+Cached\+Transforms} ()
+\item 
+\mbox{\Hypertarget{classSequenceGeometry_a8db35b97e3693eab5670de48b8699965}\label{classSequenceGeometry_a8db35b97e3693eab5670de48b8699965}} 
+void {\bfseries Calculate\+Centre\+CT} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSequenceGeometry_a5cca1b02fd7b4e7283ed19f635d242a7}\label{classSequenceGeometry_a5cca1b02fd7b4e7283ed19f635d242a7}} 
+double {\bfseries len\+\_\+t}
+\item 
+\mbox{\Hypertarget{classSequenceGeometry_a561c6e1ecfd40afd6e0bc2fa72194974}\label{classSequenceGeometry_a561c6e1ecfd40afd6e0bc2fa72194974}} 
+Sequence\+Frame\+::\+Origin {\bfseries omode}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSequenceGeometry_a1d904b73570a03e3496dbbd574b8fde0}\label{classSequenceGeometry_a1d904b73570a03e3496dbbd574b8fde0}} 
+\index{Sequence\+Geometry@{Sequence\+Geometry}!Get\+Geometry\+Extent@{Get\+Geometry\+Extent}}
+\index{Get\+Geometry\+Extent@{Get\+Geometry\+Extent}!Sequence\+Geometry@{Sequence\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Extent()}{GetGeometryExtent()}}
+{\footnotesize\ttfamily Accelerator\+Geometry\+::\+Extent Sequence\+Geometry\+::\+Get\+Geometry\+Extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the local extent of this geometry. \begin{DoxyReturn}{Returns}
+A pair giving the extent of this geometry. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_a2db830fe927af3c9cba59b8452370bfb}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classSequenceGeometry_a322e113ebda69e6c42af9415f3c964d9}\label{classSequenceGeometry_a322e113ebda69e6c42af9415f3c964d9}} 
+\index{Sequence\+Geometry@{Sequence\+Geometry}!Get\+Geometry\+Length@{Get\+Geometry\+Length}}
+\index{Get\+Geometry\+Length@{Get\+Geometry\+Length}!Sequence\+Geometry@{Sequence\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Length()}{GetGeometryLength()}}
+{\footnotesize\ttfamily double Sequence\+Geometry\+::\+Get\+Geometry\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the total arc-\/length of the geometry. \begin{DoxyReturn}{Returns}
+A double giving the total length of this geometry. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_abc36f96d542e0d9db592f8e7ee455769}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classSequenceGeometry_a7531d4e915026c4978f12190d6908167}\label{classSequenceGeometry_a7531d4e915026c4978f12190d6908167}} 
+\index{Sequence\+Geometry@{Sequence\+Geometry}!Get\+Geometry\+Transform@{Get\+Geometry\+Transform}}
+\index{Get\+Geometry\+Transform@{Get\+Geometry\+Transform}!Sequence\+Geometry@{Sequence\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Transform()}{GetGeometryTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classTransform3D}{Transform3D} Sequence\+Geometry\+::\+Get\+Geometry\+Transform (\begin{DoxyParamCaption}\item[{double}]{s0,  }\item[{double}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the three-\/dimensional transformation from the frame at s0 to the frame at s. s and s0 are in the geometry\textquotesingle{}s s-\/frame, and must be within the geometry extents. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s0} & The location at which the transform should be evalutated from. \\
+\hline
+\mbox{\tt in}  & {\em s} & The location at which the transform should be evalutated to. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throws} & a Beyond\+Extent exception if the requested s values are outside the geometry extent. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+The 3D transformation from the entrance to the exit of this geometry. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_abf9c17cd1f84ac3e41973c85a65004de}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classSequenceGeometry_a4dc3260e63d8fff7b22d7d7908741b1f}\label{classSequenceGeometry_a4dc3260e63d8fff7b22d7d7908741b1f}} 
+\index{Sequence\+Geometry@{Sequence\+Geometry}!Get\+Geometry\+Transform@{Get\+Geometry\+Transform}}
+\index{Get\+Geometry\+Transform@{Get\+Geometry\+Transform}!Sequence\+Geometry@{Sequence\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Geometry\+Transform()}{GetGeometryTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classTransform3D}{Transform3D} Sequence\+Geometry\+::\+Get\+Geometry\+Transform (\begin{DoxyParamCaption}\item[{\hyperlink{classAcceleratorGeometry_a5c1661938176102f235836f5a8be6034}{Boundary\+Plane}}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the transformation from the geometry origin to the specified boundary plane. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & The chosen Boundary\+Plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 3D transformation from the geometry origin to a specified boundary plane (extrance or exit). 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAcceleratorGeometry_af26654f89c4bff1b516d2c6d6bb68871}{Accelerator\+Geometry}.
+
+\mbox{\Hypertarget{classSequenceGeometry_a8c7221a5186be9cefe0f7fc674447e71}\label{classSequenceGeometry_a8c7221a5186be9cefe0f7fc674447e71}} 
+\index{Sequence\+Geometry@{Sequence\+Geometry}!Get\+Total\+Geometry\+Transform@{Get\+Total\+Geometry\+Transform}}
+\index{Get\+Total\+Geometry\+Transform@{Get\+Total\+Geometry\+Transform}!Sequence\+Geometry@{Sequence\+Geometry}}
+\subsubsection{\texorpdfstring{Get\+Total\+Geometry\+Transform()}{GetTotalGeometryTransform()}}
+{\footnotesize\ttfamily \hyperlink{classTransform3D}{Transform3D} Sequence\+Geometry\+::\+Get\+Total\+Geometry\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the transformation from the entrance plane frame to the exit plane frame. \begin{DoxyReturn}{Returns}
+The 3D transformation from the entrance to the exit of this geometry. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorGeometry_a9bffb8262fc3b28195e1e25fbfb2b8ba}{Accelerator\+Geometry}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Sequence\+Frame.\+cpp\end{DoxyCompactItemize}

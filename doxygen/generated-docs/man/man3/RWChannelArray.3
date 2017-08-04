@@ -1,0 +1,50 @@
+.TH "RWChannelArray" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RWChannelArray
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBROChannelArray\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRWChannelArray\fP (const std::vector< \fBRWChannel\fP *> &chnls)"
+.br
+.ti -1c
+.RI "\fBRWChannelArray\fP (\fBRWChannelArray\fP &rhs)"
+.br
+.ti -1c
+.RI "size_t \fBSetChannels\fP (const std::vector< \fBRWChannel\fP *> &chnls)"
+.br
+.ti -1c
+.RI "void \fBWrite\fP (size_t n, double value)"
+.br
+.ti -1c
+.RI "void \fBWriteAll\fP (double value)"
+.br
+.ti -1c
+.RI "void \fBWriteAll\fP (const \fBRealVector\fP &values)"
+.br
+.ti -1c
+.RI "void \fBIncrement\fP (size_t n, double value)"
+.br
+.ti -1c
+.RI "void \fBIncrementAll\fP (double value)"
+.br
+.ti -1c
+.RI "void \fBIncrementAll\fP (const \fBRealVector\fP &values)"
+.br
+.ti -1c
+.RI "void \fBoperator=\fP (const \fBRealVector\fP &v)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

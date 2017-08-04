@@ -1,0 +1,35 @@
+\hypertarget{structmap__applicator__dp}{}\section{map\+\_\+applicator\+\_\+dp$<$ M, X $>$ Struct Template Reference}
+\label{structmap__applicator__dp}\index{map\+\_\+applicator\+\_\+dp$<$ M, X $>$@{map\+\_\+applicator\+\_\+dp$<$ M, X $>$}}
+
+
+{\ttfamily \#include $<$R\+Map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmap__applicator__dp_a5459fea5f0721b189edf06b0800bac08}\label{structmap__applicator__dp_a5459fea5f0721b189edf06b0800bac08}} 
+{\bfseries map\+\_\+applicator\+\_\+dp} (const M \&anM, double dp\+\_\+r)
+\item 
+\mbox{\Hypertarget{structmap__applicator__dp_a6ff7844ec3810e18eb0d09efd92feafb}\label{structmap__applicator__dp_a6ff7844ec3810e18eb0d09efd92feafb}} 
+void {\bfseries operator()} (X \&x) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmap__applicator__dp_ae48209fc2390864e9a3fe110572830a3}\label{structmap__applicator__dp_ae48209fc2390864e9a3fe110572830a3}} 
+const M \& {\bfseries m}
+\item 
+\mbox{\Hypertarget{structmap__applicator__dp_ab9c8d99752d2ddbbd9edddf5ac3a2add}\label{structmap__applicator__dp_ab9c8d99752d2ddbbd9edddf5ac3a2add}} 
+double {\bfseries p\+\_\+ratio}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class M, class X$>$\newline
+struct map\+\_\+applicator\+\_\+dp$<$ M, X $>$}
+
+Functor for apply a map after re-\/scaling the momentum. Used mainly for tracking dipole magnets where the reference geometry (curvature) does not match the bend field / beam energy. typename X must supply double X\+::dp() function. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/R\+Map.\+h\end{DoxyCompactItemize}

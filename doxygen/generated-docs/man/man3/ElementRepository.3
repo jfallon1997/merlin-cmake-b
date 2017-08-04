@@ -1,0 +1,60 @@
+.TH "ElementRepository" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ElementRepository
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::set< \fBModelElement\fP *> \fBElementSet\fP"
+.br
+.ti -1c
+.RI "typedef ElementSet::iterator \fBiterator\fP"
+.br
+.ti -1c
+.RI "typedef ElementSet::const_iterator \fBconst_iterator\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBAdd\fP (\fBModelElement\fP *anElement)"
+.br
+.ti -1c
+.RI "size_t \fBCount\fP (const std::string &id) const"
+.br
+.ti -1c
+.RI "size_t \fBFind\fP (const std::string &id, std::vector< \fBModelElement\fP *> &elements)"
+.br
+.ti -1c
+.RI "size_t \fBSize\fP () const"
+.br
+.ti -1c
+.RI "ElementRepository::iterator \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "ElementRepository::iterator \fBend\fP ()"
+.br
+.ti -1c
+.RI "ElementRepository::const_iterator \fBbegin\fP () const"
+.br
+.ti -1c
+.RI "ElementRepository::const_iterator \fBend\fP () const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "ElementSet \fBtheElements\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,208 @@
+.TH "Material" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Material
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBCompositeMaterial\fP, and \fBMaterialMixture\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaterial\fP (std::string name0, std::string sym0, double A0, int AtomicNumber0, double Sigma_E0, double Sigma_I0, double Sigma_R0, double dEdx0, double X00, double Density0, double Conductivity0)"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateElectronDensity\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculatePlasmaEnergy\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateMeanExcitationEnergy\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateRadiationLength\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateSixtrackNuclearSlope\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateSixtrackTotalNucleusCrossSection\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateSixtrackInelasticNucleusCrossSection\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateSixtrackRutherfordCrossSection\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBCalculateSixtrackdEdx\fP (double E=7E12)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAtomicNumber\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetName\fP (std::string)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSymbol\fP (std::string)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAtomicMass\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetConductivity\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetRadiationLength\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetDensity\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetElectronDensity\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetMeanExcitationEnergy\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetPlasmaEnergy\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSixtrackTotalNucleusCrossSection\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSixtrackElasticNucleusCrossSection\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSixtrackInelasticNucleusCrossSection\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSixtrackRutherfordCrossSection\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSixtrackdEdx\fP (double)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSixtrackNuclearSlope\fP (double)"
+.br
+.ti -1c
+.RI "virtual double \fBGetAtomicNumber\fP () const"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetName\fP () const"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetSymbol\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetAtomicMass\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetConductivity\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetRadiationLength\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetRadiationLengthInM\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetDensity\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetElectronDensity\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetMeanExcitationEnergy\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetPlasmaEnergy\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetSixtrackTotalNucleusCrossSection\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetSixtrackInelasticNucleusCrossSection\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetSixtrackElasticNucleusCrossSection\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetSixtrackRutherfordCrossSection\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetSixtrackdEdx\fP () const"
+.br
+.ti -1c
+.RI "virtual double \fBGetSixtrackNuclearSlope\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBVerifyMaterial\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBIsMixture\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBMaterial\fP * \fBSelectRandomMaterial\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBAtomicNumber\fP"
+.br
+.ti -1c
+.RI "double \fBAtomicMass\fP"
+.br
+.ti -1c
+.RI "std::string \fBName\fP"
+.br
+.ti -1c
+.RI "std::string \fBSymbol\fP"
+.br
+.ti -1c
+.RI "double \fBConductivity\fP"
+.br
+.ti -1c
+.RI "double \fBX0\fP"
+.br
+.ti -1c
+.RI "double \fBDensity\fP"
+.br
+.ti -1c
+.RI "double \fBElectronDensity\fP"
+.br
+.ti -1c
+.RI "double \fBMeanExcitationEnergy\fP"
+.br
+.ti -1c
+.RI "double \fBPlasmaEnergy\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_pN_total\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_pN_elastic\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_pN_inelastic\fP"
+.br
+.ti -1c
+.RI "double \fBsigma_Rutherford\fP"
+.br
+.ti -1c
+.RI "double \fBdEdx\fP"
+.br
+.ti -1c
+.RI "double \fBb_N\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

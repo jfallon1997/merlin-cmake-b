@@ -1,0 +1,92 @@
+\hypertarget{classQuadrupole}{}\section{Quadrupole Class Reference}
+\label{classQuadrupole}\index{Quadrupole@{Quadrupole}}
+Inheritance diagram for Quadrupole\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classQuadrupole}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQuadrupole_ad8be73280b12fb42aab05fb1f05ca510}\label{classQuadrupole_ad8be73280b12fb42aab05fb1f05ca510}} 
+{\bfseries Quadrupole} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, double dnB)
+\item 
+\mbox{\Hypertarget{classQuadrupole_a48b3e930b6d89db34feac2e44083eb10}\label{classQuadrupole_a48b3e930b6d89db34feac2e44083eb10}} 
+{\bfseries Quadrupole} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, double B, double r0)
+\item 
+virtual void \hyperlink{classQuadrupole_aa0160bdc8c7be3d48e400a9698907b15}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual int \hyperlink{classQuadrupole_a39b9e323df34c8db56f6daaaa112cf06}{Get\+Index} () const
+\item 
+virtual const string \& \hyperlink{classQuadrupole_aa8d08b76a82688cbb9161b120114faff}{Get\+Type} () const
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classQuadrupole_aed92f774f225e5dbc2b88d3f928d6d9e}{Copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQuadrupole_ab9522c1df4abde43ca118fb4ea62fd59}\label{classQuadrupole_ab9522c1df4abde43ca118fb4ea62fd59}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classQuadrupole_aed92f774f225e5dbc2b88d3f928d6d9e}\label{classQuadrupole_aed92f774f225e5dbc2b88d3f928d6d9e}} 
+\index{Quadrupole@{Quadrupole}!Copy@{Copy}}
+\index{Copy@{Copy}!Quadrupole@{Quadrupole}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Quadrupole\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+\mbox{\Hypertarget{classQuadrupole_a39b9e323df34c8db56f6daaaa112cf06}\label{classQuadrupole_a39b9e323df34c8db56f6daaaa112cf06}} 
+\index{Quadrupole@{Quadrupole}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Quadrupole@{Quadrupole}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Quadrupole\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRectMultipole_a9bc789b2a193e341aab8bbd47a0e3ad4}{Rect\+Multipole}.
+
+\mbox{\Hypertarget{classQuadrupole_aa8d08b76a82688cbb9161b120114faff}\label{classQuadrupole_aa8d08b76a82688cbb9161b120114faff}} 
+\index{Quadrupole@{Quadrupole}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Quadrupole@{Quadrupole}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Quadrupole\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+\mbox{\Hypertarget{classQuadrupole_aa0160bdc8c7be3d48e400a9698907b15}\label{classQuadrupole_aa0160bdc8c7be3d48e400a9698907b15}} 
+\index{Quadrupole@{Quadrupole}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Quadrupole@{Quadrupole}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Quadrupole\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRectMultipole_a2626d08254eee03cffb73abb20a9381a}{Rect\+Multipole}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Standard\+Multipoles.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Standard\+Multipoles.\+cpp\end{DoxyCompactItemize}

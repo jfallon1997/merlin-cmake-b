@@ -1,0 +1,288 @@
+\hypertarget{classParticleTracking_1_1ProtonBunch}{}\section{Particle\+Tracking\+:\+:Proton\+Bunch Class Reference}
+\label{classParticleTracking_1_1ProtonBunch}\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+Inheritance diagram for Particle\+Tracking\+:\+:Proton\+Bunch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classParticleTracking_1_1ProtonBunch}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classParticleTracking_1_1ProtonBunch_acf0cdd892624c9fd814e6510e2aecf33}{scat\+Mode} \{ \newline
+{\bfseries Six\+Track}, 
+{\bfseries Six\+Track\+Ioniz}, 
+{\bfseries Six\+Track\+Elastic}, 
+{\bfseries Six\+Track\+SD}, 
+\newline
+{\bfseries Merlin}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticleTracking_1_1ProtonBunch_ac164c660786ace46b7062aaf55cdc892}{Proton\+Bunch} (double P0, double \hyperlink{namespaceParticleTracking_a3e89510a540596b235a808915deb0f7a}{Q}, P\+Svector\+Array \&particles)
+\item 
+\hyperlink{classParticleTracking_1_1ProtonBunch_a8995b06940ff513e9f0ccfaed64dddc8}{Proton\+Bunch} (double P0, double \hyperlink{namespaceParticleTracking_a3e89510a540596b235a808915deb0f7a}{Q}, std\+::istream \&is)
+\item 
+\hyperlink{classParticleTracking_1_1ProtonBunch_ab69b76eea9a4dc9416b9932a7f34903d}{Proton\+Bunch} (double P0, double Qm=1)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ad5a81b30ed5f1adf21bc1e35c27e9a23}\label{classParticleTracking_1_1ProtonBunch_ad5a81b30ed5f1adf21bc1e35c27e9a23}} 
+virtual bool {\bfseries Is\+Stable} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_aea2c5de19c6fc0e3eadd51ce8dcf29c1}\label{classParticleTracking_1_1ProtonBunch_aea2c5de19c6fc0e3eadd51ce8dcf29c1}} 
+virtual double {\bfseries Get\+Particle\+Mass} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a55cde65d6cfafbbfae5f4a98871c20b7}\label{classParticleTracking_1_1ProtonBunch_a55cde65d6cfafbbfae5f4a98871c20b7}} 
+virtual double {\bfseries Get\+Particle\+Mass\+MeV} () const
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a0db63a19fa76f18b7a1a4378c3b79763}\label{classParticleTracking_1_1ProtonBunch_a0db63a19fa76f18b7a1a4378c3b79763}} 
+virtual double {\bfseries Get\+Particle\+Lifetime} () const
+\item 
+int \hyperlink{classParticleTracking_1_1ProtonBunch_adca6b2edceb4186ed0c0b6cf0437cbae}{Scatter} (\hyperlink{classPSvector}{Particle} \&pi, double x, const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a0dc10730820f3b14ef0d9ccda7407555}\label{classParticleTracking_1_1ProtonBunch_a0dc10730820f3b14ef0d9ccda7407555}} 
+void {\bfseries set} ()
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a16ebd4a742186ca3ab45b3ddeeaf8ad2}\label{classParticleTracking_1_1ProtonBunch_a16ebd4a742186ca3ab45b3ddeeaf8ad2}} 
+void {\bfseries report} ()
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a5743cad91de88bc9cbf8d1d767f9dba6}\label{classParticleTracking_1_1ProtonBunch_a5743cad91de88bc9cbf8d1d767f9dba6}} 
+void {\bfseries Enable\+Scattering\+Physics} (\hyperlink{classParticleTracking_1_1ProtonBunch_acf0cdd892624c9fd814e6510e2aecf33}{scat\+Mode})
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a842cb346e91b0717559c8518d44bd469}\label{classParticleTracking_1_1ProtonBunch_a842cb346e91b0717559c8518d44bd469}} 
+int {\bfseries Scatter\+Sixtrack} (\hyperlink{classPSvector}{P\+Svector} \&pi, double x, const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ac7ec57f7d9cb3acf9c48067460a7109f}\label{classParticleTracking_1_1ProtonBunch_ac7ec57f7d9cb3acf9c48067460a7109f}} 
+int {\bfseries Scatter\+Sixtrack\+Advanced\+Ionization} (\hyperlink{classPSvector}{P\+Svector} \&pi, double x, const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_aae9e1d4f308d3266b734e15ad5057574}\label{classParticleTracking_1_1ProtonBunch_aae9e1d4f308d3266b734e15ad5057574}} 
+int {\bfseries Scatter\+Sixtrack\+Advanced\+Elastic} (\hyperlink{classPSvector}{P\+Svector} \&pi, double x, const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a1735f4df4e284e990af6715b7a001776}\label{classParticleTracking_1_1ProtonBunch_a1735f4df4e284e990af6715b7a001776}} 
+int {\bfseries Scatter\+Sixtrack\+Advanced\+Single\+Diffraction} (\hyperlink{classPSvector}{P\+Svector} \&pi, double x, const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+int \hyperlink{classParticleTracking_1_1ProtonBunch_acbd045304a1e4fe64388761773a5b074}{Scatter\+Merlin} (\hyperlink{classPSvector}{P\+Svector} \&pi, double x, const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a1394c464048e05c1a124777187c74e0f}\label{classParticleTracking_1_1ProtonBunch_a1394c464048e05c1a124777187c74e0f}} 
+void {\bfseries Configure\+Scatter} (const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+void \hyperlink{classParticleTracking_1_1ProtonBunch_a1a078ed15d187c5208e6d50ec5a763ed}{Configure\+Scatter\+Merlin} (const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_acfb35df65c549dc6cc02319325fce608}\label{classParticleTracking_1_1ProtonBunch_acfb35df65c549dc6cc02319325fce608}} 
+void {\bfseries Configure\+Scatter\+Sixtrack} (const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+void \hyperlink{classParticleTracking_1_1ProtonBunch_ab93e9a177d2a1b0e28983a8f59ef1e58}{Configure\+Scatter\+Sixtrack\+Advanced\+Ionization} (const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+void \hyperlink{classParticleTracking_1_1ProtonBunch_a00346d5259395ac42034ab42f1f60a46}{Configure\+Scatter\+Sixtrack\+Advanced\+Elastic} (const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+void \hyperlink{classParticleTracking_1_1ProtonBunch_a143508031aacba959d04fd0a397039be}{Configure\+Scatter\+Sixtrack\+Advanced\+Single\+Diffraction} (const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ab98c607c379ce030fc1335366aaa6dbc}\label{classParticleTracking_1_1ProtonBunch_ab98c607c379ce030fc1335366aaa6dbc}} 
+int($\ast$ {\bfseries Scatter\+Function\+Pointer} )(\hyperlink{classPSvector}{Particle} \&p, double x, const \hyperlink{classAperture}{Aperture} $\ast$ap)
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a183cc9f7def8e96a95db83570e080171}\label{classParticleTracking_1_1ProtonBunch_a183cc9f7def8e96a95db83570e080171}} 
+double {\bfseries A}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_aab3791b31fa7883d107746d1cc4d0dcb}\label{classParticleTracking_1_1ProtonBunch_aab3791b31fa7883d107746d1cc4d0dcb}} 
+double {\bfseries Z}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a0ba2f4b07908cfe6f71d868858a686e4}\label{classParticleTracking_1_1ProtonBunch_a0ba2f4b07908cfe6f71d868858a686e4}} 
+double {\bfseries E0}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a70d07d12b0a2aab1fbdeb76f665d1105}\label{classParticleTracking_1_1ProtonBunch_a70d07d12b0a2aab1fbdeb76f665d1105}} 
+double {\bfseries X0}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_aea79b945bd9e0062482ba0d46b43e4fe}\label{classParticleTracking_1_1ProtonBunch_aea79b945bd9e0062482ba0d46b43e4fe}} 
+double {\bfseries rho}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a24911689ef1f24f60ceeec827e849a7d}\label{classParticleTracking_1_1ProtonBunch_a24911689ef1f24f60ceeec827e849a7d}} 
+double {\bfseries lambda\+\_\+tot}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a8c8d770d71f56702793885ba7207b958}\label{classParticleTracking_1_1ProtonBunch_a8c8d770d71f56702793885ba7207b958}} 
+double {\bfseries b\+\_\+pp}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a3015153bb724456c5f1c3a6f8ea84e6a}\label{classParticleTracking_1_1ProtonBunch_a3015153bb724456c5f1c3a6f8ea84e6a}} 
+double {\bfseries b\+\_\+N}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a4d514410c093072a3e0bd8d87f660eaf}\label{classParticleTracking_1_1ProtonBunch_a4d514410c093072a3e0bd8d87f660eaf}} 
+double {\bfseries t\+\_\+low\+\_\+cut}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_af315c52e09da05432170bc4ab8ca7371}\label{classParticleTracking_1_1ProtonBunch_af315c52e09da05432170bc4ab8ca7371}} 
+double {\bfseries sigma\+\_\+p\+N\+\_\+total}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a42b13145828ed376ee5d0e4cdf8edb4f}\label{classParticleTracking_1_1ProtonBunch_a42b13145828ed376ee5d0e4cdf8edb4f}} 
+double {\bfseries sigma\+\_\+p\+N\+\_\+elastic}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ad364a2c18703fdc0216610e9d00e4eec}\label{classParticleTracking_1_1ProtonBunch_ad364a2c18703fdc0216610e9d00e4eec}} 
+double {\bfseries sigma\+\_\+pn\+\_\+elastic}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a1fdbee66a60323c4c668da4e1a3d8f68}\label{classParticleTracking_1_1ProtonBunch_a1fdbee66a60323c4c668da4e1a3d8f68}} 
+double {\bfseries sigma\+\_\+pn\+\_\+\+Single\+Diffractive}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ae2fa45ea272fc932db6445393335d7df}\label{classParticleTracking_1_1ProtonBunch_ae2fa45ea272fc932db6445393335d7df}} 
+double {\bfseries sigma\+\_\+\+Rutherford}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a0574e14185c9f1b0081cd4ac92e33dfd}\label{classParticleTracking_1_1ProtonBunch_a0574e14185c9f1b0081cd4ac92e33dfd}} 
+double {\bfseries center\+\_\+of\+\_\+mass\+\_\+squared}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a43fe62e261f81d411236415bdab7c04e}\label{classParticleTracking_1_1ProtonBunch_a43fe62e261f81d411236415bdab7c04e}} 
+double {\bfseries I}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a8971273a597bbcee61430f6519cf8d0e}\label{classParticleTracking_1_1ProtonBunch_a8971273a597bbcee61430f6519cf8d0e}} 
+double {\bfseries tmax}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_afc68fb2e0972f19d1352ef6446bfd12b}\label{classParticleTracking_1_1ProtonBunch_afc68fb2e0972f19d1352ef6446bfd12b}} 
+double {\bfseries C}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ae2f9c057d807ba57a049d1062fa62d70}\label{classParticleTracking_1_1ProtonBunch_ae2f9c057d807ba57a049d1062fa62d70}} 
+double {\bfseries C0}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a643e1779cc47d198cd578eb52d74ccf7}\label{classParticleTracking_1_1ProtonBunch_a643e1779cc47d198cd578eb52d74ccf7}} 
+double {\bfseries C1}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_aa879096a4788745354ceba97452090cf}\label{classParticleTracking_1_1ProtonBunch_aa879096a4788745354ceba97452090cf}} 
+double {\bfseries delta}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a1c4abf9f57d57dce1eb6b1ead3377a8a}\label{classParticleTracking_1_1ProtonBunch_a1c4abf9f57d57dce1eb6b1ead3377a8a}} 
+double {\bfseries d\+Edx}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a4ee537987418390989d9bc4d1b55aaa6}\label{classParticleTracking_1_1ProtonBunch_a4ee537987418390989d9bc4d1b55aaa6}} 
+double {\bfseries xi0}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a27ca346304e73d21a558d7dddfd6a1aa}\label{classParticleTracking_1_1ProtonBunch_a27ca346304e73d21a558d7dddfd6a1aa}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a25257cb99a5d2a2cb6637857887ad129}\label{classParticleTracking_1_1ProtonBunch_a25257cb99a5d2a2cb6637857887ad129}} 
+bool {\bfseries Got\+Elastic}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a39ff88ae1998a0b07f8f5b54def3945f}\label{classParticleTracking_1_1ProtonBunch_a39ff88ae1998a0b07f8f5b54def3945f}} 
+\hyperlink{classParticleTracking_1_1ppElasticScatter}{pp\+Elastic\+Scatter} $\ast$ {\bfseries Elastic\+Scatter}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_abc74a49a77ee685376e652bcab2e1051}\label{classParticleTracking_1_1ProtonBunch_abc74a49a77ee685376e652bcab2e1051}} 
+bool {\bfseries Got\+Diffractive}
+\item 
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a1a1597dc4c74168ed5b7d652e5286c46}\label{classParticleTracking_1_1ProtonBunch_a1a1597dc4c74168ed5b7d652e5286c46}} 
+\hyperlink{classParticleTracking_1_1ppDiffractiveScatter}{pp\+Diffractive\+Scatter} $\ast$ {\bfseries Diffractive\+Scatter}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_acf0cdd892624c9fd814e6510e2aecf33}\label{classParticleTracking_1_1ProtonBunch_acf0cdd892624c9fd814e6510e2aecf33}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!scat\+Mode@{scat\+Mode}}
+\index{scat\+Mode@{scat\+Mode}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{scat\+Mode}{scatMode}}
+{\footnotesize\ttfamily enum \hyperlink{classParticleTracking_1_1ProtonBunch_acf0cdd892624c9fd814e6510e2aecf33}{Particle\+Tracking\+::\+Proton\+Bunch\+::scat\+Mode}}
+
+Select the Scattering physics mode 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ac164c660786ace46b7062aaf55cdc892}\label{classParticleTracking_1_1ProtonBunch_ac164c660786ace46b7062aaf55cdc892}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Proton\+Bunch@{Proton\+Bunch}}
+\index{Proton\+Bunch@{Proton\+Bunch}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Proton\+Bunch()}{ProtonBunch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Particle\+Tracking\+::\+Proton\+Bunch\+::\+Proton\+Bunch (\begin{DoxyParamCaption}\item[{double}]{P0,  }\item[{double}]{Q,  }\item[{P\+Svector\+Array \&}]{particles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \hyperlink{classParticleTracking_1_1ProtonBunch}{Proton\+Bunch} using the specified momentum, total charge and the particle array. Note that on exit, particles is empty. \mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a8995b06940ff513e9f0ccfaed64dddc8}\label{classParticleTracking_1_1ProtonBunch_a8995b06940ff513e9f0ccfaed64dddc8}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Proton\+Bunch@{Proton\+Bunch}}
+\index{Proton\+Bunch@{Proton\+Bunch}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Proton\+Bunch()}{ProtonBunch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Particle\+Tracking\+::\+Proton\+Bunch\+::\+Proton\+Bunch (\begin{DoxyParamCaption}\item[{double}]{P0,  }\item[{double}]{Q,  }\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Read phase space vectors from specified input stream. \mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ab69b76eea9a4dc9416b9932a7f34903d}\label{classParticleTracking_1_1ProtonBunch_ab69b76eea9a4dc9416b9932a7f34903d}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Proton\+Bunch@{Proton\+Bunch}}
+\index{Proton\+Bunch@{Proton\+Bunch}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Proton\+Bunch()}{ProtonBunch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Particle\+Tracking\+::\+Proton\+Bunch\+::\+Proton\+Bunch (\begin{DoxyParamCaption}\item[{double}]{P0,  }\item[{double}]{Qm = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an empty \hyperlink{classParticleTracking_1_1ProtonBunch}{Proton\+Bunch} with the specified momentum P0 and charge per macro particle Qm (default = +1). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a1a078ed15d187c5208e6d50ec5a763ed}\label{classParticleTracking_1_1ProtonBunch_a1a078ed15d187c5208e6d50ec5a763ed}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Configure\+Scatter\+Merlin@{Configure\+Scatter\+Merlin}}
+\index{Configure\+Scatter\+Merlin@{Configure\+Scatter\+Merlin}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Configure\+Scatter\+Merlin()}{ConfigureScatterMerlin()}}
+{\footnotesize\ttfamily void Proton\+Bunch\+::\+Configure\+Scatter\+Merlin (\begin{DoxyParamCaption}\item[{const \hyperlink{classAperture}{Aperture} $\ast$}]{ap }\end{DoxyParamCaption})}
+
+The proton momentum
+
+The proton total energy
+
+The proton gamma factor
+
+The proton beta
+
+The proton kinetic energy
+
+Generate the elastic differential cross section for the proton energy
+
+Generate the Single Diffractive differential cross section for the proton energy
+
+We have now read the material properties, now to scale these if required to the current energy scale etc
+
+The total elastic cross section\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a00346d5259395ac42034ab42f1f60a46}\label{classParticleTracking_1_1ProtonBunch_a00346d5259395ac42034ab42f1f60a46}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Configure\+Scatter\+Sixtrack\+Advanced\+Elastic@{Configure\+Scatter\+Sixtrack\+Advanced\+Elastic}}
+\index{Configure\+Scatter\+Sixtrack\+Advanced\+Elastic@{Configure\+Scatter\+Sixtrack\+Advanced\+Elastic}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Configure\+Scatter\+Sixtrack\+Advanced\+Elastic()}{ConfigureScatterSixtrackAdvancedElastic()}}
+{\footnotesize\ttfamily void Proton\+Bunch\+::\+Configure\+Scatter\+Sixtrack\+Advanced\+Elastic (\begin{DoxyParamCaption}\item[{const \hyperlink{classAperture}{Aperture} $\ast$}]{ap }\end{DoxyParamCaption})}
+
+Generate the elastic differential cross section for the proton energy
+
+The total elastic cross section\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_ab93e9a177d2a1b0e28983a8f59ef1e58}\label{classParticleTracking_1_1ProtonBunch_ab93e9a177d2a1b0e28983a8f59ef1e58}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Configure\+Scatter\+Sixtrack\+Advanced\+Ionization@{Configure\+Scatter\+Sixtrack\+Advanced\+Ionization}}
+\index{Configure\+Scatter\+Sixtrack\+Advanced\+Ionization@{Configure\+Scatter\+Sixtrack\+Advanced\+Ionization}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Configure\+Scatter\+Sixtrack\+Advanced\+Ionization()}{ConfigureScatterSixtrackAdvancedIonization()}}
+{\footnotesize\ttfamily void Proton\+Bunch\+::\+Configure\+Scatter\+Sixtrack\+Advanced\+Ionization (\begin{DoxyParamCaption}\item[{const \hyperlink{classAperture}{Aperture} $\ast$}]{ap }\end{DoxyParamCaption})}
+
+The proton gamma factor
+
+The proton beta\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_a143508031aacba959d04fd0a397039be}\label{classParticleTracking_1_1ProtonBunch_a143508031aacba959d04fd0a397039be}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Configure\+Scatter\+Sixtrack\+Advanced\+Single\+Diffraction@{Configure\+Scatter\+Sixtrack\+Advanced\+Single\+Diffraction}}
+\index{Configure\+Scatter\+Sixtrack\+Advanced\+Single\+Diffraction@{Configure\+Scatter\+Sixtrack\+Advanced\+Single\+Diffraction}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Configure\+Scatter\+Sixtrack\+Advanced\+Single\+Diffraction()}{ConfigureScatterSixtrackAdvancedSingleDiffraction()}}
+{\footnotesize\ttfamily void Proton\+Bunch\+::\+Configure\+Scatter\+Sixtrack\+Advanced\+Single\+Diffraction (\begin{DoxyParamCaption}\item[{const \hyperlink{classAperture}{Aperture} $\ast$}]{ap }\end{DoxyParamCaption})}
+
+Generate the Single Diffractive differential cross section for the proton energy\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_adca6b2edceb4186ed0c0b6cf0437cbae}\label{classParticleTracking_1_1ProtonBunch_adca6b2edceb4186ed0c0b6cf0437cbae}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Scatter@{Scatter}}
+\index{Scatter@{Scatter}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Scatter()}{Scatter()}}
+{\footnotesize\ttfamily int Proton\+Bunch\+::\+Scatter (\begin{DoxyParamCaption}\item[{\hyperlink{classPSvector}{Particle} \&}]{,  }\item[{double}]{length,  }\item[{const \hyperlink{classAperture}{Aperture} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Per-\/particle type scattering. This virtual function will be replaced in specific particle bunch classes to enable the relevant physics for each particle type (protons, electrons, etc). 
+
+Reimplemented from \hyperlink{classParticleTracking_1_1ParticleBunch_aa722546fa53e2299c66aece41ee8c813}{Particle\+Tracking\+::\+Particle\+Bunch}.
+
+\mbox{\Hypertarget{classParticleTracking_1_1ProtonBunch_acbd045304a1e4fe64388761773a5b074}\label{classParticleTracking_1_1ProtonBunch_acbd045304a1e4fe64388761773a5b074}} 
+\index{Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}!Scatter\+Merlin@{Scatter\+Merlin}}
+\index{Scatter\+Merlin@{Scatter\+Merlin}!Particle\+Tracking\+::\+Proton\+Bunch@{Particle\+Tracking\+::\+Proton\+Bunch}}
+\subsubsection{\texorpdfstring{Scatter\+Merlin()}{ScatterMerlin()}}
+{\footnotesize\ttfamily int Proton\+Bunch\+::\+Scatter\+Merlin (\begin{DoxyParamCaption}\item[{\hyperlink{classPSvector}{P\+Svector} \&}]{pi,  }\item[{double}]{x,  }\item[{const \hyperlink{classAperture}{Aperture} $\ast$}]{ap }\end{DoxyParamCaption})}
+
+Scatter in x
+
+Scatter in y
+
+Check we are still inside the collimator If not, the particle leaves
+
+Point process nuclear interactions
+
+Elastic scatter pN (proton -\/ Nucleus)
+
+Elastic scatter pn (proton -\/ nucleon)
+
+Single Diffractive
+
+Rutherford coulomb scattering
+
+Inelastic interaction -\/ no more proton \+:(
+
+We use the p.\+ct() coordinate to set the exact position of the proton loss within the collimator -\/ used for output.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Proton\+Bunch.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Proton\+Bunch.\+cpp\end{DoxyCompactItemize}

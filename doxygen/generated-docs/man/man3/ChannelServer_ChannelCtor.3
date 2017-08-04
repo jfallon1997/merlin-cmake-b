@@ -1,0 +1,50 @@
+.TH "ChannelServer::ChannelCtor" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ChannelServer::ChannelCtor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBBPMChannelCtor\fP, and \fBTIC_ctor< E >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBROChannel\fP * \fBConstructRO\fP (\fBModelElement\fP *anElement)=0"
+.br
+.ti -1c
+.RI "virtual \fBRWChannel\fP * \fBConstructRW\fP (\fBModelElement\fP *anElement)=0"
+.br
+.ti -1c
+.RI "std::string \fBGetID\fP ()"
+.br
+.ti -1c
+.RI "const string & \fBGetType\fP () const"
+.br
+.ti -1c
+.RI "const string & \fBGetKey\fP () const"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBChannelCtor\fP (const string &aType, const string &aKey)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBtype\fP"
+.br
+.ti -1c
+.RI "std::string \fBkey\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

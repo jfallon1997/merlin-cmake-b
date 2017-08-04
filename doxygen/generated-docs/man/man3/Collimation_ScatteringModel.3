@@ -1,0 +1,114 @@
+.TH "Collimation::ScatteringModel" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Collimation::ScatteringModel
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ScatteringModel\&.h>\fP
+.PP
+Inherited by \fBCollimation::ScatteringModelFixed\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetScatterType\fP (int st)"
+.br
+.ti -1c
+.RI "double \fBPathLength\fP (\fBMaterial\fP *mat, double E0)"
+.br
+.ti -1c
+.RI "void \fBEnergyLoss\fP (\fBPSvector\fP &p, double x, \fBMaterial\fP *mat, double E0)"
+.br
+.ti -1c
+.RI "void \fBStraggle\fP (\fBPSvector\fP &p, double x, \fBMaterial\fP *mat, double E1, double E2)"
+.br
+.ti -1c
+.RI "bool \fBParticleScatter\fP (\fBPSvector\fP &p, \fBMaterial\fP *mat, double E)"
+.br
+.ti -1c
+.RI "virtual void \fBAddProcess\fP (\fBCollimation::ScatteringProcess\fP *S)"
+.br
+.ti -1c
+.RI "void \fBClearProcesses\fP ()"
+.br
+.ti -1c
+.RI "void \fBScatterPlot\fP (\fBParticleTracking::Particle\fP &p, double z, int turn, std::string name)"
+.br
+.ti -1c
+.RI "void \fBSetScatterPlot\fP (std::string name, int single_turn=0)"
+.br
+.ti -1c
+.RI "void \fBOutputScatterPlot\fP (std::string directory, int seed=0)"
+.br
+.ti -1c
+.RI "void \fBJawImpact\fP (\fBParticleTracking::Particle\fP &p, int turn, std::string name)"
+.br
+.ti -1c
+.RI "void \fBSetJawImpact\fP (std::string name, int single_turn=0)"
+.br
+.ti -1c
+.RI "void \fBOutputJawImpact\fP (std::string directory, int seed=0)"
+.br
+.ti -1c
+.RI "int \fBGetScatteringPhysicsModel\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< std::string > \fBScatterPlotNames\fP"
+.br
+.ti -1c
+.RI "bool \fBScatterPlot_on\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBScatterPlotData\fP * > \fBStoredScatterPlotData\fP"
+.br
+.ti -1c
+.RI "std::vector< std::string > \fBJawImpactNames\fP"
+.br
+.ti -1c
+.RI "bool \fBJawImpact_on\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBJawImpactData\fP * > \fBStoredJawImpactData\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCollimation::ScatteringProcess\fP * > \fBProcesses\fP"
+.br
+.ti -1c
+.RI "std::vector< double > \fBfraction\fP"
+.br
+.ti -1c
+.RI "std::map< std::string, \fBCollimation::CrossSections\fP *> \fBstored_cross_sections\fP"
+.br
+.ti -1c
+.RI "std::map< std::string, \fBCollimation::CrossSections\fP *>::iterator \fBCS_iterator\fP"
+.br
+.ti -1c
+.RI "EnergyLossMode \fBenergy_loss_mode\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base class for scattering models
+.PP
+The user can customise a \fBScatteringModel\fP using \fBAddProcess()\fP, or can use the predefiend models such as \fBScatteringModelMerlin\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Collimation::ScatteringModel::AddProcess (\fBCollimation::ScatteringProcess\fP * S)\fC [inline]\fP, \fC [virtual]\fP"
+Add ScatteringProcesses to the model 
+.PP
+Reimplemented in \fBCollimation::ScatteringModelFixed\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

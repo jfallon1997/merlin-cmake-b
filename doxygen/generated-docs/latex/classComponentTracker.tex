@@ -1,0 +1,73 @@
+\hypertarget{classComponentTracker}{}\section{Component\+Tracker Class Reference}
+\label{classComponentTracker}\index{Component\+Tracker@{Component\+Tracker}}
+Inheritance diagram for Component\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classComponentTracker}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classComponentTracker_1_1IntegratorSet}{Integrator\+Set}
+\item 
+struct \hyperlink{structComponentTracker_1_1UnknownComponent}{Unknown\+Component}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentTracker_a7195e1d7493af8da99857479953b088d}\label{classComponentTracker_a7195e1d7493af8da99857479953b088d}} 
+enum {\bfseries State} \{ {\bfseries undefined}, 
+{\bfseries initialised}, 
+{\bfseries tracking}, 
+{\bfseries finished}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentTracker_a71f34b270f618c4ca7d57bbe2a188c14}\label{classComponentTracker_a71f34b270f618c4ca7d57bbe2a188c14}} 
+void {\bfseries Track} ()
+\item 
+\mbox{\Hypertarget{classComponentTracker_a5aa444b7ec70f30c5ed5000eb334efce}\label{classComponentTracker_a5aa444b7ec70f30c5ed5000eb334efce}} 
+double {\bfseries Track\+Step} (double ds)
+\item 
+\mbox{\Hypertarget{classComponentTracker_ac4b090709df62a3cf8852229108df99a}\label{classComponentTracker_ac4b090709df62a3cf8852229108df99a}} 
+Component\+Tracker\+::\+State {\bfseries Get\+State} () const
+\item 
+\mbox{\Hypertarget{classComponentTracker_adaf3f184f56c9c48f1dbbf93f3d1098c}\label{classComponentTracker_adaf3f184f56c9c48f1dbbf93f3d1098c}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classComponentTracker_aec1cf2003378b9cb77dd06dcee8a51ad}\label{classComponentTracker_aec1cf2003378b9cb77dd06dcee8a51ad}} 
+double {\bfseries Get\+Remaining\+Length} () const
+\item 
+\mbox{\Hypertarget{classComponentTracker_ac18f1348aea3d837ce8dd7ffb38e068f}\label{classComponentTracker_ac18f1348aea3d837ce8dd7ffb38e068f}} 
+double {\bfseries Get\+Integrated\+Length} () const
+\item 
+\mbox{\Hypertarget{classComponentTracker_a2c56d801b3a3527d9df82b27bf3a199e}\label{classComponentTracker_a2c56d801b3a3527d9df82b27bf3a199e}} 
+bool {\bfseries Select\+Integrator} (int index, \hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+\mbox{\Hypertarget{classComponentTracker_aa6e30205dd34c75a1631583684aa2968}\label{classComponentTracker_aa6e30205dd34c75a1631583684aa2968}} 
+void {\bfseries operator()} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} $\ast$component)
+\item 
+\mbox{\Hypertarget{classComponentTracker_a66a893a1dc4bd8c76b6e86c34f630e72}\label{classComponentTracker_a66a893a1dc4bd8c76b6e86c34f630e72}} 
+void {\bfseries Clear\+Integrator\+Set} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentTracker_adb4cf1da1962de439a3ce3aa004fce02}\label{classComponentTracker_adb4cf1da1962de439a3ce3aa004fce02}} 
+{\bfseries Component\+Tracker} (\hyperlink{classComponentTracker_1_1IntegratorSet}{Integrator\+Set} $\ast$iset)
+\item 
+\mbox{\Hypertarget{classComponentTracker_a121e9c22544f5dfec001e5cb0e2c5a61}\label{classComponentTracker_a121e9c22544f5dfec001e5cb0e2c5a61}} 
+virtual void {\bfseries Initialise\+Integrator} (\hyperlink{classComponentIntegrator}{Component\+Integrator} $\ast$)
+\item 
+\mbox{\Hypertarget{classComponentTracker_a3d08499122659d456fc3bf1189e46979}\label{classComponentTracker_a3d08499122659d456fc3bf1189e46979}} 
+bool {\bfseries Register} (\hyperlink{classComponentIntegrator}{Component\+Integrator} $\ast$intg)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Component\+Tracker.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Component\+Tracker.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+.TH "TransportMatrix" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TransportMatrix
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBRealMatrix\fP \fBDrift\fP (double length, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSectorBend\fP (double length, double h, double Kx, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSectorBendT\fP (double length, double h, double Kx, \fBRealMatrix\fP &T)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBQuadrupole\fP (double length, double Kx, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBQuadrupoleR\fP (double length, double Kx, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBQuadrupoleT\fP (double length, double Kx, \fBRealMatrix\fP &T)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSrot\fP (double phi, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSrot\fP (double cosphi, double sinphi, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSrotR4\fP (double cosphi, double sinphi, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSrotR4\fP (double phi, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBPoleFaceRot\fP (double h, double theta, double fint, double hgap, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSolenoid\fP (double length, double K0, double K1, bool entrFringe, bool exitFringe, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBTWRFCavity\fP (double length, double g, double f, double phi, double E0, bool inc_end_fields, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBSWRFCavity\fP (int ncells, double g, double f, double phi, double E0, \fBRealMatrix\fP &R)"
+.br
+.ti -1c
+.RI "static \fBRealMatrix\fP & \fBArb3DXForm\fP (const \fBRealMatrix\fP &R3d, const \fBRealVector\fP &X, \fBRealMatrix\fP &R, \fBRealVector\fP &dX)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

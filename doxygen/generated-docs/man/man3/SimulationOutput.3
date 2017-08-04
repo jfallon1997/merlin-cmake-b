@@ -1,0 +1,61 @@
+.TH "SimulationOutput" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SimulationOutput
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TrackingSimulation\&.h>\fP
+.PP
+Inherited by \fBTrackingOutputAV\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDoRecord\fP (const \fBComponentFrame\fP *frame, const \fBBunch\fP *bunch)"
+.br
+.ti -1c
+.RI "void \fBDoRecordInitialBunch\fP (const \fBBunch\fP *bunch)"
+.br
+.ti -1c
+.RI "void \fBDoRecordFinalBunch\fP (const \fBBunch\fP *bunch)"
+.br
+.ti -1c
+.RI "void \fBAddIdentifier\fP (const std::string &pattern, size_t nocc=1)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoutput_all\fP"
+.br
+.ti -1c
+.RI "bool \fBoutput_initial\fP"
+.br
+.ti -1c
+.RI "bool \fBoutput_final\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBRecord\fP (const \fBComponentFrame\fP *frame, const \fBBunch\fP *bunch)=0"
+.br
+.ti -1c
+.RI "virtual void \fBRecordInitialBunch\fP (const \fBBunch\fP *bunch)=0"
+.br
+.ti -1c
+.RI "virtual void \fBRecordFinalBunch\fP (const \fBBunch\fP *bunch)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstract class used to record bunch and frame information after every component frame tracked 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

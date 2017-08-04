@@ -1,0 +1,52 @@
+\hypertarget{classATL2D}{}\section{A\+T\+L2D Class Reference}
+\label{classATL2D}\index{A\+T\+L2D@{A\+T\+L2D}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classATL2D_a9da4a65fa21af08f0afcab8060ed43da}\label{classATL2D_a9da4a65fa21af08f0afcab8060ed43da}} 
+enum {\bfseries A\+T\+L\+Mode} \{ {\bfseries increment}, 
+{\bfseries absolute}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classATL2D_a508d8ea70eba237e929dedb2f56a18ac}\label{classATL2D_a508d8ea70eba237e929dedb2f56a18ac}} 
+{\bfseries A\+T\+L2D} (double anA, const Accelerator\+Support\+List \&supports, const \hyperlink{classTVec2D}{Point2D} ref\+Point=\hyperlink{classTVec2D}{Point2D}(0, 0), ifstream $\ast$evec\+T\+File=nullptr, ifstream $\ast$eval\+File=nullptr)
+\item 
+\mbox{\Hypertarget{classATL2D_ac63fb4a4064f82f12962809ba42dc876}\label{classATL2D_ac63fb4a4064f82f12962809ba42dc876}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classATL2D_ab89d4ac472d16428f05862da37c6a775}\label{classATL2D_ab89d4ac472d16428f05862da37c6a775}} 
+double {\bfseries Do\+Step} (double dt)
+\item 
+\mbox{\Hypertarget{classATL2D_a82db2b069d935cbd55a94b95036db641}\label{classATL2D_a82db2b069d935cbd55a94b95036db641}} 
+void {\bfseries Record\+Offsets} (std\+::ostream \&os) const
+\item 
+\mbox{\Hypertarget{classATL2D_a71428bd01bf47b361b09ff410851bbe4}\label{classATL2D_a71428bd01bf47b361b09ff410851bbe4}} 
+double {\bfseries Get\+Time} () const
+\item 
+\mbox{\Hypertarget{classATL2D_a06c110e3eac5943a4dc811a1b8c0c312}\label{classATL2D_a06c110e3eac5943a4dc811a1b8c0c312}} 
+void {\bfseries Set\+Random\+Seed} (unsigned int nseed)
+\item 
+\mbox{\Hypertarget{classATL2D_ac1adf7295344bbab22b6eccfeee7538e}\label{classATL2D_ac1adf7295344bbab22b6eccfeee7538e}} 
+unsigned int {\bfseries Get\+Random\+Seed} () const
+\item 
+\mbox{\Hypertarget{classATL2D_a1ea2e3c38ce8345fc3331cbe7e87ab4a}\label{classATL2D_a1ea2e3c38ce8345fc3331cbe7e87ab4a}} 
+void {\bfseries Reset\+Random\+Seed} ()
+\item 
+\mbox{\Hypertarget{classATL2D_a017e4c5e7e34b0320812ba7757bce60a}\label{classATL2D_a017e4c5e7e34b0320812ba7757bce60a}} 
+bool {\bfseries Set\+A\+T\+L\+Mode} (const A\+T\+L\+Mode mode)
+\item 
+\mbox{\Hypertarget{classATL2D_aa96730144a50df16e195e61a4eeb9380}\label{classATL2D_aa96730144a50df16e195e61a4eeb9380}} 
+bool {\bfseries Set\+Vibration} (const double vrms)
+\item 
+\mbox{\Hypertarget{classATL2D_adf994271afcce311a67c63fe094a3423}\label{classATL2D_adf994271afcce311a67c63fe094a3423}} 
+void {\bfseries Record\+Eigen\+System} (ofstream $\ast$evec\+T\+File, ofstream $\ast$eval\+File)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/A\+T\+L2\+D.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/A\+T\+L2\+D.\+cpp\end{DoxyCompactItemize}

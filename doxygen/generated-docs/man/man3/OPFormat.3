@@ -1,0 +1,81 @@
+.TH "OPFormat" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OPFormat
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOPFormat\fP (int p=16)"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBscientific\fP ()"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBfixed\fP ()"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBgeneral\fP ()"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBprecision\fP (int p)"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBwidth\fP (int w)"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBleft\fP ()"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBright\fP ()"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBinternal\fP ()"
+.br
+.ti -1c
+.RI "\fBOPFormat\fP & \fBoverflow\fP (bool flg)"
+.br
+.ti -1c
+.RI "string \fBoperator()\fP (double val) const"
+.br
+.ti -1c
+.RI "string \fBoperator()\fP (int val) const"
+.br
+.ti -1c
+.RI "string \fBoperator()\fP (const string &val) const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBprc\fP"
+.br
+.ti -1c
+.RI "int \fBwdt\fP"
+.br
+.ti -1c
+.RI "ios_base::fmtflags \fBfmt\fP"
+.br
+.ti -1c
+.RI "ios_base::fmtflags \fBadjust\fP"
+.br
+.ti -1c
+.RI "bool \fBallowovf\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBOPFormat\fP &fmt)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

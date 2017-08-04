@@ -1,0 +1,70 @@
+.TH "LatticeFunctionTable" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LatticeFunctionTable
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLatticeFunctionTable\fP (\fBAcceleratorModel\fP *aModel, double refMomentum)"
+.br
+.ti -1c
+.RI "void \fBAddFunction\fP (int i, int j, int k)"
+.br
+.ti -1c
+.RI "void \fBUseDefaultFunctions\fP ()"
+.br
+.ti -1c
+.RI "void \fBUseOrbitFunctions\fP ()"
+.br
+.ti -1c
+.RI "void \fBRemoveFunction\fP (int i, int j, int k)"
+.br
+.ti -1c
+.RI "void \fBRemoveAllFunctions\fP ()"
+.br
+.ti -1c
+.RI "void \fBCalculate\fP (\fBPSvector\fP *p=nullptr, \fBRealMatrix\fP *M=nullptr)"
+.br
+.ti -1c
+.RI "void \fBCalculateEnergyDerivative\fP ()"
+.br
+.ti -1c
+.RI "double \fBValue\fP (int i, int j, int k, int ncpt)"
+.br
+.ti -1c
+.RI "void \fBPrintTable\fP (ostream &os, int n1=0, int n2=\-1)"
+.br
+.ti -1c
+.RI "void \fBSize\fP (int &rows, int &cols)"
+.br
+.ti -1c
+.RI "int \fBGetSPosIndex\fP (double s)"
+.br
+.ti -1c
+.RI "void \fBSetDelta\fP (double new_delta)"
+.br
+.ti -1c
+.RI "void \fBMakeTMSymplectic\fP (bool flag)"
+.br
+.ti -1c
+.RI "int \fBNumberOfRows\fP ()"
+.br
+.ti -1c
+.RI "void \fBScaleBendPathLength\fP (double scale)"
+.br
+.ti -1c
+.RI "double \fBMean\fP (int i, int j, int k, int n1=0, int n2=\-1)"
+.br
+.ti -1c
+.RI "double \fBRMS\fP (int i, int j, int k, int n1=0, int n2=\-1)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

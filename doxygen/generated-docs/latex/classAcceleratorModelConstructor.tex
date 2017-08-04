@@ -1,0 +1,56 @@
+\hypertarget{classAcceleratorModelConstructor}{}\section{Accelerator\+Model\+Constructor Class Reference}
+\label{classAcceleratorModelConstructor}\index{Accelerator\+Model\+Constructor@{Accelerator\+Model\+Constructor}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a95137acaeede54d6f7bcaf696a627d60}\label{classAcceleratorModelConstructor_a95137acaeede54d6f7bcaf696a627d60}} 
+typedef std\+::stack$<$ \hyperlink{classSequenceFrame}{Sequence\+Frame} $\ast$$>$ {\bfseries Frame\+Stack}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a7bf5f980e78539e2fe087d0bc17c1665}\label{classAcceleratorModelConstructor_a7bf5f980e78539e2fe087d0bc17c1665}} 
+void {\bfseries New\+Model} ()
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a510b776b012e3b65835090b719b6a4e0}\label{classAcceleratorModelConstructor_a510b776b012e3b65835090b719b6a4e0}} 
+\hyperlink{classAcceleratorModel}{Accelerator\+Model} $\ast$ {\bfseries Get\+Model} ()
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_aad55cb64c05fb52cf13ac4e1332193a9}\label{classAcceleratorModelConstructor_aad55cb64c05fb52cf13ac4e1332193a9}} 
+void {\bfseries New\+Frame} (\hyperlink{classSequenceFrame}{Sequence\+Frame} $\ast$a\+Frame)
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_aa8c38df39965086b3518ed805f130cf4}\label{classAcceleratorModelConstructor_aa8c38df39965086b3518ed805f130cf4}} 
+void {\bfseries End\+Frame} ()
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a11be4caa0df30c52c992621ae0adcba0}\label{classAcceleratorModelConstructor_a11be4caa0df30c52c992621ae0adcba0}} 
+{\footnotesize template$<$class T $>$ }\\T $\ast$ {\bfseries Append\+Component} (T \&acc, double d=0)
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a21ccc90688cd0ea76891dda5d36c2e7b}\label{classAcceleratorModelConstructor_a21ccc90688cd0ea76891dda5d36c2e7b}} 
+{\footnotesize template$<$class T $>$ }\\T $\ast$ {\bfseries Append\+Component} (T $\ast$acc, double d=0)
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a6a3fd6d8e2a92651ac70e2469a396681}\label{classAcceleratorModelConstructor_a6a3fd6d8e2a92651ac70e2469a396681}} 
+void {\bfseries Append\+Component\+Frame} (\hyperlink{classComponentFrame}{Component\+Frame} $\ast$cf)
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a833a360f8881b60f6eeaab636c1f6d37}\label{classAcceleratorModelConstructor_a833a360f8881b60f6eeaab636c1f6d37}} 
+void {\bfseries Append\+Frame} (\hyperlink{classSequenceFrame}{Sequence\+Frame} $\ast$a\+Frame)
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_afe1516820679d7d820f264ee0740921f}\label{classAcceleratorModelConstructor_afe1516820679d7d820f264ee0740921f}} 
+\hyperlink{classSequenceFrame}{Sequence\+Frame} \& {\bfseries Get\+Current\+Frame} () const
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a86180838de0ec075c0a009da4ba3535c}\label{classAcceleratorModelConstructor_a86180838de0ec075c0a009da4ba3535c}} 
+int {\bfseries Get\+Current\+Frame\+Depth} () const
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a6c138a047f21536500eae4cf3ae918cf}\label{classAcceleratorModelConstructor_a6c138a047f21536500eae4cf3ae918cf}} 
+void {\bfseries Append\+Drift} (double d)
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a8a49d3c29c1b4cd57e71e14d1f766688}\label{classAcceleratorModelConstructor_a8a49d3c29c1b4cd57e71e14d1f766688}} 
+void {\bfseries Add\+Model\+Element} (\hyperlink{classModelElement}{Model\+Element} $\ast$element)
+\item 
+\mbox{\Hypertarget{classAcceleratorModelConstructor_a18134efe6ac33c9071083502e2d3ac2e}\label{classAcceleratorModelConstructor_a18134efe6ac33c9071083502e2d3ac2e}} 
+void {\bfseries Report\+Statistics} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Accelerator\+Model\+Constructor.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Accelerator\+Model\+Constructor.\+cpp\end{DoxyCompactItemize}

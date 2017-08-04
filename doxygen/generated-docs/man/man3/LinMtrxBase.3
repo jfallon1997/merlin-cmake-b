@@ -1,0 +1,73 @@
+.TH "LinMtrxBase" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LinMtrxBase
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MatrixMaps\&.h>\fP
+.PP
+Inherited by \fBRdpMtrx\fP, and \fBRMtrx\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBGetNDF\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetRefMomentum\fP () const"
+.br
+.ti -1c
+.RI "bool \fBEnergyIndependent\fP () const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBRealMatrix\fP \fBR\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLinMtrxBase\fP (double P, int ndf)"
+.br
+.ti -1c
+.RI "\fBLinMtrxBase\fP (const \fBRealMatrix\fP &RR, double P0)"
+.br
+.ti -1c
+.RI "double \fBscaledp\fP (double P, double dp) const"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBPref\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base class for linear matrix maps\&. LinMtrxMap is intended only as a common base for class \fBRMtrx\fP and class \fBRdpMtrx\fP\&. It cannot be instantiated\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "LinMtrxBase::LinMtrxBase (const \fBRealMatrix\fP & RR, double P0)\fC [protected]\fP"
+Construction directly from an arbitrary matrix\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool LinMtrxBase::EnergyIndependent () const\fC [inline]\fP"
+Returns true if this map is energy independent\&. 
+.SS "int LinMtrxBase::GetNDF () const\fC [inline]\fP"
+Return the number of degrees of freedom for this matrix (dimension/2)\&. 
+.SS "double LinMtrxBase::GetRefMomentum () const\fC [inline]\fP"
+Return the reference momentum in GeV/c (returns 0 if the map is energy independent)\&. 
+.SS "double LinMtrxBase::scaledp (double P, double dp) const\fC [inline]\fP, \fC [protected]\fP"
+Returns the momentum error re-scaled to the reference momentum\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

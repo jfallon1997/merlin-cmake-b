@@ -1,0 +1,61 @@
+.TH "LinearFBSystem" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LinearFBSystem
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLinearFBSystem\fP (std::vector< \fBROChannel\fP *> &sigs, std::vector< \fBRWChannel\fP *> &acts, const \fBRealMatrix\fP &M)"
+.br
+.ti -1c
+.RI "\fBLinearFBSystem\fP (\fBROChannelArray\fP &sigs, \fBRWChannelArray\fP &acts, const \fBRealMatrix\fP &M)"
+.br
+.ti -1c
+.RI "void \fBSignalsToSetpoints\fP ()"
+.br
+.ti -1c
+.RI "void \fBStoreActuators\fP () const"
+.br
+.ti -1c
+.RI "void \fBRestoreActuators\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetResponseMatrix\fP (const \fBRealMatrix\fP &M)"
+.br
+.ti -1c
+.RI "void \fBSetGain\fP (double g)"
+.br
+.ti -1c
+.RI "double \fBGetGain\fP () const"
+.br
+.ti -1c
+.RI "void \fBApply\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetSetpoints\fP (const \fBRealVector\fP &S0)"
+.br
+.ti -1c
+.RI "double \fBGetActuatorRMS\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetSignalRMS\fP () const"
+.br
+.ti -1c
+.RI "int \fBGetNumSignals\fP () const"
+.br
+.ti -1c
+.RI "int \fBGetNumActuators\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetPulseDelay\fP (int n)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

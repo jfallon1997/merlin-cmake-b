@@ -1,0 +1,50 @@
+\hypertarget{classIntegrateEigenvector}{}\section{Integrate\+Eigenvector Class Reference}
+\label{classIntegrateEigenvector}\index{Integrate\+Eigenvector@{Integrate\+Eigenvector}}
+Inheritance diagram for Integrate\+Eigenvector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIntegrateEigenvector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_a9e545ef8092a0b042184ca76632d421a}\label{classIntegrateEigenvector_a9e545ef8092a0b042184ca76632d421a}} 
+double {\bfseries Integral} (\hyperlink{classTLAS_1_1Vector}{Complex\+Vector} \&Ek, \hyperlink{classSectorBend}{Sector\+Bend} $\ast$sb, double p0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_a7fe101905db849cd2aefed777e5feee7}\label{classIntegrateEigenvector_a7fe101905db849cd2aefed777e5feee7}} 
+void {\bfseries polint} (double xa\mbox{[}$\,$\mbox{]}, double ya\mbox{[}$\,$\mbox{]}, int n, double x, double \&y, double \&dy)
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_ae9fea1ffbe9b85b00fe2835385af93eb}\label{classIntegrateEigenvector_ae9fea1ffbe9b85b00fe2835385af93eb}} 
+double {\bfseries trapzd} (double a, double b, int n)
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_ae3fb01a52a3539c391b68c0ebf1a125d}\label{classIntegrateEigenvector_ae3fb01a52a3539c391b68c0ebf1a125d}} 
+double {\bfseries qromb} (double a, double b)
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_ac119f9ee70abc5f5ba083a0ba5785be1}\label{classIntegrateEigenvector_ac119f9ee70abc5f5ba083a0ba5785be1}} 
+virtual double {\bfseries func} (double s)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_aed0a99ab5790a8b960dfbc8f3afe3f02}\label{classIntegrateEigenvector_aed0a99ab5790a8b960dfbc8f3afe3f02}} 
+\hyperlink{classTLAS_1_1Vector}{Complex\+Vector} {\bfseries ek}
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_ac10f027ab6ac39111e41955e813eec0c}\label{classIntegrateEigenvector_ac10f027ab6ac39111e41955e813eec0c}} 
+\hyperlink{classComplex}{Complex} {\bfseries k}
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_a7b139028e9c81df69d9e662247bbbc59}\label{classIntegrateEigenvector_a7b139028e9c81df69d9e662247bbbc59}} 
+double {\bfseries h}
+\item 
+\mbox{\Hypertarget{classIntegrateEigenvector_a174147cdeb165de4f5fb4e22fa9b899b}\label{classIntegrateEigenvector_a174147cdeb165de4f5fb4e22fa9b899b}} 
+double {\bfseries tan\+E1}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Equilibrium\+Distribution.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Equilibrium\+Distribution.\+cpp\end{DoxyCompactItemize}

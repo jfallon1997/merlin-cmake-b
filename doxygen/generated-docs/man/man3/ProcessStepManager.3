@@ -1,0 +1,56 @@
+.TH "ProcessStepManager" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ProcessStepManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ProcessStepManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBInitialise\fP (\fBBunch\fP &bunch)"
+.br
+.ti -1c
+.RI "void \fBTrack\fP (\fBAcceleratorComponent\fP &component)"
+.br
+.ti -1c
+.RI "double \fBGetIntegratedLength\fP ()"
+.br
+.ti -1c
+.RI "void \fBAddProcess\fP (\fBBunchProcess\fP *aProcess)"
+.br
+.ti -1c
+.RI "bool \fBRemoveProcess\fP (\fBBunchProcess\fP *aProcess)"
+.br
+.ti -1c
+.RI "void \fBClearProcesses\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetLogStream\fP (std::ostream *os)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Responsible for coordinating the tracking of a bunch through a single \fBAcceleratorComponent\fP\&. Tracking occurs by the application of a series of processes, which effectively intergrate the bunch motion along the beamline\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void ProcessStepManager::AddProcess (\fBBunchProcess\fP * aProcess)"
+Add a process\&. 
+.SS "void ProcessStepManager::ClearProcesses ()"
+Remove and destroys all processes in the current process table\&. 
+.SS "double ProcessStepManager::GetIntegratedLength ()"
+Returns the total length integrated since the last call to \fBInitialise(Bunch&)\fP\&. 
+.SS "void ProcessStepManager::Initialise (\fBBunch\fP & bunch)"
+Initialise the step manager with the specified (initial) bunch\&. 
+.SS "bool ProcessStepManager::RemoveProcess (\fBBunchProcess\fP * aProcess)"
+Remove aProcess from the current process table\&. Returns true if aProcess was present, otherwise false\&. 
+.SS "void ProcessStepManager::Track (\fBAcceleratorComponent\fP & component)"
+Track the specified component\&. The current bunch object is updated accordingly\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

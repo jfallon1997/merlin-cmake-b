@@ -1,0 +1,183 @@
+\hypertarget{classAperture}{}\section{Aperture Class Reference}
+\label{classAperture}\index{Aperture@{Aperture}}
+
+
+{\ttfamily \#include $<$Aperture.\+h$>$}
+
+Inheritance diagram for Aperture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classAperture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAperture_ad20a215bea35fe695d98c1d4e000112f}{Aperture} (\hyperlink{classMaterial}{Material} $\ast$m=nullptr)
+\item 
+virtual \hyperlink{classAperture_ad2ec00bf784a25710ce4049f339513d6}{$\sim$\+Aperture} ()
+\item 
+virtual bool \hyperlink{classAperture_a77854d058bf8a00cfeb7a6d766dc0028}{Point\+Inside} (double x, double y, double z) const =0
+\item 
+bool \hyperlink{classAperture_a3fe1acdd1ca1792a7df9305b2ff6e454}{Point\+Inside} (const \hyperlink{classTVec3D}{Point3D} \&p) const
+\item 
+virtual double \hyperlink{classAperture_ad0ea7907d393ec1e6a8303343fe9dd29}{Get\+Radius\+At} (double phi, double z) const =0
+\item 
+virtual std\+::string \hyperlink{classAperture_ad7af612271a0586feea83c38549dfb75}{Get\+Aperture\+Type} () const =0
+\item 
+\hyperlink{classMaterial}{Material} $\ast$ \hyperlink{classAperture_ae75acab11fe8687836cd71afe80e9dd2}{Get\+Material} () const
+\item 
+void \hyperlink{classAperture_aa35484166441c2be0e2e159c6d6f4a11}{Set\+Material} (\hyperlink{classMaterial}{Material} $\ast$m)
+\item 
+virtual void \hyperlink{classAperture_aff2f276b93bb2cb94e559e1c4901e38e}{printout} (std\+::ostream \&out) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMaterial}{Material} $\ast$ \hyperlink{classAperture_ae92ba16dcfebf1949db67b8fc0ae3c7b}{Aperture\+Material}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the cross section of the vacuum pipe or other collimating aperture. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAperture_ad20a215bea35fe695d98c1d4e000112f}\label{classAperture_ad20a215bea35fe695d98c1d4e000112f}} 
+\index{Aperture@{Aperture}!Aperture@{Aperture}}
+\index{Aperture@{Aperture}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Aperture()}{Aperture()}}
+{\footnotesize\ttfamily Aperture\+::\+Aperture (\begin{DoxyParamCaption}\item[{\hyperlink{classMaterial}{Material} $\ast$}]{m = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em m} & The material to attach to this aperture. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAperture_ad2ec00bf784a25710ce4049f339513d6}\label{classAperture_ad2ec00bf784a25710ce4049f339513d6}} 
+\index{Aperture@{Aperture}!````~Aperture@{$\sim$\+Aperture}}
+\index{````~Aperture@{$\sim$\+Aperture}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{$\sim$\+Aperture()}{~Aperture()}}
+{\footnotesize\ttfamily Aperture\+::$\sim$\+Aperture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAperture_ad7af612271a0586feea83c38549dfb75}\label{classAperture_ad7af612271a0586feea83c38549dfb75}} 
+\index{Aperture@{Aperture}!Get\+Aperture\+Type@{Get\+Aperture\+Type}}
+\index{Get\+Aperture\+Type@{Get\+Aperture\+Type}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Get\+Aperture\+Type()}{GetApertureType()}}
+{\footnotesize\ttfamily virtual std\+::string Aperture\+::\+Get\+Aperture\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the type of the aperture. \begin{DoxyReturn}{Returns}
+A string containing the type of the aperture. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classOctagonalAperture_ada756a63c21912b26d79a5743bbd051f}{Octagonal\+Aperture}, \hyperlink{classEllipticalAperture_a8c56e3ab5e8483dd42ed6e35855409df}{Elliptical\+Aperture}, \hyperlink{classInterpolatedOctagonalAperture_a9e16536001e2732bcaf15d55134e05bf}{Interpolated\+Octagonal\+Aperture}, \hyperlink{classInterpolatedEllipticalAperture_a02a87b57b089796ccf55c9bbe16a11ec}{Interpolated\+Elliptical\+Aperture}, \hyperlink{classInterpolatedCircularAperture_ad6c2112ec4e0bd1b21b679e3fab08704}{Interpolated\+Circular\+Aperture}, \hyperlink{classCircularAperture_a18f05ba1dde35881014ba3aa2ed693bc}{Circular\+Aperture}, \hyperlink{classInterpolatedRectEllipseAperture_a310886ba54e5ea6a4e95d8946c9a7440}{Interpolated\+Rect\+Ellipse\+Aperture}, \hyperlink{classRectangularAperture_ac7d8e273423b18e1898286a51e3f22c7}{Rectangular\+Aperture}, and \hyperlink{classRectEllipseAperture_a983dec943872b82aa91f74cd10558207}{Rect\+Ellipse\+Aperture}.
+
+\mbox{\Hypertarget{classAperture_ae75acab11fe8687836cd71afe80e9dd2}\label{classAperture_ae75acab11fe8687836cd71afe80e9dd2}} 
+\index{Aperture@{Aperture}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
+{\footnotesize\ttfamily \hyperlink{classMaterial}{Material} $\ast$ Aperture\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the material associated with this aperture. \begin{DoxyReturn}{Returns}
+A pointer to a \hyperlink{classMaterial}{Material} class attached to this aperture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAperture_ad0ea7907d393ec1e6a8303343fe9dd29}\label{classAperture_ad0ea7907d393ec1e6a8303343fe9dd29}} 
+\index{Aperture@{Aperture}!Get\+Radius\+At@{Get\+Radius\+At}}
+\index{Get\+Radius\+At@{Get\+Radius\+At}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Get\+Radius\+At()}{GetRadiusAt()}}
+{\footnotesize\ttfamily virtual double Aperture\+::\+Get\+Radius\+At (\begin{DoxyParamCaption}\item[{double}]{phi,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the radius to the aperture at location z and angle phi. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em phi} & The angle. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z position of the particle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double containing the aperture radius. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classOctagonalAperture_ab79ca14c1d75522637bea3ffbbb0d8a4}{Octagonal\+Aperture}, \hyperlink{classEllipticalAperture_aec41ce72d82e004b8de123e37d3b11e9}{Elliptical\+Aperture}, \hyperlink{classInterpolatedOctagonalAperture_a92937e111009433a274722eb316270e1}{Interpolated\+Octagonal\+Aperture}, \hyperlink{classInterpolatedEllipticalAperture_adcbc99d397eba723e88877d199c035d8}{Interpolated\+Elliptical\+Aperture}, \hyperlink{classInterpolatedCircularAperture_a4c614ba51b5da0e01808f719f6a7511f}{Interpolated\+Circular\+Aperture}, \hyperlink{classCircularAperture_ab2f83be4d78bb1495b2b0aebef78e189}{Circular\+Aperture}, \hyperlink{classInterpolatedRectEllipseAperture_aac0970213673334851109d69e0e6a423}{Interpolated\+Rect\+Ellipse\+Aperture}, \hyperlink{classRectangularAperture_a7ef1ddd66a755305b7bab2a2c3ac5d58}{Rectangular\+Aperture}, and \hyperlink{classRectEllipseAperture_a3e6ea0e15b7a9f026bc7ead70efe5e18}{Rect\+Ellipse\+Aperture}.
+
+\mbox{\Hypertarget{classAperture_a77854d058bf8a00cfeb7a6d766dc0028}\label{classAperture_a77854d058bf8a00cfeb7a6d766dc0028}} 
+\index{Aperture@{Aperture}!Point\+Inside@{Point\+Inside}}
+\index{Point\+Inside@{Point\+Inside}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Point\+Inside()}{PointInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool Aperture\+::\+Point\+Inside (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if the point (x,y,z) is within the aperture. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x coordinate of the particle \\
+\hline
+\mbox{\tt in}  & {\em y} & The y coordinate of the particle \\
+\hline
+\mbox{\tt in}  & {\em z} & The z coordinate of the particle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool set to true if the specified point, is within the \hyperlink{classAperture}{Aperture}. false if it is not. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classOctagonalAperture_a9c3e4ba8a96d3b97fc92fdeef975caf9}{Octagonal\+Aperture}, \hyperlink{classEllipticalAperture_ad2ac194f4f03d5e590a7640afa69ace9}{Elliptical\+Aperture}, \hyperlink{classInterpolatedOctagonalAperture_a7d2e6993a0d679e23038ca88245db59b}{Interpolated\+Octagonal\+Aperture}, \hyperlink{classInterpolatedEllipticalAperture_a2e0b148eea71b6651cdf78df66d69e62}{Interpolated\+Elliptical\+Aperture}, \hyperlink{classOneSidedUnalignedCollimatorAperture_afad818345b971dffa9ca6fa36a166e35}{One\+Sided\+Unaligned\+Collimator\+Aperture}, \hyperlink{classInterpolatedCircularAperture_aeb31875191b05bd63bd00fe11294a432}{Interpolated\+Circular\+Aperture}, \hyperlink{classCircularAperture_a1cc2c7d1ff491dbfb0c24790897d4519}{Circular\+Aperture}, \hyperlink{classUnalignedCollimatorAperture_af116c2ff1d60c4894a9b9ae4cfc2b19e}{Unaligned\+Collimator\+Aperture}, \hyperlink{classInterpolatedRectEllipseAperture_a53862c9efd9d7e090e08ff027b6b80cf}{Interpolated\+Rect\+Ellipse\+Aperture}, \hyperlink{classCollimatorAperture_a964f63287a0ab48900859d75dfa644dc}{Collimator\+Aperture}, \hyperlink{classRectangularAperture_a47e965df14eb63f2a3851ea0e9fe26db}{Rectangular\+Aperture}, and \hyperlink{classRectEllipseAperture_ac3cc7fae775b055d74ea185a77b08c7f}{Rect\+Ellipse\+Aperture}.
+
+\mbox{\Hypertarget{classAperture_a3fe1acdd1ca1792a7df9305b2ff6e454}\label{classAperture_a3fe1acdd1ca1792a7df9305b2ff6e454}} 
+\index{Aperture@{Aperture}!Point\+Inside@{Point\+Inside}}
+\index{Point\+Inside@{Point\+Inside}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Point\+Inside()}{PointInside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Aperture\+::\+Point\+Inside (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the point p is within the aperture. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & 3D point reference to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool set to true if the specified point, is within the \hyperlink{classAperture}{Aperture}. false if it is not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAperture_aff2f276b93bb2cb94e559e1c4901e38e}\label{classAperture_aff2f276b93bb2cb94e559e1c4901e38e}} 
+\index{Aperture@{Aperture}!printout@{printout}}
+\index{printout@{printout}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{printout()}{printout()}}
+{\footnotesize\ttfamily void Aperture\+::printout (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints out the \hyperlink{classAperture}{Aperture} parameters to a specified stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em out} & The output stream to use. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classOctagonalAperture_ad8329324a912bc76c97fd3f8bbefa5ac}{Octagonal\+Aperture}, \hyperlink{classEllipticalAperture_af45343465b84072027de770839bbd73d}{Elliptical\+Aperture}, \hyperlink{classInterpolatedOctagonalAperture_ad1e9dcb72289db534c78e297fa4c8197}{Interpolated\+Octagonal\+Aperture}, \hyperlink{classInterpolatedEllipticalAperture_aee15c62d0ff01c37120481cc821f9d87}{Interpolated\+Elliptical\+Aperture}, \hyperlink{classInterpolatedCircularAperture_af32b8d603ed9dd511c3b00a045400795}{Interpolated\+Circular\+Aperture}, \hyperlink{classCircularAperture_af7380933fd3494dd0d1868b655a78b08}{Circular\+Aperture}, \hyperlink{classInterpolatedRectEllipseAperture_abd88d2108988e8653517e3291dd92ff2}{Interpolated\+Rect\+Ellipse\+Aperture}, \hyperlink{classRectangularAperture_ab3a9514337b3fd3f2368f03ab6410533}{Rectangular\+Aperture}, and \hyperlink{classRectEllipseAperture_a13285bdfb9c849fe94cd261ae1bfffe4}{Rect\+Ellipse\+Aperture}.
+
+\mbox{\Hypertarget{classAperture_aa35484166441c2be0e2e159c6d6f4a11}\label{classAperture_aa35484166441c2be0e2e159c6d6f4a11}} 
+\index{Aperture@{Aperture}!Set\+Material@{Set\+Material}}
+\index{Set\+Material@{Set\+Material}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Set\+Material()}{SetMaterial()}}
+{\footnotesize\ttfamily void Aperture\+::\+Set\+Material (\begin{DoxyParamCaption}\item[{\hyperlink{classMaterial}{Material} $\ast$}]{m }\end{DoxyParamCaption})}
+
+Sets the material associated with this aperture. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em m} & The material to attach to this aperture. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAperture_ae92ba16dcfebf1949db67b8fc0ae3c7b}\label{classAperture_ae92ba16dcfebf1949db67b8fc0ae3c7b}} 
+\index{Aperture@{Aperture}!Aperture\+Material@{Aperture\+Material}}
+\index{Aperture\+Material@{Aperture\+Material}!Aperture@{Aperture}}
+\subsubsection{\texorpdfstring{Aperture\+Material}{ApertureMaterial}}
+{\footnotesize\ttfamily \hyperlink{classMaterial}{Material}$\ast$ Aperture\+::\+Aperture\+Material\hspace{0.3cm}{\ttfamily [protected]}}
+
+The \hyperlink{classMaterial}{Material} of this aperture. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Aperture.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Aperture.\+cpp\end{DoxyCompactItemize}

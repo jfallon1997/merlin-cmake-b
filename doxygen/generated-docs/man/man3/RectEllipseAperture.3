@@ -1,0 +1,122 @@
+.TH "RectEllipseAperture" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RectEllipseAperture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RectEllipseAperture\&.h>\fP
+.PP
+Inherits \fBAperture\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRectEllipseAperture\fP (double rhw, double rhh, double ehh, double ehv)"
+.br
+.ti -1c
+.RI "bool \fBPointInside\fP (double x, double y, double z) const"
+.br
+.ti -1c
+.RI "double \fBGetRadiusAt\fP (double phi, double z) const"
+.br
+.ti -1c
+.RI "std::string \fBGetApertureType\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBprintout\fP (std::ostream &out) const"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "const double \fBRectHalfWidth\fP"
+.br
+.ti -1c
+.RI "const double \fBRectHalfHeight\fP"
+.br
+.ti -1c
+.RI "const double \fBEllipseHalfHorizontal\fP"
+.br
+.ti -1c
+.RI "const double \fBEllipseHalfVertical\fP"
+.br
+.ti -1c
+.RI "const double \fBEHH2\fP"
+.br
+.ti -1c
+.RI "const double \fBHV\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Rectellipse \fBAperture\fP This class defines the LHC beam screen 
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string RectEllipseAperture::GetApertureType () const\fC [virtual]\fP"
+Returns the type of the aperture\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A string containing the type of the aperture\&. 
+.RE
+.PP
+
+.PP
+Implements \fBAperture\fP\&.
+.SS "double RectEllipseAperture::GetRadiusAt (double phi, double z) const\fC [virtual]\fP"
+Returns the radius to the aperture at location z and angle phi\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIphi\fP The angle\&. 
+.br
+\fIz\fP The z position of the particle\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A double containing the aperture radius\&. 
+.RE
+.PP
+
+.PP
+Implements \fBAperture\fP\&.
+.SS "bool RectEllipseAperture::PointInside (double x, double y, double z) const\fC [virtual]\fP"
+Returns true if the point (x,y,z) is within the aperture\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP The x coordinate of the particle 
+.br
+\fIy\fP The y coordinate of the particle 
+.br
+\fIz\fP The z coordinate of the particle 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A bool set to true if the specified point, is within the \fBAperture\fP\&. false if it is not\&. 
+.RE
+.PP
+
+.PP
+Implements \fBAperture\fP\&.
+.SS "void RectEllipseAperture::printout (std::ostream & out) const\fC [virtual]\fP"
+Prints out the \fBAperture\fP parameters to a specified stream\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP The output stream to use\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAperture\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

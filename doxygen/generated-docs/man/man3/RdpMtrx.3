@@ -1,0 +1,81 @@
+.TH "RdpMtrx" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RdpMtrx
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MatrixMaps\&.h>\fP
+.PP
+Inherits \fBLinMtrxBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRdpMtrx\fP (int ndf=3, double P0=0)"
+.br
+.ti -1c
+.RI "\fBRdpMtrx\fP (const \fBRealMatrix\fP &RR, const \fBRealMatrix\fP &TT, double P0=0)"
+.br
+.ti -1c
+.RI "\fBPSvector\fP & \fBApply\fP (\fBPSvector\fP &x) const"
+.br
+.ti -1c
+.RI "\fBPSvector\fP & \fBApply\fP (\fBPSvector\fP &x, double p0) const"
+.br
+.ti -1c
+.RI "PSvectorArray & \fBApply\fP (PSvectorArray &xa) const"
+.br
+.ti -1c
+.RI "PSvectorArray & \fBApply\fP (PSvectorArray &xa, double p0) const"
+.br
+.ti -1c
+.RI "\fBPSmoments\fP & \fBApply\fP (\fBPSmoments\fP &sigma) const"
+.br
+.ti -1c
+.RI "\fBPSmoments\fP & \fBApply\fP (\fBPSmoments\fP &sigma, double p0) const"
+.br
+.ti -1c
+.RI "PSmomentsArray & \fBApply\fP (PSmomentsArray &sigmaArray) const"
+.br
+.ti -1c
+.RI "PSmomentsArray & \fBApply\fP (PSmomentsArray &sigmaArray, double p0) const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBRealMatrix\fP \fBT\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+An approximate linear map which contains a first-order chromatic correction\&. The matrix used for tracking is calculated as R0+R1*dp, where R0 is the matrix calculated about the reference momentum, R1 is the first order derivative wrt momentum and dp is the momentum error\&. For more information see \fBRMtrx\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RdpMtrx::RdpMtrx (int ndf = \fC3\fP, double P0 = \fC0\fP)\fC [inline]\fP, \fC [explicit]\fP"
+Constructor taking the reference momentum and the number of degrees of freedom (ndf) for the matrix\&. The matrices are dimensioned but not initialised\&. 
+.SS "RdpMtrx::RdpMtrx (const \fBRealMatrix\fP & RR, const \fBRealMatrix\fP & TT, double P0 = \fC0\fP)\fC [inline]\fP"
+Constructor from two arbitrary matrices\&. Both matrices should be square and of equal dimension, which should be 2n where n=1,2, or 3\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBPSvector\fP & RdpMtrx::Apply (\fBPSvector\fP & x) const"
+Transforms the vector x by R such that x->R\&.x\&. The second form explicitly specifies the reference momentum (GeV/c) for the vector\&. Returns x\&. 
+.SS "PSvectorArray & RdpMtrx::Apply (PSvectorArray & xa) const"
+Transforms each vector in xa by R such that x->R\&.x\&. The second form explicitly specifies the reference momentum (GeV/c) for the vectors\&. Returns xa\&. 
+.SS "\fBPSmoments\fP & RdpMtrx::Apply (\fBPSmoments\fP & sigma) const"
+Transform sigma by R\&. If X,S represent the first- and second-order moments respectively, then X->R\&.X and S->R\&.S\&.R'\&. The second form explicitly specifies the reference momentum (GeV/c) for the moments\&. Returns sigma\&. 
+.SS "PSmomentsArray & RdpMtrx::Apply (PSmomentsArray & sigmaArray) const"
+Transforms the moments in sigmaArray by R (see apply(PSmoments&) for details)\&. The second form explicitly specifies the reference momentum (GeV/c) for the moments\&. Returns sigmaArray\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBRealMatrix\fP RdpMtrx::T"
+Second-order momemtum derivative matrix (T matrix)\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

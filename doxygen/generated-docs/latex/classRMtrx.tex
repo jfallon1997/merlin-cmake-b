@@ -1,0 +1,123 @@
+\hypertarget{classRMtrx}{}\section{R\+Mtrx Class Reference}
+\label{classRMtrx}\index{R\+Mtrx@{R\+Mtrx}}
+
+
+{\ttfamily \#include $<$Matrix\+Maps.\+h$>$}
+
+Inheritance diagram for R\+Mtrx\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRMtrx}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRMtrx_a032c49c9e214bc5547f1f8905b90c0a7}{R\+Mtrx} (int ndf=3, double P=0)
+\item 
+\hyperlink{classRMtrx_af3e573feaa7716ab2e3359d1ed5553e9}{R\+Mtrx} (const \hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} \&RR, double P0=0)
+\item 
+void \hyperlink{classRMtrx_ad5947ad3a111cb9b72ca3ae2e3fff35b}{Set\+Ref\+Momentum} (double p)
+\item 
+\hyperlink{classPSvector}{P\+Svector} \& \hyperlink{classRMtrx_a8c7db2715f9264ca496c3bbc830653ac}{Apply} (\hyperlink{classPSvector}{P\+Svector} \&x) const
+\item 
+\mbox{\Hypertarget{classRMtrx_afcfe247b08330a88da8ec65ec1be2a6a}\label{classRMtrx_afcfe247b08330a88da8ec65ec1be2a6a}} 
+\hyperlink{classPSvector}{P\+Svector} \& {\bfseries Apply} (\hyperlink{classPSvector}{P\+Svector} \&x, double p0) const
+\item 
+P\+Svector\+Array \& \hyperlink{classRMtrx_a46df04852afc2eccc36360ea5a3a3826}{Apply} (P\+Svector\+Array \&xa) const
+\item 
+\mbox{\Hypertarget{classRMtrx_ac160408e3e173197cc36835a54c54eab}\label{classRMtrx_ac160408e3e173197cc36835a54c54eab}} 
+P\+Svector\+Array \& {\bfseries Apply} (P\+Svector\+Array \&xa, double p0) const
+\item 
+\hyperlink{classTPSMoments}{P\+Smoments} \& \hyperlink{classRMtrx_a563c6861facf2b7147575ab0921357d8}{Apply} (\hyperlink{classTPSMoments}{P\+Smoments} \&sigma) const
+\item 
+\mbox{\Hypertarget{classRMtrx_a83d49550b5dff3ab2ceb53c11032fac8}\label{classRMtrx_a83d49550b5dff3ab2ceb53c11032fac8}} 
+\hyperlink{classTPSMoments}{P\+Smoments} \& {\bfseries Apply} (\hyperlink{classTPSMoments}{P\+Smoments} \&sigma, double p0) const
+\item 
+P\+Smoments\+Array \& \hyperlink{classRMtrx_a3d1ab14e965dbadccf16040a28cb6911}{Apply} (P\+Smoments\+Array \&sigma\+Array) const
+\item 
+\mbox{\Hypertarget{classRMtrx_a0fc070459cafa48863cfb562cddbcd3e}\label{classRMtrx_a0fc070459cafa48863cfb562cddbcd3e}} 
+P\+Smoments\+Array \& {\bfseries Apply} (P\+Smoments\+Array \&sigma\+Array, double p0) const
+\item 
+\hyperlink{classRMtrx}{R\+Mtrx} \& \hyperlink{classRMtrx_aec48b145bf3d175a14026d04fe3eb23c}{Invert} ()
+\item 
+\hyperlink{classRMtrx}{R\+Mtrx} \& \hyperlink{classRMtrx_a8d08b2c62149ffd5309b9cfb3783a8cd}{operator$\ast$=} (const \hyperlink{classRMtrx}{R\+Mtrx} \&rhs)
+\item 
+double \hyperlink{classRMtrx_a1cb4e9e7e00137f95f0a5b1511d0344e}{operator()} (int i, int j) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classRMtrx}{R\+Mtrx} represents a linear map which is implemented by a matrix (R matrix). The map can act on single vectors or first-\/ and second-\/order moments, or arrays of the above. The dimensionality of the map is specified in the number of degrees of freedom (1,2 or 3). In addition, \hyperlink{classRMtrx}{R\+Mtrx} objects are associated with a specific reference momentum, about which the map (R) is calculated. Functions are provided for mapping vectors or moments whose reference momenta are different from the \hyperlink{classRMtrx}{R\+Mtrx} reference. \hyperlink{classRMtrx}{R\+Mtrx} objects can be multiplied together and inverted. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRMtrx_a032c49c9e214bc5547f1f8905b90c0a7}\label{classRMtrx_a032c49c9e214bc5547f1f8905b90c0a7}} 
+\index{R\+Mtrx@{R\+Mtrx}!R\+Mtrx@{R\+Mtrx}}
+\index{R\+Mtrx@{R\+Mtrx}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{R\+Mtrx()}{RMtrx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+Mtrx\+::\+R\+Mtrx (\begin{DoxyParamCaption}\item[{int}]{ndf = {\ttfamily 3},  }\item[{double}]{P = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor taking the reference momentum and the number of degrees of freedom (ndf) for the matrix. The matrix is dimensioned but not initialised. \mbox{\Hypertarget{classRMtrx_af3e573feaa7716ab2e3359d1ed5553e9}\label{classRMtrx_af3e573feaa7716ab2e3359d1ed5553e9}} 
+\index{R\+Mtrx@{R\+Mtrx}!R\+Mtrx@{R\+Mtrx}}
+\index{R\+Mtrx@{R\+Mtrx}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{R\+Mtrx()}{RMtrx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+Mtrx\+::\+R\+Mtrx (\begin{DoxyParamCaption}\item[{const \hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} \&}]{RR,  }\item[{double}]{P0 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construction from an aribrary matrix. The matrix should be square with dimension 2n, where n is 1,2 or 3. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRMtrx_a8c7db2715f9264ca496c3bbc830653ac}\label{classRMtrx_a8c7db2715f9264ca496c3bbc830653ac}} 
+\index{R\+Mtrx@{R\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{classPSvector}{P\+Svector} \& R\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{\hyperlink{classPSvector}{P\+Svector} \&}]{x }\end{DoxyParamCaption}) const}
+
+Transforms the vector x by R such that x-\/$>$R.\+x. The second form explicitly specifies the reference momentum (Ge\+V/c) for the vector. Returns x. \mbox{\Hypertarget{classRMtrx_a46df04852afc2eccc36360ea5a3a3826}\label{classRMtrx_a46df04852afc2eccc36360ea5a3a3826}} 
+\index{R\+Mtrx@{R\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily P\+Svector\+Array \& R\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{P\+Svector\+Array \&}]{xa }\end{DoxyParamCaption}) const}
+
+Transforms each vector in xa by R such that x-\/$>$R.\+x. The second form explicitly specifies the reference momentum (Ge\+V/c) for the vectors. Returns xa. \mbox{\Hypertarget{classRMtrx_a563c6861facf2b7147575ab0921357d8}\label{classRMtrx_a563c6861facf2b7147575ab0921357d8}} 
+\index{R\+Mtrx@{R\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{classTPSMoments}{P\+Smoments} \& R\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{\hyperlink{classTPSMoments}{P\+Smoments} \&}]{sigma }\end{DoxyParamCaption}) const}
+
+Transform sigma by R. If X,S represent the first-\/ and second-\/order moments respectively, then X-\/$>$R.\+X and S-\/$>$R.\+S.\+R\textquotesingle{}. The second form explicitly specifies the reference momentum (Ge\+V/c) for the moments. Returns sigma. \mbox{\Hypertarget{classRMtrx_a3d1ab14e965dbadccf16040a28cb6911}\label{classRMtrx_a3d1ab14e965dbadccf16040a28cb6911}} 
+\index{R\+Mtrx@{R\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily P\+Smoments\+Array \& R\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{P\+Smoments\+Array \&}]{sigma\+Array }\end{DoxyParamCaption}) const}
+
+Transforms the moments in sigma\+Array by R (see apply(\+P\+Smoments\&) for details). The second form explicitly specifies the reference momentum (Ge\+V/c) for the moments. Returns sigma\+Array. \mbox{\Hypertarget{classRMtrx_aec48b145bf3d175a14026d04fe3eb23c}\label{classRMtrx_aec48b145bf3d175a14026d04fe3eb23c}} 
+\index{R\+Mtrx@{R\+Mtrx}!Invert@{Invert}}
+\index{Invert@{Invert}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{Invert()}{Invert()}}
+{\footnotesize\ttfamily \hyperlink{classRMtrx}{R\+Mtrx} \& R\+Mtrx\+::\+Invert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Invert the matrix. \mbox{\Hypertarget{classRMtrx_a1cb4e9e7e00137f95f0a5b1511d0344e}\label{classRMtrx_a1cb4e9e7e00137f95f0a5b1511d0344e}} 
+\index{R\+Mtrx@{R\+Mtrx}!operator()@{operator()}}
+\index{operator()@{operator()}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily double R\+Mtrx\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+array-\/like accessor \mbox{\Hypertarget{classRMtrx_a8d08b2c62149ffd5309b9cfb3783a8cd}\label{classRMtrx_a8d08b2c62149ffd5309b9cfb3783a8cd}} 
+\index{R\+Mtrx@{R\+Mtrx}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \hyperlink{classRMtrx}{R\+Mtrx} \& R\+Mtrx\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classRMtrx}{R\+Mtrx} \&}]{rhs }\end{DoxyParamCaption})}
+
+Dot operation. ({\itshape this)}=R represents ($\ast$this)-\/$>$R.($\ast$this). \mbox{\Hypertarget{classRMtrx_ad5947ad3a111cb9b72ca3ae2e3fff35b}\label{classRMtrx_ad5947ad3a111cb9b72ca3ae2e3fff35b}} 
+\index{R\+Mtrx@{R\+Mtrx}!Set\+Ref\+Momentum@{Set\+Ref\+Momentum}}
+\index{Set\+Ref\+Momentum@{Set\+Ref\+Momentum}!R\+Mtrx@{R\+Mtrx}}
+\subsubsection{\texorpdfstring{Set\+Ref\+Momentum()}{SetRefMomentum()}}
+{\footnotesize\ttfamily void R\+Mtrx\+::\+Set\+Ref\+Momentum (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the reference momentum 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Matrix\+Maps.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Matrix\+Maps.\+cpp\end{DoxyCompactItemize}

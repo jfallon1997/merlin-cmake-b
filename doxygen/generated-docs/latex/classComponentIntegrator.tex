@@ -1,0 +1,64 @@
+\hypertarget{classComponentIntegrator}{}\section{Component\+Integrator Class Reference}
+\label{classComponentIntegrator}\index{Component\+Integrator@{Component\+Integrator}}
+Inheritance diagram for Component\+Integrator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.222222cm]{classComponentIntegrator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a81037449593735e62c70fa6cd0c20768}\label{classComponentIntegrator_a81037449593735e62c70fa6cd0c20768}} 
+void {\bfseries Track\+All} ()
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a5ea98e93a176d8581ac48f268173ebd5}\label{classComponentIntegrator_a5ea98e93a176d8581ac48f268173ebd5}} 
+virtual double {\bfseries Track} (double ds)
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a9cb39d2e0d4f22344817accd711c193c}\label{classComponentIntegrator_a9cb39d2e0d4f22344817accd711c193c}} 
+virtual int {\bfseries Get\+Component\+Index} () const =0
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_ab4350e450e7f45283a9d5919859c26cc}\label{classComponentIntegrator_ab4350e450e7f45283a9d5919859c26cc}} 
+double {\bfseries Get\+Integrated\+Length} () const
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a421b563148487d2a54200d278764fc40}\label{classComponentIntegrator_a421b563148487d2a54200d278764fc40}} 
+double {\bfseries Get\+Remaining\+Length} () const
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_afab3c609d39a252ec6c63065a509f565}\label{classComponentIntegrator_afab3c609d39a252ec6c63065a509f565}} 
+bool {\bfseries Is\+Valid\+Step} (double ds) const
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a9953712a9b723fec4de0ce73c6c469eb}\label{classComponentIntegrator_a9953712a9b723fec4de0ce73c6c469eb}} 
+virtual \hyperlink{classNumericalRange}{Float\+Range} {\bfseries Get\+Valid\+Step\+Range} () const
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_aa44c60a7824f638dd29b22740279d2ae}\label{classComponentIntegrator_aa44c60a7824f638dd29b22740279d2ae}} 
+bool {\bfseries At\+Entrance} () const
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a7b7ede6cc52f7bd3c763a5cb5b429900}\label{classComponentIntegrator_a7b7ede6cc52f7bd3c763a5cb5b429900}} 
+bool {\bfseries At\+Exit} (double step=0) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a297f809c321275632fee9d8ff5888a1c}\label{classComponentIntegrator_a297f809c321275632fee9d8ff5888a1c}} 
+virtual void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&a\+Component)
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_aa9f0b7d4e71dee27739cd88fbf964e15}\label{classComponentIntegrator_aa9f0b7d4e71dee27739cd88fbf964e15}} 
+virtual void {\bfseries Track\+Step} (double ds)=0
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_aedbb23def430ead6302118934b54cafd}\label{classComponentIntegrator_aedbb23def430ead6302118934b54cafd}} 
+virtual void {\bfseries Track\+Entrance} ()
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_aca649a742f2355d7cbe0aa2297253d75}\label{classComponentIntegrator_aca649a742f2355d7cbe0aa2297253d75}} 
+virtual void {\bfseries Track\+Exit} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComponentIntegrator_a47ec22f8d261031cdb117f49bfa14c59}\label{classComponentIntegrator_a47ec22f8d261031cdb117f49bfa14c59}} 
+class {\bfseries Component\+Tracker}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Component\+Integrator.\+h\end{DoxyCompactItemize}

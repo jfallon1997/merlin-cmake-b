@@ -1,0 +1,75 @@
+.TH "ComponentTracker" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ComponentTracker
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBTBunchCMPTracker< _B >\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBIntegratorSet\fP"
+.br
+.ti -1c
+.RI "struct \fBUnknownComponent\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBState\fP { \fBundefined\fP, \fBinitialised\fP, \fBtracking\fP, \fBfinished\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTrack\fP ()"
+.br
+.ti -1c
+.RI "double \fBTrackStep\fP (double ds)"
+.br
+.ti -1c
+.RI "ComponentTracker::State \fBGetState\fP () const"
+.br
+.ti -1c
+.RI "void \fBReset\fP ()"
+.br
+.ti -1c
+.RI "double \fBGetRemainingLength\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetIntegratedLength\fP () const"
+.br
+.ti -1c
+.RI "bool \fBSelectIntegrator\fP (int index, \fBAcceleratorComponent\fP &component)"
+.br
+.ti -1c
+.RI "void \fBoperator()\fP (\fBAcceleratorComponent\fP *component)"
+.br
+.ti -1c
+.RI "void \fBClearIntegratorSet\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBComponentTracker\fP (\fBIntegratorSet\fP *iset)"
+.br
+.ti -1c
+.RI "virtual void \fBInitialiseIntegrator\fP (\fBComponentIntegrator\fP *)"
+.br
+.ti -1c
+.RI "bool \fBRegister\fP (\fBComponentIntegrator\fP *intg)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,97 @@
+\hypertarget{classSWRFfield}{}\section{S\+W\+R\+Ffield Class Reference}
+\label{classSWRFfield}\index{S\+W\+R\+Ffield@{S\+W\+R\+Ffield}}
+Inheritance diagram for S\+W\+R\+Ffield\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSWRFfield}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSWRFfield_a596ace19be9f11ade6e29fde1692986d}\label{classSWRFfield_a596ace19be9f11ade6e29fde1692986d}} 
+{\bfseries S\+W\+R\+Ffield} (double f, double Epk, double phase=0)
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classSWRFfield_a95ebdd2f637626f2015d37680f7c00d0}{Get\+B\+Field\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, double t=0) const
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classSWRFfield_ac40ae5a64589c9e36c0fc826633851bb}{Get\+E\+Field\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, double t=0) const
+\item 
+virtual \hyperlink{classTVec3D}{Vector3D} \hyperlink{classSWRFfield_a72eee724db2bc2e21d100bb0c684a590}{Get\+Force\+At} (const \hyperlink{classTVec3D}{Point3D} \&x, const \hyperlink{classTVec3D}{Vector3D} \&v, double q, double t=0) const
+\item 
+\mbox{\Hypertarget{classSWRFfield_a119b9f86dcfaf7937ec5bb440163c443}\label{classSWRFfield_a119b9f86dcfaf7937ec5bb440163c443}} 
+virtual double {\bfseries Ez} (double z, double t) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSWRFfield_a95ebdd2f637626f2015d37680f7c00d0}\label{classSWRFfield_a95ebdd2f637626f2015d37680f7c00d0}} 
+\index{S\+W\+R\+Ffield@{S\+W\+R\+Ffield}!Get\+B\+Field\+At@{Get\+B\+Field\+At}}
+\index{Get\+B\+Field\+At@{Get\+B\+Field\+At}!S\+W\+R\+Ffield@{S\+W\+R\+Ffield}}
+\subsubsection{\texorpdfstring{Get\+B\+Field\+At()}{GetBFieldAt()}}
+{\footnotesize\ttfamily \hyperlink{classTVec3D}{Vector3D} S\+W\+R\+Ffield\+::\+Get\+B\+Field\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the magnetic field at the point x and time t. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the magnetic field. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEMField_ab1ce822878e2facc77f836e3eeea7fd8}{E\+M\+Field}.
+
+\mbox{\Hypertarget{classSWRFfield_ac40ae5a64589c9e36c0fc826633851bb}\label{classSWRFfield_ac40ae5a64589c9e36c0fc826633851bb}} 
+\index{S\+W\+R\+Ffield@{S\+W\+R\+Ffield}!Get\+E\+Field\+At@{Get\+E\+Field\+At}}
+\index{Get\+E\+Field\+At@{Get\+E\+Field\+At}!S\+W\+R\+Ffield@{S\+W\+R\+Ffield}}
+\subsubsection{\texorpdfstring{Get\+E\+Field\+At()}{GetEFieldAt()}}
+{\footnotesize\ttfamily \hyperlink{classTVec3D}{Vector3D} S\+W\+R\+Ffield\+::\+Get\+E\+Field\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the electric field at the point x and time t 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the electric field. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEMField_a3b1045b1ab38a337478c9a94ac6c1852}{E\+M\+Field}.
+
+\mbox{\Hypertarget{classSWRFfield_a72eee724db2bc2e21d100bb0c684a590}\label{classSWRFfield_a72eee724db2bc2e21d100bb0c684a590}} 
+\index{S\+W\+R\+Ffield@{S\+W\+R\+Ffield}!Get\+Force\+At@{Get\+Force\+At}}
+\index{Get\+Force\+At@{Get\+Force\+At}!S\+W\+R\+Ffield@{S\+W\+R\+Ffield}}
+\subsubsection{\texorpdfstring{Get\+Force\+At()}{GetForceAt()}}
+{\footnotesize\ttfamily \hyperlink{classTVec3D}{Vector3D} S\+W\+R\+Ffield\+::\+Get\+Force\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{classTVec3D}{Point3D} \&}]{x,  }\item[{const \hyperlink{classTVec3D}{Vector3D} \&}]{v,  }\item[{double}]{q,  }\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the force due to this field on a particle of charge q with position x and velocity v at time t. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The location of the particle. \\
+\hline
+\mbox{\tt in}  & {\em v} & The velocity of the particle. \\
+\hline
+\mbox{\tt in}  & {\em q} & The charge of the particle. \\
+\hline
+\mbox{\tt in}  & {\em t} & The time when the force is applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Vector3D containing the force on a particle of charge q. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEMField_aa00f4f213a55c9223f6ca08463a57691}{E\+M\+Field}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/S\+W\+R\+Ffield.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/S\+W\+R\+Ffield.\+cpp\end{DoxyCompactItemize}

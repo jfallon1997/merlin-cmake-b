@@ -1,0 +1,41 @@
+.TH "map_applicator_dp< M, X >" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+map_applicator_dp< M, X >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RMap\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmap_applicator_dp\fP (const M &anM, double dp_r)"
+.br
+.ti -1c
+.RI "void \fBoperator()\fP (X &x) const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const M & \fBm\fP"
+.br
+.ti -1c
+.RI "double \fBp_ratio\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class M, class X>
+.br
+struct map_applicator_dp< M, X >"
+Functor for apply a map after re-scaling the momentum\&. Used mainly for tracking dipole magnets where the reference geometry (curvature) does not match the bend field / beam energy\&. typename X must supply double X::dp() function\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

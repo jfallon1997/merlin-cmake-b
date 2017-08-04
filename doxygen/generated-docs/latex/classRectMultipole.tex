@@ -1,0 +1,97 @@
+\hypertarget{classRectMultipole}{}\section{Rect\+Multipole Class Reference}
+\label{classRectMultipole}\index{Rect\+Multipole@{Rect\+Multipole}}
+Inheritance diagram for Rect\+Multipole\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.930931cm]{classRectMultipole}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRectMultipole_abd8a462fd5b1c2884a231aa79b2f0310}\label{classRectMultipole_abd8a462fd5b1c2884a231aa79b2f0310}} 
+void {\bfseries Set\+Field\+Strength} (double b)
+\item 
+\mbox{\Hypertarget{classRectMultipole_a31dcf998569d121f8ad9165f8ad39698}\label{classRectMultipole_a31dcf998569d121f8ad9165f8ad39698}} 
+double {\bfseries Get\+Field\+Strength} () const
+\item 
+\mbox{\Hypertarget{classRectMultipole_a230b498106a348b48ff93141ef0dcf49}\label{classRectMultipole_a230b498106a348b48ff93141ef0dcf49}} 
+int {\bfseries Get\+Primary\+Pole\+No} () const
+\item 
+virtual int \hyperlink{classRectMultipole_a9bc789b2a193e341aab8bbd47a0e3ad4}{Get\+Index} () const
+\item 
+virtual void \hyperlink{classRectMultipole_a2626d08254eee03cffb73abb20a9381a}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual void \hyperlink{classRectMultipole_afa249ac1d4f3b6c8c1171e5586731ffd}{Rotate\+Y180} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRectMultipole_a8cb07d2f2a4bf86dfdd65ae569714489}\label{classRectMultipole_a8cb07d2f2a4bf86dfdd65ae569714489}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRectMultipole_a61c242922ceb6b62c327031e2d0850e9}\label{classRectMultipole_a61c242922ceb6b62c327031e2d0850e9}} 
+{\bfseries Rect\+Multipole} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double length, int npole, double b, double r0, bool skew=false)
+\item 
+\mbox{\Hypertarget{classRectMultipole_ac5d1d71f5c835bfe6bf0a9259f1d139f}\label{classRectMultipole_ac5d1d71f5c835bfe6bf0a9259f1d139f}} 
+{\bfseries Rect\+Multipole} (const string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, int np, double b, bool skew=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRectMultipole_a9bc789b2a193e341aab8bbd47a0e3ad4}\label{classRectMultipole_a9bc789b2a193e341aab8bbd47a0e3ad4}} 
+\index{Rect\+Multipole@{Rect\+Multipole}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Rect\+Multipole@{Rect\+Multipole}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Rect\+Multipole\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_abd1490171ac9af6004d3da01fb3b95fb}{Accelerator\+Component}.
+
+
+
+Reimplemented in \hyperlink{classDecapole_ac34dc3e11924c94ff4464cc0ca5ddf68}{Decapole}, \hyperlink{classSkewSextupole_a8dbbf55904005b051ad5d84a9140ab10}{Skew\+Sextupole}, \hyperlink{classOctupole_acf28f59d4bb7f7ad6729e23902915d2b}{Octupole}, \hyperlink{classSkewQuadrupole_aa3fb2801ec77a1d9d4d7a4d603c2b767}{Skew\+Quadrupole}, \hyperlink{classSextupole_ab86d63dda91c41c870c89069724681a2}{Sextupole}, \hyperlink{classQuadrupole_a39b9e323df34c8db56f6daaaa112cf06}{Quadrupole}, \hyperlink{classYCor_a7e13236734c9ea7f52ecc2ee27523c4f}{Y\+Cor}, and \hyperlink{classXCor_abc1f1ab53804904384d6fadfcbaba5bb}{X\+Cor}.
+
+\mbox{\Hypertarget{classRectMultipole_a2626d08254eee03cffb73abb20a9381a}\label{classRectMultipole_a2626d08254eee03cffb73abb20a9381a}} 
+\index{Rect\+Multipole@{Rect\+Multipole}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Rect\+Multipole@{Rect\+Multipole}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Rect\+Multipole\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_ab897c54689ac946f40c3ad0716ddd4bb}{Accelerator\+Component}.
+
+
+
+Reimplemented in \hyperlink{classDecapole_a7fd7331bfbc39982539f8077afef2e6e}{Decapole}, \hyperlink{classSkewSextupole_a8700a80f9f1863d5f6966cf0827ed342}{Skew\+Sextupole}, \hyperlink{classOctupole_a646ac61a3ef6a66e987df0364d8bb465}{Octupole}, \hyperlink{classSkewQuadrupole_ac277fd65922256a16c1d2774254c09d2}{Skew\+Quadrupole}, \hyperlink{classSextupole_a7059ddac1812040330950de346e22f48}{Sextupole}, \hyperlink{classYCor_a6d5d11f3128222ae114d250a2f7d62bb}{Y\+Cor}, \hyperlink{classQuadrupole_aa0160bdc8c7be3d48e400a9698907b15}{Quadrupole}, and \hyperlink{classXCor_abd5e017ea4191ee86f141d72979f90d2}{X\+Cor}.
+
+\mbox{\Hypertarget{classRectMultipole_afa249ac1d4f3b6c8c1171e5586731ffd}\label{classRectMultipole_afa249ac1d4f3b6c8c1171e5586731ffd}} 
+\index{Rect\+Multipole@{Rect\+Multipole}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!Rect\+Multipole@{Rect\+Multipole}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void Rect\+Multipole\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Implements \hyperlink{classAcceleratorComponent_a8bf0d39b56578ca99f286ca1504b9072}{Accelerator\+Component}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Rect\+Multipole.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Rect\+Multipole.\+cpp\end{DoxyCompactItemize}

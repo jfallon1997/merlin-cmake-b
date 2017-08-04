@@ -1,0 +1,56 @@
+.TH "BunchTracker< P >" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BunchTracker< P >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TrackingSimulation\&.h>\fP
+.PP
+Inherits \fBTrackingSimulation\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef P::bunch_type \fBbunch_type\fP"
+.br
+.ti -1c
+.RI "typedef P \fBtransport_process\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBunchTracker\fP (const \fBAcceleratorModel::Beamline\fP &bline)"
+.br
+.ti -1c
+.RI "\fBBunchTracker\fP (const \fBAcceleratorModel::Beamline\fP &bline, bunch_type *bunch0)"
+.br
+.ti -1c
+.RI "bunch_type & \fBGetBunch\fP ()"
+.br
+.ti -1c
+.RI "transport_process & \fBGetTransportProcess\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class P>
+.br
+class BunchTracker< P >"
+A template class which is used to implement a bunch implementation specific \fBTrackingSimulation\fP\&. P must be a bunch specific transport process which has only a default constructor\&. It must also define P::bunch_type which specifies the type of bunch implementation to be tracked\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class P > \fBBunchTracker\fP< P >::\fBBunchTracker\fP (const \fBAcceleratorModel::Beamline\fP & bline)\fC [inline]\fP, \fC [explicit]\fP"
+Constructor taking the beamline to be tracked\&. The initial bunch must be specified by supplying a concrete \fBBunchConstructor\fP via SetInitialBunchCtor\&. 
+.SS "template<class P > \fBBunchTracker\fP< P >::\fBBunchTracker\fP (const \fBAcceleratorModel::Beamline\fP & bline, bunch_type * bunch0)\fC [inline]\fP"
+Constructs a \fBBunchTracker\fP taking the beamline to be tracked and the initial bunch to be used\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

@@ -1,0 +1,98 @@
+.TH "ArcGeometry" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ArcGeometry
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBCenteredGeometry\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArcGeometry\fP (double l, double curv)"
+.br
+.ti -1c
+.RI "double \fBGetCurvature\fP () const"
+.br
+.ti -1c
+.RI "double \fBGetAngle\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBTransform3D\fP \fBGetGeometryTransform\fP (double s0, double s) const"
+.br
+.ti -1c
+.RI "virtual \fBTransform3D\fP \fBGetGeometryTransform\fP (\fBBoundaryPlane\fP p) const"
+.br
+.ti -1c
+.RI "virtual \fBTransform3D\fP \fBGetTotalGeometryTransform\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetCurvature\fP (double curv)"
+.br
+.ti -1c
+.RI "void \fBSetTilt\fP (double t)"
+.br
+.ti -1c
+.RI "double \fBGetTilt\fP () const"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBTransform3D\fP ArcGeometry::GetGeometryTransform (double s0, double s) const\fC [virtual]\fP"
+Return the three-dimensional transformation from the frame at s0 to the frame at s\&. s and s0 are in the geometry's s-frame, and must be within the geometry extents\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs0\fP The location at which the transform should be evalutated from\&. 
+.br
+\fIs\fP The location at which the transform should be evalutated to\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIThrows\fP a BeyondExtent exception if the requested s values are outside the geometry extent\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The 3D transformation from the entrance to the exit of this geometry\&. 
+.RE
+.PP
+
+.PP
+Implements \fBAcceleratorGeometry\fP\&.
+.SS "\fBTransform3D\fP ArcGeometry::GetGeometryTransform (\fBBoundaryPlane\fP p) const\fC [virtual]\fP"
+Returns the transformation from the geometry origin to the specified boundary plane\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp\fP The chosen BoundaryPlane 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The 3D transformation from the geometry origin to a specified boundary plane (extrance or exit)\&. 
+.RE
+.PP
+
+.PP
+Implements \fBAcceleratorGeometry\fP\&.
+.SS "\fBTransform3D\fP ArcGeometry::GetTotalGeometryTransform () const\fC [virtual]\fP"
+Returns the transformation from the entrance plane frame to the exit plane frame\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The 3D transformation from the entrance to the exit of this geometry\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAcceleratorGeometry\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

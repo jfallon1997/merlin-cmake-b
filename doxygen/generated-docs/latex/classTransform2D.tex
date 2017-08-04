@@ -1,0 +1,73 @@
+\hypertarget{classTransform2D}{}\section{Transform2D Class Reference}
+\label{classTransform2D}\index{Transform2D@{Transform2D}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTransform2D_a5121f210c33849e1f5aaa476b51fac19}\label{classTransform2D_a5121f210c33849e1f5aaa476b51fac19}} 
+{\bfseries Transform2D} (double dx=0, double dy=0, double dphi=0)
+\item 
+\mbox{\Hypertarget{classTransform2D_a354ea82322ed73e7e5814c73c2acec01}\label{classTransform2D_a354ea82322ed73e7e5814c73c2acec01}} 
+{\bfseries Transform2D} (const \hyperlink{classRotation2D}{Rotation2D} \&rr, const \hyperlink{classTVec2D}{Point2D} \&p=\hyperlink{classTVec2D}{Point2D}(0, 0))
+\item 
+\mbox{\Hypertarget{classTransform2D_a2d4213898c0a438d9b263922ea4bf007}\label{classTransform2D_a2d4213898c0a438d9b263922ea4bf007}} 
+{\bfseries Transform2D} (const \hyperlink{classTVec2D}{Point2D} \&p)
+\item 
+\mbox{\Hypertarget{classTransform2D_ab127aa120542e0e96a1314329a2b6538}\label{classTransform2D_ab127aa120542e0e96a1314329a2b6538}} 
+const \hyperlink{classTransform2D}{Transform2D} \& {\bfseries operator$\ast$=} (const \hyperlink{classTransform2D}{Transform2D} \&t)
+\item 
+\mbox{\Hypertarget{classTransform2D_af29b112b2321f8cc205e0d66b22e829b}\label{classTransform2D_af29b112b2321f8cc205e0d66b22e829b}} 
+\hyperlink{classTransform2D}{Transform2D} {\bfseries inv} () const
+\item 
+\mbox{\Hypertarget{classTransform2D_a6190d98204d6ac06759fb05679888ef7}\label{classTransform2D_a6190d98204d6ac06759fb05679888ef7}} 
+const \hyperlink{classTransform2D}{Transform2D} \& {\bfseries invert} ()
+\item 
+\mbox{\Hypertarget{classTransform2D_ae3961fa462633c619a434056d4be31ee}\label{classTransform2D_ae3961fa462633c619a434056d4be31ee}} 
+const \hyperlink{classTVec2D}{Point2D} \& {\bfseries translation} () const
+\item 
+\mbox{\Hypertarget{classTransform2D_ac999a9ed1382c3b04e8261d0b822b3ee}\label{classTransform2D_ac999a9ed1382c3b04e8261d0b822b3ee}} 
+const \hyperlink{classRotation2D}{Rotation2D} \& {\bfseries rotation} () const
+\item 
+\mbox{\Hypertarget{classTransform2D_afe952ae46903df3ca27b9e942cc6fb1e}\label{classTransform2D_afe952ae46903df3ca27b9e942cc6fb1e}} 
+double {\bfseries rotation\+Angle} () const
+\item 
+\mbox{\Hypertarget{classTransform2D_a523ef8ebc7acfcb28d03f3dcd955a4ca}\label{classTransform2D_a523ef8ebc7acfcb28d03f3dcd955a4ca}} 
+double {\bfseries sinphi} () const
+\item 
+\mbox{\Hypertarget{classTransform2D_ae95634a718340a10a23e30fbba4ee82c}\label{classTransform2D_ae95634a718340a10a23e30fbba4ee82c}} 
+double {\bfseries cosphi} () const
+\item 
+\mbox{\Hypertarget{classTransform2D_a3fb4fb40659401243e25a4d4948d7f6c}\label{classTransform2D_a3fb4fb40659401243e25a4d4948d7f6c}} 
+bool {\bfseries is\+Identity} () const
+\item 
+\mbox{\Hypertarget{classTransform2D_aa74e1c8fcb0b821b9172bfefa89fe460}\label{classTransform2D_aa74e1c8fcb0b821b9172bfefa89fe460}} 
+\hyperlink{classTVec2D}{Point2D} {\bfseries operator()} (const \hyperlink{classTVec2D}{Point2D} \&p) const
+\item 
+\mbox{\Hypertarget{classTransform2D_a400f563a0e8ea013ef48c3bc2c24b5fc}\label{classTransform2D_a400f563a0e8ea013ef48c3bc2c24b5fc}} 
+\hyperlink{classTVec2D}{Vector2D} {\bfseries operator()} (const \hyperlink{classTVec2D}{Vector2D} \&v) const
+\item 
+\mbox{\Hypertarget{classTransform2D_a64ca790081bb1325eb744e5e072218bd}\label{classTransform2D_a64ca790081bb1325eb744e5e072218bd}} 
+void {\bfseries set\+TranslationX} (double x)
+\item 
+\mbox{\Hypertarget{classTransform2D_a8a77b6344a224d69975430d7dfd81266}\label{classTransform2D_a8a77b6344a224d69975430d7dfd81266}} 
+void {\bfseries set\+TranslationY} (double y)
+\item 
+\mbox{\Hypertarget{classTransform2D_a1b881f23feb6823b74f3a069b72a10ba}\label{classTransform2D_a1b881f23feb6823b74f3a069b72a10ba}} 
+void {\bfseries set\+Rotation} (double phi)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTransform2D_a28fff51d8ff5f34bb5ad0cf777effd76}\label{classTransform2D_a28fff51d8ff5f34bb5ad0cf777effd76}} 
+\hyperlink{classTransform2D}{Transform2D} {\bfseries operator$\ast$} (const \hyperlink{classTransform2D}{Transform2D} \&t2, const \hyperlink{classTransform2D}{Transform2D} \&t1)
+\item 
+\mbox{\Hypertarget{classTransform2D_a7a9845acf0924672cce52abb77b4609d}\label{classTransform2D_a7a9845acf0924672cce52abb77b4609d}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \hyperlink{classTransform2D}{Transform2D} \&t)
+\item 
+\mbox{\Hypertarget{classTransform2D_ad5ad7c9990a9dd10ca4c6e1c5e947f9d}\label{classTransform2D_ad5ad7c9990a9dd10ca4c6e1c5e947f9d}} 
+istream \& {\bfseries operator$>$$>$} (istream \&is, \hyperlink{classTransform2D}{Transform2D} \&t)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Transform2\+D.\+h\end{DoxyCompactItemize}

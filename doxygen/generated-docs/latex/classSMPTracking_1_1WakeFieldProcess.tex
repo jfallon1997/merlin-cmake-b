@@ -1,0 +1,47 @@
+\hypertarget{classSMPTracking_1_1WakeFieldProcess}{}\section{S\+M\+P\+Tracking\+:\+:Wake\+Field\+Process Class Reference}
+\label{classSMPTracking_1_1WakeFieldProcess}\index{S\+M\+P\+Tracking\+::\+Wake\+Field\+Process@{S\+M\+P\+Tracking\+::\+Wake\+Field\+Process}}
+Inheritance diagram for S\+M\+P\+Tracking\+:\+:Wake\+Field\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSMPTracking_1_1WakeFieldProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_a6bb79d2caf1d3b1cc9dcc8f2a77cca2f}\label{classSMPTracking_1_1WakeFieldProcess_a6bb79d2caf1d3b1cc9dcc8f2a77cca2f}} 
+enum {\bfseries Impulse\+Location} \{ {\bfseries at\+Centre}, 
+{\bfseries at\+Exit}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_a2034cbb11c9385088ffca954095c71a6}\label{classSMPTracking_1_1WakeFieldProcess_a2034cbb11c9385088ffca954095c71a6}} 
+{\bfseries Wake\+Field\+Process} (int prio, double slice\+\_\+width=1.\+0e-\/6, string a\+I\+D=\char`\"{}\+S\+M\+P W\+A\+K\+E\+F\+I\+E\+L\+D\char`\"{})
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_aaff6ee24c12ab7c27d8bd1509ecbf596}\label{classSMPTracking_1_1WakeFieldProcess_aaff6ee24c12ab7c27d8bd1509ecbf596}} 
+virtual void {\bfseries Initialise\+Process} (\hyperlink{classBunch}{Bunch} \&bunch)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_a224872c661dc95f216a0bf0333f1269b}\label{classSMPTracking_1_1WakeFieldProcess_a224872c661dc95f216a0bf0333f1269b}} 
+virtual void {\bfseries Set\+Current\+Component} (\hyperlink{classAcceleratorComponent}{Accelerator\+Component} \&component)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_a2ccfffd3a85f474ef01df309d25dd024}\label{classSMPTracking_1_1WakeFieldProcess_a2ccfffd3a85f474ef01df309d25dd024}} 
+virtual void {\bfseries Do\+Process} (double ds)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_a7a2c5c56af74932049abe7a34a0d47d3}\label{classSMPTracking_1_1WakeFieldProcess_a7a2c5c56af74932049abe7a34a0d47d3}} 
+virtual double {\bfseries Get\+Max\+Allowed\+Step\+Size} () const
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_a6a16e9ff93dfd8d90bd6ac2ff80c6fba}\label{classSMPTracking_1_1WakeFieldProcess_a6a16e9ff93dfd8d90bd6ac2ff80c6fba}} 
+void {\bfseries Apply\+Impulse\+At} (Impulse\+Location loc)
+\item 
+\mbox{\Hypertarget{classSMPTracking_1_1WakeFieldProcess_a13a679309a25176cde41abf341779804}\label{classSMPTracking_1_1WakeFieldProcess_a13a679309a25176cde41abf341779804}} 
+void {\bfseries Include\+Transverse\+Wake} (bool flg)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/S\+M\+P\+Wake\+Field\+Process.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/S\+M\+P\+Wake\+Field\+Process.\+cpp\end{DoxyCompactItemize}

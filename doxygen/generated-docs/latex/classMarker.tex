@@ -1,0 +1,101 @@
+\hypertarget{classMarker}{}\section{Marker Class Reference}
+\label{classMarker}\index{Marker@{Marker}}
+Inheritance diagram for Marker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMarker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMarker_a4c656d101a6f402031e40328d96000a0}\label{classMarker_a4c656d101a6f402031e40328d96000a0}} 
+{\bfseries Marker} (const std\+::string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id})
+\item 
+virtual void \hyperlink{classMarker_a3910ebbb39ce13360e4dd53897c490ce}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+virtual int \hyperlink{classMarker_a3453b35526a601d4c97d689b61f73454}{Get\+Index} () const
+\item 
+virtual const string \& \hyperlink{classMarker_a3fc5e5a8665da63bc18a28c604c71036}{Get\+Type} () const
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classMarker_a79a35a1eac386b87a456cbfff265c9ec}{Copy} () const
+\item 
+virtual void \hyperlink{classMarker_aa1e927fe0a2eea626759daec624c97f3}{Rotate\+Y180} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMarker_a4ade4412f174253602075f03b70e52fe}\label{classMarker_a4ade4412f174253602075f03b70e52fe}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMarker_a79a35a1eac386b87a456cbfff265c9ec}\label{classMarker_a79a35a1eac386b87a456cbfff265c9ec}} 
+\index{Marker@{Marker}!Copy@{Copy}}
+\index{Copy@{Copy}!Marker@{Marker}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Marker\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+\mbox{\Hypertarget{classMarker_a3453b35526a601d4c97d689b61f73454}\label{classMarker_a3453b35526a601d4c97d689b61f73454}} 
+\index{Marker@{Marker}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Marker@{Marker}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Marker\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_abd1490171ac9af6004d3da01fb3b95fb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classMarker_a3fc5e5a8665da63bc18a28c604c71036}\label{classMarker_a3fc5e5a8665da63bc18a28c604c71036}} 
+\index{Marker@{Marker}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Marker@{Marker}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Marker\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+\mbox{\Hypertarget{classMarker_a3910ebbb39ce13360e4dd53897c490ce}\label{classMarker_a3910ebbb39ce13360e4dd53897c490ce}} 
+\index{Marker@{Marker}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Marker@{Marker}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Marker\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_ab897c54689ac946f40c3ad0716ddd4bb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classMarker_aa1e927fe0a2eea626759daec624c97f3}\label{classMarker_aa1e927fe0a2eea626759daec624c97f3}} 
+\index{Marker@{Marker}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!Marker@{Marker}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void Marker\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Implements \hyperlink{classAcceleratorComponent_a8bf0d39b56578ca99f286ca1504b9072}{Accelerator\+Component}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Marker.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Marker.\+cpp\end{DoxyCompactItemize}

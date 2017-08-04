@@ -1,0 +1,92 @@
+.TH "Rot3Drep" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Rot3Drep
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBGeneralRotation\fP, \fBIdentityRotation\fP, and \fBPureAxisRotation\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBPoint3D\fP \fBrotate\fP (const \fBPoint3D\fP &x) const =0"
+.br
+.ti -1c
+.RI "virtual \fBVector3D\fP \fBrotate\fP (const \fBVector3D\fP &v) const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBdot\fP (const \fBRot3Drep\fP &r) const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBdotBy\fP (const \fBRotationX\fP &rx) const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBdotBy\fP (const \fBRotationY\fP &ry) const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBdotBy\fP (const \fBRotationZ\fP &rz) const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBdotBy\fP (const \fBGeneralRotation\fP &r) const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBinv\fP () const =0"
+.br
+.ti -1c
+.RI "virtual RotationType \fBtype\fP () const =0"
+.br
+.ti -1c
+.RI "virtual bool \fBisIdentity\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBisXrot\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBisYrot\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBisZrot\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBrotXbyPI\fP () const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBrotYbyPI\fP () const =0"
+.br
+.ti -1c
+.RI "virtual \fBRot3Drep\fP * \fBrotZbyPI\fP () const =0"
+.br
+.ti -1c
+.RI "virtual \fBRealMatrix\fP & \fBgetMatrix\fP (\fBRealMatrix\fP &m) const =0"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBRot3Drep\fP * \fBidentity\fP ()"
+.br
+.ti -1c
+.RI "static \fBRot3Drep\fP * \fBrotationX\fP (double angle)"
+.br
+.ti -1c
+.RI "static \fBRot3Drep\fP * \fBrotationY\fP (double angle)"
+.br
+.ti -1c
+.RI "static \fBRot3Drep\fP * \fBrotationZ\fP (double angle)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBRotation3D\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

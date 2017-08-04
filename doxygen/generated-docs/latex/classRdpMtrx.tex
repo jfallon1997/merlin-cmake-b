@@ -1,0 +1,105 @@
+\hypertarget{classRdpMtrx}{}\section{Rdp\+Mtrx Class Reference}
+\label{classRdpMtrx}\index{Rdp\+Mtrx@{Rdp\+Mtrx}}
+
+
+{\ttfamily \#include $<$Matrix\+Maps.\+h$>$}
+
+Inheritance diagram for Rdp\+Mtrx\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRdpMtrx}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRdpMtrx_a9b50f0956d194a4465884c195665a942}{Rdp\+Mtrx} (int ndf=3, double P0=0)
+\item 
+\hyperlink{classRdpMtrx_a0ddcf357a2525db9c315eacbbf700e63}{Rdp\+Mtrx} (const \hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} \&RR, const \hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} \&TT, double P0=0)
+\item 
+\hyperlink{classPSvector}{P\+Svector} \& \hyperlink{classRdpMtrx_a5896c951a1fb9be559e6772757df78fb}{Apply} (\hyperlink{classPSvector}{P\+Svector} \&x) const
+\item 
+\mbox{\Hypertarget{classRdpMtrx_aad837fd5689b665fef3ae6dc7323d219}\label{classRdpMtrx_aad837fd5689b665fef3ae6dc7323d219}} 
+\hyperlink{classPSvector}{P\+Svector} \& {\bfseries Apply} (\hyperlink{classPSvector}{P\+Svector} \&x, double p0) const
+\item 
+P\+Svector\+Array \& \hyperlink{classRdpMtrx_a47ed4487db94625469b1bf36dfd8b00a}{Apply} (P\+Svector\+Array \&xa) const
+\item 
+\mbox{\Hypertarget{classRdpMtrx_a2c71f7ba1bd77318ee5a54425f4e5906}\label{classRdpMtrx_a2c71f7ba1bd77318ee5a54425f4e5906}} 
+P\+Svector\+Array \& {\bfseries Apply} (P\+Svector\+Array \&xa, double p0) const
+\item 
+\hyperlink{classTPSMoments}{P\+Smoments} \& \hyperlink{classRdpMtrx_a54ac0d59f270749a5cd005bd9aa12955}{Apply} (\hyperlink{classTPSMoments}{P\+Smoments} \&sigma) const
+\item 
+\mbox{\Hypertarget{classRdpMtrx_afd6450da82570e1f421be6f787ee4d24}\label{classRdpMtrx_afd6450da82570e1f421be6f787ee4d24}} 
+\hyperlink{classTPSMoments}{P\+Smoments} \& {\bfseries Apply} (\hyperlink{classTPSMoments}{P\+Smoments} \&sigma, double p0) const
+\item 
+P\+Smoments\+Array \& \hyperlink{classRdpMtrx_acaaf913bf301667d1b6b91d0ddc0f026}{Apply} (P\+Smoments\+Array \&sigma\+Array) const
+\item 
+\mbox{\Hypertarget{classRdpMtrx_a287d3391a7bd9efc66cf42a102e5176a}\label{classRdpMtrx_a287d3391a7bd9efc66cf42a102e5176a}} 
+P\+Smoments\+Array \& {\bfseries Apply} (P\+Smoments\+Array \&sigma\+Array, double p0) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} \hyperlink{classRdpMtrx_a51af679232ea4866662715e629362efe}{T}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An approximate linear map which contains a first-\/order chromatic correction. The matrix used for tracking is calculated as R0+\+R1$\ast$dp, where R0 is the matrix calculated about the reference momentum, R1 is the first order derivative wrt momentum and dp is the momentum error. For more information see \hyperlink{classRMtrx}{R\+Mtrx}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRdpMtrx_a9b50f0956d194a4465884c195665a942}\label{classRdpMtrx_a9b50f0956d194a4465884c195665a942}} 
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\subsubsection{\texorpdfstring{Rdp\+Mtrx()}{RdpMtrx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rdp\+Mtrx\+::\+Rdp\+Mtrx (\begin{DoxyParamCaption}\item[{int}]{ndf = {\ttfamily 3},  }\item[{double}]{P0 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor taking the reference momentum and the number of degrees of freedom (ndf) for the matrix. The matrices are dimensioned but not initialised. \mbox{\Hypertarget{classRdpMtrx_a0ddcf357a2525db9c315eacbbf700e63}\label{classRdpMtrx_a0ddcf357a2525db9c315eacbbf700e63}} 
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\subsubsection{\texorpdfstring{Rdp\+Mtrx()}{RdpMtrx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rdp\+Mtrx\+::\+Rdp\+Mtrx (\begin{DoxyParamCaption}\item[{const \hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} \&}]{RR,  }\item[{const \hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} \&}]{TT,  }\item[{double}]{P0 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor from two arbitrary matrices. Both matrices should be square and of equal dimension, which should be 2n where n=1,2, or 3. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRdpMtrx_a5896c951a1fb9be559e6772757df78fb}\label{classRdpMtrx_a5896c951a1fb9be559e6772757df78fb}} 
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{classPSvector}{P\+Svector} \& Rdp\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{\hyperlink{classPSvector}{P\+Svector} \&}]{x }\end{DoxyParamCaption}) const}
+
+Transforms the vector x by R such that x-\/$>$R.\+x. The second form explicitly specifies the reference momentum (Ge\+V/c) for the vector. Returns x. \mbox{\Hypertarget{classRdpMtrx_a47ed4487db94625469b1bf36dfd8b00a}\label{classRdpMtrx_a47ed4487db94625469b1bf36dfd8b00a}} 
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily P\+Svector\+Array \& Rdp\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{P\+Svector\+Array \&}]{xa }\end{DoxyParamCaption}) const}
+
+Transforms each vector in xa by R such that x-\/$>$R.\+x. The second form explicitly specifies the reference momentum (Ge\+V/c) for the vectors. Returns xa. \mbox{\Hypertarget{classRdpMtrx_a54ac0d59f270749a5cd005bd9aa12955}\label{classRdpMtrx_a54ac0d59f270749a5cd005bd9aa12955}} 
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{classTPSMoments}{P\+Smoments} \& Rdp\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{\hyperlink{classTPSMoments}{P\+Smoments} \&}]{sigma }\end{DoxyParamCaption}) const}
+
+Transform sigma by R. If X,S represent the first-\/ and second-\/order moments respectively, then X-\/$>$R.\+X and S-\/$>$R.\+S.\+R\textquotesingle{}. The second form explicitly specifies the reference momentum (Ge\+V/c) for the moments. Returns sigma. \mbox{\Hypertarget{classRdpMtrx_acaaf913bf301667d1b6b91d0ddc0f026}\label{classRdpMtrx_acaaf913bf301667d1b6b91d0ddc0f026}} 
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!Apply@{Apply}}
+\index{Apply@{Apply}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily P\+Smoments\+Array \& Rdp\+Mtrx\+::\+Apply (\begin{DoxyParamCaption}\item[{P\+Smoments\+Array \&}]{sigma\+Array }\end{DoxyParamCaption}) const}
+
+Transforms the moments in sigma\+Array by R (see apply(\+P\+Smoments\&) for details). The second form explicitly specifies the reference momentum (Ge\+V/c) for the moments. Returns sigma\+Array. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classRdpMtrx_a51af679232ea4866662715e629362efe}\label{classRdpMtrx_a51af679232ea4866662715e629362efe}} 
+\index{Rdp\+Mtrx@{Rdp\+Mtrx}!T@{T}}
+\index{T@{T}!Rdp\+Mtrx@{Rdp\+Mtrx}}
+\subsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily \hyperlink{classTLAS_1_1Matrix}{Real\+Matrix} Rdp\+Mtrx\+::T}
+
+Second-\/order momemtum derivative matrix (T matrix). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Matrix\+Maps.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Matrix\+Maps.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,33 @@
+.TH "UnalignedCollimatorAperture" 3 "Fri Aug 4 2017" "Version 5.02" "Merlin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UnalignedCollimatorAperture
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBCollimatorAperture\fP\&.
+.PP
+Inherited by \fBUnalignedCollimatorApertureWithErrors\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUnalignedCollimatorAperture\fP (double w, double h, double t, \fBMaterial\fP *m, double length, double x_offset_entry=0\&.0, double y_offset_entry=0\&.0)"
+.br
+.ti -1c
+.RI "bool \fBPointInside\fP (double x, double y, double z) const"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Function Documentation"
+.PP 
+.SS "bool UnalignedCollimatorAperture::PointInside (double x, double y, double z) const\fC [inline]\fP, \fC [virtual]\fP"
+Returns true if the point (x,y,z) is within the aperture\&. The z coordinate is ignored\&. 
+.PP
+Reimplemented from \fBCollimatorAperture\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Merlin from the source code\&.

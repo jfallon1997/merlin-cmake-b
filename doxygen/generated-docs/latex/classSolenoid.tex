@@ -1,0 +1,113 @@
+\hypertarget{classSolenoid}{}\section{Solenoid Class Reference}
+\label{classSolenoid}\index{Solenoid@{Solenoid}}
+Inheritance diagram for Solenoid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classSolenoid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSolenoid_ab848889a2a16b6764459ba1ca5189713}\label{classSolenoid_ab848889a2a16b6764459ba1ca5189713}} 
+{\bfseries Solenoid} (const std\+::string \&\hyperlink{classModelElement_aada171ead2085c75b592cf07d91bc5c2}{id}, double len, double Bz)
+\item 
+\mbox{\Hypertarget{classSolenoid_a87149bea2392a6b2e1e3930efa9efe6a}\label{classSolenoid_a87149bea2392a6b2e1e3930efa9efe6a}} 
+double {\bfseries Get\+Bz} () const
+\item 
+\mbox{\Hypertarget{classSolenoid_ad4c144cbf13969032da3ee3ff8db90af}\label{classSolenoid_ad4c144cbf13969032da3ee3ff8db90af}} 
+void {\bfseries Set\+Bz} (double B)
+\item 
+virtual void \hyperlink{classSolenoid_aff80a21647e92b9810f2058d9e8540b2}{Rotate\+Y180} ()
+\item 
+virtual const string \& \hyperlink{classSolenoid_ac120a84dc2b8e02ad747d818b3bf66af}{Get\+Type} () const
+\item 
+virtual \hyperlink{classModelElement}{Model\+Element} $\ast$ \hyperlink{classSolenoid_a712906ddbcacc761559736d01b04b513}{Copy} () const
+\item 
+virtual int \hyperlink{classSolenoid_a6aa64b57e6de710c77242d5e29a6ed8e}{Get\+Index} () const
+\item 
+virtual void \hyperlink{classSolenoid_a565c5334191f0c4b45b053144db29609}{Prepare\+Tracker} (\hyperlink{classComponentTracker}{Component\+Tracker} \&a\+Tracker)
+\item 
+\mbox{\Hypertarget{classSolenoid_a28b987b0b11e955baeb1b2a85f2ae98d}\label{classSolenoid_a28b987b0b11e955baeb1b2a85f2ae98d}} 
+void {\bfseries Set\+Field\+Strength} (double b)
+\item 
+\mbox{\Hypertarget{classSolenoid_a92494000a3e3a0bd3156504e512f944e}\label{classSolenoid_a92494000a3e3a0bd3156504e512f944e}} 
+double {\bfseries Get\+Field\+Strength} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSolenoid_aa19372aec63a055c08817847b02d83a4}\label{classSolenoid_aa19372aec63a055c08817847b02d83a4}} 
+static const int {\bfseries ID} = \hyperlink{classAcceleratorComponent_aa7ad4d39e1a488b705983842ed1ac784}{Unique\+Index}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSolenoid_a712906ddbcacc761559736d01b04b513}\label{classSolenoid_a712906ddbcacc761559736d01b04b513}} 
+\index{Solenoid@{Solenoid}!Copy@{Copy}}
+\index{Copy@{Copy}!Solenoid@{Solenoid}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \hyperlink{classModelElement}{Model\+Element} $\ast$ Solenoid\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual constructor. 
+
+Implements \hyperlink{classModelElement_ac3ca26d649bd86a0f31a58ae09941429}{Model\+Element}.
+
+\mbox{\Hypertarget{classSolenoid_a6aa64b57e6de710c77242d5e29a6ed8e}\label{classSolenoid_a6aa64b57e6de710c77242d5e29a6ed8e}} 
+\index{Solenoid@{Solenoid}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!Solenoid@{Solenoid}}
+\subsubsection{\texorpdfstring{Get\+Index()}{GetIndex()}}
+{\footnotesize\ttfamily int Solenoid\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the unique index for this class of accelerator components. \begin{DoxyReturn}{Returns}
+An integer containing the unique index for this \hyperlink{classAcceleratorComponent}{Accelerator\+Component} type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_abd1490171ac9af6004d3da01fb3b95fb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classSolenoid_ac120a84dc2b8e02ad747d818b3bf66af}\label{classSolenoid_ac120a84dc2b8e02ad747d818b3bf66af}} 
+\index{Solenoid@{Solenoid}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Solenoid@{Solenoid}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const string \& Solenoid\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the type string for the element. \begin{DoxyReturn}{Returns}
+A string containing the type of the element. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classModelElement_a04dc2e51e1999fca612eb1838ec6b271}{Model\+Element}.
+
+\mbox{\Hypertarget{classSolenoid_a565c5334191f0c4b45b053144db29609}\label{classSolenoid_a565c5334191f0c4b45b053144db29609}} 
+\index{Solenoid@{Solenoid}!Prepare\+Tracker@{Prepare\+Tracker}}
+\index{Prepare\+Tracker@{Prepare\+Tracker}!Solenoid@{Solenoid}}
+\subsubsection{\texorpdfstring{Prepare\+Tracker()}{PrepareTracker()}}
+{\footnotesize\ttfamily void Solenoid\+::\+Prepare\+Tracker (\begin{DoxyParamCaption}\item[{\hyperlink{classComponentTracker}{Component\+Tracker} \&}]{a\+Tracker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Primary tracking interface. Prepares the specified Tracker object for tracking this component. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em a\+Tracker} & The tracker to prepare. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classAcceleratorComponent_ab897c54689ac946f40c3ad0716ddd4bb}{Accelerator\+Component}.
+
+\mbox{\Hypertarget{classSolenoid_aff80a21647e92b9810f2058d9e8540b2}\label{classSolenoid_aff80a21647e92b9810f2058d9e8540b2}} 
+\index{Solenoid@{Solenoid}!Rotate\+Y180@{Rotate\+Y180}}
+\index{Rotate\+Y180@{Rotate\+Y180}!Solenoid@{Solenoid}}
+\subsubsection{\texorpdfstring{Rotate\+Y180()}{RotateY180()}}
+{\footnotesize\ttfamily void Solenoid\+::\+Rotate\+Y180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the component 180 degrees about its local Y axis. 
+
+Implements \hyperlink{classAcceleratorComponent_a8bf0d39b56578ca99f286ca1504b9072}{Accelerator\+Component}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Solenoid.\+h\item 
+/home/fallon/git/merlin-\/cmake/\+Merlin/Solenoid.\+cpp\end{DoxyCompactItemize}
