@@ -90,8 +90,9 @@ int FindElementLatticePosition(string RequestedElement, AcceleratorModel* model)
 
 int main(int argc, char* argv[])
 {
-	int seed = 0;
-	int npart = 10000;
+	int seed = 10;
+	//int seed = 0;
+	int npart = 50000;
 	//~ int npart = 100000;
 	int nturns = 20;
 

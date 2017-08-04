@@ -6,3 +6,4 @@ merlin-unix/obj/
 *~
 CMakeCache.txt
 build
+*.swp
