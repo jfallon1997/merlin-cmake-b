@@ -7,5 +7,4 @@ merlin-unix/obj/
 CMakeCache.txt
 build
 *.swp
-doxygen/generated-docs/latex
-doxygen/generated-docs/man
+doxygen/generated-docs

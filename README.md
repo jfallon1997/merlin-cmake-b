@@ -7,8 +7,7 @@ This is the cmake branch of Merlin. An eclipse orientated branch also exists. Bo
 Merlin Documentation
 ====================
 
-You can find `doxygen` generated documentation for Merlin at the webpage [https://github.com/jfallon1997/merlin-cmake-b/doxygen/generated-docs/html](https://github.com/jfallon1997/merlin-cmake-b/doxygen/generated-docs/html)
-
+You can find `doxygen` generated documentation for Merlin by running `doxygen Merlin.Doxyfile` in the `doxygen` directory, and opening the webpage `doxygen/generated-docs/html/index.html`.  
 
 Building with cmake
 ===================
