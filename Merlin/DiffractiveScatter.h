@@ -21,11 +21,12 @@ namespace ParticleTracking
 
 /**
 * Class for all things relating to proton-proton single diffractive scattering.
-* This includes, generation of differential cross sections.
-* Integration of the differential cross sections.
-* Generation of momentum transfer t values for calculation of scattering angles.
-* Generation of mass loss values for calculation of momentum changes.
-* Multiple scattering models
+* This includes: 
+*  + Generation of differential cross sections.
+*  + Integration of the differential cross sections.
+*  + Generation of momentum transfer t values for calculation of scattering angles.
+*  + Generation of mass loss values for calculation of momentum changes.
+*  + Multiple scattering models
 */
 class ppDiffractiveScatter
 {
@@ -64,7 +65,7 @@ public:
 
 	/**
 	* Sets the minimum t value for generation
-	* @param tmin the minumum t value to generate
+	* @param tmin the minimum t value to generate
 	*/
 	void SetTMin(double tmin);
 
@@ -75,13 +76,13 @@ public:
 
 	/**
 	* Sets the maximum t value for generation
-	* @param tmin the minumum xi value to generate
+	* @param tmin the minimum xi value to generate
 	*/
 	void SetXiMax(double ximax);
 
 	/**
 	* Sets the minimum xi value for generation
-	* @param tmin the minumum xi value to generate
+	* @param tmin the minimum xi value to generate
 	*/
 	void SetXiMin(double ximin);
 

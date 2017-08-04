@@ -1,3 +1,15 @@
+
+Merlin cmake
+------------
+
+This is the cmake branch of Merlin. An eclipse orientated branch also exists. Both branches should share the same Merlin library files (in the directory `Merlin`)
+
+Merlin Documentation
+====================
+
+You can find `doxygen` generated documentation for Merlin at the webpage [https://github.com/jfallon1997/merlin-cmake-b/doxygen/generated-docs/html](https://github.com/jfallon1997/merlin-cmake-b/doxygen/generated-docs/html)
+
+
 Building with cmake
 ===================
 

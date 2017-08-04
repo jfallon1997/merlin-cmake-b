@@ -4,6 +4,7 @@ var searchData=
   ['scatter',['Scatter',['../classParticleTracking_1_1ParticleBunch.html#aa722546fa53e2299c66aece41ee8c813',1,'ParticleTracking::ParticleBunch::Scatter()'],['../classParticleTracking_1_1ProtonBunch.html#adca6b2edceb4186ed0c0b6cf0437cbae',1,'ParticleTracking::ProtonBunch::Scatter()']]],
   ['scatteratcollimator',['ScatterAtCollimator',['../classParticleTracking_1_1CollimateParticleProcess.html#a6ce4a520f7eb912bdfa635ef26614733',1,'ParticleTracking::CollimateParticleProcess']]],
   ['scattermerlin',['ScatterMerlin',['../classParticleTracking_1_1ProtonBunch.html#acbd045304a1e4fe64388761773a5b074',1,'ParticleTracking::ProtonBunch']]],
+  ['select',['Select',['../classParticleTracking_1_1ppDiffractiveScatter.html#a813e2437d113d3db8994e3301d07855e',1,'ParticleTracking::ppDiffractiveScatter']]],
   ['selectrandommaterial',['SelectRandomMaterial',['../classMaterialMixture.html#af13d1230726a4b35b8bbe877f6322ca5',1,'MaterialMixture']]],
   ['selectt',['SelectT',['../classParticleTracking_1_1ppDiffractiveScatter.html#ab76465efcf0e83555243d73f93a7049b',1,'ParticleTracking::ppDiffractiveScatter::SelectT()'],['../classParticleTracking_1_1ppElasticScatter.html#a7ca2a62dcdda44c0164cd0f4123bb140',1,'ParticleTracking::ppElasticScatter::SelectT()']]],
   ['selectxi',['SelectXi',['../classParticleTracking_1_1ppDiffractiveScatter.html#a09ef68dfe8abc179ccabb766b0c46be1',1,'ParticleTracking::ppDiffractiveScatter']]],

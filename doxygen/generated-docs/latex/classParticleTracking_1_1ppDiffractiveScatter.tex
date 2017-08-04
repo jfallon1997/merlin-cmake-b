@@ -16,9 +16,9 @@ void \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_aea40467446793fb96
 void \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_afa8a735da9c32b48a09f014a00ea8265}{Integrate\+Dsig\+Dt\+Dxi} ()
 \item 
 double \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_ab76465efcf0e83555243d73f93a7049b}{SelectT} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Picks a t value from the generated distribution (including interpolation) \end{DoxyCompactList}\item 
 double \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_a09ef68dfe8abc179ccabb766b0c46be1}{Select\+Xi} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Picks an Xi value from the generated distribution (including interpolation) \end{DoxyCompactList}\item 
 void \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_a7daeefd79f8f288f6edc0b85c2acc1c7}{Set\+T\+Min} (double tmin)
 \item 
 void \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_a31b1bc459e301f2a4ae78f2caa803ec0}{Set\+T\+Max} (double tmax)
@@ -47,13 +47,19 @@ double \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_a89425dbbdcf14f0
 \item 
 void \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_a206970eeedffc495ff7558fd5078b2a0}{Enable\+Debug} (bool debug)
 \item 
-\mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a813e2437d113d3db8994e3301d07855e}\label{classParticleTracking_1_1ppDiffractiveScatter_a813e2437d113d3db8994e3301d07855e}} 
-std\+::pair$<$ double, double $>$ {\bfseries Select} ()
+std\+::pair$<$ double, double $>$ \hyperlink{classParticleTracking_1_1ppDiffractiveScatter_a813e2437d113d3db8994e3301d07855e}{Select} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Class for all things relating to proton-\/proton single diffractive scattering. This includes, generation of differential cross sections. Integration of the differential cross sections. Generation of momentum transfer t values for calculation of scattering angles. Generation of mass loss values for calculation of momentum changes. Multiple scattering models 
+Class for all things relating to proton-\/proton single diffractive scattering. This includes\+:
+\begin{DoxyItemize}
+\item Generation of differential cross sections.
+\item Integration of the differential cross sections.
+\item Generation of momentum transfer t values for calculation of scattering angles.
+\item Generation of mass loss values for calculation of momentum changes.
+\item Multiple scattering models 
+\end{DoxyItemize}
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a1127d26a2b1b95632ed823ef803a855b}\label{classParticleTracking_1_1ppDiffractiveScatter_a1127d26a2b1b95632ed823ef803a855b}} 
@@ -69,20 +75,26 @@ class constructor
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Enable\+Debug@{Enable\+Debug}}
 \index{Enable\+Debug@{Enable\+Debug}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Enable\+Debug()}{EnableDebug()}}
-{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Enable\+Debug (\begin{DoxyParamCaption}\item[{bool}]{debug }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Enable\+Debug (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
 
 Debug toggle -\/ set to true or false to enable/disable debugging output 
 \begin{DoxyParams}{Parameters}
-{\em debug} & Turn on and off debugging output \\
+{\em debug} & Turn on and off debugging output\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_adaec9271ebbbc79bf484f5bbd7e89605}\label{classParticleTracking_1_1ppDiffractiveScatter_adaec9271ebbbc79bf484f5bbd7e89605}} 
+Debug toggle -\/ set to true or false to enable/disable debugging output \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_adaec9271ebbbc79bf484f5bbd7e89605}\label{classParticleTracking_1_1ppDiffractiveScatter_adaec9271ebbbc79bf484f5bbd7e89605}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Generate\+Distribution@{Generate\+Distribution}}
 \index{Generate\+Distribution@{Generate\+Distribution}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Generate\+Distribution()}{GenerateDistribution()}}
 {\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Generate\+Distribution (\begin{DoxyParamCaption}\item[{double}]{energy }\end{DoxyParamCaption})}
 
-Generates the requried differential cross sections and integrates for the specified energy \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_aea40467446793fb960701530018efdc5}\label{classParticleTracking_1_1ppDiffractiveScatter_aea40467446793fb960701530018efdc5}} 
+Generates the requried differential cross sections and integrates for the specified energy
+
+Generates the required differential cross sections and integrates for the specified energy Generating pp Diffractive differential cross section
+
+Integrating differential cross section
+
+Diffractive Configuration generation done \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_aea40467446793fb960701530018efdc5}\label{classParticleTracking_1_1ppDiffractiveScatter_aea40467446793fb960701530018efdc5}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Generate\+Dsig\+Dt\+Dxi@{Generate\+Dsig\+Dt\+Dxi}}
 \index{Generate\+Dsig\+Dt\+Dxi@{Generate\+Dsig\+Dt\+Dxi}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Generate\+Dsig\+Dt\+Dxi()}{GenerateDsigDtDxi()}}
@@ -99,7 +111,9 @@ Generates the elastic differential cross section Places the results into the vec
 \subsubsection{\texorpdfstring{Get\+Diffractive\+Cross\+Section()}{GetDiffractiveCrossSection()}}
 {\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Get\+Diffractive\+Cross\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Gets the Integrated Single diffractive cross section \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a59b5664ec798af2b1cc682240c477523}\label{classParticleTracking_1_1ppDiffractiveScatter_a59b5664ec798af2b1cc682240c477523}} 
+Gets the Integrated Single diffractive cross section
+
+Gets the Integrated elastic cross section \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a59b5664ec798af2b1cc682240c477523}\label{classParticleTracking_1_1ppDiffractiveScatter_a59b5664ec798af2b1cc682240c477523}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Get\+T\+Max@{Get\+T\+Max}}
 \index{Get\+T\+Max@{Get\+T\+Max}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Get\+T\+Max()}{GetTMax()}}
@@ -111,7 +125,9 @@ Gets the currently set maximum t value \mbox{\Hypertarget{classParticleTracking_
 \subsubsection{\texorpdfstring{Get\+T\+Min()}{GetTMin()}}
 {\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Get\+T\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Gets the currently set minimum t value \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a552947ba20fbbf8e93cbc48b3e9e6a5f}\label{classParticleTracking_1_1ppDiffractiveScatter_a552947ba20fbbf8e93cbc48b3e9e6a5f}} 
+Gets the currently set minimum t value
+
+Gets the currently set minimum/maximum t value \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a552947ba20fbbf8e93cbc48b3e9e6a5f}\label{classParticleTracking_1_1ppDiffractiveScatter_a552947ba20fbbf8e93cbc48b3e9e6a5f}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Get\+T\+Step\+Size@{Get\+T\+Step\+Size}}
 \index{Get\+T\+Step\+Size@{Get\+T\+Step\+Size}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Get\+T\+Step\+Size()}{GetTStepSize()}}
@@ -129,7 +145,9 @@ Gets the currently set maximum xo value \mbox{\Hypertarget{classParticleTracking
 \subsubsection{\texorpdfstring{Get\+Xi\+Min()}{GetXiMin()}}
 {\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Get\+Xi\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Gets the currently set minimum xi value \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a7b00f2c992d0e353c85c6ee4b0e6cbda}\label{classParticleTracking_1_1ppDiffractiveScatter_a7b00f2c992d0e353c85c6ee4b0e6cbda}} 
+Gets the currently set minimum xi value
+
+Gets the currently set minimum/maximum t value \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a7b00f2c992d0e353c85c6ee4b0e6cbda}\label{classParticleTracking_1_1ppDiffractiveScatter_a7b00f2c992d0e353c85c6ee4b0e6cbda}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Get\+Xi\+Step\+Size@{Get\+Xi\+Step\+Size}}
 \index{Get\+Xi\+Step\+Size@{Get\+Xi\+Step\+Size}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Get\+Xi\+Step\+Size()}{GetXiStepSize()}}
@@ -141,17 +159,33 @@ Gets the currently set xi step size \mbox{\Hypertarget{classParticleTracking_1_1
 \subsubsection{\texorpdfstring{Integrate\+Dsig\+Dt\+Dxi()}{IntegrateDsigDtDxi()}}
 {\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Integrate\+Dsig\+Dt\+Dxi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Integrates the elastic differential cross section \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_ab76465efcf0e83555243d73f93a7049b}\label{classParticleTracking_1_1ppDiffractiveScatter_ab76465efcf0e83555243d73f93a7049b}} 
+Integrates the elastic differential cross section \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a813e2437d113d3db8994e3301d07855e}\label{classParticleTracking_1_1ppDiffractiveScatter_a813e2437d113d3db8994e3301d07855e}} 
+\index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Select@{Select}}
+\index{Select@{Select}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
+\subsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+set value of deltat depending on evaluation of (it$<$(N-\/1))
+
+set value of deltax depending on evaluation of (ix$<$(N-\/1)) \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_ab76465efcf0e83555243d73f93a7049b}\label{classParticleTracking_1_1ppDiffractiveScatter_ab76465efcf0e83555243d73f93a7049b}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!SelectT@{SelectT}}
 \index{SelectT@{SelectT}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Select\+T()}{SelectT()}}
 {\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+SelectT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Picks a t value from the generated distribution (including interpolation) 
 
 Picks a t value from the generated distribution (including interpolation) \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a09ef68dfe8abc179ccabb766b0c46be1}\label{classParticleTracking_1_1ppDiffractiveScatter_a09ef68dfe8abc179ccabb766b0c46be1}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Select\+Xi@{Select\+Xi}}
 \index{Select\+Xi@{Select\+Xi}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Select\+Xi()}{SelectXi()}}
 {\footnotesize\ttfamily double Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Select\+Xi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Picks an Xi value from the generated distribution (including interpolation) 
 
 Picks an xi value from the generated distribution (including interpolation) \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a31b1bc459e301f2a4ae78f2caa803ec0}\label{classParticleTracking_1_1ppDiffractiveScatter_a31b1bc459e301f2a4ae78f2caa803ec0}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Set\+T\+Max@{Set\+T\+Max}}
@@ -167,21 +201,21 @@ Sets the maximum t value for generation \mbox{\Hypertarget{classParticleTracking
 
 Sets the minimum t value for generation 
 \begin{DoxyParams}{Parameters}
-{\em tmin} & the minumum t value to generate \\
+{\em tmin} & the minimum t value to generate\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a19f9d33319193a4dab8e50c48fd72d7a}\label{classParticleTracking_1_1ppDiffractiveScatter_a19f9d33319193a4dab8e50c48fd72d7a}} 
+Sets the minimum/maximum t value for generation \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a19f9d33319193a4dab8e50c48fd72d7a}\label{classParticleTracking_1_1ppDiffractiveScatter_a19f9d33319193a4dab8e50c48fd72d7a}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Set\+T\+Step\+Size@{Set\+T\+Step\+Size}}
 \index{Set\+T\+Step\+Size@{Set\+T\+Step\+Size}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Set\+T\+Step\+Size()}{SetTStepSize()}}
-{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Set\+T\+Step\+Size (\begin{DoxyParamCaption}\item[{double}]{step }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Set\+T\+Step\+Size (\begin{DoxyParamCaption}\item[{double}]{Step\+Size }\end{DoxyParamCaption})}
 
 Sets the step size in t for the differential cross section generation 
 \begin{DoxyParams}{Parameters}
-{\em step} & The step size to generate \\
+{\em step} & The step size to generate\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_acfd8385c3ee1f3e710a1c7ef15183039}\label{classParticleTracking_1_1ppDiffractiveScatter_acfd8385c3ee1f3e710a1c7ef15183039}} 
+Sets the step size in t for the differential cross section generation \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_acfd8385c3ee1f3e710a1c7ef15183039}\label{classParticleTracking_1_1ppDiffractiveScatter_acfd8385c3ee1f3e710a1c7ef15183039}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Set\+Xi\+Max@{Set\+Xi\+Max}}
 \index{Set\+Xi\+Max@{Set\+Xi\+Max}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Set\+Xi\+Max()}{SetXiMax()}}
@@ -189,32 +223,32 @@ Sets the step size in t for the differential cross section generation
 
 Sets the maximum t value for generation 
 \begin{DoxyParams}{Parameters}
-{\em tmin} & the minumum xi value to generate \\
+{\em tmin} & the minimum xi value to generate \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_a8138fee1bfa1b108e2862a1f56024fa8}\label{classParticleTracking_1_1ppDiffractiveScatter_a8138fee1bfa1b108e2862a1f56024fa8}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Set\+Xi\+Min@{Set\+Xi\+Min}}
 \index{Set\+Xi\+Min@{Set\+Xi\+Min}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Set\+Xi\+Min()}{SetXiMin()}}
-{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Set\+Xi\+Min (\begin{DoxyParamCaption}\item[{double}]{ximin }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Set\+Xi\+Min (\begin{DoxyParamCaption}\item[{double}]{min }\end{DoxyParamCaption})}
 
 Sets the minimum xi value for generation 
 \begin{DoxyParams}{Parameters}
-{\em tmin} & the minumum xi value to generate \\
+{\em tmin} & the minimum xi value to generate\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_af1e7bef526bd62823d1cdc5e9346ac1f}\label{classParticleTracking_1_1ppDiffractiveScatter_af1e7bef526bd62823d1cdc5e9346ac1f}} 
+Sets the minimum/maximum t value for generation \mbox{\Hypertarget{classParticleTracking_1_1ppDiffractiveScatter_af1e7bef526bd62823d1cdc5e9346ac1f}\label{classParticleTracking_1_1ppDiffractiveScatter_af1e7bef526bd62823d1cdc5e9346ac1f}} 
 \index{Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}!Set\+Xi\+Step\+Size@{Set\+Xi\+Step\+Size}}
 \index{Set\+Xi\+Step\+Size@{Set\+Xi\+Step\+Size}!Particle\+Tracking\+::pp\+Diffractive\+Scatter@{Particle\+Tracking\+::pp\+Diffractive\+Scatter}}
 \subsubsection{\texorpdfstring{Set\+Xi\+Step\+Size()}{SetXiStepSize()}}
-{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Set\+Xi\+Step\+Size (\begin{DoxyParamCaption}\item[{double}]{step }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Particle\+Tracking\+::pp\+Diffractive\+Scatter\+::\+Set\+Xi\+Step\+Size (\begin{DoxyParamCaption}\item[{double}]{Step\+Size }\end{DoxyParamCaption})}
 
 Sets the step size in Xi for the differential cross section generation 
 \begin{DoxyParams}{Parameters}
-{\em step} & The step size to generate \\
+{\em step} & The step size to generate\\
 \hline
 \end{DoxyParams}
-
+Sets the step size in xi for the differential cross section generation 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

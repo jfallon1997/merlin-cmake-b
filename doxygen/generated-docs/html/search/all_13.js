@@ -18,6 +18,7 @@ var searchData=
   ['sectorbendci',['SectorBendCI',['../classSMPTracking_1_1SectorBendCI.html',1,'SMPTracking::SectorBendCI'],['../classParticleTracking_1_1THIN__LENS_1_1SectorBendCI.html',1,'ParticleTracking::THIN_LENS::SectorBendCI'],['../classParticleTracking_1_1TRANSPORT_1_1SectorBendCI.html',1,'ParticleTracking::TRANSPORT::SectorBendCI'],['../classParticleTracking_1_1SYMPLECTIC_1_1SectorBendCI.html',1,'ParticleTracking::SYMPLECTIC::SectorBendCI']]],
   ['sectorbendmap',['SectorBendMap',['../structParticleTracking_1_1SYMPLECTIC_1_1SectorBendMap.html',1,'ParticleTracking::SYMPLECTIC']]],
   ['sectorbendmapef',['SectorBendMapEF',['../structParticleTracking_1_1SYMPLECTIC_1_1SectorBendMapEF.html',1,'ParticleTracking::SYMPLECTIC']]],
+  ['select',['Select',['../classParticleTracking_1_1ppDiffractiveScatter.html#a813e2437d113d3db8994e3301d07855e',1,'ParticleTracking::ppDiffractiveScatter']]],
   ['selectrandommaterial',['SelectRandomMaterial',['../classMaterialMixture.html#af13d1230726a4b35b8bbe877f6322ca5',1,'MaterialMixture']]],
   ['selectt',['SelectT',['../classParticleTracking_1_1ppDiffractiveScatter.html#ab76465efcf0e83555243d73f93a7049b',1,'ParticleTracking::ppDiffractiveScatter::SelectT()'],['../classParticleTracking_1_1ppElasticScatter.html#a7ca2a62dcdda44c0164cd0f4123bb140',1,'ParticleTracking::ppElasticScatter::SelectT()']]],
   ['selectxi',['SelectXi',['../classParticleTracking_1_1ppDiffractiveScatter.html#a09ef68dfe8abc179ccabb766b0c46be1',1,'ParticleTracking::ppDiffractiveScatter']]],

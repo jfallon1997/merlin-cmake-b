@@ -93,8 +93,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa8a735da9c32b48a09f014a00ea8265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleTracking_1_1ppDiffractiveScatter.html#afa8a735da9c32b48a09f014a00ea8265">IntegrateDsigDtDxi</a> ()</td></tr>
 <tr class="separator:afa8a735da9c32b48a09f014a00ea8265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab76465efcf0e83555243d73f93a7049b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleTracking_1_1ppDiffractiveScatter.html#ab76465efcf0e83555243d73f93a7049b">SelectT</a> ()</td></tr>
+<tr class="memdesc:ab76465efcf0e83555243d73f93a7049b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Picks a t value from the generated distribution (including interpolation)  <a href="#ab76465efcf0e83555243d73f93a7049b">More...</a><br /></td></tr>
 <tr class="separator:ab76465efcf0e83555243d73f93a7049b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09ef68dfe8abc179ccabb766b0c46be1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleTracking_1_1ppDiffractiveScatter.html#a09ef68dfe8abc179ccabb766b0c46be1">SelectXi</a> ()</td></tr>
+<tr class="memdesc:a09ef68dfe8abc179ccabb766b0c46be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Picks an Xi value from the generated distribution (including interpolation)  <a href="#a09ef68dfe8abc179ccabb766b0c46be1">More...</a><br /></td></tr>
 <tr class="separator:a09ef68dfe8abc179ccabb766b0c46be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7daeefd79f8f288f6edc0b85c2acc1c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleTracking_1_1ppDiffractiveScatter.html#a7daeefd79f8f288f6edc0b85c2acc1c7">SetTMin</a> (double tmin)</td></tr>
 <tr class="separator:a7daeefd79f8f288f6edc0b85c2acc1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,12 +126,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a89425dbbdcf14f06ffe2bf50cfde7072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206970eeedffc495ff7558fd5078b2a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleTracking_1_1ppDiffractiveScatter.html#a206970eeedffc495ff7558fd5078b2a0">EnableDebug</a> (bool debug)</td></tr>
 <tr class="separator:a206970eeedffc495ff7558fd5078b2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a813e2437d113d3db8994e3301d07855e"><td class="memItemLeft" align="right" valign="top"><a id="a813e2437d113d3db8994e3301d07855e"></a>
-std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> ()</td></tr>
+<tr class="memitem:a813e2437d113d3db8994e3301d07855e"><td class="memItemLeft" align="right" valign="top">std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleTracking_1_1ppDiffractiveScatter.html#a813e2437d113d3db8994e3301d07855e">Select</a> ()</td></tr>
 <tr class="separator:a813e2437d113d3db8994e3301d07855e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class for all things relating to proton-proton single diffractive scattering. This includes, generation of differential cross sections. Integration of the differential cross sections. Generation of momentum transfer t values for calculation of scattering angles. Generation of mass loss values for calculation of momentum changes. Multiple scattering models </p>
+<div class="textblock"><p>Class for all things relating to proton-proton single diffractive scattering. This includes:</p><ul>
+<li>Generation of differential cross sections.</li>
+<li>Integration of the differential cross sections.</li>
+<li>Generation of momentum transfer t values for calculation of scattering angles.</li>
+<li>Generation of mass loss values for calculation of momentum changes.</li>
+<li>Multiple scattering models </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1127d26a2b1b95632ed823ef803a855b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1127d26a2b1b95632ed823ef803a855b">&#9670;&nbsp;</a></span>ppDiffractiveScatter()</h2>
@@ -168,17 +175,18 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
           <td class="memname">void ParticleTracking::ppDiffractiveScatter::EnableDebug </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>debug</em></td><td>)</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Debug toggle - set to true or false to enable/disable debugging output </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">debug</td><td>Turn on and off debugging output </td></tr>
+    <tr><td class="paramname">debug</td><td>Turn on and off debugging output</td></tr>
   </table>
   </dd>
 </dl>
+<p>Debug toggle - set to true or false to enable/disable debugging output </p>
 
 </div>
 </div>
@@ -197,7 +205,11 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Generates the requried differential cross sections and integrates for the specified energy </p>
+<p>Generates the requried differential cross sections and integrates for the specified energy</p>
+<p>Generates the required differential cross sections and integrates for the specified energy </p>
+<p>Generating pp Diffractive differential cross section</p>
+<p>Integrating differential cross section</p>
+<p>Diffractive Configuration generation done </p>
 
 </div>
 </div>
@@ -239,7 +251,8 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the Integrated Single diffractive cross section </p>
+<p>Gets the Integrated Single diffractive cross section</p>
+<p>Gets the Integrated elastic cross section </p>
 
 </div>
 </div>
@@ -275,7 +288,8 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the currently set minimum t value </p>
+<p>Gets the currently set minimum t value</p>
+<p>Gets the currently set minimum/maximum t value </p>
 
 </div>
 </div>
@@ -329,7 +343,8 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the currently set minimum xi value </p>
+<p>Gets the currently set minimum xi value</p>
+<p>Gets the currently set minimum/maximum t value </p>
 
 </div>
 </div>
@@ -369,6 +384,25 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
+<a id="a813e2437d113d3db8994e3301d07855e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813e2437d113d3db8994e3301d07855e">&#9670;&nbsp;</a></span>Select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; double, double &gt; ParticleTracking::ppDiffractiveScatter::Select </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set value of deltat depending on evaluation of (it&lt;(N-1))</p>
+<p>set value of deltax depending on evaluation of (ix&lt;(N-1)) </p>
+
+</div>
+</div>
 <a id="ab76465efcf0e83555243d73f93a7049b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab76465efcf0e83555243d73f93a7049b">&#9670;&nbsp;</a></span>SelectT()</h2>
 
@@ -383,6 +417,8 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Picks a t value from the generated distribution (including interpolation) </p>
 <p>Picks a t value from the generated distribution (including interpolation) </p>
 
 </div>
@@ -401,6 +437,8 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Picks an Xi value from the generated distribution (including interpolation) </p>
 <p>Picks an xi value from the generated distribution (including interpolation) </p>
 
 </div>
@@ -441,10 +479,11 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
 </div><div class="memdoc">
 <p>Sets the minimum t value for generation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tmin</td><td>the minumum t value to generate </td></tr>
+    <tr><td class="paramname">tmin</td><td>the minimum t value to generate</td></tr>
   </table>
   </dd>
 </dl>
+<p>Sets the minimum/maximum t value for generation </p>
 
 </div>
 </div>
@@ -458,17 +497,18 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
           <td class="memname">void ParticleTracking::ppDiffractiveScatter::SetTStepSize </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>step</em></td><td>)</td>
+          <td class="paramname"><em>StepSize</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the step size in t for the differential cross section generation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">step</td><td>The step size to generate </td></tr>
+    <tr><td class="paramname">step</td><td>The step size to generate</td></tr>
   </table>
   </dd>
 </dl>
+<p>Sets the step size in t for the differential cross section generation </p>
 
 </div>
 </div>
@@ -489,7 +529,7 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
 </div><div class="memdoc">
 <p>Sets the maximum t value for generation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tmin</td><td>the minumum xi value to generate </td></tr>
+    <tr><td class="paramname">tmin</td><td>the minimum xi value to generate </td></tr>
   </table>
   </dd>
 </dl>
@@ -506,17 +546,18 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
           <td class="memname">void ParticleTracking::ppDiffractiveScatter::SetXiMin </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ximin</em></td><td>)</td>
+          <td class="paramname"><em>min</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the minimum xi value for generation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tmin</td><td>the minumum xi value to generate </td></tr>
+    <tr><td class="paramname">tmin</td><td>the minimum xi value to generate</td></tr>
   </table>
   </dd>
 </dl>
+<p>Sets the minimum/maximum t value for generation </p>
 
 </div>
 </div>
@@ -530,17 +571,18 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
           <td class="memname">void ParticleTracking::ppDiffractiveScatter::SetXiStepSize </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>step</em></td><td>)</td>
+          <td class="paramname"><em>StepSize</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the step size in Xi for the differential cross section generation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">step</td><td>The step size to generate </td></tr>
+    <tr><td class="paramname">step</td><td>The step size to generate</td></tr>
   </table>
   </dd>
 </dl>
+<p>Sets the step size in xi for the differential cross section generation </p>
 
 </div>
 </div>
