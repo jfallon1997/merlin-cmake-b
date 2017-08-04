@@ -15,16 +15,24 @@
 #include <iostream>
 #include <fstream>
 
-// Include for the Elastic scattering class
+/**
+* Include for the Elastic scattering class
+*/
 #include "DiffractiveScatter.h"
 
-// Include for the max() algorithm
+/**
+* Include for the max() algorithm
+*/
 #include <algorithm>
 
-// Include for make_pair
+/**
+* Include for make_pair
+*/
 #include <utility>
 
-// Include Constants
+/**
+* Include Constants
+*/
 #include "NumericalConstants.h"
 #include "PhysicalConstants.h"
 #include "PhysicalUnits.h"
@@ -36,55 +44,77 @@ using namespace PhysicalConstants;
 namespace ParticleTracking
 {
 
-// Sets the minimum/maximum t value for generation
+/**
+* Sets the minimum/maximum t value for generation
+*/
 void ppDiffractiveScatter::SetTMin(double tmin){ t_min = tmin; }
 void ppDiffractiveScatter::SetTMax(double tmax){ t_max = tmax; }
 
-// Sets the step size in t for the differential cross section generation
+/**
+* Sets the step size in t for the differential cross section generation
+*/
 void ppDiffractiveScatter::SetTStepSize(double StepSize){ t_step = StepSize; }
 
-// Sets the minimum/maximum t value for generation
+/**
+* Sets the minimum/maximum t value for generation
+*/
 void ppDiffractiveScatter::SetXiMin(double min){ xi_min = min; }
 void ppDiffractiveScatter::SetXiMax(double max){ xi_max = max; }
 
-// Sets the step size in xi for the differential cross section generation
+/**
+* Sets the step size in xi for the differential cross section generation
+*/
 void ppDiffractiveScatter::SetXiStepSize(double StepSize){ xi_step = StepSize; }
 
 
-// Gets the currently set minimum/maximum t value
+/**
+* Gets the currently set minimum/maximum t value
+*/
 double ppDiffractiveScatter::GetTMin() const { return t_min; }
 double ppDiffractiveScatter::GetTMax() const { return t_max; }
 
-// Gets the currently set t step size
+/**
+* Gets the currently set t step size
+*/
 double ppDiffractiveScatter::GetTStepSize() const { return t_step; }
 
-// Gets the currently set minimum/maximum t value
+/**
+* Gets the currently set minimum/maximum t value
+*/
 double ppDiffractiveScatter::GetXiMin() const { return xi_min; }
 double ppDiffractiveScatter::GetXiMax() const { return xi_max; }
 
-// Gets the currently set xi step size
+/**
+* Gets the currently set xi step size
+*/
 double ppDiffractiveScatter::GetXiStepSize() const { return xi_step; }
 
-// Gets the Integrated elastic cross section
+/**
+* Gets the Integrated elastic cross section
+*/
 double ppDiffractiveScatter::GetDiffractiveCrossSection() const { return SigDiffractive; }
 
 
-// Debug toggle - set to true or false to enable/disable debugging output
+/**
+* Debug toggle - set to true or false to enable/disable debugging output
+*/
 void ppDiffractiveScatter::EnableDebug(bool flag){ Debug = flag; }
 
 
-// Generates the required differential cross sections and integrates for the specified energy
+/**
+* Generates the required differential cross sections and integrates for the specified energy
+*/
 void ppDiffractiveScatter::GenerateDistribution(double energy)
 {
 	if(!Configured)
 	{
-		// Generating pp Diffractive differential cross section
+		/// Generating pp Diffractive differential cross section
 		GenerateDsigDtDxi(energy);
 
-		// Integrating differential cross section
+		/// Integrating differential cross section
 		IntegrateDsigDtDxi();
 
-		// Diffractive Configuration generation done
+		/// Diffractive Configuration generation done
 		Configured = true;
 	}
 }
@@ -128,25 +158,25 @@ void  __attribute__((optimize("O3,unsafe-math-optimizations"))) ppDiffractiveSca
 		}
 	}
 
-	// convert mbarn to barn
+	/// convert mbarn to barn
 	SigDiffractive= 0.001*sum * xi_step * t_step;
 
-	// convert histograms to normalised cumulants
-	// Running total
+	/// convert histograms to normalised cumulants
+	/// Running total
 	for(int i=1; i<NN; i++)
 	{
 		xdist[i]+=xdist[i-1];
 		tdist[i]+=tdist[i-1];
 	}
 
-	// Normalised
+	/// Normalised
 	for(int i=0; i<NN; i++)
 	{
 		xdist[i]/=xdist[NN-1];
 		tdist[i]/=tdist[NN-1];
 	}
 
-	// convert to lookup tables
+	/// convert to lookup tables
 	int iseekt=0, iseekx=0;
 	xarray[0]=tarray[0]=0;
 
@@ -154,7 +184,7 @@ void  __attribute__((optimize("O3,unsafe-math-optimizations"))) ppDiffractiveSca
 	{
 		double target=double(i)/N;
 
-		// Increment up to the first value of iseekx that satisfies (xdist[iseekx+1] < target)
+		/// Increment up to the first value of iseekx that satisfies (xdist[iseekx+1] < target)
 		while(xdist[iseekx+1] < target)
 		{
 			iseekx++;
@@ -163,7 +193,7 @@ void  __attribute__((optimize("O3,unsafe-math-optimizations"))) ppDiffractiveSca
 		double leftover = target - xdist[iseekx];
 		xarray[i] = (iseekx + std::min(1.0E0,leftover/(xdist[iseekx+1]-xdist[iseekx])))/NN;
 
-		// Increment up to the first value of iseekt that satisfies (tdist[iseekt+1] < target)
+		/// Increment up to the first value of iseekt that satisfies (tdist[iseekt+1] < target)
 		while(tdist[iseekt+1] < target)
 		{
 			iseekt++;
@@ -177,7 +207,7 @@ void  __attribute__((optimize("O3,unsafe-math-optimizations"))) ppDiffractiveSca
 	std::cout << "Sixtrack Diffractive total cross section total " << 0.00068*log(0.15*s) * 1000.0 <<" mb" << std::endl;
 }
 
-// Picks a t value from the generated distribution (including interpolation)
+/// Picks a t value from the generated distribution (including interpolation)
 double ppDiffractiveScatter::SelectT()
 {
 
@@ -186,7 +216,7 @@ double ppDiffractiveScatter::SelectT()
 	return t;
 }
 
-// Picks an Xi value from the generated distribution (including interpolation)
+/// Picks an Xi value from the generated distribution (including interpolation)
 double ppDiffractiveScatter::SelectXi()
 {
 	double SigValue = RandomNG::uniform (0, 1.0);
@@ -204,7 +234,7 @@ retry:
 	double extra = rt-it;
 	double deltat = 0.0;
 
-	// set value of deltat depending on evaluation of (it<(N-1))
+	/// set value of deltat depending on evaluation of (it<(N-1))
 	deltat = it<(N-1) ? tarray[it+1]-tarray[it] : 1-tarray[it];
 
 	tt = tarray[it] + extra * deltat;
@@ -220,7 +250,7 @@ retry:
 	extra = rx-ix;
 	double deltax=0.0;
 
-	// set value of deltax depending on evaluation of (ix<(N-1))
+	/// set value of deltax depending on evaluation of (ix<(N-1))
 	deltax = ix<(N-1) ? xarray[ix+1]-xarray[ix] : 1-xarray[ix];
 
 	xx=xarray[ix]+extra*deltax;
@@ -238,7 +268,7 @@ retry:
 	return std::make_pair(tt,mrec);
 }
 
-// This is the high mass regge diffraction
+/// This is the high mass regge diffraction
 double ppDiffractiveScatter::PomeronScatter2(double tt, double x, double s)
 {
 	double sigma_xi = 0.1;
@@ -250,36 +280,36 @@ double ppDiffractiveScatter::PomeronScatter2(double tt, double x, double s)
 
 inline double  __attribute__((optimize("O3,unsafe-math-optimisations"))) __attribute__ ((hot)) ppDiffractiveScatter::PomeronScatter(const double tt, const double x, const double s)   const
 {
-	// Call PomeronScatter SD
+	/// Call PomeronScatter SD
 	const double t= - tt;
 
-	// Parameters for the resonance term in the background
+	/// Parameters for the resonance term in the background
 	const double Mproton = 0.938272013;
 	const double Mpion = 0.1349766;
 	const double Mmin2 = pow(Mproton+Mpion,2);
 
-	// mass of the resonance P11 D13 G15 F17
+	/// mass of the resonance P11 D13 G15 F17
 	const double ml01 = 1.44;
 	const double ml02 = 1.52;
 	const double ml03 = 1.68;
 	const double ml04 = 2.19;
 
-	// width of the resonance
+	/// width of the resonance
 	const double GammaL1 = 0.325;
 	const double GammaL2 = 0.13;
 	const double GammaL3 = 0.14;
 	const double GammaL4 = 0.45;
 
-	// coupling coefficient from the data fit
+	/// coupling coefficient from the data fit
 	const double cl01 = 3.07;
 	const double cl02 = 0.4149;
 	const double cl03 = 1.108  ;
 	const double cl04 = 0.9515;
 
-	// this is chosen from the fit on the cross section data
+	/// this is chosen from the fit on the cross section data
 	double Mcut = 3;
 
-	// Adjust matching point for high s
+	/// Adjust matching point for high s
 	if(ss > 4000)
 	{
 		Mcut = 3 + 0.6 * log(s/4000);
