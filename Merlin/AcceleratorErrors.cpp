@@ -1,6 +1,14 @@
-//---------------
-//  AcceleratorErrors
-//  DK 1.12.08
+/////////////////////////////////////////////////////////////////////////
+//
+// Merlin C++ Class Library for Charged Particle Accelerator Simulations
+//
+// Class library version unknown
+//
+// Copyright: see Merlin/copyright.txt
+//
+// Created: DK 1.12.08
+//
+/////////////////////////////////////////////////////////////////////////
 
 #include "AcceleratorErrors.h"
 #include "utils.h"

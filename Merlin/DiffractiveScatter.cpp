@@ -2,7 +2,7 @@
 //
 // Merlin C++ Class Library for Charged Particle Accelerator Simulations
 //
-// Class library version 5.0X (2017)
+// Class library version 5.02 (2017)
 //
 // Copyright: see Merlin/copyright.txt
 //
