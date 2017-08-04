@@ -17,8 +17,8 @@ To generate `doxygen` files, ensure you are in the `doxygen` directory, in which
 
 | Source File                     | Recent Check for *some* `doxygen` documentation? | Date of Check |
 |---------------------------------|--------------------------------------------------|---------------|
-| AcceleratorComponent.cpp        |                                                  |               |
-| AcceleratorComponent.h          |                                                  |               |
+| AcceleratorComponent.cpp        | ✓                                                |               |
+| AcceleratorComponent.h          | Excellent                                        |               |
 | AcceleratorErrors.cpp           |                                                  |               |
 | AcceleratorErrors.h             |                                                  |               |
 | AcceleratorGeometry.cpp         |                                                  |               |
