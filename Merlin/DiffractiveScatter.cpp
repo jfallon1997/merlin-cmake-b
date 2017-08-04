@@ -45,9 +45,14 @@ namespace ParticleTracking
 {
 
 /**
-* Sets the minimum/maximum t value for generation
+* Sets the minimum t value for generation
 */
 void ppDiffractiveScatter::SetTMin(double tmin){ t_min = tmin; }
+
+/**
+* Sets the maximum t value for generation
+*/
+
 void ppDiffractiveScatter::SetTMax(double tmax){ t_max = tmax; }
 
 /**
@@ -56,9 +61,13 @@ void ppDiffractiveScatter::SetTMax(double tmax){ t_max = tmax; }
 void ppDiffractiveScatter::SetTStepSize(double StepSize){ t_step = StepSize; }
 
 /**
-* Sets the minimum/maximum t value for generation
+* Sets the minimum t value for generation
 */
 void ppDiffractiveScatter::SetXiMin(double min){ xi_min = min; }
+
+/**
+* Sets the maximum t value for generation
+*/
 void ppDiffractiveScatter::SetXiMax(double max){ xi_max = max; }
 
 /**
@@ -68,9 +77,13 @@ void ppDiffractiveScatter::SetXiStepSize(double StepSize){ xi_step = StepSize; }
 
 
 /**
-* Gets the currently set minimum/maximum t value
+* Gets the currently set minimum t value
 */
 double ppDiffractiveScatter::GetTMin() const { return t_min; }
+
+/**
+* Gets the currently set maximum t value
+*/
 double ppDiffractiveScatter::GetTMax() const { return t_max; }
 
 /**
@@ -79,9 +92,13 @@ double ppDiffractiveScatter::GetTMax() const { return t_max; }
 double ppDiffractiveScatter::GetTStepSize() const { return t_step; }
 
 /**
-* Gets the currently set minimum/maximum t value
+* Gets the currently set minimum t value
 */
 double ppDiffractiveScatter::GetXiMin() const { return xi_min; }
+
+/**
+* Gets the currently set maximum t value
+*/
 double ppDiffractiveScatter::GetXiMax() const { return xi_max; }
 
 /**
