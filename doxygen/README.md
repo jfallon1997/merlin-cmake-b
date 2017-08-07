@@ -3,8 +3,9 @@
 These instructions will (in the future) tell you how to generate your own
 `doxygen` files for `Merlin`
 
-If you wish to view pre-generated documentation, ~see `generated-docs`~ *to be
-added*
+If you wish to view pre-generated documentation, they are *temporarily*
+being hosted at [http://users.ox.ac.uk/~scat6524/merlin-doxygen/html](
+http://users.ox.ac.uk/~scat6524/merlin-doxygen/html/index.html)
 
 ## Editing the Documentation
 
@@ -28,7 +29,7 @@ used to mark the amount/condition of documentation in that file. As header files
 define the member functions and `cpp` files implement them, we won't need much
 (if any) documentation in most `cpp` files.
 
-Classification:
+Classification (rough guide):
 
 * Excellent: uses doxygen specific syntax such as `@return` and `@param`, and
 contains complete description of code
