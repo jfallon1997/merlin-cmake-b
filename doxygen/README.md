@@ -3,9 +3,23 @@
 These instructions will (in the future) tell you how to generate your own
 `doxygen` files for `Merlin`
 
+## Viewing the Documentation
+
 If you wish to view pre-generated documentation, they are *temporarily*
 being hosted at [http://users.ox.ac.uk/~scat6524/merlin-doxygen/html](
 http://users.ox.ac.uk/~scat6524/merlin-doxygen/html/index.html)
+
+To compile and view your own documentation, download all of the files in the
+`doxygen` folder, run `doxygen Merlin.Doxyfile`, then open a page (e.g.
+`index.html`) in `generated-docs/html`
+
+Man-pages and pdf-diagrams can be found and viewed in a similar manner, under
+the folders `doxygen/generated-docs/man/man3` and 
+`doxygen/generated-docs/latex` respectively. 
+
+*Note: to view the man pages, run the command*
+`man $PATH_TO_MAN_PAGES/the_page.3` or `man ,/the_page.3` *if you are in the 
+man page directory*.
 
 ## Editing the Documentation
 
@@ -62,7 +76,7 @@ and shouldn't be altered
 | ApertureSurvey.h                | Excellent                                        | 2017-08-04    |
 | ArcGeometry.h                   | Good                                             | 2017-08-07    |
 | ArcMultipoleField.h             | Good                                             | 2017-08-04    |
-| ATL2D.h                         | Satisfactory                                     | 2017-08-04    |
+| ATL2D.h                         | Good                                             | 2017-08-04    |
 | AxisRotations.h                 | Satisfactory                                     | 2017-08-04    |
 | BasicTransportMaps.h            | Poor                                             | 2017-08-04    |
 | BeamData.h                      | Poor                                             | 2017-08-04    |
