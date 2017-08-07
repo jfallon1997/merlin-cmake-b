@@ -51,17 +51,17 @@ and shouldn't be altered
 | AcceleratorComponent.h          | Excellent                                        | 2017-08-04    |
 | AcceleratorErrors.h             | Excellent                                        | 2017-08-04    |
 | AcceleratorGeometry.h           | Excellent                                        | 2017-08-04    |
-| AcceleratorModelConstructor.h   | Satisfactory                                     | 2017-08-04    |
+| AcceleratorModelConstructor.h   | Good                                             | 2017-08-07    |
 | AcceleratorModel.h              | Excellent                                        | 2017-08-04    |
-| AcceleratorSupport.h            | Satisfactory                                     | 2017-08-04    |
-| ACG.h                           | Poor                                             | 2017-08-04    |
+| AcceleratorSupport.h            | Good                                             | 2017-08-07    |
+| ACG.h                           | Satisfactory                                     | 2017-08-07    |
 | algorithm.h                     | No documentation                                 | 2017-08-04    |
-| AMBufferManager.h               | Satisfactory                                     | 2017-08-04    |
+| AMBufferManager.h               | Good                                             | 2017-08-07    |
 | ApertureConfiguration.h         | Excellent                                        | 2017-08-04    |
 | Aperture.h                      | Excellent                                        | 2017-08-04    |
 | ApertureSurvey.h                | Excellent                                        | 2017-08-04    |
-| ArcGeometry.h                   | Satisfactory                                     | 2017-08-04    |
-| ArcMultipoleField.h             | Satisfactory                                     | 2017-08-04    |
+| ArcGeometry.h                   | Good                                             | 2017-08-07    |
+| ArcMultipoleField.h             | Good                                             | 2017-08-04    |
 | ATL2D.h                         | Satisfactory                                     | 2017-08-04    |
 | AxisRotations.h                 | Satisfactory                                     | 2017-08-04    |
 | BasicTransportMaps.h            | Poor                                             | 2017-08-04    |
@@ -101,24 +101,24 @@ and shouldn't be altered
 | ComponentFrame.h                | Satisfactory                                     | 2017-08-04    |
 | ComponentIntegrator.h           | Satisfactory                                     | 2017-08-04    |
 | Components.h                    | Complete                                         | 2017-08-04    |
-| ComponentStepper.h              | Lots of weird numbers, should they be here??     |               |
-| ComponentTracker.h              |                                                  |               |
-| CompositeMaterial.h             |                                                  |               |
-| ConstructSrot.h                 |                                                  |               |
-| CorrectorDipoles.h              |                                                  |               |
-| CorrectorWinding.h              |                                                  |               |
-| CoulombScatter.h                |                                                  |               |
-| CouplerWakeFieldProcess.h       |                                                  |               |
-| CPUFeatures.h                   |                                                  |               |
-| CrabMarker.h                    |                                                  |               |
-| CrossSections.h                 |                                                  |               |
-| deleters.h                      |                                                  |               |
-| DiffractiveScatter.h            | ✓                                                | 2017-08-04    |
-| DiscUnif.h                      |                                                  |               |
-| Dispersion.h                    |                                                  |               |
-| Drift.h                         |                                                  |               |
-| DynamicModel.h                  |                                                  |               |
-| echo_ostream.h                  |                                                  |               |
+| ComponentStepper.h              | Lots of weird numbers...                         | 2017-08-04    |
+| ComponentTracker.h              | Good                                             | 2017-08-07    |
+| CompositeMaterial.h             | Satisfactory                                     | 2017-08-07    |
+| ConstructSrot.h                 | Poor                                             | 2017-08-07    |
+| CorrectorDipoles.h              | Satisfactory                                     | 2017-08-07    |
+| CorrectorWinding.h              | Satisfactory                                     | 2017-08-07    |
+| CoulombScatter.h                | Satisfactory                                     | 2017-08-07    |
+| CouplerWakeFieldProcess.h       | Satisfactory                                     | 2017-08-07    |
+| CPUFeatures.h                   | Good                                             | 2017-08-07    |
+| CrabMarker.h                    | Poor                                             | 2017-08-07    |
+| CrossSections.h                 | No documentation                                 | 2017-08-07    |
+| deleters.h                      | Good                                             | 2017-08-07    |
+| DiffractiveScatter.h            | Excellent                                        | 2017-08-07    |
+| DiscUnif.h                      | No documentation                                 | 2017-08-07    |
+| Dispersion.h                    | No documentation                                 | 2017-08-07    |
+| Drift.h                         | Good                                             | 2017-08-07    |
+| DynamicModel.h                  | Complete                                         | 2017-08-07    |
+| echo_ostream.h                  | Satisfactory                                     | 2017-08-07    |
 | ElasticScatter.h                |                                                  |               |
 | ElectronBunch.h                 |                                                  |               |
 | ElementRepository.h             |                                                  |               |
