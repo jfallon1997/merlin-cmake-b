@@ -77,33 +77,33 @@ and shouldn't be altered
 | ArcGeometry.h                   | Good                                             | 2017-08-07    |
 | ArcMultipoleField.h             | Good                                             | 2017-08-04    |
 | ATL2D.h                         | Good                                             | 2017-08-04    |
-| AxisRotations.h                 | Satisfactory                                     | 2017-08-04    |
-| BasicTransportMaps.h            | Poor                                             | 2017-08-04    |
-| BeamData.h                      | Poor                                             | 2017-08-04    |
+| AxisRotations.h                 | Good                                             | 2017-08-07    |
+| BasicTransportMaps.h            | No documentation                                 | 2017-08-07    |
+| BeamData.h                      | Satisfactory                                     | 2017-08-07    |
 | BetatronTunes.h                 | No documentation                                 | 2017-08-04    |
 | BetatronTunes.h.2               | No documentation                                 | 2017-08-04    |
 | Binomial.h                      | No documentation                                 | 2017-08-04    |
-| BPMChannelCtor.h                | Satisfactory                                     | 2017-08-04    |
-| BPMChannel.h                    | Satisfactory                                     | 2017-08-04    |
-| BPMDataBuffer.h                 | Satisfactory                                     | 2017-08-04    |
-| BPMDataBufferServer.h           | Poor                                             | 2017-08-04    |
+| BPMChannelCtor.h                | Good                                             | 2017-08-07    |
+| BPMChannel.h                    | Good                                             | 2017-08-07    |
+| BPMDataBuffer.h                 | Satisfactory                                     | 2017-08-07    |
+| BPMDataBufferServer.h           | Satisfactory                                     | 2017-08-07    |
 | BPM.h                           | Satisfactory                                     | 2017-08-04    |
 | BunchConstructor.h              | Satisfactory                                     | 2017-08-04    |
 | BunchConverter.h                | Good                                             | 2017-08-04    |
 | BunchFilter.h                   | Poor                                             | 2017-08-04    |
 | Bunch.h                         | Satisfactory                                     | 2017-08-04    |
-| BunchProcess.h                  | Poor (some single comments describe multiple fns)|               |
-| BzField.h                       | Satisfactory                                     | 2017-08-04    |
-| CCFailureProcess.h              | Satisfactory (but some comments need splitting)  | 2017-08-04    |
-| CenteredGeometry.h              | Good                                             | 2017-08-04    |
-| ChannelServer.h                 | Satisfactory                                     | 2017-08-04    |
-| Channels.h                      | Good                                             | 2017-08-04    |
+| BunchProcess.h                  | Poor (some single comments describe multiple fns)| 2017-08-07    |
+| BzField.h                       | Good                                             | 2017-08-07    |
+| CCFailureProcess.h              | Satisfactory                                     | 2017-08-07    |
+| CenteredGeometry.h              | Good                                             | 2017-08-07    |
+| ChannelServer.h                 | Good                                             | 2017-08-07    |
+| Channels.h                      | Good                                             | 2017-08-07    |
 | ClosedOrbit.h                   | No documentation                                 | 2017-08-04    |
-| CollimateParticleProcess.h      | Satisfactory                                     | 2017-08-04    |
-| CollimateProtonProcess.h        | Good                                             | 2017-08-04    |
-| CollimationOutput.h             | Satisfactory                                     | 2017-08-04    |
-| CollimatorAperture.h            | Poor                                             | 2017-08-04    |
-| CollimatorDatabase.h            | Poor                                             | 2017-08-04    |
+| CollimateParticleProcess.h      | Satisfactory                                     | 2017-08-07    |
+| CollimateProtonProcess.h        | Good                                             | 2017-08-07    |
+| CollimationOutput.h             | Satisfactory                                     | 2017-08-07    |
+| CollimatorAperture.h            | Poor                                             | 2017-08-07    |
+| CollimatorDatabase.h            | Satisfactory                                     | 2017-08-07    |
 | Collimator.h                    | Good                                             | 2017-08-04    |
 | CollimatorPotentialModels.h     | Poor                                             | 2017-08-04    |
 | CollimatorTable.h               | No documentation                                 | 2017-08-04    |
