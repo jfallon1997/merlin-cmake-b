@@ -185,54 +185,54 @@ and shouldn't be altered
 | MultipoleField.h                | Good                                             | 2017-08-08    |
 | MuonBunch.h                     | Good                                             | 2017-08-08    |
 | MVCMatrix.h                     | Good                                             | 2017-08-08    |
-| NANCheckProcess.h               |                                                  |               |
-| NegExp.h                        |                                                  |               |
-| Normal.h                        |                                                  |               |
-| NormalTransform.h               |                                                  |               |
-| NumericalConstants.h            |                                                  |               |
-| OPFormat.h                      |                                                  |               |
-| ParticleBunchConstructor.h      |                                                  |               |
-| ParticleBunch.h                 |                                                  |               |
-| ParticleBunchProcess.h          |                                                  |               |
-| ParticleBunchTypes.h            |                                                  |               |
-| ParticleBunchUtilities.h        |                                                  |               |
-| ParticleComponentTracker.h      |                                                  |               |
-| ParticleMapComponent.h          |                                                  |               |
-| ParticleMap.h                   |                                                  |               |
-| ParticleMapPI.h                 |                                                  |               |
-| ParticleTracker.h               |                                                  |               |
-| PatchFrame.h                    |                                                  |               |
-| PhaseAdvance.h                  |                                                  |               |
-| PhysicalConstants.h             |                                                  |               |
-| PhysicalUnits.h                 |                                                  |               |
-| Poisson.h                       |                                                  |               |
-| ProcessStepManager.h            |                                                  |               |
-| ProtonBunch.h                   |                                                  |               |
-| PSmoments.h                     |                                                  |               |
-| PSTypes.h                       |                                                  |               |
-| PSvector.h                      |                                                  |               |
-| PSvectorTransform3D.h           |                                                  |               |
-| Random.h                        |                                                  |               |
-| RandomNG.h                      |                                                  |               |
-| Range.h                         |                                                  |               |
-| RectangularGeometry.h           |                                                  |               |
-| RectEllipseAperture.h           |                                                  |               |
-| RectMultipoleField.h            |                                                  |               |
-| RectMultipole.h                 |                                                  |               |
-| RectSWRF.h                      |                                                  |               |
-| RectTWRF.h                      |                                                  |               |
-| ReferenceParticle.h             |                                                  |               |
-| ResistiveWakePotentials.h       |                                                  |               |
-| RFAcceleratingField.h           |                                                  |               |
-| RFStructure.h                   |                                                  |               |
-| RingDeltaTProcess.h             |                                                  |               |
-| ring_iterator.h                 |                                                  |               |
-| RMap.h                          |                                                  |               |
-| RMSProfileMonitor.h             |                                                  |               |
-| RndInt.h                        |                                                  |               |
-| RNG.h                           |                                                  |               |
-| Rot3Drep.h                      |                                                  |               |
-| Rotation3D.h                    |                                                  |               |
+| NANCheckProcess.h               | No documentation                                 | 2017-08-08    |
+| NegExp.h                        | No documentation                                 | 2017-08-08    |
+| Normal.h                        | No documentation                                 | 2017-08-08    |
+| NormalTransform.h               | No documentation                                 | 2017-08-08    |
+| NumericalConstants.h            | Complete                                         | 2017-08-08    |
+| OPFormat.h                      | Poor                                             | 2017-08-08    |
+| ParticleBunchConstructor.h      | Good                                             | 2017-08-08    |
+| ParticleBunch.h                 | Good                                             | 2017-08-08    |
+| ParticleBunchProcess.h          | Complete                                         | 2017-08-08    |
+| ParticleBunchTypes.h            | Complete                                         | 2017-08-08    |
+| ParticleBunchUtilities.h        | Excellent                                        | 2017-08-08    |
+| ParticleComponentTracker.h      | Complete                                         | 2017-08-08    |
+| ParticleMapComponent.h          | Good                                             | 2017-08-08    |
+| ParticleMap.h                   | Satisfactory                                     | 2017-08-08    |
+| ParticleMapPI.h                 | Poor                                             | 2017-08-08    |
+| ParticleTracker.h               | Good                                             | 2017-08-08    |
+| PatchFrame.h                    | Poor, also code labeled as needing rewrite       | 2017-08-08    |
+| PhaseAdvance.h                  | Satisfactory                                     | 2017-08-08    |
+| PhysicalConstants.h             | Complete                                         | 2017-08-08    |
+| PhysicalUnits.h                 | Complete                                         | 2017-08-08    |
+| Poisson.h                       | No documentation                                 | 2017-08-08    |
+| ProcessStepManager.h            | Good                                             | 2017-08-08    |
+| ProtonBunch.h                   | Poor                                             | 2017-08-08    |
+| PSmoments.h                     | Poor                                             | 2017-08-08    |
+| PSTypes.h                       | Complete                                         | 2017-08-08    |
+| PSvector.h                      | Poor                                             | 2017-08-08    |
+| PSvectorTransform3D.h           | Poor                                             | 2017-08-08    |
+| Random.h                        | No documentation                                 | 2017-08-08    |
+| RandomNG.h                      | Good                                             | 2017-08-08    |
+| Range.h                         | Satisfactory                                     | 2017-08-08    |
+| RectangularGeometry.h           | Good                                             | 2017-08-08    |
+| RectEllipseAperture.h           | Satisfactory                                     | 2017-08-08    |
+| RectMultipoleField.h            | Good                                             | 2017-08-08    |
+| RectMultipole.h                 | Good                                             | 2017-08-08    |
+| RectSWRF.h                      | Good                                             | 2017-08-08    |
+| RectTWRF.h                      | Good                                             | 2017-08-08    |
+| ReferenceParticle.h             | Good                                             | 2017-08-08    |
+| ResistiveWakePotentials.h       | No documentation                                 | 2017-08-08    |
+| RFAcceleratingField.h           | Good                                             | 2017-08-08    |
+| RFStructure.h                   | Good                                             | 2017-08-08    |
+| RingDeltaTProcess.h             | No documentation                                 | 2017-08-08    |
+| ring_iterator.h                 | Poor                                             | 2017-08-08    |
+| RMap.h                          | Satisfactory                                     | 2017-08-08    |
+| RMSProfileMonitor.h             | Poor                                             | 2017-08-08    |
+| RndInt.h                        | Satisfactory                                     | 2017-08-08    |
+| RNG.h                           | Poor                                             | 2017-08-08    |
+| Rot3Drep.h                      | Good                                             | 2017-08-08    |
+| Rotation3D.h                    | Good, but suspiciously similar to Rot3Drep.h...  | 2017-08-08    |
 | RotationMatrix.h                |                                                  |               |
 | RotationType.h                  |                                                  |               |
 | RTMap.h                         |                                                  |               |
