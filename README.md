@@ -23,7 +23,8 @@ To interactively configure, run:
     ccmake $PATH_TO_MERLIN_DIR
 
 To build run `make` or, to build with multiple threads (e.g. 4 threads)
-`make -j4`
+
+    make -j4
 
 
 The `libmerlin.so` library will be built in the build directory.
@@ -35,11 +36,5 @@ Enable tests with
     cmake -DBUILD_TESTING=ON
     make
     make test
-
-
-
-
-
-
 
 

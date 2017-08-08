@@ -104,18 +104,18 @@ and shouldn't be altered
 | CollimationOutput.h             | Satisfactory                                     | 2017-08-07    |
 | CollimatorAperture.h            | Poor                                             | 2017-08-07    |
 | CollimatorDatabase.h            | Satisfactory                                     | 2017-08-07    |
-| Collimator.h                    | Good                                             | 2017-08-04    |
-| CollimatorPotentialModels.h     | Poor                                             | 2017-08-04    |
+| Collimator.h                    | Good                                             | 2017-08-07    |
+| CollimatorPotentialModels.h     | Poor                                             | 2017-08-07    |
 | CollimatorTable.h               | No documentation                                 | 2017-08-04    |
 | CollimatorWakePotentials.h      | No documentation                                 | 2017-08-04    |
-| CollimatorWakeProcess.h         | Poor                                             | 2017-08-04    |
-| CombinedWakeRF.h                | Poor                                             | 2017-08-04    |
+| CollimatorWakeProcess.h         | Poor                                             | 2017-08-08    |
+| CombinedWakeRF.h                | Poor, ref TWRFStructure::GetPhase doesn't exist  | 2017-08-08    |
 | ComplexDef.h                    | No documentation                                 | 2017-08-04    |
 | Complex.h                       | No documentation                                 | 2017-08-04    |
-| ComponentFrame.h                | Satisfactory                                     | 2017-08-04    |
-| ComponentIntegrator.h           | Satisfactory                                     | 2017-08-04    |
+| ComponentFrame.h                | Satisfactory                                     | 2017-08-08    |
+| ComponentIntegrator.h           | Satisfactory                                     | 2017-08-08    |
 | Components.h                    | Complete                                         | 2017-08-04    |
-| ComponentStepper.h              | Lots of weird numbers...                         | 2017-08-04    |
+| ComponentStepper.h              | Lots of weird numbers and symbols                | 2017-08-08    |
 | ComponentTracker.h              | Good                                             | 2017-08-07    |
 | CompositeMaterial.h             | Satisfactory                                     | 2017-08-07    |
 | ConstructSrot.h                 | Poor                                             | 2017-08-07    |
@@ -133,58 +133,58 @@ and shouldn't be altered
 | Drift.h                         | Good                                             | 2017-08-07    |
 | DynamicModel.h                  | Complete                                         | 2017-08-07    |
 | echo_ostream.h                  | Satisfactory                                     | 2017-08-07    |
-| ElasticScatter.h                |                                                  |               |
-| ElectronBunch.h                 |                                                  |               |
-| ElementRepository.h             |                                                  |               |
-| EMField.h                       |                                                  |               |
-| EquilibriumDistribution.h       |                                                  |               |
-| Erlang.h                        |                                                  |               |
-| FlukaCollimationOutput.h        |                                                  |               |
-| FrameModifier.h                 |                                                  |               |
-| GeneralRotation.h               |                                                  |               |
-| GeometryObject3D.h              |                                                  |               |
-| GeometryPatch.h                 |                                                  |               |
-| Geom.h                          |                                                  |               |
-| Histogram.h                     |                                                  |               |
-| HollowElectronLens.h            |                                                  |               |
-| HollowELensProcess.h            |                                                  |               |
-| HypGeom.h                       |                                                  |               |
-| IdentityRotation.h              |                                                  |               |
-| IndirectChannels.h              |                                                  |               |
-| InterpolatedApertures.h         |                                                  |               |
-| Interpolation.h                 |                                                  |               |
-| Klystron.h                      |                                                  |               |
-| Landau.h                        |                                                  |               |
-| LatticeFrame.h                  |                                                  |               |
-| LatticeFunctions.h              |                                                  |               |
-| LCAVintegrator.h                |                                                  |               |
-| LinearAlgebra.h                 |                                                  |               |
-| LinearFBSystem.h                |                                                  |               |
-| LinearParticleMap.h             |                                                  |               |
-| LogNorm.h                       |                                                  |               |
-| LossMapCollimationOutput.h      |                                                  |               |
-| MADInterface.h                  |                                                  |               |
-| MADKeyMap.h                     |                                                  |               |
-| MagnetMover.h                   |                                                  |               |
-| Marker.h                        |                                                  |               |
-| MaterialDatabase.h              |                                                  |               |
-| Material.h                      |                                                  |               |
-| MaterialMixture.h               |                                                  |               |
-| MatrixMaps.h                    |                                                  |               |
-| MatrixPrinter.h                 |                                                  |               |
-| Measurement.h                   |                                                  |               |
-| merlin_config.h                 |                                                  |               |
-| MerlinException.h               |                                                  |               |
-| MerlinIO.h                      |                                                  |               |
-| MerlinProfile.h                 |                                                  |               |
-| MLCG.h                          |                                                  |               |
-| ModelElement.h                  |                                                  |               |
-| Monitor.h                       |                                                  |               |
-| MonitorProcess.h                |                                                  |               |
-| MultiNormal.h                   |                                                  |               |
-| MultipoleField.h                |                                                  |               |
-| MuonBunch.h                     |                                                  |               |
-| MVCMatrix.h                     |                                                  |               |
+| ElasticScatter.h                | Good                                             | 2017-08-08    |
+| ElectronBunch.h                 | Satisfactory                                     | 2017-08-08    |
+| ElementRepository.h             | Good                                             | 2017-08-08    |
+| EMField.h                       | Excellent                                        | 2017-08-08    |
+| EquilibriumDistribution.h       | No documentation                                 | 2017-08-08    |
+| Erlang.h                        | No documentation                                 | 2017-08-08    |
+| FlukaCollimationOutput.h        | No documentation                                 | 2017-08-08    |
+| FrameModifier.h                 | Good                                             | 2017-08-08    |
+| GeneralRotation.h               | Good                                             | 2017-08-08    |
+| GeometryObject3D.h              | Good                                             | 2017-08-08    |
+| GeometryPatch.h                 | Satisfactory                                     | 2017-08-08    |
+| Geom.h                          | No documentation                                 | 2017-08-08    |
+| Histogram.h                     | No documentation                                 | 2017-08-08    |
+| HollowElectronLens.h            | Satisfactory                                     | 2017-08-08    |
+| HollowELensProcess.h            | Good                                             | 2017-08-08    |
+| HypGeom.h                       | No documentation                                 | 2017-08-08    |
+| IdentityRotation.h              | Good                                             | 2017-08-08    |
+| IndirectChannels.h              | Good                                             | 2017-08-08    |
+| InterpolatedApertures.h         | Satisfactory                                     | 2017-08-08    |
+| Interpolation.h                 | Satisfactory                                     | 2017-08-08    |
+| Klystron.h                      | Satisfactory                                     | 2017-08-08    |
+| Landau.h                        | No documentation                                 | 2017-08-08    |
+| LatticeFrame.h                  | Good                                             | 2017-08-08    |
+| LatticeFunctions.h              | No documentation                                 | 2017-08-08    |
+| LCAVintegrator.h                | No documentation                                 | 2017-08-08    |
+| LinearAlgebra.h                 | Satisfactory                                     | 2017-08-08    |
+| LinearFBSystem.h                | Poor                                             | 2017-08-08    |
+| LinearParticleMap.h             | Poor                                             | 2017-08-08    |
+| LogNorm.h                       | No documentation                                 | 2017-08-08    |
+| LossMapCollimationOutput.h      | Excellent                                        | 2017-08-08    |
+| MADInterface.h                  | Good                                             | 2017-08-08    |
+| MADKeyMap.h                     | Good                                             | 2017-08-08    |
+| MagnetMover.h                   | Good                                             | 2017-08-08    |
+| Marker.h                        | Good                                             | 2017-08-08    |
+| MaterialDatabase.h              | Satisfactory                                     | 2017-08-08    |
+| Material.h                      | Satisfactory                                     | 2017-08-08    |
+| MaterialMixture.h               | Satisfactory                                     | 2017-08-08    |
+| MatrixMaps.h                    | Good                                             | 2017-08-08    |
+| MatrixPrinter.h                 | Complete                                         | 2017-08-08    |
+| Measurement.h                   | Poor                                             | 2017-08-08    |
+| merlin_config.h                 | Complete                                         | 2017-08-08    |
+| MerlinException.h               | Excellent                                        | 2017-08-08    |
+| MerlinIO.h                      | Poor                                             | 2017-08-08    |
+| MerlinProfile.h                 | Poor                                             | 2017-08-08    |
+| MLCG.h                          | Poor                                             | 2017-08-08    |
+| ModelElement.h                  | Excellent                                        | 2017-08-08    |
+| Monitor.h                       | Good                                             | 2017-08-08    |
+| MonitorProcess.h                | Excellent                                        | 2017-08-08    |
+| MultiNormal.h                   | Poor                                             | 2017-08-08    |
+| MultipoleField.h                | Good                                             | 2017-08-08    |
+| MuonBunch.h                     | Good                                             | 2017-08-08    |
+| MVCMatrix.h                     | Good                                             | 2017-08-08    |
 | NANCheckProcess.h               |                                                  |               |
 | NegExp.h                        |                                                  |               |
 | Normal.h                        |                                                  |               |
