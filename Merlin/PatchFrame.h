@@ -25,6 +25,7 @@
 *
 * **NOTE** This his is a bit of a kludge, and there is probably a better
 *         way to do this!
+*/
 
 class PatchFrame : public ComponentFrame
 {
