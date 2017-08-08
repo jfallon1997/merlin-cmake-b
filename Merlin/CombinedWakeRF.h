@@ -33,7 +33,7 @@ public:
 	* Coupler wake fields -- we need x,y since this is not just a transverse
 	* (dipole) wake field sum of upstream + downstream coupler
 	*/
-	virtual Vector2D Wxy(double x, double y) const = 0; * kV/nC
+	virtual Vector2D Wxy(double x, double y) const = 0; // kV/nC
 
     /**
 	* Coupler RF kicks scaled kick equals
