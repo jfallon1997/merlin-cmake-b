@@ -15,24 +15,16 @@
 #include <iostream>
 #include <fstream>
 
-/**
-* Include for the Elastic scattering class
-*/
+// Include for the Elastic scattering class
 #include "DiffractiveScatter.h"
 
-/**
-* Include for the max() algorithm
-*/
+// Include for the max() algorithm
 #include <algorithm>
 
-/**
-* Include for make_pair
-*/
+// Include for make_pair
 #include <utility>
 
-/**
-* Include Constants
-*/
+// Include Constants
 #include "NumericalConstants.h"
 #include "PhysicalConstants.h"
 #include "PhysicalUnits.h"
@@ -47,75 +39,110 @@ namespace ParticleTracking
 /**
 * Sets the minimum t value for generation
 */
-void ppDiffractiveScatter::SetTMin(double tmin){ t_min = tmin; }
+void ppDiffractiveScatter::SetTMin(double tmin){
+    t_min = tmin;
+}
 
 /**
 * Sets the maximum t value for generation
 */
 
-void ppDiffractiveScatter::SetTMax(double tmax){ t_max = tmax; }
+void ppDiffractiveScatter::SetTMax(double tmax){
+    t_max = tmax;
+}
 
 /**
 * Sets the step size in t for the differential cross section generation
 */
-void ppDiffractiveScatter::SetTStepSize(double StepSize){ t_step = StepSize; }
+void ppDiffractiveScatter::SetTStepSize(double StepSize){
+    t_step = StepSize;
+}
 
 /**
 * Sets the minimum t value for generation
 */
-void ppDiffractiveScatter::SetXiMin(double min){ xi_min = min; }
+void ppDiffractiveScatter::SetXiMin(double min){
+    xi_min = min;
+}
 
 /**
 * Sets the maximum t value for generation
 */
-void ppDiffractiveScatter::SetXiMax(double max){ xi_max = max; }
+void ppDiffractiveScatter::SetXiMax(double max){
+    xi_max = max;
+}
 
 /**
 * Sets the step size in xi for the differential cross section generation
 */
-void ppDiffractiveScatter::SetXiStepSize(double StepSize){ xi_step = StepSize; }
+void ppDiffractiveScatter::SetXiStepSize(double StepSize){
+    xi_step = StepSize;
+}
 
 
 /**
 * Gets the currently set minimum t value
+* @return t_min Currently set minimum t value
 */
-double ppDiffractiveScatter::GetTMin() const { return t_min; }
+double ppDiffractiveScatter::GetTMin() const {
+    return t_min;
+}
 
 /**
 * Gets the currently set maximum t value
+* @return t_min Currently set maximum t value
 */
-double ppDiffractiveScatter::GetTMax() const { return t_max; }
+double ppDiffractiveScatter::GetTMax() const {
+    return t_max;
+}
 
 /**
 * Gets the currently set t step size
+* @return t_min Currently set t step size
 */
-double ppDiffractiveScatter::GetTStepSize() const { return t_step; }
+double ppDiffractiveScatter::GetTStepSize() const {
+    return t_step;
+}
 
 /**
-* Gets the currently set minimum t value
+* Gets the currently set minimum xi value
+* @return t_min Currently set minimum xi value
 */
-double ppDiffractiveScatter::GetXiMin() const { return xi_min; }
+double ppDiffractiveScatter::GetXiMin() const {
+    return xi_min;
+}
 
 /**
-* Gets the currently set maximum t value
+* Gets the currently set maximum xi value
+* @return t_min Currently set maximum xi value
 */
-double ppDiffractiveScatter::GetXiMax() const { return xi_max; }
+double ppDiffractiveScatter::GetXiMax() const {
+    return xi_max;
+}
 
 /**
 * Gets the currently set xi step size
+* @return t_min Currently set xi step size
 */
-double ppDiffractiveScatter::GetXiStepSize() const { return xi_step; }
+double ppDiffractiveScatter::GetXiStepSize() const {
+    return xi_step;
+}
 
 /**
 * Gets the Integrated elastic cross section
+* @return Integrated elastic cross section
 */
-double ppDiffractiveScatter::GetDiffractiveCrossSection() const { return SigDiffractive; }
+double ppDiffractiveScatter::GetDiffractiveCrossSection() const {
+    return SigDiffractive;
+}
 
 
 /**
 * Debug toggle - set to true or false to enable/disable debugging output
 */
-void ppDiffractiveScatter::EnableDebug(bool flag){ Debug = flag; }
+void ppDiffractiveScatter::EnableDebug(bool flag){
+    Debug = flag;
+}
 
 
 /**
@@ -129,7 +156,7 @@ void ppDiffractiveScatter::GenerateDistribution(double energy)
 		GenerateDsigDtDxi(energy);
 
 		/// Integrating differential cross section
-		IntegrateDsigDtDxi();
+		//IntegrateDsigDtDxi();
 
 		/// Diffractive Configuration generation done
 		Configured = true;
@@ -223,6 +250,58 @@ void  __attribute__((optimize("O3,unsafe-math-optimizations"))) ppDiffractiveSca
 	std::cout << "Nucleon Diffractive total cross section total "  << SigDiffractive * 1000.0 <<" mb" << std::endl;
 	std::cout << "Sixtrack Diffractive total cross section total " << 0.00068*log(0.15*s) * 1000.0 <<" mb" << std::endl;
 }
+
+/*
+void ppDiffractiveScatter::IntegrateDsigDtDxi()
+{
+    unsigned int nTSteps = UniformT.size();
+    unsigned int nXiSteps = UniformXi.size();
+    Sig.reserve(nTSteps*nXiSteps);
+//  unsigned int seekt = 0;
+    IntSig[0] = 0.0;
+    std::cout << "INTEGRATE\t" << nTSteps << "\t" << nXiSteps << std::endl;
+//  std::cout << Uniformt.size() << "\t" << DSig.size() << "\t" << IntSig.size() << std::endl;
+
+    for(unsigned int n = 1; n < nTSteps*nXiSteps; n++)
+    {
+        double CurrentStepIntegral = (DSig[n] * nTSteps);//fix this
+        SigDiffractive += CurrentStepIntegral;
+        IntSig.push_back(SigDiffractive);
+    }
+
+    std::cout << "Diffractive Cross section (with peak): " << SigDiffractive * 1000 << std::endl;
+    //Switch to normalized values to make our life easier
+    for(unsigned int n = 1; n < nTSteps; n++)
+    {
+        for(unsigned int m = 1; m < nXiSteps; m++)
+        {
+            IntSig[n][m] /= SigDiffractive;
+            //(*ofile) << UniformT[n] << "\t" << IntSig[n] << std::endl;
+        }
+    }
+
+    InversionInterpolation = new Interpolation(IntSig, UniformT);
+
+    for(unsigned int n=1; n <nSteps; n++)
+    {
+        double target = (static_cast<double>(n) / nSteps);
+
+        try
+        {
+            sig_gen = (*InversionInterpolation)(target);
+        }
+        catch(Interpolation::BadRange& error)
+        {
+            std::cerr << "Bad Range in interpolation - requested: " << error.value << " but valid range is from " << error.valid_range.lower << " to "  << error.valid_range.upper << std::endl;
+            std::cerr << "error in entry: " << n << " with total " << nSteps << std::endl;
+            throw;
+        }
+        Sig.push_back(sig_gen);
+    }
+
+    LinearInterpolation = new Interpolation(Sig, 0, (1.0/nSteps));    // Interpolation of equally spaced data points
+}
+*/
 
 /// Picks a t value from the generated distribution (including interpolation)
 double ppDiffractiveScatter::SelectT()

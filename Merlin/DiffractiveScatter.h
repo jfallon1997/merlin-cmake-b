@@ -1,19 +1,10 @@
 #ifndef _DiffractiveScatter_h_
 #define _DiffractiveScatter_h_
 
-/**
-* Include for the vector class for storing the cross section tables.
-*/
 #include <vector>
-
-/**
-* Include for complex numbers
-*/
 #include <complex>
 
-/**
-* Include for the interpolation classes, to interpolate cross section values.
-*/
+// Include for interpolating cross section values.
 #include "Interpolation.h"
 
 namespace ParticleTracking
@@ -216,7 +207,7 @@ private:
 //s of the interaction
 	double ss;
 
-	/**
+	/*
 	*
 	*	Scattering Functions
 	*

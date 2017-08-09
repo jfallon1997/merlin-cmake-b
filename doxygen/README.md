@@ -233,16 +233,16 @@ and shouldn't be altered
 | RNG.h                           | Poor                                             | 2017-08-08    |
 | Rot3Drep.h                      | Good                                             | 2017-08-08    |
 | Rotation3D.h                    | Good, but suspiciously similar to Rot3Drep.h...  | 2017-08-08    |
-| RotationMatrix.h                |                                                  |               |
-| RotationType.h                  |                                                  |               |
-| RTMap.h                         |                                                  |               |
-| RWChannelState.h                |                                                  |               |
-| ScatteringModel.h               |                                                  |               |
-| ScatteringModelsMerlin.h        |                                                  |               |
-| ScatteringProcess.h             |                                                  |               |
-| ScatterProton.h                 |                                                  |               |
-| SectorBend.h                    |                                                  |               |
-| SequenceFrame.h                 |                                                  |               |
+| RotationMatrix.h                | Poor                                             | 2017-08-08    |
+| RotationType.h                  | Complete                                         | 2017-08-08    |
+| RTMap.h                         | Satisfactory                                     | 2017-08-08    |
+| RWChannelState.h                | No documentation                                 | 2017-08-08    |
+| ScatteringModel.h               | Poor                                             | 2017-08-08    |
+| ScatteringModelsMerlin.h        | Good                                             | 2017-08-08    |
+| ScatteringProcess.h             | Poor                                             | 2017-08-08    |
+| ScatterProton.h                 | Complete                                         | 2017-08-08    |
+| SectorBend.h                    | Satisfactory                                     | 2017-08-08    |
+| SequenceFrame.h                 | Satisfactory                                     | 2017-08-08    |
 | SimpleApertures.h               |                                                  |               |
 | SimpleATL.h                     |                                                  |               |
 | SimpleDrift.h                   |                                                  |               |
