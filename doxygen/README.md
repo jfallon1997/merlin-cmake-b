@@ -6,16 +6,19 @@ These instructions will (in the future) tell you how to generate your own
 ## Viewing the Documentation
 
 If you wish to view pre-generated documentation, they are *temporarily*
-being hosted at [http://users.ox.ac.uk/~scat6524/merlin-doxygen/html](
-http://users.ox.ac.uk/~scat6524/merlin-doxygen/html/index.html)
+being hosted at <http://users.ox.ac.uk/~scat6524/merlin-doxygen/html> and a PDF
+copy at <http://users.ox.ac.uk/~scat6524/merlin-doxygen/latex/refman.pdf>
 
-To compile and view your own documentation, download all of the files in the
-`doxygen` folder, run `doxygen Merlin.Doxyfile`, then open a page (e.g.
-`index.html`) in `generated-docs/html`
+To compile documentation yourself, download all of the files in the `doxygen`
+folder, run `doxygen Merlin.Doxyfile`, then open a page (e.g. `index.html`) in
+`generated-docs/html`
 
 Man-pages and pdf-diagrams can be found and viewed in a similar manner, under
 the folders `doxygen/generated-docs/man/man3` and 
 `doxygen/generated-docs/latex` respectively. 
+
+To generate the PDF manual, `cd` into the `latex` sub-directory and run `make`.
+This will generate `refman.pdf`.
 
 *Note: to view the man pages, run the command*
 `man $PATH_TO_MAN_PAGES/the_page.3` or `man ,/the_page.3` *if you are in the 
@@ -290,13 +293,13 @@ and shouldn't be altered
 | TransRFfield.h                  | Good                                             | 2017-08-11    |
 | TransRFIntegrator.h             | No documentation                                 | 2017-08-11    |
 | TransverseRFStructure.h         | Satisfactory                                     | 2017-08-11    |
-| TTrackSim.h                     |                                                  |               |
-| TWRFfield.h                     |                                                  |               |
-| TWRFStructure.h                 |                                                  |               |
-| Uniform.h                       |                                                  |               |
-| utils.h                         |                                                  |               |
-| VectorTags.h                    |                                                  |               |
-| WakeFieldProcess.h              |                                                  |               |
-| WakePotentials.h                |                                                  |               |
-| Weibull.h                       |                                                  |               |
-| XTFFInterface.h                 |                                                  |               |
+| TTrackSim.h                     | Good                                             | 2017-08-11    |
+| TWRFfield.h                     | Good                                             | 2017-08-11    |
+| TWRFStructure.h                 | Good                                             | 2017-08-11    |
+| Uniform.h                       | Poor                                             | 2017-08-11    |
+| utils.h                         | Poor                                             | 2017-08-11    |
+| VectorTags.h                    | Good                                             | 2017-08-11    |
+| WakeFieldProcess.h              | Poor                                             | 2017-08-11    |
+| WakePotentials.h                | Poor                                             | 2017-08-11    |
+| Weibull.h                       | No documentation                                 | 2017-08-11    |
+| XTFFInterface.h                 | Satisfactory                                     | 2017-08-11    |
