@@ -243,53 +243,53 @@ and shouldn't be altered
 | ScatterProton.h                 | Complete                                         | 2017-08-08    |
 | SectorBend.h                    | Satisfactory                                     | 2017-08-08    |
 | SequenceFrame.h                 | Satisfactory                                     | 2017-08-08    |
-| SimpleApertures.h               |                                                  |               |
-| SimpleATL.h                     |                                                  |               |
-| SimpleDrift.h                   |                                                  |               |
-| SimpleSolenoid.h                |                                                  |               |
-| SliceMacroParticle.h            |                                                  |               |
-| SMPBunchConstructor.h           |                                                  |               |
-| SMPBunch.h                      |                                                  |               |
-| SMPBunchProcess.h               |                                                  |               |
-| SMPComponentTracker.h           |                                                  |               |
-| SMPStdIntegrators.h             |                                                  |               |
-| SMPTracker.h                    |                                                  |               |
-| SMPTransform3D.h                |                                                  |               |
-| SMPWakeFieldProcess.h           |                                                  |               |
-| Solenoid.h                      |                                                  |               |
-| Space2D.h                       |                                                  |               |
-| Space3D.h                       |                                                  |               |
-| SpinParticleProcess.h           |                                                  |               |
-| StableOrbits.h                  |                                                  |               |
-| StandardMultipoles.h            |                                                  |               |
-| StdIntegrators.h                |                                                  |               |
-| StringPattern.h                 |                                                  |               |
-| SupportStructure.h              |                                                  |               |
-| svdcmp.h                        |                                                  |               |
-| SWRFfield.h                     |                                                  |               |
-| SWRFStructure.h                 |                                                  |               |
-| SymplecticIntegrators.h         |                                                  |               |
-| SynchRadParticleProcess.h       |                                                  |               |
-| TaperedCollimatorPotentials.h   |                                                  |               |
-| tblas.h                         |                                                  |               |
-| TComponentFrame.h               |                                                  |               |
-| TCovMtrx.h                      |                                                  |               |
-| TemplateComponents.h            |                                                  |               |
-| Timing.h                        |                                                  |               |
-| TLAS.h                          |                                                  |               |
-| TLASimp.h                       |                                                  |               |
-| TMatrixLib.h                    |                                                  |               |
-| TrackingOutputAV.h              |                                                  |               |
-| TrackingSimulation.h            |                                                  |               |
-| TransferMatrix.h                |                                                  |               |
-| Transform2D.h                   |                                                  |               |
-| Transform3D.h                   |                                                  |               |
-| Transformable.h                 |                                                  |               |
-| TransportMatrix.h               |                                                  |               |
-| TransportRMap.h                 |                                                  |               |
-| TransRFfield.h                  |                                                  |               |
-| TransRFIntegrator.h             |                                                  |               |
-| TransverseRFStructure.h         |                                                  |               |
+| SimpleApertures.h               | Satisfactory                                     | 2017-08-10    |
+| SimpleATL.h                     | Satisfactory                                     | 2017-08-10    |
+| SimpleDrift.h                   | Complete                                         | 2017-08-10    |
+| SimpleSolenoid.h                | No documentation                                 | 2017-08-10    |
+| SliceMacroParticle.h            | Poor                                             | 2017-08-10    |
+| SMPBunchConstructor.h           | Satisfactory                                     | 2017-08-10    |
+| SMPBunch.h                      | Satisfactory                                     | 2017-08-10    |
+| SMPBunchProcess.h               | No documentation                                 | 2017-08-10    |
+| SMPComponentTracker.h           | Complete                                         | 2017-08-10    |
+| SMPStdIntegrators.h             | Poor                                             | 2017-08-10    |
+| SMPTracker.h                    | No documentation                                 | 2017-08-10    |
+| SMPTransform3D.h                | Poor                                             | 2017-08-10    |
+| SMPWakeFieldProcess.h           | Poor                                             | 2017-08-10    |
+| Solenoid.h                      | Good                                             | 2017-08-10    |
+| Space2D.h                       | Satisfactory                                     | 2017-08-10    |
+| Space3D.h                       | Satisfactory                                     | 2017-08-10    |
+| SpinParticleProcess.h           | Poor                                             | 2017-08-10    |
+| StableOrbits.h                  | No documentation                                 | 2017-08-10    |
+| StandardMultipoles.h            | Satisfactory                                     | 2017-08-10    |
+| StdIntegrators.h                | No documentation                                 | 2017-08-10    |
+| StringPattern.h                 | Satisfactory                                     | 2017-08-10    |
+| SupportStructure.h              | Good                                             | 2017-08-10    |
+| svdcmp.h                        | No documentation                                 | 2017-08-10    |
+| SWRFfield.h                     | Satisfactory                                     | 2017-08-10    |
+| SWRFStructure.h                 | Satisfactory                                     | 2017-08-10    |
+| SymplecticIntegrators.h         | No documentation                                 | 2017-08-10    |
+| SynchRadParticleProcess.h       | Good                                             | 2017-08-10    |
+| TaperedCollimatorPotentials.h   | No documentation                                 | 2017-08-10    |
+| tblas.h                         | Poor documentation, and the code wants a rewrite | 2017-08-10    |
+| TComponentFrame.h               | Poor                                             | 2017-08-10    |
+| TCovMtrx.h                      | Poor                                             | 2017-08-10    |
+| TemplateComponents.h            | Poor                                             | 2017-08-10    |
+| Timing.h                        | No documentation                                 | 2017-08-10    |
+| TLAS.h                          | Poor                                             | 2017-08-10    |
+| TLASimp.h                       | Poor, and a lot of code in header file (move it?)| 2017-08-10    |
+| TMatrixLib.h                    | Satisfactory                                     | 2017-08-10    |
+| TrackingOutputAV.h              | Poor                                             | 2017-08-11    |
+| TrackingSimulation.h            | Good                                             | 2017-08-11    |
+| TransferMatrix.h                | No documentation                                 | 2017-08-11    |
+| Transform2D.h                   | Good                                             | 2017-08-11    |
+| Transform3D.h                   | Satisfactory                                     | 2017-08-11    |
+| Transformable.h                 | Satisfactory                                     | 2017-08-11    |
+| TransportMatrix.h               | Good                                             | 2017-08-11    |
+| TransportRMap.h                 | No documentation                                 | 2017-08-11    |
+| TransRFfield.h                  | Good                                             | 2017-08-11    |
+| TransRFIntegrator.h             | No documentation                                 | 2017-08-11    |
+| TransverseRFStructure.h         | Satisfactory                                     | 2017-08-11    |
 | TTrackSim.h                     |                                                  |               |
 | TWRFfield.h                     |                                                  |               |
 | TWRFStructure.h                 |                                                  |               |
