@@ -37,4 +37,76 @@ Enable tests with
     make
     make test
 
+## Source Code to investigate
 
+~~~~~~~~~~~~~~~~~~~~~~
+cd merlin-cmake/Merlin
+grep -rnohl "TO DO" 
+./SMPStdIntegrators.cpp
+./TransRFIntegrator.cpp
+./SMPBunch.cpp
+
+grep -rnohl "TODO" 
+./HollowELensProcess.cpp
+./TransRFfield.h
+./ProtonBunch.cpp
+./InterpolatedApertures.h
+./LinearParticleMap.cpp
+./MatrixMaps.cpp
+./ApertureConfiguration.cpp
+./ParticleBunch.cpp
+
+grep -rnohl "to do" 
+./Collimator.cpp
+./CrabMarker.cpp
+./PatchFrame.h
+./Marker.cpp
+./TMatrixLib.h
+./ModelElement.h
+./ProtonBunch.cpp
+./Bunch.h
+./Drift.cpp
+./SMPBunch.cpp
+./Klystron.h
+./BunchFilter.cpp
+./HollowElectronLens.cpp
+./EMField.cpp
+./MagnetMover.cpp
+./CollimateParticleProcess.cpp
+
+grep -rnohl "FIX" 
+./ScatteringModelsMerlin.cpp
+./Marker.cpp
+./MADInterface.cpp
+./ProtonBunch.cpp
+./Marker.h
+./RMap.h
+
+grep -rnohl "fix" 
+./CollimateParticleProcess.h
+./ScatteringModelsMerlin.cpp
+./PSmoments.h
+./XTFFInterface.cpp
+./EquilibriumDistribution.cpp
+./SymplecticIntegrators.cpp
+./MonitorProcess.h
+./TransferMatrix.cpp
+./OPFormat.h
+./StdIntegrators.cpp
+./TransportIntegrators.cpp
+./LatticeFunctions.cpp
+./MADInterface.cpp
+./ProtonBunch.cpp
+./Range.h
+./ApertureConfiguration.cpp
+./MultiNormal.h
+./MonitorProcess.cpp
+./MADInterface.h
+./MVCMatrix.h
+./ScatteringModelsMerlin.h
+./CollimateParticleProcess.cpp
+./ParticleBunch.cpp
+./DiffractiveScatter.cpp
+./TrackingOutputAV.cpp
+
+~~~~~~~~~~~~~~~~~~~~~~
