@@ -7,7 +7,8 @@ These instructions are give for you to generate your own `doxygen` files for
 
 If you wish to view pre-generated documentation, they are *temporarily*
 being hosted at <http://users.ox.ac.uk/~scat6524/merlin-doxygen/html> and a PDF
-copy at <http://users.ox.ac.uk/~scat6524/merlin-doxygen/latex/refman.pdf>
+copy at <https://github.com/jfallon1997/merlin-cmake-b/releases> as well as
+<http://users.ox.ac.uk/~scat6524/merlin-doxygen/latex/refman.pdf>
 
 To compile documentation yourself, download all of the files in the `doxygen`
 folder, run `doxygen Merlin.Doxyfile`, then open a page (e.g. `index.html`) in
