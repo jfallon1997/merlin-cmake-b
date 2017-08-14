@@ -41,12 +41,12 @@ Enable tests with
 
 ~~~~~~~~~~~~~~~~~~~~~~
 cd merlin-cmake/Merlin
-grep -rnohl "TO DO" 
+$ grep -rnohl "TO DO" 
 ./SMPStdIntegrators.cpp
 ./TransRFIntegrator.cpp
 ./SMPBunch.cpp
 
-grep -rnohl "TODO" 
+$ grep -rnohl "TODO" 
 ./HollowELensProcess.cpp
 ./TransRFfield.h
 ./ProtonBunch.cpp
@@ -56,7 +56,7 @@ grep -rnohl "TODO"
 ./ApertureConfiguration.cpp
 ./ParticleBunch.cpp
 
-grep -rnohl "to do" 
+$ grep -rnohl "to do" 
 ./Collimator.cpp
 ./CrabMarker.cpp
 ./PatchFrame.h
@@ -74,7 +74,7 @@ grep -rnohl "to do"
 ./MagnetMover.cpp
 ./CollimateParticleProcess.cpp
 
-grep -rnohl "FIX" 
+$ grep -rnohl "FIX" 
 ./ScatteringModelsMerlin.cpp
 ./Marker.cpp
 ./MADInterface.cpp
@@ -82,7 +82,7 @@ grep -rnohl "FIX"
 ./Marker.h
 ./RMap.h
 
-grep -rnohl "fix" 
+$ grep -rnohl "fix" 
 ./CollimateParticleProcess.h
 ./ScatteringModelsMerlin.cpp
 ./PSmoments.h
