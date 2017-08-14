@@ -28,7 +28,7 @@ public:
 	ppDiffractiveScatter(): Configured(false),Debug(false) {}
 	~ppDiffractiveScatter();
 	/**
-	* Generates the requried differential cross sections and integrates for the specified energy
+	* Generates the required differential cross sections and integrates for the specified energy
 	*/
 	void GenerateDistribution(double energy);
 

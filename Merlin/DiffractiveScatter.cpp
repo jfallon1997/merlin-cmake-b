@@ -24,7 +24,6 @@
 // Include for make_pair
 #include <utility>
 
-// Include Constants
 #include "NumericalConstants.h"
 #include "PhysicalConstants.h"
 #include "PhysicalUnits.h"

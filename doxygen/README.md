@@ -119,7 +119,7 @@ and shouldn't be altered
 | ComponentFrame.h                | Satisfactory                                     | 2017-08-08    |
 | ComponentIntegrator.h           | Satisfactory                                     | 2017-08-08    |
 | Components.h                    | Complete                                         | 2017-08-04    |
-| ComponentStepper.h              | Lots of weird numbers and symbols                | 2017-08-08    |
+| ComponentStepper.h              | Lots of weird numbers and symbols (and in .cpp)  | 2017-08-08    |
 | ComponentTracker.h              | Good                                             | 2017-08-07    |
 | CompositeMaterial.h             | Satisfactory                                     | 2017-08-07    |
 | ConstructSrot.h                 | Poor                                             | 2017-08-07    |
