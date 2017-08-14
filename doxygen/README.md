@@ -1,7 +1,7 @@
 # Merlin Doxygen Generation
 
-These instructions will (in the future) tell you how to generate your own
-`doxygen` files for `Merlin`
+These instructions are give for you to generate your own `doxygen` files for
+`Merlin`
 
 ## Viewing the Documentation
 
