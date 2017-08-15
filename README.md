@@ -39,6 +39,14 @@ Enable tests with
 
 ## Source Code to investigate
 
+### `SpinParticleProcess.cpp`
+
+Why is `SpinParticleBunch::ApplyTransformation (const Transform3D& t)` of type
+bool? Furthermore, the code is self described inefficient...
+
+
+### Misc.
+
 ~~~~~~~~~~~~~~~~~~~~~~
 cd merlin-cmake/Merlin
 $ grep -rnohl "TO DO" 
@@ -108,5 +116,18 @@ $ grep -rnohl "fix"
 ./ParticleBunch.cpp
 ./DiffractiveScatter.cpp
 ./TrackingOutputAV.cpp
+
+$ grep -rnohl "no-no" 
+./TMatrixLib.h
+./tblas.h
+
+$ grep -rnohl "gcc"
+./TMatrixLib.h
+./WakeFieldProcess.cpp
+./.WakeFieldProcess.cpp.swp
+./AcceleratorModel.cpp
+./CollimatorTable.h
+./CouplerWakeFieldProcess.cpp
+
 
 ~~~~~~~~~~~~~~~~~~~~~~
