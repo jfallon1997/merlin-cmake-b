@@ -13,7 +13,6 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include <cassert>
-// LatticeFrame
 #include "LatticeFrame.h"
 
 #define VALID_SFRAME(sframe) \

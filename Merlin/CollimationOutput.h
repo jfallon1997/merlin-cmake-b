@@ -11,6 +11,7 @@
 // Last Edited: 20.07.15 HR
 //
 /////////////////////////////////////////////////////////////////////////
+
 #ifndef CollimationOutput_h
 #define CollimationOutput_h 1
 

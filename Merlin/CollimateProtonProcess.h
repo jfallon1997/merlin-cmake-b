@@ -11,6 +11,7 @@
 // Last Edited: 03.11.15 HR
 //
 /////////////////////////////////////////////////////////////////////////
+
 #ifndef CollimateProtonProcess_h
 #define CollimateProtonProcess_h 1
 

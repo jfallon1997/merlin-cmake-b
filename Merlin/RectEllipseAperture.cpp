@@ -1,6 +1,7 @@
 #include "RectEllipseAperture.h"
 #include <iostream>
 #include <cstdlib>
+
 /*
 * Checks if a particle is within a RectEllipseAperture type
 * Returns true if the point (x,y,z) is within the aperture.

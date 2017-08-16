@@ -1,6 +1,3 @@
-
-
-
 #ifndef Space3D_h
 #define Space3D_h 1
 

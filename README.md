@@ -117,17 +117,18 @@ $ grep -rnohl "fix"
 ./DiffractiveScatter.cpp
 ./TrackingOutputAV.cpp
 
-$ grep -rnohl "no-no" 
+$ grep -rnohli "no-no" 
 ./TMatrixLib.h
 ./tblas.h
 
-$ grep -rnohl "gcc"
+$ grep -rnohli "gcc"
 ./TMatrixLib.h
 ./WakeFieldProcess.cpp
 ./.WakeFieldProcess.cpp.swp
 ./AcceleratorModel.cpp
 ./CollimatorTable.h
 ./CouplerWakeFieldProcess.cpp
+
 
 
 ~~~~~~~~~~~~~~~~~~~~~~

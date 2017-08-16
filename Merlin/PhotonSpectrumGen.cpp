@@ -1,3 +1,4 @@
+//
 // GeSynRad.C, GEnerator for SYNchrotron RADiation, distribution version in C++
 // by Helmut Burkhardt, CERN
 // there is also a FORTRAN equivalent (dsynrad.f)

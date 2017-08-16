@@ -11,6 +11,7 @@
 // Last Edited: 22.09.15 HR + ASG
 //
 /////////////////////////////////////////////////////////////////////////
+
 #ifndef CCFailureProcess_h
 #define CCFailureProcess_h 1
 

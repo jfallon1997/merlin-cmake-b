@@ -2,9 +2,7 @@
 #include <algorithm>
 #include "utils.h"
 
-// RingDeltaTProcess
 #include "RingDeltaTProcess.h"
-// SectorBend
 #include "SectorBend.h"
 
 namespace
