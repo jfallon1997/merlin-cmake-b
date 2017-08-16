@@ -29,17 +29,17 @@ class ArbSpacedData : public Interpolation::Method
 {
 public:
 
-	struct Data
-	{
-		double x,y;
-		Data(double x1=0, double y1=0) : x(x1),y(y1) {}
-	};
+    struct Data
+    {
+        double x,y;
+        Data(double x1=0, double y1=0) : x(x1),y(y1) {}
+    };
 
-	ArbSpacedData(const vector<double>& xvals, const vector<double>& yvals);
-	virtual double ValueAt(double) const;
+    ArbSpacedData(const vector<double>& xvals, const vector<double>& yvals);
+    virtual double ValueAt(double) const;
 
 private:
-	vector<Data> itsData;
+    vector<Data> itsData;
 };
 
 // Method used for equally space data
@@ -48,68 +48,68 @@ class EqualSpacedData : public Interpolation::Method
 {
 public:
 
-	EqualSpacedData(const vector<double> yv, double xm, double delta)
-		: yvals(yv),xmin(xm),xmax(xm+(yv.size()-1)*delta),dx(delta)
-	{
-		assert(dx>0);
-	}
+    EqualSpacedData(const vector<double> yv, double xm, double delta)
+        : yvals(yv),xmin(xm),xmax(xm+(yv.size()-1)*delta),dx(delta)
+    {
+        assert(dx>0);
+    }
 
-	double ValueAt(double x) const;
+    double ValueAt(double x) const;
 
 private:
-	vector<double> yvals;
-	double xmin;
-	double xmax;
-	double dx;
+    vector<double> yvals;
+    double xmin;
+    double xmax;
+    double dx;
 };
 
 // Function  used by sort() for ArbSpacedData::Data
 //
 inline bool sort_x(const ArbSpacedData::Data& d1, const ArbSpacedData::Data& d2)
 {
-	return d1.x<d2.x;
+    return d1.x<d2.x;
 }
 
 // Class ArbSpacedData implementation
 //
 ArbSpacedData::ArbSpacedData(const vector<double>& xvals, const vector<double>& yvals)
-	: itsData()
+    : itsData()
 {
-	assert(xvals.size()==yvals.size());
-	itsData.reserve(xvals.size());
-	for(size_t i=0; i<xvals.size(); i++)
-	{
-		itsData.push_back(Data(xvals[i],yvals[i]));
-	}
-	sort(itsData.begin(),itsData.end(),sort_x);
+    assert(xvals.size()==yvals.size());
+    itsData.reserve(xvals.size());
+    for(size_t i=0; i<xvals.size(); i++)
+    {
+        itsData.push_back(Data(xvals[i],yvals[i]));
+    }
+    sort(itsData.begin(),itsData.end(),sort_x);
 }
 
 double ArbSpacedData::ValueAt(double x) const
 {
-	if(x<itsData.front().x || x>itsData.back().x)
-	{
-		throw Interpolation::BadRange(x,FloatRange(itsData.front().x,itsData.back().x));
-	}
+    if(x<itsData.front().x || x>itsData.back().x)
+    {
+        throw Interpolation::BadRange(x,FloatRange(itsData.front().x,itsData.back().x));
+    }
 
-	// locate segment by binary search
-	size_t ju=itsData.size(),jl=0,jm;
+    // locate segment by binary search
+    size_t ju=itsData.size(),jl=0,jm;
 
-	while((ju-jl)>1)
-	{
-		jm = (ju+jl)>>1;
-		if(x>itsData[jm].x)
-		{
-			jl=jm;
-		}
-		else
-		{
-			ju=jm;
-		}
-	}
+    while((ju-jl)>1)
+    {
+        jm = (ju+jl)>>1;
+        if(x>itsData[jm].x)
+        {
+            jl=jm;
+        }
+        else
+        {
+            ju=jm;
+        }
+    }
 
-	// use linear interpolation to return value
-	double m = (itsData[jl+1].y-itsData[jl].y)/(itsData[jl+1].x-itsData[jl].x);
-	return itsData[jl].y+(x-itsData[jl].x)*m;
+    // use linear interpolation to return value
+    double m = (itsData[jl+1].y-itsData[jl].y)/(itsData[jl+1].x-itsData[jl].x);
+    return itsData[jl].y+(x-itsData[jl].x)*m;
 }
 
 // Class EqualSpacedData implementation
@@ -117,49 +117,49 @@ double ArbSpacedData::ValueAt(double x) const
 
 double EqualSpacedData::ValueAt(double x) const
 {
-	// note that we use extrapolation here if x is out of range
-	size_t n;
-	if(x<xmin)
-	{
-		n=0;
-	}
-	else if(x>xmax)
-	{
-		n=yvals.size()-2;
-	}
-	else
-	{
-		n = (x-xmin)/dx;
-	}
+    // note that we use extrapolation here if x is out of range
+    size_t n;
+    if(x<xmin)
+    {
+        n=0;
+    }
+    else if(x>xmax)
+    {
+        n=yvals.size()-2;
+    }
+    else
+    {
+        n = (x-xmin)/dx;
+    }
 
-	double m = (yvals[n+1]-yvals[n])/dx;
-	double x0 = xmin+dx*n;
-	return yvals[n]+m*(x-x0);
+    double m = (yvals[n+1]-yvals[n])/dx;
+    double x0 = xmin+dx*n;
+    return yvals[n]+m*(x-x0);
 }
 
 }
 
 // exception
 Interpolation::BadRange::BadRange(double x, const FloatRange& r)
-	: MerlinException(""),value(x),valid_range(r)
+    : MerlinException(""),value(x),valid_range(r)
 {
-	ostringstream buf;
-	buf<<value<<" not in interpolation range ("<<r.lower<<","<<r.upper<<')';
-	SetMsg(buf.str());
+    ostringstream buf;
+    buf<<value<<" not in interpolation range ("<<r.lower<<","<<r.upper<<')';
+    SetMsg(buf.str());
 }
 
 Interpolation::Interpolation(const vector<double>& yvals, double xmin, double dx)
-	: itsMethod(new EqualSpacedData(yvals,xmin,dx))
+    : itsMethod(new EqualSpacedData(yvals,xmin,dx))
 {}
 
 Interpolation::Interpolation(const std::vector<double>& xv, const vector<double>& yv)
-	: itsMethod(new ArbSpacedData(xv,yv))
+    : itsMethod(new ArbSpacedData(xv,yv))
 {}
 
 Interpolation::~Interpolation()
 {
-	if(itsMethod)
-	{
-		delete itsMethod;
-	}
+    if(itsMethod)
+    {
+        delete itsMethod;
+    }
 }

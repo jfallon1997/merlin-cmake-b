@@ -15,48 +15,48 @@
 #include "CorrectorWinding.h"
 
 CorrectorWinding::CorrectorWinding (RectMultipole& aMagnet)
-	: ModelElement(aMagnet.GetName()),magnet(&aMagnet)
+    : ModelElement(aMagnet.GetName()),magnet(&aMagnet)
 {}
 
 void CorrectorWinding::SetBx (double value)
 {
-	if((*magnet).GetField().GetFieldScale()==0)
-	{
-		return;
-	}
+    if((*magnet).GetField().GetFieldScale()==0)
+    {
+        return;
+    }
 
-	double l=magnet->GetLength();
-	(*magnet).GetField().SetComponent(0,0,value/l);
+    double l=magnet->GetLength();
+    (*magnet).GetField().SetComponent(0,0,value/l);
 }
 
 void CorrectorWinding::SetBy (double value)
 {
-	if((*magnet).GetField().GetFieldScale()==0)
-	{
-		return;
-	}
+    if((*magnet).GetField().GetFieldScale()==0)
+    {
+        return;
+    }
 
-	double l=magnet->GetLength();
-	(*magnet).GetField().SetComponent(0,value/l,0);
+    double l=magnet->GetLength();
+    (*magnet).GetField().SetComponent(0,value/l,0);
 }
 
 double CorrectorWinding::GetBx () const
 {
-	return (*magnet).GetField().GetComponent(0).imag()*magnet->GetLength();
+    return (*magnet).GetField().GetComponent(0).imag()*magnet->GetLength();
 }
 
 double CorrectorWinding::GetBy () const
 {
-	return (*magnet).GetField().GetComponent(0).real()*magnet->GetLength();
+    return (*magnet).GetField().GetComponent(0).real()*magnet->GetLength();
 }
 
 const string& CorrectorWinding::GetType () const
 {
-	_TYPESTR(CorrectorWinding)
+    _TYPESTR(CorrectorWinding)
 }
 
 ModelElement* CorrectorWinding::Copy () const
 {
-	return new CorrectorWinding(*this);
+    return new CorrectorWinding(*this);
 }
 

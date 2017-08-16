@@ -6,7 +6,7 @@
 //
 // Copyright: see Merlin/copyright.txt
 //
-// Created:		21.09.15 Haroon Rafique
+// Created:     21.09.15 Haroon Rafique
 // Modified:
 // Last Edited: 21.09.15 Haroon Rafique
 //
@@ -18,38 +18,38 @@
 const int CrabMarker::ID = UniqueIndex();
 
 CrabMarker::CrabMarker (const string& id, double len)
-	: Drift(id,len)
+    : Drift(id,len)
 {}
 
 CrabMarker::CrabMarker (const string& id, double len, double mux, double muy)
-	: Drift(id,len)
+    : Drift(id,len)
 {
-	SetMuX(mux);
-	SetMuY(muy);
+    SetMuX(mux);
+    SetMuY(muy);
 }
 
 const string& CrabMarker::GetType () const
 {
-	_TYPESTR(CrabMarker);
+    _TYPESTR(CrabMarker);
 }
 
 int CrabMarker::GetIndex () const
 {
-	return  ID;
+    return  ID;
 }
 
 void CrabMarker::PrepareTracker (ComponentTracker& aTracker)
 {
-	_PREPTRACK(aTracker,Drift);
+    _PREPTRACK(aTracker,Drift);
 }
 
 void CrabMarker::RotateY180 ()
 {
-	// nothing to do
+    // nothing to do
 }
 
 ModelElement* CrabMarker::Copy () const
 {
-	return new CrabMarker(*this);
+    return new CrabMarker(*this);
 }
 

@@ -27,15 +27,15 @@ struct MatchID
 {
 public:
 
-	MatchID(const string& idpat,bool negate=false) : pattern(idpat) {}
-	bool operator()(const ModelElement* elmnt) const
-	{
-		bool rv = pattern(elmnt->GetQualifiedName());
-		return neg ? !rv : rv;
-	}
+    MatchID(const string& idpat,bool negate=false) : pattern(idpat) {}
+    bool operator()(const ModelElement* elmnt) const
+    {
+        bool rv = pattern(elmnt->GetQualifiedName());
+        return neg ? !rv : rv;
+    }
 private:
-	bool neg;
-	StringPattern pattern;
+    bool neg;
+    StringPattern pattern;
 };
 
 } // end anonymous namespace
@@ -45,23 +45,23 @@ template class std::set< ModelElement* >;
 
 ElementRepository::~ElementRepository ()
 {
-	for_each(theElements.begin(),theElements.end(),deleter<ModelElement>());
+    for_each(theElements.begin(),theElements.end(),deleter<ModelElement>());
 }
 
 bool ElementRepository::Add (ModelElement* anElement)
 {
-	pair<iterator,bool> rv = theElements.insert(anElement);
-	return rv.second;
+    pair<iterator,bool> rv = theElements.insert(anElement);
+    return rv.second;
 }
 
 size_t ElementRepository::Count (const std::string& id) const
 {
-	return count_if(theElements.begin(),theElements.end(),MatchID(id));
+    return count_if(theElements.begin(),theElements.end(),MatchID(id));
 }
 
 size_t ElementRepository::Find (const std::string& id, std::vector<ModelElement*>& elements)
 {
-	remove_copy_if(theElements.begin(),theElements.end(),
-	               back_inserter(elements),MatchID(id,true));
-	return elements.size();
+    remove_copy_if(theElements.begin(),theElements.end(),
+                   back_inserter(elements),MatchID(id,true));
+    return elements.size();
 }

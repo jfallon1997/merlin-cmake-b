@@ -12,26 +12,26 @@ using namespace PhysicalUnits;
 
 double MuonBunch::GetParticleMass() const
 {
-	return MuonMass;
+    return MuonMass;
 }
 
 double MuonBunch::GetParticleMassMeV() const
 {
-	return MuonMassMeV;
+    return MuonMassMeV;
 }
 
 double MuonBunch::GetParticleLifetime() const
 {
-	return MuonLifetime;
+    return MuonLifetime;
 }
 
 bool MuonBunch::IsStable() const
 {
-	return false;
+    return false;
 }
 /*
 int MuonBunch::Scatter(PSvector& p,double x,double E0,const Aperture* ap)
 {
-	return 0;
+    return 0;
 } //End of ScatterMuon
 */

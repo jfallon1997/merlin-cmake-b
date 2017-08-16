@@ -24,141 +24,141 @@
 #include "ComponentTracker.h"
 #include "Marker.h"
 
-//	The only default integrator supplied is that for a
-//	Marker element, which are zero-length pseudo-components.
-//	The default integrator does nothing.
+//  The only default integrator supplied is that for a
+//  Marker element, which are zero-length pseudo-components.
+//  The default integrator does nothing.
 
 class DefaultMarkerIntegrator : public ComponentIntegrator
 {
 public:
 
-	//	Performs no action.
-	virtual void TrackStep (double ds);
+    //  Performs no action.
+    virtual void TrackStep (double ds);
 
-	//	Returns the component index for this integrator.
-	virtual int GetComponentIndex () const;
+    //  Returns the component index for this integrator.
+    virtual int GetComponentIndex () const;
 };
 
 ComponentTracker::IntegratorSet::~IntegratorSet ()
 {
-	//	std::for_each(itsMap.begin(),itsMap.end(),map_deleter<IndexType,Integrator>());
-	for(IMap::iterator i=itsMap.begin(); i!=itsMap.end(); i++)
-	{
-		delete (*i).second;
-	}
+    //  std::for_each(itsMap.begin(),itsMap.end(),map_deleter<IndexType,Integrator>());
+    for(IMap::iterator i=itsMap.begin(); i!=itsMap.end(); i++)
+    {
+        delete (*i).second;
+    }
 }
 
 bool ComponentTracker::IntegratorSet::Add (ComponentIntegrator* intg)
 {
-	using namespace std;
+    using namespace std;
 
-	pair<IMap::iterator,bool> rt=itsMap.insert(
-	                                 IMap::value_type(intg->GetComponentIndex(),intg));
+    pair<IMap::iterator,bool> rt=itsMap.insert(
+                                     IMap::value_type(intg->GetComponentIndex(),intg));
 
-	if(!rt.second)   // override
-	{
-		delete (*rt.first).second;
-		(*rt.first).second = intg;
-	}
-	return !rt.second;
+    if(!rt.second)   // override
+    {
+        delete (*rt.first).second;
+        (*rt.first).second = intg;
+    }
+    return !rt.second;
 }
 
 ComponentIntegrator* ComponentTracker::IntegratorSet::GetIntegrator (int n)
 {
-	IMap::iterator i = itsMap.find(n);
-	return i==itsMap.end() ? nullptr : (*i).second;
+    IMap::iterator i = itsMap.find(n);
+    return i==itsMap.end() ? nullptr : (*i).second;
 }
 
 void DefaultMarkerIntegrator::TrackStep (double ds)
 {
-	assert(ds==0);
+    assert(ds==0);
 }
 
 int DefaultMarkerIntegrator::GetComponentIndex () const
 {
-	return Marker::ID;
+    return Marker::ID;
 }
 
 ComponentTracker::ComponentTracker ()
-	: itsState(undefined),iSet(new IntegratorSet)
+    : itsState(undefined),iSet(new IntegratorSet)
 {
-	Register(new DefaultMarkerIntegrator());
+    Register(new DefaultMarkerIntegrator());
 }
 
 ComponentTracker::ComponentTracker (IntegratorSet* anIS)
-	: itsState(undefined),iSet(anIS)
+    : itsState(undefined),iSet(anIS)
 {}
 
 ComponentTracker::~ComponentTracker ()
 {
-	if(iSet)
-	{
-		delete iSet;
-	}
+    if(iSet)
+    {
+        delete iSet;
+    }
 }
 
 void ComponentTracker::Track ()
 {
-	assert(itsState==initialised);
-	integrator->TrackAll();
-	itsState=finished;
+    assert(itsState==initialised);
+    integrator->TrackAll();
+    itsState=finished;
 }
 
 double ComponentTracker::TrackStep (double ds)
 {
-	assert(itsState==initialised || itsState==tracking);
-	assert(integrator->IsValidStep(ds));
+    assert(itsState==initialised || itsState==tracking);
+    assert(integrator->IsValidStep(ds));
 
-	double sToExit=integrator->Track(ds);
-	itsState = fequal(sToExit,0) ? finished : tracking;
-	return itsState;
+    double sToExit=integrator->Track(ds);
+    itsState = fequal(sToExit,0) ? finished : tracking;
+    return itsState;
 }
 
 void ComponentTracker::Reset ()
 {
-	integrator = nullptr;
-	itsState = undefined;
+    integrator = nullptr;
+    itsState = undefined;
 }
 
 double ComponentTracker::GetRemainingLength () const
 {
-	assert(itsState!=undefined);
-	return integrator->GetRemainingLength();
+    assert(itsState!=undefined);
+    return integrator->GetRemainingLength();
 }
 
 double ComponentTracker::GetIntegratedLength () const
 {
-	assert(itsState!=undefined);
-	return integrator->GetIntegratedLength();
+    assert(itsState!=undefined);
+    return integrator->GetIntegratedLength();
 }
 
 bool ComponentTracker::SelectIntegrator (int index, AcceleratorComponent& component)
 {
-	assert((itsState==undefined)||(itsState==finished));
+    assert((itsState==undefined)||(itsState==finished));
 
-	integrator = iSet->GetIntegrator(index);
-	if(!integrator)
-	{
-		return false;
-	}
-	integrator->SetCurrentComponent(component);
-	InitialiseIntegrator(integrator);
-	return true;
+    integrator = iSet->GetIntegrator(index);
+    if(!integrator)
+    {
+        return false;
+    }
+    integrator->SetCurrentComponent(component);
+    InitialiseIntegrator(integrator);
+    return true;
 }
 
 void ComponentTracker::InitialiseIntegrator (ComponentIntegrator*)
 {
-	itsState = initialised;
+    itsState = initialised;
 }
 
 bool ComponentTracker::Register (ComponentIntegrator* intg)
 {
-	if(iSet==nullptr)
-	{
-		iSet = new IntegratorSet();
-	}
+    if(iSet==nullptr)
+    {
+        iSet = new IntegratorSet();
+    }
 
-	return iSet->Add(intg);
+    return iSet->Add(intg);
 }
 
 

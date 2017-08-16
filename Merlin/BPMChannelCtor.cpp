@@ -20,26 +20,26 @@
 BPMDataBufferServer BPMChannelCtor::theServer;
 
 BPMChannelCtor::BPMChannelCtor (char xy)
-	: ChannelCtor("BPM",std::string(1,xy))
+    : ChannelCtor("BPM",std::string(1,xy))
 {
-	assert(xy=='X'||xy=='Y');
+    assert(xy=='X'||xy=='Y');
 }
 
 ROChannel* BPMChannelCtor::ConstructRO (ModelElement* anElement)
 {
 #ifndef NDEBUG
-	BPM* bpm = dynamic_cast<BPM*>(anElement);
-	assert(bpm!=0);
+    BPM* bpm = dynamic_cast<BPM*>(anElement);
+    assert(bpm!=0);
 #else
-	BPM* bpm = static_cast<BPM*>(anElement);
+    BPM* bpm = static_cast<BPM*>(anElement);
 #endif
 
-	BPMDataBuffer* dataBuffer = theServer.GetDataBuffer(bpm);
-	return new BPMChannel(key[0],dataBuffer);
+    BPMDataBuffer* dataBuffer = theServer.GetDataBuffer(bpm);
+    return new BPMChannel(key[0],dataBuffer);
 }
 
 RWChannel* BPMChannelCtor::ConstructRW (ModelElement* anElement)
 {
-	return (RWChannel*)nullptr;
+    return (RWChannel*)nullptr;
 }
 

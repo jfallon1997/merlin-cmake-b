@@ -17,8 +17,8 @@
 
 void BPMDataBuffer::Record (const BPM& aBPM, const BPM::Data& data)
 {
-	x = data.x.value;
-	y = data.y.value;
+    x = data.x.value;
+    y = data.y.value;
 }
 
 

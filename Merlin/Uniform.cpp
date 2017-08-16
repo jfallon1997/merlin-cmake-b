@@ -3,5 +3,5 @@
 
 double Uniform::operator()()
 {
-	return( pLow + delta * pGenerator -> asDouble() );
+    return( pLow + delta * pGenerator -> asDouble() );
 }

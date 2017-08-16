@@ -4,13 +4,13 @@
 #include "LogNorm.h"
 
 //
-//	See Simulation, Modelling & Analysis by Law & Kelton, pp260
+//  See Simulation, Modelling & Analysis by Law & Kelton, pp260
 //
 //
 
 double LogNormal::operator()()
 {
-	return exp (this->Normal::operator()() );
+    return exp (this->Normal::operator()() );
 }
 
 

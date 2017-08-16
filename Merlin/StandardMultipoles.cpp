@@ -23,12 +23,12 @@
 const int Quadrupole::ID = UniqueIndex();
 
 Quadrupole::Quadrupole (const string& id, double len, double dnB)
-	: _RMC1(1)
+    : _RMC1(1)
 {
 }
 
 Quadrupole::Quadrupole (const string& id, double len, double B, double r0)
-	: _RMC2(1)
+    : _RMC2(1)
 {
 }
 
@@ -36,22 +36,22 @@ Quadrupole::Quadrupole (const string& id, double len, double B, double r0)
 
 void Quadrupole::PrepareTracker (ComponentTracker& aTracker)
 {
-	_MPT
+    _MPT
 }
 
 int Quadrupole::GetIndex () const
 {
-	_RID
+    _RID
 }
 
 const string& Quadrupole::GetType () const
 {
-	_TYPESTR(Quadrupole)
+    _TYPESTR(Quadrupole)
 }
 
 ModelElement* Quadrupole::Copy () const
 {
-	_CP(Quadrupole)
+    _CP(Quadrupole)
 }
 
 // Class Sextupole
@@ -59,12 +59,12 @@ ModelElement* Quadrupole::Copy () const
 const int Sextupole::ID = UniqueIndex();
 
 Sextupole::Sextupole (const string& id, double len, double dnB)
-	: _RMC1(2)
+    : _RMC1(2)
 {
 }
 
 Sextupole::Sextupole (const string& id, double len, double B, double r0)
-	: _RMC2(2)
+    : _RMC2(2)
 {
 }
 
@@ -72,22 +72,22 @@ Sextupole::Sextupole (const string& id, double len, double B, double r0)
 
 void Sextupole::PrepareTracker (ComponentTracker& aTracker)
 {
-	_MPT
+    _MPT
 }
 
 int Sextupole::GetIndex () const
 {
-	_RID
+    _RID
 }
 
 const string& Sextupole::GetType () const
 {
-	_TYPESTR(Sextupole);
+    _TYPESTR(Sextupole);
 }
 
 ModelElement* Sextupole::Copy () const
 {
-	_CP(Sextupole)
+    _CP(Sextupole)
 }
 
 // Class SkewQuadrupole
@@ -95,12 +95,12 @@ ModelElement* Sextupole::Copy () const
 const int SkewQuadrupole::ID = UniqueIndex();
 
 SkewQuadrupole::SkewQuadrupole (const string& id, double len, double dnB)
-	: _RMSC1(1)
+    : _RMSC1(1)
 {
 }
 
 SkewQuadrupole::SkewQuadrupole (const string& id, double len, double B, double r0)
-	: _RMSC2(1)
+    : _RMSC2(1)
 {
 }
 
@@ -108,22 +108,22 @@ SkewQuadrupole::SkewQuadrupole (const string& id, double len, double B, double r
 
 void SkewQuadrupole::PrepareTracker (ComponentTracker& aTracker)
 {
-	_MPT
+    _MPT
 }
 
 int SkewQuadrupole::GetIndex () const
 {
-	_RID
+    _RID
 }
 
 const string& SkewQuadrupole::GetType () const
 {
-	_TYPESTR(SkewQuadrupole)
+    _TYPESTR(SkewQuadrupole)
 }
 
 ModelElement* SkewQuadrupole::Copy () const
 {
-	_CP(SkewQuadrupole)
+    _CP(SkewQuadrupole)
 }
 
 // Class Octupole
@@ -131,12 +131,12 @@ ModelElement* SkewQuadrupole::Copy () const
 const int Octupole::ID = UniqueIndex();
 
 Octupole::Octupole (const string& id, double len, double dnB)
-	: _RMC1(3)
+    : _RMC1(3)
 {
 }
 
 Octupole::Octupole (const string& id, double len, double B, double r0)
-	: _RMC2(3)
+    : _RMC2(3)
 {
 }
 
@@ -144,22 +144,22 @@ Octupole::Octupole (const string& id, double len, double B, double r0)
 
 void Octupole::PrepareTracker (ComponentTracker& aTracker)
 {
-	_MPT
+    _MPT
 }
 
 int Octupole::GetIndex () const
 {
-	_RID
+    _RID
 }
 
 const string& Octupole::GetType () const
 {
-	_TYPESTR(Octupole)
+    _TYPESTR(Octupole)
 }
 
 ModelElement* Octupole::Copy () const
 {
-	_CP(Octupole)
+    _CP(Octupole)
 }
 
 // Class SkewSextupole
@@ -167,12 +167,12 @@ ModelElement* Octupole::Copy () const
 const int SkewSextupole::ID = UniqueIndex();
 
 SkewSextupole::SkewSextupole (const string& id, double len, double dnB)
-	: _RMSC1(2)
+    : _RMSC1(2)
 {
 }
 
 SkewSextupole::SkewSextupole (const string& id, double len, double B, double r0)
-	: _RMSC2(2)
+    : _RMSC2(2)
 {
 }
 
@@ -180,34 +180,34 @@ SkewSextupole::SkewSextupole (const string& id, double len, double B, double r0)
 
 void SkewSextupole::PrepareTracker (ComponentTracker& aTracker)
 {
-	_MPT
+    _MPT
 }
 
 int SkewSextupole::GetIndex () const
 {
-	_RID
+    _RID
 }
 
 const string& SkewSextupole::GetType () const
 {
-	_TYPESTR(SkewSextupole)
+    _TYPESTR(SkewSextupole)
 }
 
 ModelElement* SkewSextupole::Copy () const
 {
-	_CP(SkewSextupole)
+    _CP(SkewSextupole)
 }
 
 // Class Decapole
 const int Decapole::ID = UniqueIndex();
 
 Decapole::Decapole (const string& id, double len, double dnB)
-	: _RMC1(4)
+    : _RMC1(4)
 {
 }
 
 Decapole::Decapole (const string& id, double len, double B, double r0)
-	: _RMC2(4)
+    : _RMC2(4)
 {
 }
 
@@ -215,21 +215,21 @@ Decapole::Decapole (const string& id, double len, double B, double r0)
 
 void Decapole::PrepareTracker (ComponentTracker& aTracker)
 {
-	_MPT
+    _MPT
 }
 
 int Decapole::GetIndex () const
 {
-	_RID
+    _RID
 }
 
 const string& Decapole::GetType () const
 {
-	_TYPESTR(Decapole)
+    _TYPESTR(Decapole)
 }
 
 ModelElement* Decapole::Copy () const
 {
-	_CP(Decapole)
+    _CP(Decapole)
 }
 

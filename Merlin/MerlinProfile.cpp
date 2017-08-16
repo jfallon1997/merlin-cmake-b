@@ -9,11 +9,11 @@ std::map<std::string, timespec> MerlinProfile::StartTime;
 #ifdef MERLIN_PROFILE
 bool MerlinProfile::IsEnabled()
 {
-	return true;
+    return true;
 }
 #else
 bool MerlinProfile::IsEnabled()
 {
-	return false;
+    return false;
 }
 #endif

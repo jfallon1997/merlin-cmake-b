@@ -55,7 +55,7 @@ const double MuonMassMeV = 105.65836;
 
 const double MuonMass = ProtonMass * MuonMassMeV/ProtonMassMeV; //AtomicMassUnit * 0.11342892;
 
-const double MuonLifetime = 2.1970e-6 * second;	//In the rest frame
+const double MuonLifetime = 2.1970e-6 * second; //In the rest frame
 
 const double FineStructureConstant = (ElectronCharge * ElectronCharge * SpeedOfLight * FreeSpacePermeability) / (2 * PlanckConstant);
 
@@ -63,14 +63,14 @@ const double PionZeroMassMeV = 134.976;
 
 double LorentzBeta (double gamma)
 {
-	return sqrt( 1-(1/(gamma*gamma)) );
+    return sqrt( 1-(1/(gamma*gamma)) );
 }
 double LorentzGamma (double beta)
 {
-	return 1 / (sqrt(1-(beta*beta)));
+    return 1 / (sqrt(1-(beta*beta)));
 }
 double LorentzGamma (double momentum, double mass)
 {
-	return sqrt(1 + pow(momentum/(mass*SpeedOfLight),2) );
+    return sqrt(1 + pow(momentum/(mass*SpeedOfLight),2) );
 }
 }

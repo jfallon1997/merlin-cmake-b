@@ -21,14 +21,14 @@ namespace ParticleTracking
 
 ParticleBunch& LinearParticleMap::Apply (ParticleBunch& bunch) const
 {
-	R.Apply(bunch.GetParticles());
-	return bunch;
+    R.Apply(bunch.GetParticles());
+    return bunch;
 }
 
 void LinearParticleMap::Invert ()
 {
-	// TODO:
-	assert(false);
+    // TODO:
+    assert(false);
 }
 
 } //end namespace ParticleTracking

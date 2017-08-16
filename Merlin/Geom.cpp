@@ -3,8 +3,8 @@
 
 double Geometric::operator()()
 {
-	int samples;
-	for (samples = 1; pGenerator -> asDouble() < pMean; samples++);
-	return((double) samples);
+    int samples;
+    for (samples = 1; pGenerator -> asDouble() < pMean; samples++);
+    return((double) samples);
 }
 

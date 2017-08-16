@@ -22,17 +22,17 @@ void ComponentFrame::Invalidate () const
 
 const string& ComponentFrame::GetType () const
 {
-	_TYPESTR(ComponentFrame);
+    _TYPESTR(ComponentFrame);
 }
 
 ModelElement* ComponentFrame::Copy () const
 {
-	return new ComponentFrame(*this);
+    return new ComponentFrame(*this);
 }
 
 bool ComponentFrame::IsBoundaryPlane (BoundaryPlane p, const LatticeFrame* aSubFrame) const
 {
-	// Should never be called!
-	assert(false);
-	return false;
+    // Should never be called!
+    assert(false);
+    return false;
 }

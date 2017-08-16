@@ -15,18 +15,18 @@
 #include "RWChannelState.h"
 
 RWChannelState::RWChannelState(const std::vector<RWChannel*>& channels)
-	: chs(channels), values(channels.size())
+    : chs(channels), values(channels.size())
 {
-	CacheCurrentState();
+    CacheCurrentState();
 }
 
 void RWChannelState::Reset()
 {
-	chs.WriteAll(values);
+    chs.WriteAll(values);
 }
 
 void RWChannelState::CacheCurrentState()
 {
-	chs.ReadAll(values);
+    chs.ReadAll(values);
 }
 

@@ -18,27 +18,27 @@
 const int RectMultipole::ID = UniqueIndex();
 
 RectMultipole::RectMultipole (const string& id, double length, int npole, double b, double r0, bool skew)
-	: TAccCompGF<RectangularGeometry,MultipoleField>(id,new RectangularGeometry(length),
-	        new MultipoleField(npole,b,r0,skew))
+    : TAccCompGF<RectangularGeometry,MultipoleField>(id,new RectangularGeometry(length),
+            new MultipoleField(npole,b,r0,skew))
 {}
 
 RectMultipole::RectMultipole (const string& id, double len, int np, double b, bool skew)
-	: TAccCompGF<RectangularGeometry,MultipoleField>(id,new RectangularGeometry(len),
-	        new MultipoleField(np,b,skew))
+    : TAccCompGF<RectangularGeometry,MultipoleField>(id,new RectangularGeometry(len),
+            new MultipoleField(np,b,skew))
 {}
 
 int RectMultipole::GetIndex () const
 {
-	return ID;
+    return ID;
 }
 
 void RectMultipole::PrepareTracker (ComponentTracker& aTracker)
 {
-	_PREPTRACK(aTracker,AcceleratorComponent);
+    _PREPTRACK(aTracker,AcceleratorComponent);
 }
 
 void RectMultipole::RotateY180 ()
 {
-	GetField().RotateY180();
+    GetField().RotateY180();
 }
 

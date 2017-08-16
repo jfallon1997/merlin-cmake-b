@@ -18,7 +18,7 @@
 #include "AxisRotations.h"
 
 Rot3Drep::Rot3Drep ()
-	: refc(0)
+    : refc(0)
 {}
 
 Rot3Drep::~Rot3Drep ()
@@ -26,61 +26,61 @@ Rot3Drep::~Rot3Drep ()
 
 bool Rot3Drep::isIdentity () const
 {
-	return false;
+    return false;
 }
 
 bool Rot3Drep::isXrot () const
 {
-	return false;
+    return false;
 }
 
 bool Rot3Drep::isYrot () const
 {
-	return false;
+    return false;
 }
 
 bool Rot3Drep::isZrot () const
 {
-	return false;
+    return false;
 }
 
 Rot3Drep* Rot3Drep::identity ()
 {
-	return new IdentityRotation;
+    return new IdentityRotation;
 }
 
 Rot3Drep* Rot3Drep::rotationX (double angle)
 {
-	if(angle==0)
-	{
-		return new IdentityRotation;
-	}
-	else
-	{
-		return new RotationX(angle);
-	}
+    if(angle==0)
+    {
+        return new IdentityRotation;
+    }
+    else
+    {
+        return new RotationX(angle);
+    }
 }
 
 Rot3Drep* Rot3Drep::rotationY (double angle)
 {
-	if(angle==0)
-	{
-		return new IdentityRotation;
-	}
-	else
-	{
-		return new RotationY(angle);
-	}
+    if(angle==0)
+    {
+        return new IdentityRotation;
+    }
+    else
+    {
+        return new RotationY(angle);
+    }
 }
 
 Rot3Drep* Rot3Drep::rotationZ (double angle)
 {
-	if(angle==0)
-	{
-		return new IdentityRotation;
-	}
-	else
-	{
-		return new RotationZ(angle);
-	}
+    if(angle==0)
+    {
+        return new IdentityRotation;
+    }
+    else
+    {
+        return new RotationZ(angle);
+    }
 }

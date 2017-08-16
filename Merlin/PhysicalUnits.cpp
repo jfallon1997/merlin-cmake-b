@@ -7,7 +7,7 @@ namespace PhysicalUnits
 
 
 //Area
-const double barn = 1.0e-28;	// m^2
+const double barn = 1.0e-28;    // m^2
 
 // length
 const double meter=1.0;

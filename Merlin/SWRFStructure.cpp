@@ -20,8 +20,8 @@ namespace
 {
 inline double Wavelength(double f)
 {
-	using PhysicalConstants::SpeedOfLight;
-	return SpeedOfLight/f;
+    using PhysicalConstants::SpeedOfLight;
+    return SpeedOfLight/f;
 }
 }
 
@@ -30,36 +30,36 @@ inline double Wavelength(double f)
 const int SWRFStructure::ID = UniqueIndex();
 
 SWRFStructure::SWRFStructure (const string& id, int ncells, double f, double E0, double phi)
-	: RFStructure(id,Wavelength(f)*ncells/2,new SWRFfield(f,E0,phi))
+    : RFStructure(id,Wavelength(f)*ncells/2,new SWRFfield(f,E0,phi))
 {}
 
 SWRFStructure::SWRFStructure (const SWRFStructure& rhs)
-	: RFStructure(rhs.GetName(),rhs.GetLength(),new SWRFfield(static_cast<const SWRFfield&>(rhs.GetField())))
+    : RFStructure(rhs.GetName(),rhs.GetLength(),new SWRFfield(static_cast<const SWRFfield&>(rhs.GetField())))
 {}
 
 const string& SWRFStructure::GetType () const
 {
-	_TYPESTR(SWRFStructure)
+    _TYPESTR(SWRFStructure)
 }
 
 int SWRFStructure::GetIndex () const
 {
-	return ID;
+    return ID;
 }
 
 void SWRFStructure::PrepareTracker (ComponentTracker& aTracker)
 {
-	_PREPTRACK(aTracker,AcceleratorComponent)
+    _PREPTRACK(aTracker,AcceleratorComponent)
 }
 
 void SWRFStructure::RotateY180 ()
 {
-	double E = GetField().GetAmplitude();
-	GetField().SetAmplitude(-E);
+    double E = GetField().GetAmplitude();
+    GetField().SetAmplitude(-E);
 }
 
 ModelElement* SWRFStructure::Copy () const
 {
-	return new SWRFStructure(*this);
+    return new SWRFStructure(*this);
 }
 

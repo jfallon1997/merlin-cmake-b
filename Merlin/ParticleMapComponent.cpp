@@ -21,33 +21,33 @@ namespace ParticleTracking
 const int ParticleMapComponent::ID = UniqueIndex();
 
 ParticleMapComponent::ParticleMapComponent (const std::string& id, ParticleMap* pmap, double intB2ds)
-	: AcceleratorComponent(id),itsMap(pmap),ib2(intB2ds)
+    : AcceleratorComponent(id),itsMap(pmap),ib2(intB2ds)
 {
-	assert(pmap);
+    assert(pmap);
 }
 
 const string& ParticleMapComponent::GetType () const
 {
-	_TYPESTR(ParticleMap);
+    _TYPESTR(ParticleMap);
 }
 
 ModelElement* ParticleMapComponent::Copy () const
 {
-	return new ParticleMapComponent(*this);
+    return new ParticleMapComponent(*this);
 }
 
 int ParticleMapComponent::GetIndex () const
 {
-	return ID;
+    return ID;
 }
 
 void ParticleMapComponent::RotateY180 ()
 {
-	itsMap->Invert();
+    itsMap->Invert();
 }
 
 void ParticleMapComponent::PrepareTracker (ComponentTracker& aTracker)
 {
-	_PREPTRACK(aTracker,AcceleratorComponent)
+    _PREPTRACK(aTracker,AcceleratorComponent)
 }
 } //end namespace ParticleTracking

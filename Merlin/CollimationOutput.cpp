@@ -6,8 +6,8 @@
 //
 // Copyright: see Merlin/copyright.txt
 //
-// Created:		08.01.15 Haroon Rafique
-// Modified:	09.11.15 Haroon Rafique & Alessia Valloni
+// Created:     08.01.15 Haroon Rafique
+// Modified:    09.11.15 Haroon Rafique & Alessia Valloni
 // Last Edited: 10.11.15 HR + AV
 //
 /////////////////////////////////////////////////////////////////////////
@@ -26,7 +26,7 @@ namespace ParticleTracking
 
 CollimationOutput::CollimationOutput(OutputType ot)
 {
-	otype = ot;
+    otype = ot;
 }
 
 } // End namespace ParticleTracking

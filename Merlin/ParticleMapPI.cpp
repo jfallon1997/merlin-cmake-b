@@ -19,9 +19,9 @@ namespace ParticleTracking
 
 void ParticleMapCI::TrackStep (double ds)
 {
-	assert(ds==0);
-	currentComponent->Apply(*currentBunch);
-	return;
+    assert(ds==0);
+    currentComponent->Apply(*currentBunch);
+    return;
 }
 
 } // end namespace ParticleTracking

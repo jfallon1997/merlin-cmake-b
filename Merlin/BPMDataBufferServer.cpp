@@ -16,22 +16,22 @@
 
 BPMDataBuffer* BPMDataBufferServer::GetDataBuffer (BPM* bpm, bool create)
 {
-	map<BPM*,BPMDataBuffer>::iterator b = dataBuffers.find(bpm);
+    map<BPM*,BPMDataBuffer>::iterator b = dataBuffers.find(bpm);
 
-	if(b!=dataBuffers.end())
-	{
-		return &(b->second);
-	}
+    if(b!=dataBuffers.end())
+    {
+        return &(b->second);
+    }
 
-	if(!create)
-	{
-		return (BPMDataBuffer*)nullptr;
-	}
+    if(!create)
+    {
+        return (BPMDataBuffer*)nullptr;
+    }
 
-	// make new buffer
-	BPMDataBuffer* newbuf = &(dataBuffers[bpm]);
-	newbuf->SetID(bpm->GetName());
-	bpm->AddBuffer(newbuf);
-	return newbuf;
+    // make new buffer
+    BPMDataBuffer* newbuf = &(dataBuffers[bpm]);
+    newbuf->SetID(bpm->GetName());
+    bpm->AddBuffer(newbuf);
+    return newbuf;
 }
 

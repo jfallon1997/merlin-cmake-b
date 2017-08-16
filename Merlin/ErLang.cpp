@@ -3,11 +3,11 @@
 
 double Erlang::operator()()
 {
-	double prod = 1.0;
+    double prod = 1.0;
 
-	for (int i = 0; i < k; i++)
-	{
-		prod *= pGenerator -> asDouble();
-	}
-	return(-log(prod)/a);
+    for (int i = 0; i < k; i++)
+    {
+        prod *= pGenerator -> asDouble();
+    }
+    return(-log(prod)/a);
 }

@@ -19,36 +19,36 @@
 const int TWRFStructure::ID = UniqueIndex();
 
 TWRFStructure::TWRFStructure (const string& id, double len, double f, double Epk, double phi)
-	: RFStructure(id,len,new TWRFfield(f,Epk,phi))
+    : RFStructure(id,len,new TWRFfield(f,Epk,phi))
 {}
 
 TWRFStructure::TWRFStructure (const TWRFStructure& rhs)
-	:RFStructure(rhs.GetName(),rhs.GetLength(),new TWRFfield(static_cast<const TWRFfield&>(rhs.GetField())))
+    :RFStructure(rhs.GetName(),rhs.GetLength(),new TWRFfield(static_cast<const TWRFfield&>(rhs.GetField())))
 {}
 
 const string& TWRFStructure::GetType () const
 {
-	_TYPESTR(TWRFStructure)
+    _TYPESTR(TWRFStructure)
 }
 
 int TWRFStructure::GetIndex () const
 {
-	return ID;
+    return ID;
 }
 
 void TWRFStructure::PrepareTracker (ComponentTracker& aTracker)
 {
-	_PREPTRACK(aTracker,AcceleratorComponent)
+    _PREPTRACK(aTracker,AcceleratorComponent)
 }
 
 void TWRFStructure::RotateY180 ()
 {
-	double E = GetField().GetAmplitude();
-	GetField().SetAmplitude(-E);
+    double E = GetField().GetAmplitude();
+    GetField().SetAmplitude(-E);
 }
 
 ModelElement* TWRFStructure::Copy () const
 {
-	return new TWRFStructure(*this);
+    return new TWRFStructure(*this);
 }
 

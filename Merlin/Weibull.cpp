@@ -2,12 +2,12 @@
 #include "Weibull.h"
 
 /**
-*	See Simulation, Modelling & Analysis by Law & Kelton, pp259
+*   See Simulation, Modelling & Analysis by Law & Kelton, pp259
 *
-*	This is the ``polar'' method.
+*   This is the ``polar'' method.
 *//
 
 double Weibull::operator()()
 {
-	return( pow(pBeta * ( - log(1 - pGenerator -> asDouble()) ), pInvAlpha) );
+    return( pow(pBeta * ( - log(1 - pGenerator -> asDouble()) ), pInvAlpha) );
 }
